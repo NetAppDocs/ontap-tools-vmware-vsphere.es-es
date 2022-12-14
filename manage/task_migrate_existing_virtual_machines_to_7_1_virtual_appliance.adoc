@@ -1,0 +1,30 @@
+---
+permalink: manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html 
+sidebar: sidebar 
+keywords:  
+summary: Si está utilizando la versión más reciente de las herramientas de ONTAP para VMware vSphere, A continuación, debe migrar sus máquinas virtuales que se aprovisionan con las métricas de calidad de servicio “MaxThroughput MBPS” o “MaxThroughput IOPS” a nuevos almacenes de datos VVol que se aprovisionan con las métricas de calidad de servicio “Max IOPS” de la versión más reciente de las herramientas ONTAP. 
+---
+= Migrar máquinas virtuales con perfiles de funcionalidad de almacenamiento más antiguos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si está utilizando la versión más reciente de las herramientas de ONTAP para VMware vSphere, A continuación, debería migrar sus máquinas virtuales que se aprovisionan con las métricas de calidad de servicio «MaxThroughput MBPS» o «MaxThroughput IOPS» en nuevos almacenes de datos VVol aprovisionados con las métricas de calidad de servicio «Max IOPS» de la versión más reciente de las herramientas de ONTAP.
+
+*Acerca de esta tarea*
+
+Con la versión más reciente de las herramientas de ONTAP, puede configurar las métricas de calidad de servicio para cada máquina virtual o disco de máquina virtual (VMDK). Las métricas de calidad de servicio se aplicaron anteriormente en el nivel de volumen ONTAP FlexVol y fueron compartidas por todas las máquinas virtuales o VMDK que se aprovisionaron en ese volumen FlexVol.
+
+A partir de la versión 7.2 de herramientas de ONTAP, las métricas de calidad de servicio de una máquina virtual no se comparten con otras máquinas virtuales.
+
+
+NOTE: No debe modificar la Política de almacenamiento de máquinas virtuales existente, ya que las máquinas virtuales pueden dejar de cumplir las normativas.
+
+* Pasos*
+
+. Crear almacenes de datos vVols usando un nuevo perfil de funcionalidad de almacenamiento con el valor necesario «Max IOPS».
+. Cree una normativa de almacenamiento de VM y, a continuación, asigne la nueva normativa de almacenamiento de VM al nuevo perfil de capacidad de almacenamiento.
+. Migre las máquinas virtuales existentes a los almacenes de datos de VVol recién creados mediante la nueva normativa de almacenamiento de equipos virtuales.
+

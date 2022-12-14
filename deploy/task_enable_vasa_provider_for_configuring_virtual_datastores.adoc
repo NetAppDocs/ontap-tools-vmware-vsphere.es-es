@@ -1,0 +1,79 @@
+---
+permalink: deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Las herramientas de ONTAP para VMware vSphere tienen habilitada la funcionalidad de proveedor de VASA de forma predeterminada. Puede configurar almacenes de datos VMware Virtual Volumes \(vVols\) con los perfiles de capacidad de almacenamiento necesarios para cada almacén de datos vVols.' 
+---
+= Habilite VASA Provider para configurar almacenes de datos virtuales
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las herramientas de ONTAP para VMware vSphere tienen habilitada la funcionalidad de proveedor de VASA de forma predeterminada. Puede configurar almacenes de datos VMware Virtual Volumes (vVols) con perfiles de capacidad de almacenamiento necesarios para cada almacén de datos vVols.
+
+*Lo que necesitará*
+
+* Debe haber configurado la instancia de vCenter Server y ESXi.
+* Debe haber implementado las herramientas de ONTAP .
+
+
+*Acerca de esta tarea*
+
+Si la funcionalidad del proveedor VASA está deshabilitada antes de actualizar a la versión 9.7.1 de las herramientas de ONTAP , la funcionalidad del proveedor VASA permanece deshabilitada después de la actualización. Esta versión le permite habilitar la función de replicación vVols para almacenes de datos vVols.
+
+* Pasos*
+
+. Inicie sesión en la interfaz de usuario web de VMware vSphere.
+. En vSphere Client, haga clic en *Menú* > *Consola de herramientas ONTAP*.
+. Haga clic en *Configuración*.
+. Haga clic en *Administrar capacidades* en la ficha Configuración administrativa.
+. En el cuadro de diálogo gestionar funcionalidades, seleccione la extensión VASA Provider para habilitar.
+. Si desea utilizar la capacidad de replicación para almacenes de datos vVols, utilice el botón de alternar *Activar replicación vVols*.
+. Introduzca la dirección IP de las herramientas de ONTAP y la contraseña del administrador y, a continuación, haga clic en *aplicar*.
++
+
+NOTE: Si el estado del proveedor VASA se muestra como "'fuera de línea'" incluso después de habilitar la extensión del proveedor VASA, compruebe la ``/var/log/vmware/vmware-sps/sps.log` Archivar los errores de conexión con VASA Provider o reiniciar el servicio "'vmware-sps'".
+
+
+
+
+
+== Registre los servicios de API de OnCommand con ONTAP 9.6 o versiones anteriores
+
+Si utiliza ONTAP 9.6 o una versión anterior, el panel de vVols puede mostrar los detalles de los almacenes de datos de VMware Virtual Volumes (vVols) y las máquinas virtuales solo si ha registrado el proveedor de servicios de API de OnCommand para VASA para obtener datos para el equipo virtual vVols y los informes de almacenes de datos.
+
+*Lo que necesitará*
+
+Debe haber descargado los servicios de API de OnCommand 2.1 o una versión posterior del sitio de soporte de NetApp.
+
+
+NOTE: El panel vVols muestra las métricas de rendimiento sólo cuando los almacenes DE datos Y las máquinas virtuales DE SAN vVols se configuran mediante ONTAP 9.3 o posterior.
+
+* Pasos*
+
+. En la página de inicio de las herramientas de ONTAP, haga clic en *Configuración*.
+. Haga clic en *Administrar extensión* en la ficha Configuración administrativa.
+. Use el control deslizante Register OnCommand API Services para habilitar los servicios de API de OnCommand.
+. Introduzca la dirección IP, el puerto de servicio y las credenciales de OnCommand API Services.
++
+También puede utilizar el cuadro de diálogo Administrar extensiones de proveedor VASA para las siguientes modificaciones:
+
++
+** Para actualizar el registro de los servicios API de OnCommand cuando se produce cualquier cambio en las credenciales.
+** Para cancelar el registro de los servicios API de OnCommand cuando ya no necesite el panel vVols.
++
+Debe desactivar la casilla de comprobación Register OnCommand API Services para quitar el registro de servicios API de OnCommand para proveedor VASA.
+
+
+
+. Haga clic en *aplicar*.
++
+El panel vVols muestra las métricas para los almacenes de datos DE ONTAP 9.6 o VERSIONES anteriores de SAN vVols sólo después de que se haya completado el registro de los Servicios de API de OnCommand.
+
+
+
+*Información relacionada*
+
+https://mysupport.netapp.com/site/global/dashboard["Soporte de NetApp"]

@@ -1,0 +1,28 @@
+---
+permalink: configure/task_assign_qos_policies.html 
+sidebar: sidebar 
+keywords:  
+summary: El aprovisionamiento de almacenes de datos de FlexGroup no admite la asignación de perfiles de funcionalidad de almacenamiento a los almacenes de datos. Pero es posible asignar políticas de calidad de servicio a máquinas virtuales que se crean en almacenes de datos respaldados por FlexGroup. 
+---
+= Asigne políticas de calidad de servicio
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El aprovisionamiento de almacenes de datos de FlexGroup no admite la asignación de perfiles de funcionalidad de almacenamiento a los almacenes de datos. Pero es posible asignar políticas de calidad de servicio a máquinas virtuales que se crean en almacenes de datos respaldados por FlexGroup.
+
+*Acerca de esta tarea*
+
+Las políticas de calidad de servicio se pueden aplicar a nivel de equipo virtual o de almacén de datos. Las políticas de calidad de servicio son necesarias para que un almacén de datos configure los umbrales de rendimiento (Max y Min IOPS). Cuando se configura la calidad de servicio en un almacén de datos, se aplica a las máquinas virtuales que residen en el almacén de datos, no en el volumen de FlexGroup. Sin embargo, si establece la calidad de servicio en todas las máquinas virtuales de un almacén de datos, los ajustes de calidad de servicio individuales de las máquinas virtuales se anularán. Esto se aplica únicamente a las máquinas virtuales disponibles en el almacén de datos y no a ninguna máquina virtual migrada o añadida. Si desea aplicar la calidad de servicio a las máquinas virtuales que se han añadido o migrado recientemente de un almacén de datos en particular, debe establecer manualmente los valores de calidad de servicio.
+
+
+NOTE: No puede aplicar la configuración de calidad de servicio en un almacén de datos o máquinas virtuales para los almacenes de datos que se aprovisionan en máquinas virtuales de almacenamiento directo, ya que ONTAP no admite la calidad de servicio en el nivel de gestión de máquinas virtuales de almacenamiento.
+
+* Pasos*
+
+. En la página de inicio de las herramientas de ONTAP, haga clic en *Menú* > *Host y clústeres*.
+. Haga clic con el botón derecho del ratón en el almacén de datos o la máquina virtual necesarios y haga clic en *Herramientas de ONTAP de NetApp* > *asignar QoS*.
+. En el cuadro de diálogo asignar QoS, introduzca los valores de IOPS necesarios y haga clic en *aplicar*.
+

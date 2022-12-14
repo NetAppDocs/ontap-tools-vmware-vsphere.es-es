@@ -1,0 +1,32 @@
+---
+permalink: configure/task_configure_esx_server_multipathing_and_timeout_settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Las herramientas de ONTAP® para VMware vSphere comprueban y establecen la configuración de accesos múltiples del host ESXi y la configuración de tiempo de espera del HBA que funcionan mejor con los sistemas de almacenamiento de NetApp. 
+---
+= Configure los valores de multivía y de tiempo de espera del servidor ESXi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las herramientas de ONTAP para VMware vSphere comprueban y establecen la configuración de multivía del host ESXi y el tiempo de espera de HBA que funcionan mejor con los sistemas de almacenamiento de NetApp.
+
+*Acerca de esta tarea*
+
+Este proceso puede llevar mucho tiempo, según la configuración y la carga del sistema. El progreso de la tarea se muestra en el panel Recent Tasks. Cuando se completan las tareas, el icono de alerta de estado del host se sustituye por el icono normal o el icono de reinicio pendiente.
+
+* Pasos*
+
+. En la página Home de VMware vSphere Web Client, haga clic en *vCenter* > *hosts*.
+. Haga clic con el botón derecho en un host y seleccione *acciones* > *NetApp VSC* > *establecer valores recomendados*.
+. En el cuadro de diálogo NetApp Recommended Settings, seleccione los valores que mejor se adapten a su sistema.
++
+Los valores estándar recomendados se establecen de forma predeterminada.
+
++
+image::../media/vsc_recommended_hosts_settings.gif[configuración de hosts recomendada por vsc]
+
+. Haga clic en *Aceptar*.
+

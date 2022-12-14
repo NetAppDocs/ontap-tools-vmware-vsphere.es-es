@@ -1,0 +1,109 @@
+---
+permalink: manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Puede supervisar el rendimiento y ver los cinco almacenes de datos PRINCIPALES SAN y NAS VMware Virtual Volumes \(vVols\) en vCenter Server según los parámetros que seleccione utilizando el panel vVols de las herramientas ONTAP.' 
+---
+= Analice los datos de rendimiento con el panel vVols
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede supervisar el rendimiento y ver los cinco almacenes de datos PRINCIPALES SAN y NAS VMware Virtual Volumes (vVols) en vCenter Server según los parámetros que seleccione con la consola vVols de las herramientas ONTAP.
+
+*Lo que necesitará*
+
+* Debe haber habilitado OnCommand API Services 2.1 o posterior si utiliza ONTAP 9.6 o anterior.
++
+No es necesario registrar los Servicios API de OnCommand con VASA Provider para obtener los detalles del informe sobre el almacén de datos SAN vVols o EL almacén de datos DE SAN vVols VM para ONTAP 9.7 o posterior.
+
++
+https://mysupport.netapp.com/site/global/dashboard[]
+
+* Debe utilizar ONTAP 9.3 o una versión posterior para su sistema de almacenamiento.
+
+
+Los datos de IOPS que proporciona ONTAP se redondean y se muestran en el panel de vVols. Puede haber una diferencia entre el valor de IOPS real que proporciona ONTAP y el valor de IOPS que se muestra en el panel de vVols. Las herramientas de ONTAP proporcionan supervisión del rendimiento para almacenes de datos vVols basados en NFS.
+
+
+NOTE: Si registra los Servicios API de OnCommand por primera vez, puede ver todos los datos de métricas de rendimiento de los almacenes DE datos SAN vVols en la consola vVols sólo después de 15 a 30 minutos.
+
+* Los datos del panel de vVols se actualizan periódicamente, con un intervalo de 10 minutos.
+* Si ha añadido, modificado o eliminado un sistema de almacenamiento de la instancia de vCenter Server, es posible que no note ningún cambio en los datos de la consola de vVols durante algún tiempo.
++
+Esto se debe a que los servicios API de OnCommand tardan tiempo en obtener métricas actualizadas de ONTAP.
+
+* El valor total de IOPS que se muestra en el portlet Overview de la consola vVols no es un valor acumulativo de IOPS de lectura y valor de IOPS de escritura.
++
+IOPS de lectura, IOPS de escritura y total IOPS son métricas independientes que proporcionan los servicios de API de OnCommand. Si hay una diferencia entre el valor de IOPS total y el valor de IOPS acumulativo (valor de IOPS de lectura + valor de IOPS de escritura) que proporcionan los servicios de API de OnCommand, se observa la misma diferencia en los valores de IOPS en el panel de vVols.
+
+* Los vVols de datos basados en NFS aprovisionados con ONTAP 9.8 y versiones posteriores se registran automáticamente para supervisar el rendimiento en el panel vVols.
+
+
+* Pasos*
+
+. En la página de inicio de vSphere Client, haga clic en *Herramientas de ONTAP*.
+. Seleccione la instancia de vCenter Server requerida mediante el menú desplegable *vCenter Server* para ver los almacenes de datos.
+. Haga clic en *vVols Dashboard*.
++
+El portlet datastores proporciona los siguientes detalles:
+
++
+** El número de almacenes de datos vVols gestionados por VASA Provider en la instancia de vCenter Server
+** Los cinco almacenes de datos vVols principales según el uso de recursos y los parámetros de rendimiento, puede cambiar la lista de los almacenes de datos en función del espacio utilizado, las IOPS o la latencia y del orden necesario.
+
+
+. Vea los detalles de las máquinas virtuales con el portlet Máquinas virtuales.
++
+El portlet Máquinas virtuales proporciona los siguientes detalles:
+
++
+** Número de máquinas virtuales que utilizan almacenes de datos ONTAP en vCenter Server
+** Las cinco máquinas virtuales más importantes basadas en IOPS, latencia, rendimiento, capacidad dedicada, tiempo activo, Y espacio lógico puede personalizar cómo se enumeran las cinco máquinas virtuales principales en el panel de control de vVols.
+
+
+
+
+
+
+== Requisitos de datos del panel de vVols
+
+Debe verificar algunos requisitos importantes del panel vVols para mostrar detalles dinámicos de los almacenes de datos y las máquinas virtuales de VMware Virtual Volumes (vVols).
+
+La siguiente tabla muestra una descripción general de lo que debe comprobar si el panel de vVols no muestra las métricas de rendimiento para los almacenes de datos DE SAN vVols aprovisionados y las máquinas virtuales.
+
+|===
+
+
+| *Consideraciones* | *Descripción* 
+
+
+ a| 
+Implementación por primera vez de servicios API de OnCommand
+ a| 
+* Si tiene clústeres de ONTAP 9.6 o anteriores, utiliza OnCommand API Services 2.1 o una versión posterior.
++
+No es necesario que los servicios API de OnCommand estén registrados con proveedor de VASA si utiliza ONTAP 9.7 y una versión posterior.
+
+* Debe haber seguido las instrucciones de instalación proporcionadas en la guía de instalación y configuración de _OnCommand API Services_ después de descargar e instalar OnCommand API Services desde el sitio de soporte de NetApp.
+* Cada instancia de proveedor de VASA debe tener una instancia dedicada de servicios de API de OnCommand.
++
+Los servicios de API de OnCommand no se deben compartir entre varias instancias de proveedor VASA o vCenter Server.
+
+* Los servicios API de OnCommand se ejecutan y se puede acceder a ellos.
+
+
+
+
+ a| 
+Sistema de almacenamiento
+ a| 
+* Utiliza ONTAP 9.3 o una versión posterior.
+* Se utilizan credenciales adecuadas para el sistema de almacenamiento.
+* El sistema de almacenamiento es activo y accesible.
+* La máquina virtual seleccionada debe utilizar al menos un almacén de datos vVols, y las operaciones de I/o se están ejecutando en el disco de la máquina virtual.
+
+
+|===

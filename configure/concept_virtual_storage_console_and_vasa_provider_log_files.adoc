@@ -1,0 +1,36 @@
+---
+permalink: configure/concept_virtual_storage_console_and_vasa_provider_log_files.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede comprobar los archivos de registro en el directorio /opt/netapp/vscserver/log y en el directorio /opt/netapp/vpserver/log cuando encuentre errores. 
+---
+= Archivos de registro de Virtual Storage Console y VASA Provider
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede comprobar los archivos de registro en el directorio '/opt/netapp/vscserver/log' y en el directorio '/opt/netapp/vpserver/log' cuando encuentre errores.
+
+Los siguientes tres archivos de registro pueden ser útiles para identificar problemas:
+
+* 'cxf.log', con información sobre el tráfico de API que entra y sale de VASA Provider *'kaminoPrefs.xml', que contiene información acerca de la configuración de VSC
+* 'Vvolvp.log', que contiene toda la información de registro sobre VASA Provider
+
+
+El menú de mantenimiento de herramientas de ONTAP para VMware vSphere le permite establecer diferentes niveles de registro para sus requisitos. Se encuentran disponibles los siguientes niveles de registro:
+
+* Información
+* Depurar
+* Error
+* Traza
+
+
+Al establecer los niveles de registro, se actualizan los siguientes archivos:
+
+* Servidor VSC: "kamino.log" y "vvolvp.log"
+* Servidor del proveedor DE VASA: "Vvolvp.log", "error.log" y "netapp.log"
+
+
+Además, la página de la interfaz de línea de comandos (CLI) web del proveedor VASA contiene las llamadas API que se realizaron, los errores que se devolvió y varios contadores relacionados con el rendimiento. Puede encontrar la página web CLI en 'https://<IP_address_or_hostname>:9083/stats'[].

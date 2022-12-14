@@ -1,0 +1,76 @@
+---
+permalink: protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Debe configurar los intervalos de tiempo de espera del almacenamiento de acuerdo con la configuración recomendada para el adaptador de replicación de almacenamiento \(SRA\) para que funcione de forma óptima en entornos con un alto nivel de escalado.' 
+---
+= Configure el adaptador de replicación de almacenamiento para entornos de gran escala
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe configurar los intervalos de tiempo de espera de almacenamiento de acuerdo con la configuración recomendada para que el adaptador de replicación de almacenamiento (SRA) funcione de forma óptima en entornos con un alto nivel de escalado.
+
+
+
+== Configuración del proveedor de almacenamiento
+
+Debe configurar los siguientes valores de tiempo de espera en SRM para entornos escalados:
+
+|===
+
+
+| *Ajustes avanzados* | *Valores de tiempo de espera* 
+
+
+ a| 
+`StorageProvider.resignatureTimeout`
+ a| 
+Aumente el valor del ajuste de 900 segundos a 12000 segundos.
+
+
+
+ a| 
+`storageProvider.hostRescanDelaySec`
+ a| 
+60
+
+
+
+ a| 
+`storageProvider.hostRescanRepeatCnt`
+ a| 
+20
+
+
+
+ a| 
+`storageProvider.hostRescanTimeoutSec`
+ a| 
+Establecer un valor alto (por ejemplo: 99999)
+
+|===
+También debe habilitar el `StorageProvider.autoResignatureMode` opción.
+
+Consulte la documentación de VMware para obtener más información sobre cómo modificar la configuración del proveedor de almacenamiento.
+
+https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html["Documentación de VMware vSphere: Cambie la configuración del proveedor de almacenamiento"]
+
+
+
+== Configuración de almacenamiento
+
+Debe configurar el valor de `storage.commandTimeout` y.. `storage.maxConcurrentCommandCnt` intervalo de tiempo de espera para entornos con gran escala a 99,999 segundos.
+
+
+NOTE: El intervalo de tiempo de espera especificado es el valor máximo. No es necesario esperar hasta que se llegue al tiempo de espera máximo. La mayoría de comandos terminan dentro del intervalo máximo de tiempo de espera establecido.
+
+También debe configurar el tiempo máximo para que SRA realice una sola operación en el archivo vvol.properties: offtap.operation.timeout.period.seconds=86400.
+
+https://kb.netapp.com/app/answers/answer_view/a_id/1001111["Respuesta 1001111 de la base de conocimientos de NetApp: Adaptador de replicación de almacenamiento de NetApp 4.0/7.X para la guía de ajuste de tamaño de ONTAP"]
+
+La documentación de VMware sobre la modificación de la configuración del proveedor DE SAN tiene más información.
+
+https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-711FD223-50DB-414C-A2A7-3BEB8FAFDBD9.html["Documentación de VMware Site Recovery Manager: Cambiar la configuración de almacenamiento"]

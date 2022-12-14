@@ -1,0 +1,65 @@
+---
+permalink: manage/task_edit_esxi_host_settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Es posible utilizar la consola de herramientas de ONTAP para VMware vSphere para editar la configuración del host ESXi. 
+---
+= Modifique la configuración del host ESXi mediante las herramientas ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible utilizar la consola de herramientas de ONTAP para VMware vSphere para editar la configuración del host ESXi.
+
+*Lo que necesitará*
+
+Debe haber configurado un sistema host ESXi para la instancia de vCenter Server.
+
+Si existe un problema con la configuración del host ESXi, el problema se muestra en el portlet ESXi Host Systems de la consola. Puede hacer clic en el problema para ver el nombre de host o la dirección IP del host ESXi que tiene el problema.
+
+* Pasos*
+
+. En la página Home de vSphere Client, haga clic en *Herramientas de ONTAP*.
+. Edite la configuración del host ESXi.
++
+|===
+
+
+| *Si desea editar la configuración del host ESXi desde...* | * Haga esto...* 
+
+
+ a| 
+Problemas mostrados
+ a| 
+.. Haga clic en el problema en el portlet ESXi Host Systems.
+.. Haga clic en los nombres de hosts ESXi para los que desea modificar la configuración.
+.. Haga clic con el botón derecho en el nombre de host ESXi y haga clic en *Herramientas ONTAP de NetApp* > *establecer valores recomendados*.
+.. Modifique la configuración necesaria y, a continuación, haga clic en *Aceptar*.
+
+
+
+
+ a| 
+Página de inicio de vSphere Client
+ a| 
+.. Haga clic en *Menú* > *hosts y clústeres*.
+.. Haga clic con el botón derecho en el host ESXi requerido y seleccione *Herramientas ONTAP de NetApp* > *establecer valor recomendado*.
+.. Haga clic en *Aceptar*.
+
+
+
+
+ a| 
+Portlet sistemas host ESXi
+ a| 
+.. Haga clic en la ficha *Panel tradicional* de la sección Descripción general de VSC.
+.. Haga clic en *Editar configuración del host ESXi*.
+.. Seleccione el nombre de host ESXi en la ficha Configuración del host y estado para los que desea modificar la configuración y haga clic en *SIGUIENTE*.
+.. Seleccione la configuración necesaria en la ficha Configuración de host recomendada y, a continuación, haga clic en *Siguiente*.
+.. Revise su selección en la ficha Resumen y, a continuación, haga clic en *TERMINAR*.
+
+
+|===
+

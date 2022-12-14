@@ -1,0 +1,22 @@
+---
+permalink: protect/concept_configure_protected_and_recovery_site_resources.html 
+sidebar: sidebar 
+keywords:  
+summary: Debe configurar las asignaciones de recursos, como las redes de VM, los hosts ESXi y las carpetas en ambos sitios para permitir la asignación de cada recurso del sitio protegido al recurso apropiado en el sitio de recuperación. 
+---
+= Configurar los recursos del sitio de recuperación y protegidos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe configurar las asignaciones de recursos, como las redes de VM, los hosts ESXi y las carpetas en ambos sitios para permitir la asignación de cada recurso del sitio protegido al recurso apropiado en el sitio de recuperación.
+
+Debe completar las siguientes configuraciones de recursos:
+
+* Asignaciones de red
+* Asignaciones de carpetas
+* Asignaciones de recursos
+* Almacenes de datos de marcadores de posición
+

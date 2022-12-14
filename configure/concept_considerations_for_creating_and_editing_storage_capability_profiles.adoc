@@ -1,0 +1,32 @@
+---
+permalink: configure/concept_considerations_for_creating_and_editing_storage_capability_profiles.html 
+sidebar: sidebar 
+keywords:  
+summary: Debe tener en cuenta las consideraciones que se deben tener en cuenta para crear y editar perfiles de funcionalidad de almacenamiento. 
+---
+= Consideraciones que tener en cuenta para crear y editar perfiles de funcionalidad de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe tener en cuenta las consideraciones que se deben tener en cuenta para crear y editar perfiles de funcionalidad de almacenamiento.
+
+* Solo puede configurar Min IOPS en sistemas AFF.
+* Es posible configurar métricas de calidad de servicio en un nivel de almacén de datos de volumen virtual (VVol).
++
+Esta funcionalidad proporciona una mayor flexibilidad a la hora de asignar diferentes métricas de calidad de servicio para diferentes VMDK de la misma máquina virtual que se aprovisiona en un almacén de datos virtual.
+
+* Es posible configurar perfiles de funcionalidad de almacenamiento para almacenes de datos FAS y AFF.
++
+Para los sistemas AFF de FAS, puede configurar la reserva de espacio para que sea gruesa o ligera.
+
+* Puede usar perfiles de funcionalidad de almacenamiento para proporcionar cifrado para los almacenes de datos.
+* No puede modificar los perfiles de funcionalidad de almacenamiento existentes (creados antes de la versión 7.2) después de actualizar desde una versión anterior de las herramientas de ONTAP para VMware vSphere a la versión más reciente de las herramientas de ONTAP.
++
+Los perfiles de funcionalidad de almacenamiento anteriores se conservan para su compatibilidad con versiones anteriores. Si no se están utilizando las plantillas predeterminadas, durante la actualización a la versión más reciente de las herramientas de ONTAP, las plantillas existentes se anularán para reflejar las nuevas métricas de calidad de servicio relacionadas con el rendimiento de los perfiles de funcionalidad de almacenamiento.
+
+* No es posible modificar ni utilizar los perfiles de funcionalidad de almacenamiento heredados para aprovisionar nuevos almacenes de datos virtuales ni políticas de almacenamiento de máquinas virtuales.
+* Es necesario usar nuevos perfiles de funcionalidad de almacenamiento para todos los almacenes de datos nuevos.
+

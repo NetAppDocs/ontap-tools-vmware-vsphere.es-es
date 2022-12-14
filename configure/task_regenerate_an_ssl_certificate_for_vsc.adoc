@@ -1,0 +1,28 @@
+---
+permalink: configure/task_regenerate_an_ssl_certificate_for_vsc.html 
+sidebar: sidebar 
+keywords:  
+summary: 'El certificado SSL se genera al instalar Virtual Storage Console \(VSC\). El nombre completo \(DN\) que se genera para el certificado SSL puede no ser un nombre común \(CN\) que reconocen los equipos cliente. Al cambiar las contraseñas del almacén de claves y de la clave privada, puede volver a generar el certificado y crear un certificado específico del sitio.' 
+---
+= Regenere un certificado SSL para Virtual Storage Console
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El certificado SSL se genera al instalar Virtual Storage Console (VSC). El nombre distintivo (DN) que se genera para el certificado SSL puede no ser un nombre común (CN) que reconocen los equipos cliente. Al cambiar las contraseñas del almacén de claves y de la clave privada, puede volver a generar el certificado y crear un certificado específico del sitio.
+
+*Acerca de esta tarea*
+
+Puede habilitar el diagnóstico remoto mediante la consola de mantenimiento y generar un certificado específico de cada sitio.
+
+https://kb.netapp.com/advice_and_troubleshooting/data_storage_software/vsc_and_vasa_provider/virtual_storage_console%3a_implementing_ca_signed_certificates["Virtual Storage Console: Implementación de certificados firmados por CA"]
+
+* Pasos*
+
+. Inicie sesión en la consola de mantenimiento.
+. Introduzca `1` Para acceder al menú Configuración de la aplicación.
+. En el menú Configuración de la aplicación, introduzca `3` Para detener el servicio VSC.
+. Introduzca `7` Para regenerar el certificado SSL.
+

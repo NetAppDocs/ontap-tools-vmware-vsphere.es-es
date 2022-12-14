@@ -1,0 +1,124 @@
+---
+permalink: configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Es posible configurar tiempos de espera y otros valores en los hosts ESXi mediante las herramientas de ONTAP para VMware vSphere con el fin de garantizar el mejor rendimiento y una conmutación al respaldo correcta. Los valores que define Virtual Storage Console \(VSC\) se basan en pruebas internas de NetApp.' 
+---
+= Los valores de host de ESXi se establecen mediante herramientas de ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible configurar tiempos de espera y otros valores en los hosts ESXi mediante las herramientas de ONTAP para VMware vSphere con el fin de garantizar el mejor rendimiento y una conmutación al respaldo correcta. Los valores que conjuntos de herramientas de ONTAP se basan en pruebas internas de NetApp.
+
+Puede configurar los siguientes valores en un host ESXi:
+
+
+
+== Configuración avanzada de ESXi
+
+* *VMFS3.HardwaraceleratedLocking*
++
+Debe establecer este valor en 1.
+
+* *VMFS3.EnableBlockDelete*
++
+Debe configurar este valor en 0.
+
+
+
+
+
+== Configuración de NFS
+
+* *Net.TcpipHeapSize*
++
+Si utiliza vSphere 6.0 o una versión posterior, debe configurar este valor en 32.
+
+* *Net.TcpipHeapMax*
++
+Debe establecer este valor en 512 MB para las versiones vSphere 6.X, excepto en el caso de los lanzamientos 6.5U3 y 6.7U3. Para las versiones vSphere 6.5U3 y 6.7U3, este valor se establece en 1024 MB. Si utiliza vSphere 7.0 o versiones posteriores, debe configurar este valor en 1024 MB.
+
+* *NFS.MaxVolumes*
++
+Si utiliza vSphere 6.0 o una versión posterior, debe configurar este valor en 256.
+
+* *NFS41.MaxVolumes*
++
+Si utiliza vSphere 6.0 o una versión posterior, debe configurar este valor en 256.
+
+* *NFS.MaxQueueDepth*
++
+Si utiliza vSphere 6.0 o una versión posterior del host ESXi, debe configurar este valor en 128 o superior para evitar los cuellos de botella en la cola.
+
++
+Para las versiones de vSphere anteriores a la 6.0, debe configurar este valor en 64.
+
+* *NFS.HeartbeatMaxFailures*
++
+Debe establecer este valor en 10 para todas las configuraciones de NFS.
+
+* *NFS.HeartbeatFrequency*
++
+Debe establecer este valor en 12 para todas las configuraciones de NFS.
+
+* *NFS.HeartbeatTimeout*
++
+Debe establecer este valor en 5 para todas las configuraciones de NFS.
+
+
+
+
+
+== Configuración de FC/FCoE
+
+* *Política de selección de ruta*
++
+Debe establecer este valor en "'RR'" (operación por turnos) cuando se utilicen rutas FC con ALUA.
+
++
+Debería establecer este valor en «'FIJO'» para todas las demás configuraciones.
+
++
+Establecer este valor en «'RR'» ayuda a proporcionar equilibrio de carga en todas las rutas activas/optimizadas. El valor "'FIXED'" se utiliza para configuraciones antiguas y no ALUA y ayuda a evitar las operaciones de E/S proxy
+
+* *Disk.QFullSampleSize*
++
+Debe establecer este valor en 32 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
+
+* *Disk.QFullThreshold*
++
+Debe establecer este valor en 8 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
+
+* *Tiempos de espera de HBA FC Emulex*
++
+Se utiliza el valor predeterminado.
+
+* *Tiempo de espera de HBA FC QLogic*
++
+Se utiliza el valor predeterminado.
+
+
+
+
+
+== Configuración de iSCSI
+
+* *Política de selección de ruta*
++
+Debería establecer este valor en «'RR'» para todas las rutas de iSCSI.
+
++
+Establecer este valor en «'RR'» ayuda a proporcionar equilibrio de carga en todas las rutas activas/optimizadas.
+
+* *Disk.QFullSampleSize*
++
+Debe establecer este valor en 32 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
+
+* *Disk.QFullThreshold*
++
+Debe establecer este valor en 8 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
+
+

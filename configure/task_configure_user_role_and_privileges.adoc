@@ -1,0 +1,45 @@
+---
+permalink: configure/task_configure_user_role_and_privileges.html 
+sidebar: sidebar 
+keywords: user roles 
+summary: Puede configurar nuevos roles de usuario para gestionar sistemas de almacenamiento mediante el archivo JSON proporcionado con las herramientas de ONTAP y System Manager de ONTAP. 
+---
+= Configure los roles y privilegios de usuario
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede configurar nuevos roles de usuario para gestionar sistemas de almacenamiento mediante el archivo JSON proporcionado con las herramientas de ONTAP y System Manager de ONTAP.
+
+*Lo que necesitará*
+
+* Debería haber descargado el archivo privilegios de ONTAP desde las herramientas de ONTAP mediante \https://{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip.
+* Debe haber configurado el almacenamiento ONTAP 9.8P1 o posterior.
+* Inició sesión con privilegios de administrador del sistema de almacenamiento.
+
+
+* Pasos*
+
+. Descomprima el archivo descargado `\https://{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip` archivo.
+. Acceda a ONTAP System Manager.
+. Haga clic en *CLUSTER* > *Configuración* > *usuarios y roles*.
+. Haga clic en *Agregar usuario*.
+. En el cuadro de diálogo Agregar usuario, seleccione *Productos de virtualización*.
+. Haga clic en *examinar* para seleccionar y cargar el archivo JSON de privilegios de ONTAP.
++
+El campo DE PRODUCTO se completa automáticamente.
+
+. Seleccione la capacidad necesaria en el menú desplegable CAPACIDAD DEL PRODUCTO.
++
+El campo *ROL* se rellena automáticamente en función de la capacidad del producto seleccionada.
+
+. Introduzca el nombre de usuario y la contraseña necesarios.
+. Seleccione los privilegios (Discovery, Create Storage, Modify Storage, Destroy Storage) necesarios para el usuario y, a continuación, haga clic en *Add*.
+
+
+Se añaden el nuevo rol y el usuario, y se pueden ver los privilegios detallados en el rol que se configuró.
+
+
+NOTE: La operación de desinstalación no quita las funciones de VSC, sino que quita los nombres localizados de los privilegios específicos de VSC y añade el prefijo a los privilegios que faltan ''XXX'''. Este comportamiento ocurre porque vCenter Server no proporciona una opción para quitar privilegios. Cuando se vuelve a instalar VSC o se actualiza a una versión más reciente de VSC, se restauran todos los roles estándar de VSC y los privilegios específicos de VSC.

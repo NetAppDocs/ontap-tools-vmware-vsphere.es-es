@@ -1,0 +1,49 @@
+---
+section: protect
+title: Proteja los almacenes de datos y las máquinas virtuales
+entries:
+- title: Habilite Storage Replication Adapter para proteger almacenes de datos
+  url: "/protect/task_enable_storage_replication_adapter.html"
+- title: Configuración del sistema de almacenamiento para la recuperación ante desastres
+  entries:
+  - title: Configuración de sistemas de almacenamiento para SAN y NAS
+    url: "/protect/task_configure_storage_replication_adapter_for_san_environment.html"
+  - title: Configure almacenamiento para entornos a gran escala
+    url: "/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html"
+- title: Configure SRA en el dispositivo SRM
+  url: "/protect/task_configure_sra_on_srm_appliance.html"
+- title: Actualice las credenciales del SRA
+  url: "/protect/task_update_sra_credentials.html"
+- title: Migrar SRM de Windows a SRM Appliance
+  url: "/protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html"
+- title: Configurar la replicación del almacén de datos vVols para proteger las máquinas
+    virtuales
+  url: "/protect/concept_configure_replication_for_vvols_datastore.html"
+- title: Configurar la replicación de vVols para almacenes de datos existentes
+  url: "/protect/configure_vvols_replication_existing_datastore.html"
+- title: Proteja equipos virtuales sin protección
+  url: "/protect/task_protect_non_protected_virtual_machines.html"
+- title: Configuración de sitios protegidos y de recuperación
+  entries:
+  - title: Configuración de políticas de almacenamiento de equipos virtuales
+    url: "/protect/task_configure_vm_storage_policies.html"
+  - title: Configure los grupos de protección
+    url: "/protect/task_configure_protection_groups.html"
+  - title: Sitios protegidos para pares y de recuperación
+    url: "/protect/task_pair_protected_and_recovery_sites.html"
+  - title: Configurar los recursos del sitio de recuperación y protegidos
+    entries:
+    - title: Configure las asignaciones de red
+      url: "/protect/task_configure_network_mappings.html"
+    - title: Configure las asignaciones de carpetas
+      url: "/protect/task_configure_folder_mappings.html"
+    - title: Configure las asignaciones de recursos
+      url: "/protect/task_configure_resource_mappings.html"
+    - title: Asigne políticas de almacenamiento
+      url: "/protect/task_map_storage_policies.html"
+    - title: Configure almacenes de datos de marcadores de posición
+      url: "/protect/task_configure_placeholder_datastores.html"
+    - title: Configure el SRA con el administrador de cabinas
+      url: "/protect/task_configure_array_manager.html"
+  - title: Comprobar los sistemas de almacenamiento replicados
+    url: "/protect/task_verify_the_replicated_storage_environment.html"

@@ -1,0 +1,29 @@
+---
+permalink: deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html 
+sidebar: sidebar 
+keywords: Virtual Storage Console,Storage Replication Adapter 
+summary: Antes de implementar las herramientas de ONTAP para VMware vSphere, debería estar familiarizado con los requisitos de espacio para el paquete de implementación y algunos requisitos básicos del sistema host. 
+---
+= Requisitos de espacio y ajuste de tamaño para las herramientas de ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de implementar las herramientas de ONTAP para VMware vSphere, debería estar familiarizado con los requisitos de espacio para el paquete de implementación y algunos requisitos básicos del sistema host.
+
+* *Requisitos de espacio del paquete de instalación*
++
+** 2.1 GB para instalaciones con thin provisioning
+** 54.0 GB para instalaciones de Thick-Provisioning
+
+
+* *Requisitos de dimensionamiento del sistema principal*
++
+** ESXi 6.5U3 o posterior
+** Memoria recomendada: 12 GB de RAM
+** CPU recomendadas: 2
+
+
+

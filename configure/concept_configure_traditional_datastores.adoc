@@ -1,0 +1,14 @@
+---
+permalink: configure/concept_configure_traditional_datastores.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Es posible usar Virtual Storage Console \(VSC\) para configurar almacenes de datos y máquinas virtuales en vCenter Server. Los almacenes de datos y las máquinas virtuales aprovisionados mediante VSC se muestran en la consola de VSC. De este modo, es posible supervisar y gestionar fácilmente estos almacenes de datos y máquinas virtuales.' 
+---
+= Configuración de almacenes de datos tradicionales y máquinas virtuales
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede usar Virtual Storage Console (VSC) para configurar almacenes de datos y máquinas virtuales en vCenter Server. Los almacenes de datos y las máquinas virtuales aprovisionados mediante VSC se muestran en la consola de VSC. De este modo, es posible supervisar y gestionar fácilmente estos almacenes de datos y máquinas virtuales.

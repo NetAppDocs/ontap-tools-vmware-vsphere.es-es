@@ -1,0 +1,78 @@
+---
+permalink: deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html 
+sidebar: sidebar 
+keywords: Virtual Storage Console, Storage Replication Adapter 
+summary: Puede realizar una actualización in situ a la versión más reciente de las herramientas de ONTAP desde la configuración existente 9.7.1 o posterior siguiendo las instrucciones que se proporcionan aquí. 
+---
+= Actualice a la versión más reciente de herramientas de ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede realizar una actualización in situ a la versión más reciente de las herramientas de ONTAP desde su versión existente de 9.7P1 o posterior siguiendo las instrucciones proporcionadas aquí.
+
+*Lo que necesitará*
+
+* Debe haber descargado el archivo _.iso_ para la última versión de las herramientas de ONTAP.
+* Debe haber reservado al menos 12 GB de RAM para que las herramientas de ONTAP funcionen de forma óptima después de la actualización.
+* Debe limpiar la caché del explorador de vSphere Client.
++
+link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html["Borre los paquetes de plugins descargados en caché de vSphere"]
+
+
+
+El estado del proveedor de VASA de la implementación existente se conserva después de la actualización. Después de la actualización, es necesario habilitar o deshabilitar manualmente VASA Provider según sus requisitos. Sin embargo, es mejor habilitar VASA Provider incluso si los volúmenes virtuales de VMware (vVols) no están en uso, ya que permite los perfiles de funcionalidades de almacenamiento para el aprovisionamiento de almacenes de datos tradicionales y las alarmas de almacenamiento.
+
+
+NOTE: Puede realizar una actualización in situ a la versión más reciente de las herramientas de ONTAP solo desde las versiones 9.7P1 o posteriores existentes. Cuando actualice a la versión 9.7.1 de herramientas de ONTAP y desee utilizar la replicación de vVols, tendrá que configurar una instancia más de vCenter Server con herramientas ONTAP con Site Recovery Manager (SRM) instalado.
+
+* Pasos*
+
+. Monte el archivo _.iso_ descargado en las herramientas de ONTAP:
++
+.. Haga clic en *Editar configuración* > *Unidad de DVD/CD-ROM*.
+.. Seleccione *Datastore ISO* file en la lista desplegable.
+.. Desplácese hasta el archivo _.iso_ descargado y, a continuación, seleccione la casilla de verificación *conectar al encender*.
+
+
+. Acceda a la pestaña Resumen de las herramientas de ONTAP implementadas.
+. Haga clic en *image:../media/launch_maintenance_console.gif[""]* para iniciar la consola de mantenimiento.
+. En el indicador «Menú principal», introduzca la opción `2` Para *Configuración del sistema* y, a continuación, introduzca la opción `8` Para *actualización*.
++
+Cuando se complete la actualización, se reinicien las herramientas ONTAP. Las herramientas de ONTAP se registran en vCenter Server con la misma dirección IP que antes de la actualización.
+
+. Si desea que se registren herramientas de ONTAP en la instancia de vCenter Server con la dirección IPv6, debe realizar lo siguiente:
++
+.. Cancele el registro de las herramientas de ONTAP.
+.. Registre la dirección IPv6 de las herramientas de ONTAP en vCenter Server mediante la página *Register*.
+.. Vuelva a generar los certificados de VSC y proveedores VASA después del registro.
+
+
++
+
+IMPORTANT: IPv6 solo es compatible con vCenter Server 6.7 y versiones posteriores.
+
+. Cierre sesión y vuelva a iniciar sesión en vSphere Client para ver las herramientas ONTAP implementadas.
++
+.. Cierre la sesión en vSphere Web Client o vSphere Client existente y cierre la ventana.
+.. Inicie sesión en vSphere Client.
++
+Es posible que el plugin se actualice en vSphere Client durante unos minutos.
+
+
+
+
+
+[NOTE]
+====
+* Si se actualiza desde la versión 7.0 de las herramientas de ONTAP a la versión más reciente de las herramientas de ONTAP, primero es necesario crear perfiles de funcionalidad de almacenamiento antes de intentar editar una política de almacenamiento de máquina virtual existente, o bien es posible que aparezca un error con valores incorrectos o faltantes.
+* Si actualiza desde una versión anterior a la versión más reciente de las herramientas de ONTAP, se observe que `vvol.rebalance.threshold` falta la propiedad en el archivo "vvol.properties".
++
+El valor predeterminado de la propiedad se establece en 85%.
+
+* Después de actualizar a la versión más reciente de OTV(9.10) con FIPS habilitada, pero tiene una versión anterior de vCenter donde FIPS no es compatible, la implementación seguirá funcionando. Pero si actualiza vCenter a la versión más reciente compatible con FIPS y tiene una versión anterior de herramientas de ONTAP, la implementación solo funcionará si FIPS está deshabilitado en vCenter.
+
+
+====

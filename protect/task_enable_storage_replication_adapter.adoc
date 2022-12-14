@@ -1,0 +1,68 @@
+---
+permalink: protect/task_enable_storage_replication_adapter.html 
+sidebar: sidebar 
+keywords:  
+summary: Las herramientas de ONTAP para VMware vSphere ofrecen la opción de permitir el uso de la funcionalidad SRA con VSC para configurar la recuperación ante desastres. 
+---
+= Habilite SRA para proteger almacenes de datos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las herramientas de ONTAP para VMware vSphere ofrecen la opción de permitir el uso de la funcionalidad SRA con VSC para configurar la recuperación ante desastres.
+
+*Lo que necesitará*
+
+* Debe haber configurado la instancia de vCenter Server y ESXi.
+* Debe haber implementado las herramientas de ONTAP.
+* Debe haber descargado el `.msi` Archivo del plugin de SRA o del `.tar.gz` File para SRM Appliance solo si desea configurar la solución de recuperación ante desastres de Site Recovery Manager (SRM).
++
+https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html["Site Recovery Manager instalación y configuración Site Recovery Manager 8.2"] tiene más información.
+
+
+
+*Acerca de esta tarea*
+
+La flexibilidad para habilitar las funcionalidades VASA Provider y SRA le permite ejecutar solo los flujos de trabajo necesarios para la empresa.
+
+* Pasos*
+
+. Inicie sesión en la interfaz de usuario web de VMware vSphere.
+. En vSphere Client, haga clic en *Menú* > *Consola de herramientas ONTAP*.
+. Haga clic en *Configuración*.
+. Haga clic en *Administrar capacidades* en la ficha *Configuración administrativa*.
+. En el cuadro de diálogo *Administrar capacidades*, seleccione la extensión SRA que desee activar.
+. Introduzca la dirección IP de las herramientas de ONTAP y la contraseña del administrador y, a continuación, haga clic en *aplicar*.
+. Puede usar uno de los siguientes métodos para implementar el SRA:
++
+|===
+
+
+ a| 
+*Para SRM de Windows*
+| *Para el dispositivo SRM* 
+
+
+ a| 
+.. Haga doble clic en el descargado `.msi` Instalador del plugin SRA.
+.. Siga las instrucciones que aparecen en pantalla.
+.. Introduzca la dirección IP y la contraseña de las herramientas de ONTAP implementadas.
+
+ a| 
+.. Acceda a la página del dispositivo SRM y, a continuación, vaya a la página Storage Replication Adapters del dispositivo SRM.
+.. Haga clic en *Nuevo adaptador*.
+.. Cargue el instalador _.tar.gz_ del plugin de SRA en SRM.
+.. Vuelva a analizar los adaptadores para verificar que los detalles se actualizan en la página adaptadores de replicación de almacenamiento SRM.
+
+
+|===
++
+Debe cerrar la sesión en vSphere Client y, a continuación, volver a iniciar sesión para verificar que la extensión seleccionada esté disponible para la configuración.
+
+
+
+*Información relacionada*
+
+link:../concepts/concept_manage_disaster_recovery_setup_using_srm.html["Configure Storage Replication Adapter para la recuperación ante desastres"]

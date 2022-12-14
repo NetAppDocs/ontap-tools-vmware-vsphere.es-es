@@ -1,0 +1,23 @@
+---
+permalink: concepts/concept_manage_disaster_recovery_setup_using_srm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Puede crear y gestionar la configuración de recuperación ante desastres en vCenter Server junto con Site Recovery Manager \(SRM\) de VMware.' 
+---
+= Configure la configuración de la recuperación ante desastres
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear y gestionar la configuración de recuperación de desastres en vCenter Server junto con Site Recovery Manager (SRM) de VMware.
+
+El proveedor DE VASA ahora viene integrado con las funcionalidades del adaptador de replicación de almacenamiento (SRA). Si ha configurado almacenes de datos vVols en el centro de datos, para la recuperación de almacenes de datos vVols, no es necesario instalar SRA por separado para la recuperación ante desastres. En Site Recovery Manager (SRM), debe emparejar los sitios protegidos y de recuperación. Después de que se haya producido el emparejamiento de sitios, la próxima parte de la configuración de SRM implica configurar un par de cabinas que permite que SRM se comunique con el sistema de almacenamiento para detectar dispositivos y replicación de dispositivos. Para poder configurar el par de matrices, primero debe crear un par de sitios en SRM.
+
+Esta versión de herramientas de ONTAP le ofrece la opción de utilizar una configuración de SnapMirror síncrona para la recuperación ante desastres.
+
+
+NOTE: El administrador de recuperación de sitio de VMware (SRM) no usa el SRA para gestionar la recuperación ante desastres de los almacenes de datos vVols. En su lugar, VASA Provider se utiliza para el control de replicación y conmutación al nodo de respaldo de almacenes de datos vVols en clústeres de ONTAP 9.7 y posteriores.
+
+link:../protect/task_enable_storage_replication_adapter.html["Habilite Storage Replication Adapter"]

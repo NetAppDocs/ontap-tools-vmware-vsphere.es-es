@@ -1,0 +1,33 @@
+---
+section: concepts
+title: Conceptos
+entries:
+- title: Descripción general de las herramientas de ONTAP
+  url: "/concepts/concept_virtual_storage_console_overview.html"
+- title: Configuraciones del proveedor VASA para vVols
+  url: "/concepts/concept_configure_vvols_datastores.html"
+- title: Adaptador de replicación de almacenamiento para recuperación ante desastres
+  url: "/concepts/concept_manage_disaster_recovery_setup_using_srm.html"
+- title: Control de acceso basado en roles
+  entries:
+  - title: Información general sobre el control de acceso basado en roles para las
+      herramientas de ONTAP
+    url: "/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html"
+  - title: Componentes de permisos de vCenter Server
+    url: "/concepts/reference_components_that_make_up_vcenter_server_permissions.html"
+  - title: Puntos clave sobre la asignación y modificación de permisos para vCenter
+      Server
+    url: "/concepts/reference_key_points_about_assigning_and_modifying_permissions.html"
+  - title: Funciones estándar incluidas en las herramientas de ONTAP
+    url: "/concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html"
+  - title: Privilegios necesarios para las tareas de VSC
+    url: "/concepts/concept_privileges_required_for_vsc_tasks.html"
+  - title: Permisos para los sistemas de almacenamiento ONTAP y objetos de vSphere
+    url: "/concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html"
+  - title: Cómo configurar el control de acceso basado en roles para las herramientas
+      de ONTAP
+    url: "/concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html"
+- title: Configurar la alta disponibilidad para las herramientas de ONTAP
+  url: "/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html"
+- title: Configuraciones de MetroCluster compatibles con las herramientas de ONTAP
+  url: "/concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html"

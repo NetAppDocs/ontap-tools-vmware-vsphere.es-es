@@ -1,0 +1,45 @@
+---
+permalink: concepts/concept_privileges_required_for_vsc_tasks.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Las diferentes herramientas de ONTAP para tareas de VMware vSphere requieren diferentes combinaciones de privilegios específicas para Virtual Storage Console \(VSC\) y los privilegios nativos de vCenter Server.' 
+---
+= Privilegios necesarios para las tareas de VSC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las diferentes herramientas de ONTAP para tareas de VMware vSphere requieren distintas combinaciones de privilegios específicas de Virtual Storage Console (VSC) y los privilegios nativos de vCenter Server.
+
+Puede encontrar información sobre los privilegios necesarios para las tareas de VSC en el artículo 1032542 de la base de conocimientos de NetApp.
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/How_to_configure_RBAC_for_Virtual_Storage_Console["Cómo configurar RBAC para Virtual Storage Console"]
+
+
+
+== Privilegios a nivel de producto que requieren las herramientas de ONTAP para VMware vSphere
+
+Para tener acceso a las herramientas de ONTAP para la interfaz gráfica de usuario de VMware vSphere, es necesario contar con el privilegio View específico de VSC para el producto asignado en el nivel de objeto de vSphere correspondiente. Si se inicia sesión sin este privilegio, VSC muestra un mensaje de error al hacer clic en el icono de NetApp y no le permite acceder a VSC.
+
+En la siguiente tabla, se describe el privilegio View en el nivel de producto de VSC:
+
+|===
+
+
+| *Privilegio* | *Descripción* | *Nivel de asignación* 
+
+
+ a| 
+Ver
+ a| 
+Puede acceder a la interfaz gráfica de usuario de VSC. Este privilegio no le permite realizar tareas en VSC. Para realizar cualquier tarea de VSC, debe tener los privilegios correctos específicos de VSC y nativos de vCenter Server para esas tareas.
+ a| 
+El nivel de asignación determina qué porciones de la interfaz de usuario se muestran. Al asignar el privilegio View en el objeto raíz (carpeta), es posible ingresar a VSC haciendo clic en el icono de NetApp.
+
+Es posible asignar el privilegio View a otro nivel de objeto de vSphere. No obstante, de esta forma se limitan los menús de VSC que se pueden ver y usar.
+
+El objeto raíz es el lugar recomendado para asignar cualquier permiso que contiene el privilegio View.
+
+|===

@@ -1,0 +1,59 @@
+---
+permalink: manage/concept_what_vasa_provider_reports_do.html 
+sidebar: sidebar 
+keywords: VSC, VASA Provider, and SRA 
+summary: 'Los informes vVols muestran información detallada acerca de los almacenes de datos VMware Virtual Volumes \(vVols\) y las máquinas virtuales creadas en estos almacenes de datos. La consola vVols le permite revisar e identificar problemas potenciales con los almacenes de datos vVols y los equipos virtuales en vCenter Server.' 
+---
+= Informes de vVols
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los informes vVols muestran información detallada sobre los almacenes de datos VMware Virtual Volumes (vVols) y las máquinas virtuales que se crean en estos almacenes de datos. La consola vVols le permite revisar e identificar problemas potenciales con los almacenes de datos vVols y los equipos virtuales en vCenter Server.
+
+Puede ver, organizar y exportar informes. Los datos del informe de los almacenes de datos vVols y las máquinas virtuales son proporcionados por ONTAP junto con los servicios API de OnCommand.
+
+VVols ofrece los siguientes informes predefinidos:
+
+* Informe de almacén de datos de vVols
+* Informe de vVols VM
+
+
+*VVols Datastore Report*
+
++ el menú vVols Datastore Report ofrece información sobre los siguientes parámetros para los almacenes de datos:
+
+* Nombre del almacén de datos vVols
+* Espacio libre
+* El espacio utilizado
+* Espacio total
+* Porcentaje de espacio utilizado
+* Porcentaje de espacio disponible
+* IOPS
+* Las métricas de rendimiento de latencia están disponibles para los almacenes de datos vVols basados en NFS en ONTAP 9.8 y versiones posteriores. También puede verificar la hora en la que se generó el informe. El menú Informe de almacenes de datos vVols le permite organizar el informe según sus necesidades y, a continuación, exportar el informe organizado mediante el botón *Exportar a CSV*. Cada nombre de almacén DE datos DE SAN vVols del informe es un enlace que se desplaza a la pestaña Monitor del almacén de datos DE SAN vVols seleccionado, que se puede utilizar para ver las métricas de rendimiento.
+
+
+*Informe de la máquina virtual de vVols*
+
++ el menú de informe de resumen de máquina virtual vVols proporciona las métricas de rendimiento para todas las máquinas virtuales que utilizan los almacenes de datos SAN vVols que VASA Provider aprovisiona para ONTAP para una instancia seleccionada de vCenter Server. Las métricas de máquina virtual que se muestran en los informes de VM son datos históricos que se recopilan cada 10 minutos para las máquinas virtuales en almacenes de datos vVols. Se añadirán a la tabla «"última hora de actualización" y «"tiempo de actualización siguiente" para proporcionar información sobre cuándo se recopilaron los datos y cuándo se recopilará la siguiente recopilación de datos.
+
+* Nombre de la máquina virtual
+* Capacidad comprometida
+* Siempre activo
+* IOPS
+* Rendimiento
++
+El informe muestra si la máquina virtual está encendida o apagada.
+
+* Espacio lógico
+* Host
+* Estado de alimentación
+* Latencia
++
+El informe muestra la latencia de las máquinas virtuales en todos los almacenes de datos vVols asociados con las máquinas virtuales.
+
+
+
+Cada nombre de máquina virtual del informe es un enlace a la ficha Monitor de la máquina virtual seleccionada. Puede organizar el informe de la máquina virtual según sus necesidades, exportar el informe en formato .CSV y, a continuación, guardar el informe en el sistema local. La fecha/hora del informe se adjunta al informe guardado.

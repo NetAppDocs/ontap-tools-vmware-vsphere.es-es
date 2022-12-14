@@ -1,0 +1,33 @@
+---
+permalink: manage/task_remove_storage_from_a_vvols_datastore.html 
+sidebar: sidebar 
+keywords: Remove vVol datastore 
+summary: 'Si un almacén de datos VMware Virtual Volumes \(vVols\) tiene varios volúmenes FlexVol, puede eliminar uno o varios volúmenes FlexVol del almacén de datos vVols sin eliminarlo.' 
+---
+= Quitar almacenamiento de un almacén de datos vVols
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si un almacén de datos de VMware Virtual Volumes (vVols) tiene varios volúmenes FlexVol, puede eliminar uno o varios de los volúmenes FlexVol del almacén de datos vVols sin eliminar el almacén de datos.
+
+*Acerca de esta tarea*
+
+Existe un almacén de datos vVols, siempre que haya al menos un volumen FlexVol disponible en el almacén de datos. Si desea eliminar un almacén de datos vVols en un clúster de alta disponibilidad, primero debe desmontar el almacén de datos de todos los hosts del clúster de alta disponibilidad y, a continuación, eliminar la carpeta .vsphere-ha residiendo manualmente mediante la interfaz de usuario de vCenter Server. A continuación, puede eliminar el almacén de datos vVols.
+
+* Pasos*
+
+. En la página Home de vSphere Client, haga clic en *hosts and Clusters*.
+. Haga clic con el botón derecho del ratón en el almacén de datos vVols que desea modificar y, a continuación, seleccione *Herramientas ONTAP de NetApp* > *Eliminar almacenamiento de vVols Datastore*.
++
+Aparecerá el cuadro de diálogo Remove Storage from vVols Datastore.
+
+. Seleccione los volúmenes FlexVol que desea quitar del almacén de datos vVols y haga clic en *Quitar*.
+. Haga clic en *Aceptar* en el cuadro de diálogo de confirmación.
++
+
+NOTE: Si selecciona todos los volúmenes FlexVol, se muestra un mensaje de error que indica que no se podrá realizar la operación.
+
+

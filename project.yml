@@ -1,0 +1,79 @@
+---
+settings:
+  name: ONTAP tools for VMware vSphere 9.11
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  versions:
+  - name: Herramientas de ONTAP para VMware vSphere
+    url: "/ontap-tools-vmware-vsphere"
+    version-number: '9.11'
+  - name: Herramientas de ONTAP para VMware vSphere
+    url: "/ontap-tools-vmware-vsphere-910"
+    version-number: '9.10'
+  - name: Herramientas de ONTAP para VMware vSphere
+    url: "/ontap-tools-vmware-vsphere-98"
+    version-number: '9.8'
+  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr
+sidebar:
+  entries:
+  - title: Herramientas de ONTAP para documentos de VMware vSphere 9.11
+    url: "/index.html"
+  - title: Notas de la versión
+    url: "/release_notes.html"
+  - section: concepts
+  - section: deploy
+  - section: configure
+  - section: protect
+  - section: manage
+  - title: Avisos legales
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: Manos a la obra
+    links:
+    - title: Notas de la versión
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883436
+    - title: Obtenga información sobre las herramientas de ONTAP para VMware vSphere
+      url: "/concepts/concept_virtual_storage_console_overview.html"
+    - title: Herramientas de ONTAP Inicio rápido
+      url: "/qsg.html"
+    - title: Ponga en funcionamiento las herramientas de ONTAP
+      url: "/deploy/task_deploy_ontap_tools.html"
+    - title: Actualice las herramientas de ONTAP
+      url: "/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html"
+  - title: Utilice las herramientas de ONTAP
+    links:
+    - title: Aprovisione almacenes de datos tradicionales
+      url: "/configure/task_provision_datastores.html"
+    - title: Aprovisionamiento de almacenes de datos vVols
+      url: "/configure/task_provision_vvols_datastores.html"
+    - title: Configure el control de acceso basado en roles
+      url: "/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html"
+    - title: Configurar el diagnóstico remoto
+      url: "/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html"
+    - title: Configuración de la alta disponibilidad
+      url: "/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html"
+  - title: Proteja y gestione almacenes de datos
+    links:
+    - title: Proteja los almacenes de datos
+      url: "/protect/task_enable_storage_replication_adapter.html"
+    - title: Proteja las máquinas virtuales
+      url: "/protect/concept_configure_replication_for_vvols_datastore.html"
+    - title: Supervisión de almacenes de datos tradicionales y máquinas virtuales
+      url: "/manage/task_monitor_datastores_using_the_traditional_dashboard.html"
+    - title: Supervise almacenes de datos vVols y máquinas virtuales
+      url: "/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html"
+  - title: Más recursos
+    links:
+    - title: Documentación para versiones anteriores de herramientas de ONTAP para
+        VMware
+      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63792
+    - title: Base de conocimientos de NetApp - Herramientas de ONTAP
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
+    - title: 'Utilidad de importación de NetApp: Vídeo'
+      url: https://www.youtube.com/watch?v=CEQmIEzNVfA
+    - title: 'Comunidad de NetApp: Herramientas de ONTAP'
+      url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions

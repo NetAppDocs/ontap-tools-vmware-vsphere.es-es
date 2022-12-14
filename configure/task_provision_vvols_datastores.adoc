@@ -1,0 +1,127 @@
+---
+permalink: configure/task_provision_vvols_datastores.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede aprovisionar un almacén de datos vVols mediante el asistente Provision Datastore solo si VASA Provider está habilitado en sus herramientas ONTAP. 
+---
+= Aprovisionamiento de almacenes de datos vVols
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede aprovisionar un almacén de datos vVols mediante el asistente Provision Datastore solo si VASA Provider está habilitado en sus herramientas ONTAP.
+
+*Lo que necesitará*
+
+* Debe asegurarse de que los detalles de subred de todas las redes a las que está conectado el servidor ESXi alojado se hayan introducido en Kaminoprefs.xml.
++
+Consulte la sección *activación del montaje del almacén de datos en distintas subredes*.
+
+* Debe configurar una política y una programación similares de replicación en los almacenes de datos tanto en los sitios de origen como de destino para que la replicación inversa sea exitosa.
+
+
+El menú de aprovisionamiento de almacenes de datos le permite especificar un perfil de funcionalidad de almacenamiento para el almacén de datos, lo que ayuda a especificar objetivos de nivel de servicio (SLO) constantes y simplifica el proceso de aprovisionamiento. Es posible especificar un perfil de funcionalidad de almacenamiento solo si se habilitó el proveedor de VASA.
+
+Los volúmenes FlexVol que se utilizan como almacenamiento de respaldo se muestran en el panel de vVols sólo si ejecutan ONTAP 9.5 o posterior. No se debe usar el asistente New Datastore de vCenter Server para aprovisionar almacenes de datos vVols.
+
+* Debe utilizar credenciales del clúster para crear almacenes de datos vVols.
++
+No se pueden utilizar credenciales de SVM para crear almacenes de datos vVols.
+
+* VASA Provider no admite el clonado de una máquina virtual alojada en el almacén de datos vVols de un protocolo a otro almacén de datos con un protocolo diferente.
+* Debe haber completado el emparejamiento de clústeres y el emparejamiento de SVM en los sitios de origen y destino.
+
+
+*Acerca de esta tarea*
+
+
+NOTE: La versión 9.10 de las herramientas de ONTAP admite la creación de almacenes de datos vVols con un tamaño vmdk superior a 16 TB para las plataformas de almacenamiento All SAN Array (ASA) del tipo ONTAP 9.9.1 o posterior.
+
+* Pasos*
+
+. En la página de inicio de vSphere Client, haga clic en *hosts and Clusters*.
+. En el panel de navegación, seleccione el centro de datos donde desea aprovisionar el almacén de datos.
+. Especifique los hosts en los que desea montar el almacén de datos.
++
+|===
+
+
+| *Para que el almacén de datos esté disponible para...* | * Haga esto...* 
+
+
+ a| 
+Todos los hosts de un centro de datos
+ a| 
+Haga clic con el botón derecho en un centro de datos y seleccione *NetApp VSC* > *Provision Datastore*.
+
+
+
+ a| 
+Todos los hosts de un clúster
+ a| 
+Haga clic con el botón derecho en un clúster y seleccione *NetApp VSC* > *Provision Datastore*.
+
+
+
+ a| 
+Un solo host
+ a| 
+Haga clic con el botón derecho en un host y seleccione *NetApp VSC* > *Provision Datastore*.
+
+|===
+. Complete los campos en el cuadro de diálogo New Datastore para crear el almacén de datos.
++
+La mayoría de los campos del cuadro de diálogo son claros y explicativos. En la siguiente tabla se describen algunos de los campos que pueden requerir explicación.
+
++
+|===
+
+
+| *Sección* | *Descripción* 
+
+
+ a| 
+Generales
+ a| 
+En la sección General del cuadro de diálogo Nuevo almacén de datos se proporcionan opciones para introducir la ubicación, el nombre, la descripción, el tipo y el protocolo del nuevo almacén de datos. El tipo de almacén de datos vVols se utiliza para configurar un almacén de datos vVols.
+
+
+NOTE: Si va a aprovisionar el almacén de datos vVols de iSCSI para la replicación vVols, antes de crear un almacén de datos vVols en el sitio de destino, debe realizar la actualización de SnapMirror y la redetección del clúster.
+
+
+
+ a| 
+Sistema de almacenamiento
+ a| 
+Esta sección le permite seleccionar si desea que el almacén de datos vVols tenga habilitada o deshabilitada la replicación. En esta versión solo se permite el perfil de replicación de tipo asíncrono. A continuación, puede seleccionar uno o varios perfiles de funcionalidad de almacenamiento mostrados. Los valores recomendados por el sistema de *sistemas de almacenamiento* y *Storage VM* se completan automáticamente. Los valores recomendados se completan solo si se emparejan en ONTAP. Puede modificar estos valores si es necesario.
+
+*Nota:* al crear volúmenes FlexVol en ONTAP, debe asegurarse de crearlos con los atributos que desee seleccionar en el perfil de capacidad de almacenamiento. Tanto los volúmenes de FlexVol de protección de datos como de lectura deben tener atributos similares.
+
+Después de crear los volúmenes FlexVol y de inicializar SnapMirror en ONTAP, debe ejecutar una nueva detección del almacenamiento en VSC para poder ver los nuevos volúmenes.
+
+
+
+ a| 
+Los atributos del almacenamiento
+ a| 
+Debe seleccionar la programación para SnapMirror y el volumen FlexVol requerido en la lista existente. Esta programación debe ser similar a la seleccionada en la página VM Storage Policies. El usuario debe haber creado volúmenes de FlexVol en ONTAP con SnapMirror que se enumeran. Puede seleccionar el perfil de capacidad de almacenamiento predeterminado que se utilizará para crear vVols mediante la opción *Perfil de capacidad de almacenamiento predeterminado*. De manera predeterminada, todos los volúmenes se establecen en el tamaño máximo de fila automática al 120 % y las copias de Snapshot predeterminadas están habilitadas en estos volúmenes.
+
+*Nota:*
+
+** Un volumen FlexVol que forma parte de un almacén de datos vVols no se puede reducir por debajo del tamaño existente, pero puede crecer un 120% como máximo. Las copias de Snapshot predeterminadas están habilitadas en este volumen de FlexVol.
+** El tamaño mínimo del volumen de FlexVol que debe crear es de 5 GB.
+
+
+|===
+. En la sección Resumen, haga clic en **Finalizar**.
+
+
+*resultado*
+
+Se crea un grupo de replicación en el back-end cuando se configura un almacén de datos vVols.
+
+*Información relacionada*
+
+link:../manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html["Analice los datos de rendimiento con el panel vVols"]

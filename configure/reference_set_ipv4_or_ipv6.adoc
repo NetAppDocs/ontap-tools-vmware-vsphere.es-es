@@ -1,0 +1,70 @@
+---
+permalink: configure/reference_set_ipv4_or_ipv6.html 
+sidebar: sidebar 
+keywords:  
+summary: Hay una nueva opción añadida al archivo de preferencias kaminoprefs.xmlque es posible establecer para habilitar la compatibilidad con IPv4 o IPv6 en todos los sistemas de almacenamiento añadidos a VSC. 
+---
+= Utilice el archivo de preferencias para establecer IPv4 o IPv6
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los archivos de preferencias contienen configuraciones que controlan las herramientas de ONTAP para las operaciones de VMware vSphere. En la mayoría de los casos, no es necesario modificar la configuración de estos archivos. Es útil saber qué archivos de preferencias utiliza Virtual Storage Console (VSC).
+
+VSC tiene varios archivos de preferencias. Estos archivos incluyen claves de entrada y valores que determinan el modo en que VSC realiza diversas operaciones. A continuación se muestran algunos de los archivos de preferencias que utiliza VSC:
+
+`/opt/netapp/vscserver/etc/kamino/kaminoprefs.xml`
+
+`/opt/netapp/vscserver/etc/vsc/vscPreferences.xml`
+
+Puede que tenga que modificar los archivos de preferencias en determinadas situaciones. Por ejemplo, si utiliza iSCSI o NFS y la subred es diferente para los hosts ESXi y el sistema de almacenamiento, deberá modificar los archivos de preferencias. Si no modifica la configuración en el archivo de preferencias, el aprovisionamiento del almacén de datos genera errores porque VSC no puede montar el almacén de datos.
+
+Hay una nueva opción agregada al archivo de preferencias `kaminoprefs.xml` Que puede configurar para habilitar la compatibilidad con IPv4 o IPv6 en todos los sistemas de almacenamiento añadidos a VSC.
+
+* La `default.override.option.provision.mount.datastore.address.family` el parámetro se ha agregado a la `kaminoprefs.xml` Archivo de preferencias para establecer un protocolo LIF de datos preferido para el aprovisionamiento del almacén de datos.
++
+Esta preferencia es aplicable para todos los sistemas de almacenamiento añadidos a VSC.
+
+* Los valores de la nueva opción son `IPv4`, `IPv6`, y. `NONE`.
+* De forma predeterminada, el valor se establece en `NONE`.
+
+
+|===
+
+
+| *Valor* | *Descripción* 
+
+
+ a| 
+NINGUNO
+ a| 
+* El aprovisionamiento ocurre mediante el mismo tipo de dirección IPv6 o IPv4 de LIF de datos que el tipo de clúster o LIF de gestión SVM que se utilizan para añadir el almacenamiento.
+* Si la SVM no tiene el mismo tipo de dirección IPv6 o IPv4, el aprovisionamiento se realiza a través del otro tipo de LIF de datos, si está disponible.
+
+
+
+
+ a| 
+IPv4
+ a| 
+* El aprovisionamiento se produce mediante la LIF de datos IPv4 en la SVM seleccionada.
+* Si la SVM no tiene una LIF de datos IPv4, el aprovisionamiento se realiza a través de la LIF de datos IPv6, si está disponible en la SVM.
+
+
+
+
+ a| 
+IPv6
+ a| 
+* El aprovisionamiento se produce mediante la LIF de datos IPv6 en la SVM seleccionada.
+* Si la SVM no tiene una LIF de datos IPv6, el aprovisionamiento se realiza a través de la LIF de datos IPv4, si está disponible en la SVM.
+
+
+|===
+Para configurar IPv4 o IPv6 mediante la interfaz de usuario de, consulte las secciones siguientes:
+
+* link:../configure/add_different_subnets.html["Agregue subredes diferentes"]
+* link:../configure/task_enable_datastore_mounting_across_different_subnets.html["Habilite el montaje del almacén de datos en diferentes subredes"]
+

@@ -1,0 +1,42 @@
+---
+permalink: configure/reference_rebalance_vvols_datastore.html 
+sidebar: sidebar 
+keywords: vVols datastore,rebalancing 
+summary: Las herramientas de ONTAP admiten un comando para reequilibrar los volúmenes de FlexVol en el centro de datos. El objetivo principal es hacer posible una utilización uniforme del espacio entre los volúmenes FlexVol. Las herramientas de ONTAP redistribuyen los vVols entre los volúmenes existentes en función del uso del espacio, thin provisioning, número de LUN y los perfiles de funcionalidad de almacenamiento. 
+---
+= Reequilibre los almacenes de datos vVols
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las herramientas de ONTAP admiten un comando para reequilibrar los volúmenes de FlexVol en el centro de datos. El objetivo principal es hacer posible una utilización uniforme del espacio entre los volúmenes FlexVol. Las herramientas de ONTAP redistribuyen los vVols entre los volúmenes existentes en función del uso del espacio, thin provisioning, número de LUN y los perfiles de funcionalidad de almacenamiento.
+
+El reequilibrio de los almacenes de datos vVols se realiza mediante el movimiento de LUN o el movimiento de archivos. Los criterios considerados durante el reequilibrio de vVols son los siguientes:
+
+* No se admiten almacenes de datos VVol para NFS
+* No se cambiará el tamaño de los volúmenes FlexVol existentes ni se añadirán nuevos volúmenes FlexVol
+* Solo se reequilibran los volúmenes de FlexVol que tienen la misma funcionalidad de almacenamiento o atributos de volumen
+* Se considera el reequilibrio de los volúmenes FlexVol con la mayor utilización de espacio
+* Todos los vVols asociados con una máquina virtual se mueven a los mismos volúmenes FlexVol
+* Se mantiene el límite de recuento de LUN y archivos
+* No se pueden reequilibrar si el delta entre el aprovechamiento del espacio de los volúmenes FlexVol es del 10%
+
+
+El comando rebalancear elimina volúmenes FlexVol vacíos para proporcionar espacio a otros almacenes de datos. Por lo tanto, el comando permite quitar volúmenes FlexVol no deseados para poder eliminar del almacén de datos. El comando tiene la intención de mover todos los vVols asociados con una máquina virtual al mismo volumen FlexVol. Hay una comprobaciones previas realizadas por el comando antes de que se inicie el reequilibrio para minimizar fallos. Pero incluso con las comprobaciones previas exitosas, la operación de reequilibrio podría fallar en uno o más vVols. Cuando esto ocurre, no hay reversión de la operación de reequilibrio. Por lo tanto, los vVols asociados con una máquina virtual pueden colocarse en diferentes volúmenes FlexVol y darán lugar a registros de advertencia.
+
+[NOTE]
+====
+* No se admiten las operaciones de almacenes de datos paralelos ni de máquinas virtuales.
+* Debe realizar una operación de redetección del clúster una vez que finaliza cada operación de reequilibrio de vVols.
+* Durante el funcionamiento del reequilibrio de vVols, si se identifica un gran número de almacenes de datos vVols, la operación de transferencia se agota después del valor predeterminado establecido.
++
+** Si esto ocurre, debe modificar el `vvol.properties` archivo para establecer el valor en `offtap.operation.timeout.period.seconds=29700` Y reinicie el servicio de proveedor VASA.
+
+
+* Si un volumen FlexVol tiene Snapshots, durante el funcionamiento del reequilibrio de vVols, los vVols no se reequilibran correctamente debido a la falta de detalles sobre la utilización del espacio.
+* Puede establecer la propiedad VASA Provider _enable.update.vvol.through.Discovery_ en true para obtener datos consistentes entre las herramientas ONTAP y ONTAP, cuando se produce un tiempo de espera durante una operación de reequilibrio de contenedores.
+
+
+====

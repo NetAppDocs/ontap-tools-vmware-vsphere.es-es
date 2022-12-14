@@ -1,0 +1,34 @@
+---
+permalink: manage/task_collect_the_log_files.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Puede recopilar archivos de registro de las herramientas de ONTAP® para VMware vSphere mediante la opción disponible en la interfaz gráfica de usuario \(GUI\) de VSC. Es posible que el soporte técnico le solicite recoger los archivos de registro que sirven como ayuda para la solución de un problema.' 
+---
+= Recoja los archivos de registro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible recoger archivos de registro de las herramientas de ONTAP para VMware vSphere en la opción disponible en la interfaz gráfica de usuario (GUI) de VSC. Es posible que el soporte técnico le solicite recoger los archivos de registro que sirven como ayuda para la solución de un problema.
+
+*Acerca de esta tarea*
+
+Si necesita archivos de registro del proveedor VASA, puede generar un paquete de soporte desde la pantalla del panel de control del proveedor. Esta página forma parte de los menús de mantenimiento de proveedor de VASA, a los que se puede acceder desde la consola del dispositivo virtual.
+
+`\https://vm_ip:9083`
+
+Puede recopilar los archivos de registro de VSC usando la función «'Export VSC Logs'» de la interfaz gráfica de usuario de VSC. Cuando recoja un bundle de registro de VSC con VASA Provider habilitado, el paquete de registro de VSC también tendrá los registros VP. Los siguientes pasos le indican cómo recoger los archivos de registro de VSC:
+
+* Pasos*
+
+. En la página de inicio de ONTAP Tools, haga clic en *Configuración* > *Exportar registros de VSC*.
++
+Esta operación puede llevar varios minutos.
+
+. Cuando se le solicite, guarde el archivo en el equipo local.
++
+A continuación, puede enviar el archivo _.zip_ al soporte técnico.
+
+

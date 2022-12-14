@@ -1,0 +1,34 @@
+---
+permalink: manage/task_resize_datastores.html 
+sidebar: sidebar 
+keywords:  
+summary: Cambiar el tamaño de un almacén de datos permite aumentar o reducir el almacenamiento de los archivos de los equipos virtuales. Es posible que se deba cambiar el tamaño de un almacén de datos a medida que cambian los requisitos de infraestructura. 
+---
+= Cambie el tamaño de los almacenes de
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cambiar el tamaño de un almacén de datos permite aumentar o reducir el almacenamiento de los archivos de los equipos virtuales. Es posible que se deba cambiar el tamaño de un almacén de datos a medida que cambian los requisitos de infraestructura.
+
+*Acerca de esta tarea*
+
+Si desea que VSC cambie el tamaño del volumen que contiene cuando cambia el tamaño del almacén de datos VMFS, no debe utilizar la opción *usar volumen existente* en la sección atributos de almacenamiento al aprovisionar inicialmente el almacén de datos VMFS, sino que en su lugar permita crear automáticamente un volumen nuevo para cada almacén de datos.
+
+Puede aumentar o reducir el tamaño de un almacén de datos NFS, pero en el caso de un almacén de datos VMFS, solo puede aumentar el tamaño. También se admite el redimensionamiento de los almacenes de datos con la opción de crecimiento y reducción automáticos de los almacenes de datos FlexGroup. Un FlexGroup que forma parte de un almacén de datos tradicional y un volumen FlexVol que forma parte de un almacén de datos vVols no se puede reducir por debajo del tamaño existente, pero que puede crecer como máximo del 120 %. Las Snapshot predeterminadas están habilitadas en estos volúmenes de FlexGroup y FlexVol.
+
+
+NOTE: Si utiliza plataformas de almacenamiento de tipo cabina All SAN (ASA) con ONTAP 9.9.1 o posterior, solo podrá crear almacenes de datos vVols con un tamaño de vmdk superior a 16 TB.
+
+* Pasos*
+
+. En la página Home de vSphere Client, haga clic en *hosts and Clusters*.
+. En el panel de navegación, seleccione el centro de datos que contiene el almacén de datos.
+. Haga clic con el botón derecho en el almacén de datos y seleccione *Herramientas de ONTAP de NetApp* > *asignar QoS*.
+. En el cuadro de diálogo Cambiar tamaño, especifique un nuevo tamaño para el almacén de datos y, a continuación, haga clic en *Aceptar*.
++
+Puede ejecutar la opción *REDISCOVER ALL* en el menú sistemas de almacenamiento para actualizar manualmente el listado de almacenamiento en Storage Systems y el panel, o esperar la próxima actualización programada.
+
+

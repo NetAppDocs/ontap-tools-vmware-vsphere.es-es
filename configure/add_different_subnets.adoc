@@ -1,0 +1,24 @@
+---
+permalink: configure/add_different_subnets.html 
+sidebar: sidebar 
+keywords:  
+summary: Ahora puede agregar subredes diferentes para el montaje de almacenes de datos mediante la interfaz de herramientas de ONTAP. 
+---
+= Agregue subredes diferentes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede utilizar la interfaz de herramientas de ONTAP o las API DE REST para añadir diferentes subredes de hosts ESXi. Esto permite permitir o restringir las subredes para la operación de montaje de almacenes de datos después de aprovisionar sistemas de almacenamiento. Si no añade subredes hosts ESXi, las herramientas ONTAP bloquean la operación de montaje del almacén de datos para esas subredes.
+
+* Pasos*
+
+. Inicie sesión en la instancia de vCenter Server y acceda a las herramientas de ONTAP.
+. En la página de inicio, haga clic en *Configuración* > *Administrar acceso a subred*.
+. En el cuadro de diálogo Administrar acceso a subredes, haga clic en la opción *seleccionado* en subredes permitidas para acceso a subredes NFS.
+. Introduzca los valores para las subredes necesarias y, a continuación, haga clic en *AGREGAR*.
+. Seleccione *Ninguno* o *seleccionado* para subredes restringidas.
+. Repita los pasos anteriores para acceso a subredes iSCSI y haga clic en *aplicar*.
+

@@ -1,0 +1,20 @@
+---
+permalink: deploy/concept_how_to_download_ontap_tools.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede descargar el archivo .ova para las herramientas de ONTAP para VMware vSphere en el sitio de soporte de NetApp. 
+---
+= Cómo descargar las herramientas de ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede descargar el archivo _.ova_ para las herramientas de ONTAP para VMware vSphere en el sitio de soporte de NetApp.
+
+El archivo _.ova_ incluye las herramientas de ONTAP. Una vez finalizada la implementación, los tres productos se instalan en el entorno. De forma predeterminada, VSC comienza a trabajar en cuanto decida sobre el modelo de puesta en marcha siguiente y decida si desea habilitar el proveedor VASA y el SRA en función de sus requisitos.
+
+Puede descargar las herramientas de ONTAP en el https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["Sitio de soporte de NetApp"] mediante la página de descarga del software.
+
+Si desea habilitar el SRA en la implementación de herramientas de ONTAP, debe haber instalado el plugin del SRA en el servidor del administrador de recuperación del sitio (SRM). Puede descargar el archivo de instalación del complemento SRA en el menú *adaptador de replicación de almacenamiento para ONTAP* de la sección Descargas de software.

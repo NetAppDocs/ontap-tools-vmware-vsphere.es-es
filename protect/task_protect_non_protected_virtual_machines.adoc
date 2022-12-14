@@ -1,0 +1,35 @@
+---
+permalink: protect/task_protect_non_protected_virtual_machines.html 
+sidebar: sidebar 
+keywords: virtual machines, configuring protection 
+summary: Puede configurar la protección de las máquinas virtuales no protegidas existentes que se crearon utilizando la normativa de almacenamiento de VM con la replicación deshabilitada. Para proporcionar protección, debe cambiar la normativa de almacenamiento de equipos virtuales y asignar un grupo de replicación. 
+---
+= Proteja equipos virtuales sin protección
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede configurar la protección de las máquinas virtuales no protegidas existentes que se crearon utilizando la normativa de almacenamiento de VM con la replicación deshabilitada. Para proporcionar protección, debe cambiar la normativa de almacenamiento de equipos virtuales y asignar un grupo de replicación.
+
+*Acerca de esta tarea*
+
+Si SVM tiene tanto LIF IPv4 como IPv6, debe deshabilitar las LIF IPv6 y, más adelante, llevar a cabo flujos de trabajo de recuperación ante desastres.
+
+* Pasos*
+
+. Haga clic en la máquina virtual necesaria y compruebe que está configurada con la política de almacenamiento de la máquina virtual predeterminada.
+. Haga clic con el botón derecho del ratón en la máquina virtual seleccionada y haga clic en *políticas de VM* > *Editar políticas de almacenamiento de VM*.
+. Seleccione una política de almacenamiento de VM que tenga activada la replicación en la lista desplegable *política de almacenamiento de VM*.
+. Seleccione un grupo de replicación del menú desplegable *Grupo de replicación* y, a continuación, haga clic en *Aceptar*.
+. Comprobar el resumen de la máquina virtual para confirmar que la máquina virtual está protegida.
++
+[NOTE]
+====
+** Esta versión de herramientas de ONTAP no admite la clonación en caliente de máquinas virtuales protegidas. Debe apagar la máquina virtual y después realizar la operación de clonado.
+** Si un almacén de datos no aparece en las herramientas de ONTAP después de una operación ReProtect, deberá ejecutar una detección del sistema de almacenamiento o esperar a que se ejecute la próxima operación de detección programada.
+
+
+====
+
