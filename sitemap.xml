@@ -141,7 +141,7 @@
     <url>
       <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html</loc>
       
-      <lastmod>2023-02-20T20:41:55+00:00</lastmod>
+      <lastmod>2023-03-13T13:37:58+00:00</lastmod>
       
     </url>
   
@@ -230,14 +230,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/concept_virtual_storage_console_and_vasa_provider_log_files.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/concept_virtual_storage_console_and_vasa_provider_log_files.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
@@ -293,14 +293,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/deploy/</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/deploy/</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
@@ -342,14 +342,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
@@ -463,19 +463,19 @@
     <url>
       <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere//search.html</loc>
       
-      <lastmod>2023-02-20T20:42:09+00:00</lastmod>
+      <lastmod>2023-03-13T13:38:13+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/task_add_storage_systems.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/task_add_storage_systems.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/task_add_storage_systems.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/task_add_storage_systems.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
@@ -510,14 +510,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
@@ -692,14 +692,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/task_enable_vasa_provider_for_configuring_virtual_datastores.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/task_enable_vasa_provider_for_configuring_virtual_datastores.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
@@ -853,14 +853,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/task_set_default_credentials_for_storage_systems.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/task_set_default_credentials_for_storage_systems.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/manage/task_set_default_credentials_for_storage_systems.html</loc>
+      <loc>https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/task_set_default_credentials_for_storage_systems.html</loc>
       
       <lastmod>2023-02-20T20:41:55+00:00</lastmod>
       
