@@ -1271,7 +1271,6 @@
   <block id="5cd110d372988e6fedf83dab3b77194b" category="list-text">Ejecutar el comando<block ref="ab64b2f5839594835c3c4d3e3c725c7c" prefix=" " category="inline-code"></block> para desplazarse al directorio de registro.</block>
   <block id="9d58dbd20800ce51e37de67c2297da5f" category="list-text">En la ubicación del registro, introduzca el comando para obtener el identificador del Docker utilizado por el SRA:<block ref="c3933049d26fccba0396e7760f0fba06" prefix=" " category="inline-code"></block></block>
   <block id="7202896d218d74a45a1995fe74164f61" category="list-text">Para iniciar sesión en el identificador del contenedor, introduzca el comando:<block ref="1b6eefce0212551da88d489c9ed8f5e9" prefix=" " category="inline-code"></block></block>
-  <block id="6408528f5006f0df83e2b2cc7b5f3eae" category="list-text">Configure SRM con la dirección IP y la contraseña de ONTAP Tools mediante el comando:<block ref="31ba3f744db79546f73a60bc44a81da2" prefix=" " category="inline-code"></block></block>
   <block id="3e06c9490934f18ce97a637bf06b781e" category="paragraph">Se muestra un mensaje indicando que las credenciales de almacenamiento están almacenadas correctamente. El SRA puede comunicarse con el servidor SRA mediante la dirección IP, el puerto y las credenciales proporcionados.</block>
   <block id="1633df946f0d6e82efbce7d3e6e50cc6" category="summary">Las herramientas de ONTAP para VMware vSphere son compatibles con entornos que usan configuraciones de MetroCluster IP y FC para ONTAP. La mayor parte de este soporte es automático. Sin embargo, es posible que note algunas diferencias cuando utiliza un entorno de MetroCluster con VSC y VASA Provider.</block>
   <block id="926c545e813337f4bef6900a78c65bfc" category="doc">Configuraciones de MetroCluster compatibles con las herramientas de ONTAP</block>
@@ -2002,4 +2001,5 @@
   <block id="96ab5f4eecc9217c7e8b30303647f507" category="sidebar">Información general sobre el control de acceso basado en roles para las herramientas de ONTAP</block>
   <block id="f15e14b44728511393b49d485af9e88b" category="sidebar">Cómo configurar el control de acceso basado en roles para las herramientas de ONTAP</block>
   <block id="ed2b91672ee08a221afee30153dc24a9" category="paragraph">Para realizar actualizaciones desde las herramientas de ONTAP 9.10 y versiones posteriores, ejecute el dispositivo virtual 9.7P1 o posterior. No se admite la actualización desde una versión anterior a 9.7P1 del dispositivo virtual.</block>
+  <block id="65f6fb9b3fd7c8798ba4a7010e84a65b" category="list-text">Configure SRM con la dirección IP y la contraseña de ONTAP Tools mediante el comando:<block ref="2ca82e2fa9750815c3356b6e1692f9ca" prefix=" " category="inline-code"></block></block>
 </blocks>
