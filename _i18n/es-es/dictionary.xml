@@ -1126,7 +1126,6 @@
   <block id="bc5ad92fecd3f6eeb4473c9df6479d46" category="list-text"><block ref="4609acba202877f99742342f4195d95e" prefix="" category="inline-code"></block></block>
   <block id="42f35b3ef9c82737da1f02ca0b45f308" category="list-text">Ejecute el comando perl para configurar SRA con las nuevas credenciales:</block>
   <block id="325c22d13dffac10de126d900c39ff29" category="list-text"><block ref="c8a7687f579de473b4cc34b8e40736ff" prefix="" category="inline-code"></block></block>
-  <block id="000595390ba91f5d02fbc87c52ad2a40" category="list-text"><block ref="31ba3f744db79546f73a60bc44a81da2" prefix="" category="inline-code"></block></block>
   <block id="b1e98a896c0cc88894f51da066286758" category="summary">Debe verificar que el sitio protegido y el sitio de recuperación se hayan emparejado correctamente después de configurar el adaptador de replicación de almacenamiento \(SRA\). El sistema de almacenamiento replicado debe ser detectable tanto por el sitio protegido como por el sitio de recuperación.</block>
   <block id="79d8a92408e3c5cb0a892432af2c8045" category="doc">Compruebe los sistemas de almacenamiento replicados</block>
   <block id="194dc7d35caa1e246b54270c343448ee" category="paragraph">Debe verificar que el sitio protegido y el sitio de recuperación se hayan emparejado correctamente después de configurar el adaptador de replicación de almacenamiento (SRA). El sistema de almacenamiento replicado debe ser detectable tanto por el sitio protegido como por el sitio de recuperación.</block>
@@ -1940,7 +1939,6 @@
   <block id="be280321d69d14f5dfce8709e117a691" category="list-text">Cambie al usuario raíz:<block ref="ed4421a15b86845cfea13385b427b340" prefix=" " category="inline-code"></block></block>
   <block id="9d7f1b1965b299ca0f83a93983a67fa9" category="list-text">En la ubicación del registro, escriba el comando para obtener el identificador del Docker utilizado por el Docker SRA:<block ref="c3933049d26fccba0396e7760f0fba06" prefix=" " category="inline-code"></block></block>
   <block id="a3fbfd6ca26f7eba2deb3733ea046eb1" category="list-text">Inicie sesión en el ID del contenedor:<block ref="1b6eefce0212551da88d489c9ed8f5e9" prefix=" " category="inline-code"></block></block>
-  <block id="c93a0f0ebeda9ccb76c7ccdb97a1b6fc" category="list-text">Configure SRM con la dirección IP y contraseña de ONTAP Tools:<block ref="31ba3f744db79546f73a60bc44a81da2" prefix=" " category="inline-code"></block>Se muestra un mensaje indicando que las credenciales de almacenamiento están almacenadas correctamente.</block>
   <block id="3849324d415efa553fdff378e6dd712e" category="section-title">Actualizando las credenciales de SRA</block>
   <block id="744ec7526945686620ba725a3be0778f" category="list-text">Elimine el contenido del directorio /srm/sra/conf mediante:</block>
   <block id="9394c3b706fe8eb791b91c156fbd1c93" category="section-title">Habilitar el proveedor VASA y SRA</block>
@@ -2001,5 +1999,7 @@
   <block id="96ab5f4eecc9217c7e8b30303647f507" category="sidebar">Información general sobre el control de acceso basado en roles para las herramientas de ONTAP</block>
   <block id="f15e14b44728511393b49d485af9e88b" category="sidebar">Cómo configurar el control de acceso basado en roles para las herramientas de ONTAP</block>
   <block id="ed2b91672ee08a221afee30153dc24a9" category="paragraph">Para realizar actualizaciones desde las herramientas de ONTAP 9.10 y versiones posteriores, ejecute el dispositivo virtual 9.7P1 o posterior. No se admite la actualización desde una versión anterior a 9.7P1 del dispositivo virtual.</block>
-  <block id="65f6fb9b3fd7c8798ba4a7010e84a65b" category="list-text">Configure SRM con la dirección IP y la contraseña de ONTAP Tools mediante el comando:<block ref="2ca82e2fa9750815c3356b6e1692f9ca" prefix=" " category="inline-code"></block></block>
+  <block id="a88efd6c9b7763df783d278ede79c4a6" category="list-text">Configure SRM con la dirección IP y contraseña de ONTAP Tools:<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>Se muestra un mensaje indicando que las credenciales de almacenamiento están almacenadas correctamente.</block>
+  <block id="092016eb57c00c965fc19b3bff7ff343" category="list-text"><block ref="4222690b3b5a5c9afb047223bc02154e" prefix="" category="inline-code"></block></block>
+  <block id="b8e3b3982008f247b4868b6fd9b104d8" category="list-text">Configure SRM con la dirección IP y la contraseña de ONTAP Tools mediante el comando:<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block></block>
 </blocks>
