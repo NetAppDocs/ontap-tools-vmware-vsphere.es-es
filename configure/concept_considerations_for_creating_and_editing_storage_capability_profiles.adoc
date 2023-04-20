@@ -11,7 +11,7 @@ summary: Debe tener en cuenta las consideraciones que se deben tener en cuenta p
 
 
 [role="lead"]
-Debe tener en cuenta las consideraciones que se deben tener en cuenta para crear y editar perfiles de funcionalidad de almacenamiento.
+A continuación se presentan las consideraciones para crear y editar los perfiles de capacidad de almacenamiento.
 
 * Solo puede configurar Min IOPS en sistemas AFF.
 * Es posible configurar métricas de calidad de servicio en un nivel de almacén de datos de volumen virtual (VVol).

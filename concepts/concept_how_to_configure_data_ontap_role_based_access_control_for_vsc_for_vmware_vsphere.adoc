@@ -19,22 +19,7 @@ EL proveedor DE VASA puede acceder a los sistemas de almacenamiento únicamente 
 
 Para crear un nuevo usuario y conectar un clúster o una SVM a las herramientas de ONTAP, debe realizar lo siguiente:
 
-* Cree un administrador de clúster o un rol de administrador de SVM
-+
-
-NOTE: Es posible usar uno de los siguientes para crear estos roles:
-
-+
-** System Manager 9.8P1 o posterior de ONTAP
-+
-link:../configure/task_configure_user_role_and_privileges.html["Configure los roles y privilegios de usuario"]
-
-** Herramienta de creación de usuarios de RBAC para ONTAP (si se usa ONTAP 9.6 o una versión anterior)
-+
-https://community.netapp.com/t5/Virtualization-Articles-and-Resources/RBAC-User-Creator-tool-for-VSC-VASA-Provider-and-Storage-Replication-Adapter-7-0/ta-p/133203/t5/Virtualization-Articles-and-Resources/How-to-use-the-RBAC-User-Creator-for-Data-ONTAP/ta-p/86601["Herramienta RBAC User Creator para VSC, proveedor VASA y Storage Replication Adapter 7.0 para VMware vSphere"]
-
-
-
+* Cree un rol de administrador de clúster o de administrador de SVM mediante ONTAP System Manager 9.8P1 o posterior. Consulte link:../configure/task_configure_user_role_and_privileges.html["Configure los roles y privilegios de usuario"] si quiere más información.
 * Cree usuarios con el rol asignado y el conjunto de aplicaciones adecuado mediante ONTAP
 +
 Es necesario contar con estas credenciales del sistema de almacenamiento para configurar los sistemas de almacenamiento para VSC. Puede configurar sistemas de almacenamiento para VSC introduciendo las credenciales en VSC. Cada vez que inicie sesión en un sistema de almacenamiento con estas credenciales, tendrá permisos sobre las funciones VSC que haya configurado en ONTAP al crear las credenciales.

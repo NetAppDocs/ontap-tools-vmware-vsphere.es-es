@@ -19,8 +19,8 @@ Este proceso puede llevar mucho tiempo, según la configuración y la carga del 
 
 * Pasos*
 
-. En la página Home de VMware vSphere Web Client, haga clic en *vCenter* > *hosts*.
-. Haga clic con el botón derecho en un host y seleccione *acciones* > *NetApp VSC* > *establecer valores recomendados*.
+. En la página Home de VMware vSphere Web Client, haga clic en *Hosts and Clusters*.
+. Haga clic con el botón derecho en un host y seleccione *Acciones* > *Herramientas de ONTAP de NetApp* > *Establecer valores recomendados*.
 . En el cuadro de diálogo NetApp Recommended Settings, seleccione los valores que mejor se adapten a su sistema.
 +
 Los valores estándar recomendados se establecen de forma predeterminada.

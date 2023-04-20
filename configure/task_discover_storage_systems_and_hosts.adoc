@@ -16,7 +16,7 @@ Cuando se ejecuta Virtual Storage Console (VSC) en una instancia de vSphere Clie
 *Lo que necesitará*
 
 * Todos los hosts ESXi deben estar encendidos y conectados.
-* Todas las máquinas virtuales de almacenamiento (SVM) que se van a detectar deben estar en ejecución, y cada nodo de clúster debe tener al menos una LIF de datos configurada para el protocolo de almacenamiento que se está utilizando (NFS, iSCSI o FC).
+* Todas las máquinas virtuales de almacenamiento que se vayan a detectar deben estar en ejecución y cada nodo del clúster debe tener al menos una LIF de datos configurada para el protocolo de almacenamiento en uso (NFS, iSCSI, FC o NVMe/FC).
 
 
 *Acerca de esta tarea*
@@ -28,14 +28,14 @@ Al detectar los sistemas de almacenamiento de, VSC recopila información de los 
 * Pasos*
 
 . En la página Home de vSphere Client, seleccione *hosts and Clusters*.
-. Haga clic con el botón derecho en el centro de datos necesario y seleccione *NetApp VSC* > *Actualizar datos de almacenamiento y host* .
+. Haga clic con el botón derecho en el centro de datos requerido y seleccione *Herramientas de ONTAP de NetApp* > *Actualizar datos de host y almacenamiento* .
 +
-VSC muestra un cuadro de diálogo de confirmación para informar de que esta operación puede llevar mucho tiempo.
+VSC muestra un cuadro de diálogo Confirmar que le informa de que esta acción reiniciará la detección de todos los sistemas de almacenamiento conectados, y puede demorar varios minutos. ¿Desea continuar?
 
-. Haga clic en *Aceptar*.
-. Seleccione los controladores de almacenamiento detectados que tengan el estado "'fallo de autenticación'" y, a continuación, haga clic en *ACCIONES* > *Modificar*.
-. Rellene la información necesaria en el cuadro de diálogo Modify Storage System.
-. Repita los pasos 4 y 5 en todas las controladoras de almacenamiento con el estado «"fallo de autenticación"».
+. Haga clic en *YES*.
+. Seleccione las controladoras de almacenamiento detectadas que tengan el estado `Authentication Failure`, Y, a continuación, haga clic en *ACCIONES* > *Modificar*.
+. Rellene la información necesaria en el cuadro de diálogo *Modificar sistema de almacenamiento*.
+. Repita los pasos 4 y 5 para todas las controladoras de almacenamiento con `Authentication Failure` estado.
 
 
 Una vez completado el proceso de detección, realice lo siguiente:

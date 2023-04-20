@@ -11,7 +11,7 @@ summary: 'Los archivos de preferencias contienen configuraciones que controlan l
 
 
 [role="lead"]
-Los archivos de preferencias contienen configuraciones que controlan las herramientas de ONTAP® para las operaciones de VMware vSphere. En la mayoría de los casos, no es necesario modificar la configuración de estos archivos. Es útil saber qué archivos de preferencias utiliza Virtual Storage Console (VSC).
+Los archivos de preferencias contienen configuraciones que controlan las herramientas de ONTAP para las operaciones de VMware vSphere. En la mayoría de los casos, no es necesario modificar la configuración de estos archivos. Es útil saber qué archivos de preferencias utiliza Virtual Storage Console (VSC).
 
 VSC tiene varios archivos de preferencias. Estos archivos incluyen claves de entrada y valores que determinan el modo en que VSC realiza diversas operaciones. A continuación se muestran algunos de los archivos de preferencias que utiliza VSC:
 
@@ -19,4 +19,4 @@ VSC tiene varios archivos de preferencias. Estos archivos incluyen claves de ent
 
 `/opt/netapp/vscserver/etc/vsc/vscPreferences.xml`
 
-Puede que tenga que modificar los archivos de preferencias en determinadas situaciones. Por ejemplo, si utiliza iSCSI o NFS y la subred es diferente para los hosts ESXi y el sistema de almacenamiento, deberá modificar los archivos de preferencias. Si no modifica la configuración en el archivo de preferencias, el aprovisionamiento del almacén de datos genera errores porque VSC no puede montar el almacén de datos.
+Puede que tenga que modificar los archivos de preferencias en determinadas situaciones. Por ejemplo, si utiliza iSCSI, NFS o NVMe/FC y la subred es diferente entre los hosts ESXi y el sistema de almacenamiento, debe modificar los archivos de preferencias. Si no modifica la configuración en el archivo de preferencias, el aprovisionamiento del almacén de datos genera errores porque VSC no puede montar el almacén de datos.

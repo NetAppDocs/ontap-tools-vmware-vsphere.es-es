@@ -51,17 +51,7 @@ Es posible conservar todas las credenciales de la controladora en un mismo lugar
 
 Puede configurar varias funciones ONTAP recomendadas para trabajar con las herramientas de ONTAP® para VMware vSphere y el control de acceso basado en funciones (RBAC). Estos roles contienen los privilegios de ONTAP necesarios para ejecutar las operaciones de almacenamiento necesarias que ejecutan las tareas de Virtual Storage Console (VSC).
 
-Para crear roles de usuario nuevos, debe iniciar sesión como administrador en sistemas de almacenamiento que ejecutan ONTAP. Es posible crear roles de ONTAP mediante uno de los siguientes:
-
-* System Manager 9.8P1 o posterior de ONTAP
-+
-link:../configure/task_configure_user_role_and_privileges.html["Configure los roles y privilegios de usuario"]
-
-* Herramienta de creación de usuarios de RBAC para ONTAP (si se usa ONTAP 9.6 o una versión anterior)
-+
-https://community.netapp.com/t5/Virtualization-Articles-and-Resources/RBAC-User-Creator-tool-for-VSC-VASA-Provider-and-Storage-Replication-Adapter-7-0/ta-p/133203["Herramienta RBAC User Creator para VSC, proveedor VASA y Storage Replication Adapter 7.0 para VMware vSphere"]
-
-
+Para crear roles de usuario nuevos, debe iniciar sesión como administrador en sistemas de almacenamiento que ejecutan ONTAP. Se pueden crear roles de ONTAP con ONTAP System Manager 9.8P1 o posterior. Consulte link:../configure/task_configure_user_role_and_privileges.html["Configure los roles y privilegios de usuario"] si quiere más información.
 
 Cada rol de ONTAP tiene asociado un nombre de usuario y una pareja de contraseñas que constituyen las credenciales del rol. Si no inicia sesión con estas credenciales, no podrá acceder a las operaciones de almacenamiento que están asociadas con el rol.
 

@@ -26,8 +26,6 @@ Puesta en marcha por primera vez de herramientas de ONTAP
  a| 
 La puesta en marcha de las herramientas de ONTAP instala automáticamente las funciones de VSC.
 
-link:../deploy/concept_deploy_or_upgrade_ontap_tools.html["Puesta en marcha y actualización de herramientas de ONTAP"]
-
 link:../deploy/concept_installation_workflow_for_new_users.html["Flujo de trabajo de implementación para nuevos usuarios de herramientas de ONTAP para VMware vSphere"]
 
 
@@ -107,7 +105,7 @@ Si un usuario intenta realizar una tarea sin los privilegios y permisos correcto
  a| 
 Versión de ONTAP
  a| 
-Los sistemas de almacenamiento deben ejecutar ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 o posterior.
+Sus sistemas de almacenamiento deben ejecutar ONTAP 9,7, 9.8P1 o posterior.
 
 
 
@@ -125,9 +123,9 @@ Debe tener en cuenta pocos requisitos a la hora de personalizar las herramientas
 
 
 
-=== Contraseña de usuario del administrador del dispositivo
+=== Contraseña de usuario de la aplicación
 
-No debe usar ningún espacio en la contraseña de administrador.
+Esta es la contraseña asignada a la cuenta de administrador. Por motivos de seguridad, se recomienda que la longitud de la contraseña sea de entre 8 y 30 caracteres y contenga un mínimo de un carácter superior, uno inferior, un dígito y un carácter especial. La contraseña caduca después de 90 días.
 
 
 
@@ -142,6 +140,12 @@ Debe acceder a la consola de mantenimiento utilizando el nombre de usuario «man
 Puede configurar las credenciales de administrador para vCenter Server mientras implementa las herramientas de ONTAP.
 
 Si cambia la contraseña del administrador de vCenter Server, puede actualizar la contraseña del administrador con la siguiente URL: ``\https://<IP>:8143/Register.html` El lugar donde la dirección IP es de las herramientas de ONTAP que se proporcionan durante la implementación.
+
+
+
+=== Contraseña de la base de datos Derby
+
+Por motivos de seguridad, se recomienda que la longitud de la contraseña sea de entre 8 y 30 caracteres y contenga un mínimo de un carácter superior, uno inferior, un dígito y un carácter especial. La contraseña caduca después de 90 días.
 
 
 

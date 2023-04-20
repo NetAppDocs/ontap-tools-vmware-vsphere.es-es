@@ -23,6 +23,7 @@ Virtual Storage Console (VSC) ofrece los siguientes informes predefinidos:
 * Informe de máquinas virtuales
 * Informe de almacén de datos de vVols
 * Informe de máquina virtual vVols
+* Informe de integridad de log
 
 
 
@@ -47,7 +48,7 @@ El almacén de datos ofrece los siguientes informes predefinidos:
 El menú Datastore Report ofrece información sobre los siguientes parámetros para los almacenes de datos:
 
 * Nombre del almacén de datos
-* Tipo de almacén de datos: NFS o VMFS
+* Tipo de almacén de datos: NFS y VMFS
 * Estilo de volumen
 +
 El estilo de los volúmenes puede ser un volumen de FlexVol o un volumen de FlexGroup.
@@ -118,7 +119,7 @@ Para máquinas virtuales a las que se realizan backups de FlexGroup Volumes, cua
 
 Los informes vVols muestran información detallada sobre los almacenes de datos VMware Virtual Volumes (vVols) y las máquinas virtuales que se crean en estos almacenes de datos. La consola vVols le permite revisar e identificar problemas potenciales con los almacenes de datos vVols y los equipos virtuales en vCenter Server.
 
-Puede ver, organizar y exportar informes. Los datos del informe de los almacenes de datos vVols y las máquinas virtuales son proporcionados por ONTAP junto con los servicios API de OnCommand.
+Puede ver, organizar y exportar informes. ONTAP proporciona el informe de datos para almacenes de datos de vVols y máquinas virtuales.
 
 VVols ofrece los siguientes informes predefinidos:
 
@@ -162,3 +163,40 @@ El informe muestra la latencia de las máquinas virtuales en todos los almacenes
 
 
 Cada nombre de máquina virtual del informe es un enlace a la ficha Monitor de la máquina virtual seleccionada. Puede organizar el informe de la máquina virtual según sus necesidades y exportar el informe en `.CSV` formatee y guarde el informe en el sistema local. La fecha/hora del informe se adjunta al informe guardado.
+
+*Informe de integridad del registro*
+
+El informe de integridad de log muestra el estado de integridad del archivo. La integridad del registro se comprueba a intervalos programados y el informe se muestra en la pestaña Informe de integridad del registro. También proporciona el estado de los diferentes archivos de auditoría que se están renovando.
+
+El estado del archivo log disponible es:
+
+* ACTIVE: Indica el archivo activo actual en el que se escriben los registros.
+* NORMAL: Indica que el archivo de almacenamiento no se ha alterado ni eliminado.
+* MANIPULADO: Indica que el archivo se modificó después del archivado
+* ROLLOVER_DELETE: Indica que el archivo se ha suprimido como parte de la política de retención de log4j.
+* UNEXPECTED_DELETE: Indica que el archivo se ha suprimido manualmente.
+
+
+Las herramientas de ONTAP para VMware vSphere generan registro de auditoría para los siguientes aspectos:
+
+* Servicio VSC
++
+Ubicación del registro de auditoría para vscservice: _/opt/netapp/vscservice/vsc-audit.log_. Es posible cambiar los siguientes parámetros del informe de integridad del registro en el archivo _/opt/netapp/vscserver/etc/log4j2.properties_:
+
++
+** Tamaño máximo de registro para el traspaso.
+** Política de retención, el valor predeterminado de este parámetro es 10 archivos.
+** Tamaño de archivo, el valor predeterminado de este parámetro es 10MB antes de archivar los archivos. Debe reiniciar los servicios para que los nuevos valores entren en vigor.
+
+
+* Servicio VP
++
+Ubicación del registro de auditoría para el servicio VP: _/opt/netapp/vpservice/vp-audit.log_ Los registros de auditoría de VP pueden modificarse en el archivo _/opt/netapp/vpserver/conf/log4j2.properties_. Debe reiniciar los servicios para que los nuevos valores entren en vigor.
+
+* Comandos de mantenimiento
++
+Ubicación del registro de auditoría para servicios de mantenimiento: Los archivos de registro _/opt/netapp/vscservice/maint-audit.log_ Maint pueden modificarse en el archivo _/opt/netapp/vscserver/etc/maint_logger.properties_. Cuando cambie los valores predeterminados, reinicie el servidor para que los nuevos valores entren en vigor.
+
+
+
+El programador se puede configurar para comprobar los registros de auditoría de forma regular. El valor predeterminado para el programador es de un día. Puede modificar el valor del archivo _/opt/netapp/vscserver/etc/maint_logger.properties_.

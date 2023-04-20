@@ -29,8 +29,8 @@ La consola tradicional de las herramientas de ONTAP le permite ver almacenes de 
 * Pasos*
 
 . En la página de inicio de vSphere Client, haga clic en *Herramientas de ONTAP para VMware vSphere*.
-. Seleccione la instancia requerida de vCenter Server mediante el menú desplegable vCenter Server para ver los almacenes de datos.
-. Haga clic en *Panel tradicional*.
+. Seleccione el vCenter Server requerido con el selector *INSTANCE* para ver los almacenes de datos.
+. Haga clic en *Descripción general > Panel tradicional*.
 +
 El portlet datastores proporciona los siguientes detalles:
 

@@ -11,7 +11,7 @@ summary: EL proveedor VASA para ONTAP permite crear perfiles de funcionalidad de
 
 
 [role="lead"]
-EL proveedor VASA para ONTAP permite crear perfiles de funcionalidad de almacenamiento y asignarlos a su almacenamiento. Esto le ayuda a mantener la coherencia en todo el almacenamiento. También puede usar VASA Provider para comprobar el cumplimiento de normativas entre el almacenamiento y los perfiles de capacidades de almacenamiento.
+EL proveedor VASA para ONTAP permite crear perfiles de funcionalidad de almacenamiento y asignarlos a su almacenamiento. Esto ayuda a mantener la coherencia en todo el almacenamiento. También puede usar VASA Provider para comprobar el cumplimiento de normativas entre el almacenamiento y los perfiles de capacidades de almacenamiento.
 
 Una funcionalidad de almacenamiento es un conjunto de atributos del sistema de almacenamiento que identifica un nivel específico de rendimiento del almacenamiento, eficiencia del almacenamiento y otras funcionalidades, como el cifrado del objeto de almacenamiento asociado con la funcionalidad de almacenamiento.
 
@@ -36,9 +36,6 @@ Si se utiliza con vVols, también se utiliza el perfil de funcionalidad del alma
 A continuación, vCenter Server asocia la funcionalidad de almacenamiento de un LUN o un volumen con el almacén de datos que se aprovisiona en ese LUN o volumen. Esto permite aprovisionar una máquina virtual en un almacén de datos que coincida con el perfil de almacenamiento de la máquina virtual y garantizar que todos los almacenes de datos de un clúster de almacenes de datos tengan los mismos niveles de servicio de almacenamiento.
 
 Con las herramientas de ONTAP, puede configurar cada almacén de datos de volúmenes virtuales (vVols) con un nuevo perfil de funcionalidad de almacenamiento que permita aprovisionar máquinas virtuales con requisitos de IOPS variables en el mismo almacén de datos vVols. Al ejecutar el flujo de trabajo de aprovisionamiento de equipos virtuales con requisitos de IOPS, todos los almacenes de datos vVols se enumeran en la lista de almacenes de datos compatibles.
-
-
-NOTE: Cuando se intenta aprovisionar o modificar máquinas virtuales para vCenter Server anterior a 6.5, solo los almacenes de datos vVols que contienen perfiles de funcionalidad de almacenamiento con rendimiento definido como «MAX_IOPS» se enumeran en la lista de almacenes de datos compatibles. Los almacenes de datos vVols restantes se enumeran en la lista de almacenes de datos incompatibles. Puede ignorar esta clasificación y seleccionar cualquier almacén de datos vVols de la lista de almacenes de datos incompatibles para aprovisionar o modificar la máquina virtual.
 
 
 

@@ -2,7 +2,7 @@
 permalink: concepts/concept_virtual_storage_console_overview.html 
 sidebar: sidebar 
 keywords:  
-summary: Las herramientas de ONTAP para VMware vSphere permiten gestionar su ciclo de vida de extremo a extremo para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Simplifica el almacenamiento y la gestión de datos en entornos VMware al permitir que los administradores gestionen directamente el almacenamiento en vCenter Server. 
+summary: Las herramientas de ONTAP para VMware vSphere permiten gestionar su ciclo de vida de extremo a extremo para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Permite a los administradores gestionar el almacenamiento desde el servidor de vCenter directamente y, por tanto, simplifica la gestión de datos y el almacenamiento para entornos VMware. 
 ---
 = Descripción general de las herramientas de ONTAP
 :allow-uri-read: 
@@ -11,11 +11,13 @@ summary: Las herramientas de ONTAP para VMware vSphere permiten gestionar su cic
 
 
 [role="lead"]
-Las herramientas de ONTAP para VMware vSphere permiten gestionar su ciclo de vida de extremo a extremo para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Simplifica el almacenamiento y la gestión de datos en entornos VMware al permitir que los administradores gestionen directamente el almacenamiento en vCenter Server.
+Las herramientas de ONTAP para VMware vSphere permiten gestionar su ciclo de vida de extremo a extremo para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Permite a los administradores gestionar el almacenamiento desde el servidor de vCenter directamente y, por tanto, simplifica la gestión de datos y el almacenamiento para entornos VMware.
 
-Con vSphere 6.5, VMware presentó un nuevo cliente basado en HTML5 llamado vSphere Client. Las versiones 9.6 y posteriores de herramientas de ONTAP admiten solo vSphere Client. Las herramientas de ONTAP se integran con vSphere Client y permiten utilizar servicios de inicio de sesión único (SSO). En un entorno con varias instancias de vCenter Server, cada instancia de vCenter Server que desea gestionar debe tener su propia instancia registrada de VSC.
+Las herramientas de ONTAP se integran con vSphere Client y permiten utilizar servicios de inicio de sesión único (SSO). En un entorno con varias instancias de vCenter Server, cada instancia de vCenter Server que desee gestionar debe tener su propia instancia registrada de las herramientas de ONTAP.
 
 Cada componente de las herramientas de ONTAP ofrece funcionalidades para ayudarle a gestionar su almacenamiento de forma más eficiente.
+
+La herramienta del complemento remoto de VMware vSphere Client está diseñada para integrar la funcionalidad del plugin en vSphere Client sin tener que ejecutarse dentro de vCenter Server. Esto ofrece aislamiento de complementos y permite la escalabilidad horizontal de complementos que funcionan en entornos vSphere grandes.
 
 
 
@@ -57,11 +59,6 @@ VASA Provider para ONTAP usa las API VMware vSphere para el reconocimiento del a
 * Configure las alarmas para que le avise cuando los volúmenes y agregados se aproximen a los límites del umbral
 * Supervise el rendimiento de los discos de máquinas virtuales (VMDK) y las máquinas virtuales que se crean en los almacenes de datos vVols
 
-
-Si utiliza ONTAP 9.6 o una versión anterior, el proveedor de VASA se comunica con vCenter Server mediante las API de VASA y se comunica con ONTAP mediante las API de NetApp denominadas ZAPI. Para ver la consola vVols de ONTAP 9.6 y versiones anteriores, debe haber instalado y registrado servicios de API de OnCommand en vCenter Server. Si utiliza ONTAP 9.7 y versiones posteriores, no requiere que los servicios API de OnCommand se registren en VASA Provider para ver el panel vVols.
-
-
-NOTE: Para ONTAP 9.6 y versiones anteriores, VASA Provider requiere una instancia dedicada de servicios API de OnCommand. Una instancia de los servicios de API de OnCommand no se puede compartir con varias instancias de proveedor VASA.
 
 
 

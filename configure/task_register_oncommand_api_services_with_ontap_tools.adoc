@@ -18,7 +18,7 @@ Si utiliza ONTAP 9.6 o una versión anterior, el panel de vVols puede mostrar lo
 Debe haber descargado los servicios de API de OnCommand 2.1 o una versión posterior del sitio de soporte de NetApp.
 
 
-NOTE: El panel vVols muestra las métricas de rendimiento sólo cuando los almacenes DE datos Y las máquinas virtuales DE SAN vVols se configuran mediante ONTAP 9.3 o posterior.
+NOTE: La consola de vVols muestra métricas de rendimiento solo cuando los almacenes de datos de SAN vVols y las máquinas virtuales están configuradas con ONTAP 9,7 o posterior.
 
 * Pasos*
 

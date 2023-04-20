@@ -26,8 +26,6 @@ Puesta en marcha por primera vez de herramientas de ONTAP
  a| 
 La puesta en marcha de las herramientas de ONTAP instala automáticamente las funciones de VSC.
 
-link:../deploy/concept_deploy_or_upgrade_ontap_tools.html["Implementación o actualización de herramientas de ONTAP para VMware vSphere"]
-
 link:../deploy/concept_installation_workflow_for_new_users.html["Flujo de trabajo de implementación para nuevos usuarios de herramientas de ONTAP para VMware vSphere"]
 
 
@@ -107,7 +105,7 @@ Si un usuario intenta realizar una tarea sin los privilegios y permisos correcto
  a| 
 Versión de ONTAP
  a| 
-Los sistemas de almacenamiento deben ejecutar ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 o posterior.
+Sus sistemas de almacenamiento deben ejecutar ONTAP 9,7, 9.8P1 o posterior.
 
 
 

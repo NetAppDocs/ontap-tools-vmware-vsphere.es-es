@@ -45,6 +45,6 @@ Solaris
 \https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso
 
 |===
-Debe instalar el script a partir de la copia de la instancia de VSC que está registrada en vCenter Server que gestiona la máquina virtual. Si el entorno incluye varias instancias de vCenter Server, debe seleccionar el servidor que contiene la máquina virtual para la cual desea configurar los valores de tiempo de espera de almacenamiento.
+Debe instalar el script desde la copia de la instancia de VSC que está registrada en la instancia de vCenter Server (ELM) que gestiona la máquina virtual. Si su entorno incluye varias instancias de vCenter Server, debe seleccionar la instancia que contenga la máquina virtual para la que desea configurar los valores de tiempo de espera del almacenamiento.
 
 Debe iniciar sesión en la máquina virtual y ejecutar el script para configurar los valores de tiempo de espera de almacenamiento.

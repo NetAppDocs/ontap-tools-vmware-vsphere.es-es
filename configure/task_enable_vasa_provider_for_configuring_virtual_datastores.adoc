@@ -26,7 +26,7 @@ Si la funcionalidad del proveedor VASA está deshabilitada antes de actualizar a
 * Pasos*
 
 . Inicie sesión en la interfaz de usuario web de VMware vSphere.
-. En vSphere Client, haga clic en *Menú* > *Consola de herramientas ONTAP*.
+. En vSphere Client, haga clic en *Menú* > *NetApp ONTAP tools* Consola.
 . Haga clic en *Configuración*.
 . Haga clic en *Administrar capacidades* en la ficha Configuración administrativa.
 . En el cuadro de diálogo gestionar funcionalidades, seleccione la extensión VASA Provider para habilitar.
@@ -34,8 +34,10 @@ Si la funcionalidad del proveedor VASA está deshabilitada antes de actualizar a
 . Introduzca la dirección IP de las herramientas de ONTAP y la contraseña del administrador y, a continuación, haga clic en *aplicar*.
 +
 
-NOTE: Si el estado del proveedor VASA aparece como "'fuera de línea'" incluso después de habilitar la extensión del proveedor VASA, compruebe el archivo /var/log/vmware/vmware-sps/sps.log en busca de errores de conexión con VASA Provider o reinicie el servicio "'vmware-sps'".
+NOTE: Si el estado del proveedor de VASA se muestra como ««Sin conexión»» incluso después de habilitar la extensión VASA Provider, compruebe el archivo /var/log/vmware/vmware-sps/sps.log para detectar errores de conexión con VASA Provider o reinicie el servicio «`vmware-sps ».
 
 
 
-Si utiliza ONTAP 9.6 o clústeres anteriores, debe registrar los servicios API de OnCommand con VASA Provider para obtener detalles de los almacenes de datos vVols y los equipos virtuales que se utilizan en los informes DE almacenes de datos SAN vVols VM y SAN vVols. Sin embargo, si utiliza ONTAP 9.7 o una versión posterior, no es necesario que registre los servicios API de OnCommand con el proveedor VASA.
+*Información relacionada*
+
+https://mysupport.netapp.com/site/global/dashboard["Soporte de NetApp"]

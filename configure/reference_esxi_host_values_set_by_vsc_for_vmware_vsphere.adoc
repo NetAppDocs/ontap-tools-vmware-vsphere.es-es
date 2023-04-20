@@ -35,38 +35,35 @@ Debe configurar este valor en 0.
 
 * *Net.TcpipHeapSize*
 +
-Si utiliza vSphere 6.0 o una versión posterior, debe configurar este valor en 32.
+Establezca este valor en 32.
 
 * *Net.TcpipHeapMax*
 +
-Debe establecer este valor en 512 MB para las versiones vSphere 6.X, excepto en el caso de los lanzamientos 6.5U3 y 6.7U3. Para las versiones vSphere 6.5U3 y 6.7U3, este valor se establece en 1024 MB. Si utiliza vSphere 7.0 o versiones posteriores, debe configurar este valor en 1024 MB.
+Establezca este valor en 1024MB.
 
 * *NFS.MaxVolumes*
 +
-Si utiliza vSphere 6.0 o una versión posterior, debe configurar este valor en 256.
+Establezca este valor en 256.
 
 * *NFS41.MaxVolumes*
 +
-Si utiliza vSphere 6.0 o una versión posterior, debe configurar este valor en 256.
+Establezca este valor en 256.
 
 * *NFS.MaxQueueDepth*
 +
-Si utiliza vSphere 6.0 o una versión posterior del host ESXi, debe configurar este valor en 128 o superior para evitar los cuellos de botella en la cola.
-
-+
-Para las versiones de vSphere anteriores a la 6.0, debe configurar este valor en 64.
+Defina este valor en 128 o superior para evitar cuellos de botella en cola.
 
 * *NFS.HeartbeatMaxFailures*
 +
-Debe establecer este valor en 10 para todas las configuraciones de NFS.
+Establezca este valor en 10 para todas las configuraciones de NFS.
 
 * *NFS.HeartbeatFrequency*
 +
-Debe establecer este valor en 12 para todas las configuraciones de NFS.
+Establezca este valor en 12 para todas las configuraciones de NFS.
 
 * *NFS.HeartbeatTimeout*
 +
-Debe establecer este valor en 5 para todas las configuraciones de NFS.
+Establezca este valor en 5 para todas las configuraciones de NFS.
 
 
 
@@ -76,21 +73,21 @@ Debe establecer este valor en 5 para todas las configuraciones de NFS.
 
 * *Política de selección de ruta*
 +
-Debe establecer este valor en "'RR'" (operación por turnos) cuando se utilicen rutas FC con ALUA.
+Establezca este valor en «`RR`» (por turnos) cuando se utilicen rutas FC con ALUA.
 
 +
-Debería establecer este valor en «'FIJO'» para todas las demás configuraciones.
+Establezca este valor en «`FIJO`» para todas las demás configuraciones.
 
 +
 Establecer este valor en «'RR'» ayuda a proporcionar equilibrio de carga en todas las rutas activas/optimizadas. El valor "'FIXED'" se utiliza para configuraciones antiguas y no ALUA y ayuda a evitar las operaciones de E/S proxy
 
 * *Disk.QFullSampleSize*
 +
-Debe establecer este valor en 32 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
+Establezca este valor en 32 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
 
 * *Disk.QFullThreshold*
 +
-Debe establecer este valor en 8 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
+Establezca este valor en 8 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
 
 * *Tiempos de espera de HBA FC Emulex*
 +
@@ -108,17 +105,17 @@ Se utiliza el valor predeterminado.
 
 * *Política de selección de ruta*
 +
-Debería establecer este valor en «'RR'» para todas las rutas de iSCSI.
+Establezca este valor en «`RR`» para todas las rutas de iSCSI.
 
 +
 Establecer este valor en «'RR'» ayuda a proporcionar equilibrio de carga en todas las rutas activas/optimizadas.
 
 * *Disk.QFullSampleSize*
 +
-Debe establecer este valor en 32 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
+Establezca este valor en 32 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
 
 * *Disk.QFullThreshold*
 +
-Debe establecer este valor en 8 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
+Establezca este valor en 8 para todas las configuraciones. Si configura este valor, se evitan los errores de I/O.
 
 

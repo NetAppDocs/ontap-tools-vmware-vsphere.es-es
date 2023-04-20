@@ -19,7 +19,7 @@ VSC tiene varios archivos de preferencias. Estos archivos incluyen claves de ent
 
 `/opt/netapp/vscserver/etc/vsc/vscPreferences.xml`
 
-Puede que tenga que modificar los archivos de preferencias en determinadas situaciones. Por ejemplo, si utiliza iSCSI o NFS y la subred es diferente para los hosts ESXi y el sistema de almacenamiento, deberá modificar los archivos de preferencias. Si no modifica la configuración en el archivo de preferencias, el aprovisionamiento del almacén de datos genera errores porque VSC no puede montar el almacén de datos.
+Puede que tenga que modificar los archivos de preferencias en determinadas situaciones. Por ejemplo, si utiliza iSCSI o NFS y la subred es diferente entre los hosts ESXi y el sistema de almacenamiento, deberá modificar los archivos de preferencias. Si no modifica la configuración en el archivo de preferencias, el aprovisionamiento del almacén de datos genera errores porque VSC no puede montar el almacén de datos.
 
 Hay una nueva opción agregada al archivo de preferencias `kaminoprefs.xml` Que puede configurar para habilitar la compatibilidad con IPv4 o IPv6 en todos los sistemas de almacenamiento añadidos a VSC.
 

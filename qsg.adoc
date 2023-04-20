@@ -80,7 +80,7 @@ Requisitos mínimos de almacenamiento y aplicaciones:
 | *Almacenamiento, host y aplicaciones* | *Requisitos de la versión* 
 
 
-| ONTAP | ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 o posterior. 
+| ONTAP | ONTAP 9,7, 9.8P1 o posterior. 
 
 
 | VMware vSphere, vCenter Server, hosts ESXi, Site Recovery Manager (SRM), aplicaciones plugins y bases de datos columna 1 | Consulte https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["Herramienta de matriz de interoperabilidad"^] 
@@ -95,51 +95,67 @@ Requisitos mínimos de almacenamiento y aplicaciones:
 * Elimine la caché del explorador para evitar cualquier problema con la caché del explorador durante la implementación de las herramientas de ONTAP.
 * Configure la puerta de enlace predeterminada que utilizará el dispositivo virtual para responder a los ping ICMP.
 * Un nombre de host DNS válido para el dispositivo virtual.
-* Descargue e instale OnCommand API Services para ONTAP 9.6 o una versión anterior si desea ver la consola de vVols. No es necesario registrar los servicios API de OnCommand con un proveedor VASA si utiliza ONTAP 9.7 o una versión posterior.
 
 
 
 
 === Requisitos opcionales para SRA
 
-Si está implementando el dispositivo virtual para utilizarlo con VMware Site Recovery Manager, debe tener: * Descargado el `.msi` Archivo para el plugin de SRA solo si desea configurar la solución de recuperación ante desastres del Site Recovery Manager (SRM). Columna 1 * ha descargado el `.tar.gz` Archivo para SRA si utiliza el dispositivo SRM.
+Si está implementando el dispositivo virtual para utilizarlo con VMware Site Recovery Manager, debe tener: * Descargado el `.tar.gz` Archivo para SRA si utiliza el dispositivo SRM.
 
 
 
 == Implementar las herramientas de ONTAP
 
 .Pasos
-. Descargue el `.ova` de la https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["Sitio de soporte de NetApp"^] En un sistema vSphere Client para implementar las herramientas de ONTAP.
+. Descargue `.zip` archivo que contiene binarios y certificados firmados de la https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["Sitio de soporte de NetApp"^] En un sistema vSphere Client para implementar las herramientas de ONTAP.
+. Extraiga el `.zip` archive e implemente el `.ova` archivo.
 +
 Debe implementar el `.ova` Archivo en los sitios de origen y destino si va a implementar SRA.
 
-. Inicie sesión en vSphere Web Client y seleccione *Inicio* > *Host & Clusters*.
+. Inicie sesión en vSphere Web Client, seleccione *Inicio* > *Host and Clusters*.
 . Haga clic con el botón derecho del ratón en el centro de datos necesario y, a continuación, haga clic en *implementar plantilla OVF*.
++
+Si utiliza vCenter7.0u3e y versiones posteriores, realice las siguientes acciones; de lo contrario, continúe con el paso 5. Este es un paso opcional para verificar que la integridad binaria de OVA no está alterada.
+
++
+** Descargue el archivo _OTV_INTER_ROOT_CERT_CHAIN.pem_ del sitio de soporte de NetApp.
+** Vaya a *vcenter* > *administration* > *certificate management*.
+** Haga clic en la opción *Agregar certificado raíz de confianza*.
+** Haga clic en *Browse* y proporcione la ruta para el archivo _OTV_INTER_ROOT_CERT_CHAIN.pem_.
+** Haga clic en *Agregar*.
++
+
+NOTE: El mensaje Firma de código de confianza - OVCS2 (certificado de confianza) confirma la integridad del archivo OVA descargado. Si ve el mensaje Entrust Code Signing - OVCS2 (certificado no válido), actualice VMware vCenter Server a 7.0U3E o una versión posterior.
+
+
+
 . Puede introducir la dirección URL del archivo .ova o buscar la carpeta donde se guarda el archivo .ova y, a continuación, hacer clic en *Siguiente*.
 . Especifique los detalles necesarios para completar la implementación.
-+
+
+
 
 NOTE: (Opcional) Si desea crear contenedores sin registrar en vCenter Server, seleccione la casilla de comprobación Enable VMware Cloud Foundation (VCF) en la sección Configure vCenter o Enable VCF.
 
-
-
 Puede ver el progreso de la implementación desde la ficha *tareas* y esperar a que finalice la implementación.
+
+Como parte de la puesta en marcha, se realizan verificaciones de la suma de comprobación. Si el despliegue falla, haga lo siguiente:
+
+. Verifique vpserver/logs/checksum.log. Si indica que la verificación de la suma de comprobación ha fallado, puede ver la verificación del jar fallido en el mismo registro.
++
+El archivo de registro contiene la ejecución de _sha256sum -c /opt/netapp/vpserver/conf/checksums_.
+
+. Verifique vscserver/log/checksum.log. Si indica que la verificación de la suma de comprobación ha fallado, puede ver la verificación del jar fallido en el mismo registro.
++
+El archivo de registro contiene la ejecución de _sha256sum -c /opt/netapp/vscerver/etc/checksums_.
+
+
 
 
 
 === Puesta en marcha de SRA en SRM
 
 Puede implementar el SRA en un servidor SRM de Windows o en un dispositivo SRM de 8.2.
-
-
-
-==== Instalación del SRA en el servidor SRM de Windows
-
-.Pasos
-. Descargue el `.msi` Instalador del plugin de SRA desde el sitio de soporte de NetApp.
-. Haga doble clic en el descargado `.msi` Instalador del complemento SRA y siga las instrucciones que aparecen en pantalla.
-. Introduzca la dirección IP y la contraseña del dispositivo virtual implementado para completar la instalación del plugin de SRA en el servidor SRM.
-
 
 
 
@@ -181,9 +197,9 @@ Puede implementar el SRA en un servidor SRM de Windows o en un dispositivo SRM d
 ==== Habilitar el proveedor VASA y SRA
 
 .Pasos
-. Inicie sesión en vSphere Web Client con la dirección IP especificada durante la implementación.
-. Haga clic en el icono *OTV* e introduzca el nombre de usuario y la contraseña especificados durante la implementación, haga clic en *Iniciar sesión*.
-. En el panel izquierdo de OTV, *Configuración > Configuración administrativa > Administrar capacidades* y active las capacidades necesarias.
+. Inicie sesión en el cliente web de vSphere mediante la IP de vCenter que se proporcionó durante la puesta en marcha de las herramientas OVA ONTAP.
+. En la página de accesos directos, haz clic en *NetApp ONTAP tools* en la sección de complementos.
+. En el panel izquierdo de las herramientas de ONTAP, *Configuración > Configuración administrativa > Administrar capacidades*, y habilita las capacidades necesarias.
 +
 
 NOTE: El proveedor DE VASA está habilitado de forma predeterminada. Si desea utilizar la funcionalidad de replicación para almacenes de datos vVols, utilice el botón de alternar Enable vVols replication.

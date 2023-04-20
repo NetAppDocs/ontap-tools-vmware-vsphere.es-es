@@ -1,0 +1,18 @@
+---
+permalink: configure/task_update_certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: Debe actualizar el certificado cuando caduque o cuando se modifique manualmente. Cuando el certificado de cliente o del clúster caduca o no coincide, se interrumpe la comunicación con el sistema ONTAP. 
+---
+= Actualizar certificado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe actualizar el certificado cuando el certificado de cliente o del clúster está a punto de caducar o ya ha caducado, o cuando el certificado de clúster se modifique manualmente. Cuando el certificado de cliente o del clúster caduca o no coincide, se interrumpe la comunicación con el sistema ONTAP.
+
+El certificado de clúster es el certificado de servidor que genera en la ONTAP por el administrador de almacenamiento. El certificado de cliente se puede generar en las herramientas de ONTAP. Cuando el certificado de clúster caduca, el administrador de almacenamiento necesita generar el nuevo certificado en el lado ONTAP. La ventana Modificar sistema de almacenamiento recuperó automáticamente el certificado del clúster del almacenamiento de ONTAP, y debe autorizar el certificado del clúster.
+
+Cuando el certificado está a punto de caducar o si ya ha caducado, siga el procedimiento de link:../configure/task_modify_storage_system.html["Modificar los sistemas de almacenamiento"] sección para actualizar el certificado.

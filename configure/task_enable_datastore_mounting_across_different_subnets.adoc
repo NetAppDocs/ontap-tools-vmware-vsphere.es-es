@@ -17,16 +17,14 @@ Si utiliza iSCSI o NFS y la subred es diferente entre los hosts ESXi y el sistem
 
 Cuando el aprovisionamiento del almacén de datos falla, VSC registra los siguientes mensajes de error:
 
-"No he podido continuar. No se encontraron direcciones ip al hacer referencia cruzada a las direcciones ip del kernel y a las direcciones en la controladora.
-
-No se puede encontrar una red coincidente con el volumen de montaje NFS en estos hosts.»
+'No se puede continuar. No se encontraron direcciones ip al hacer referencia cruzada a las direcciones ip del kernel y a las direcciones en la controladora. No se pudo encontrar una red coincidente con el volumen de montaje NFS en estos hosts.'
 
 * Pasos*
 
 . Inicie sesión en la instancia de vCenter Server.
 . Inicie la consola de mantenimiento con la máquina virtual unificada del dispositivo.
 +
-link:reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html["Consola de mantenimiento de herramientas de ONTAP para VMware vSphere"]
+link:../manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html["Consola de mantenimiento de herramientas de ONTAP para VMware vSphere"]
 
 . Introduzca `4` Para acceder a la opción Soporte y diagnóstico.
 . Introduzca `2` Para acceder a la opción Access Diagnostic Shell (Shell de diagnóstico de acceso).

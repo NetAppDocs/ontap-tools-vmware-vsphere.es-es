@@ -36,19 +36,17 @@ link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["Actu
 
 * Si utiliza SRA 2.1 o 3.0, primero debe tomar nota de los detalles de configuración del sitio existente.
 +
-_Guía de instalación y configuración del adaptador de replicación de almacenamiento 4.0 para ONTAP_ contiene las instrucciones detalladas en la sección "Descripción general de la actualización". Estas versiones de SRA también usan el proveedor de VASA, por lo que debe cancelar el registro del proveedor de VASA y, a continuación, implementar la versión más reciente de las herramientas de ONTAP. La versión anterior del servidor (`.ova`) se puede quitar cuando la actualización se haya completado.
+Los lanzamientos de adaptador de replicación de almacenamiento (SRA) 4,0 para ONTAP también utilizan el proveedor de VASA, por lo que debe cancelar el registro del proveedor de VASA y, a continuación, implementar la versión más reciente de las herramientas de ONTAP. La versión anterior del servidor (`.ova`) se puede quitar cuando la actualización se haya completado.
 
 
-
-Para cualquier actualización del SRA, el software del SRA (el adaptador del servidor del Site Recovery Manager, instalado por el `.msi` Archivo) debe eliminarse del servidor de Site Recovery Manager. Puede utilizar el panel de control del sistema de Windows para desinstalar el software y, a continuación, instalar el software del SRA más reciente en el servidor SRA mediante el `.msi` archivo.
 
 Si tiene la puesta en marcha del proveedor de VASA, después de la actualización desde la configuración existente, debe configurar el tamaño de memoria para que las herramientas de ONTAP sean de 12 GB con el `Edit Settings` opción. También debe modificar la reserva de memoria virtual. La máquina virtual debe estar apagada para modificar el tamaño de la memoria.
 
 Si tiene la versión 7.2 o 7.2.1 del dispositivo virtual para VSC, proveedor VASA y SRA, no puede realizar la actualización directa a una versión 9.7P1 o posterior del dispositivo unificado. Primero debe actualizar su configuración existente a la versión 9.7 del dispositivo virtual y, a continuación, actualizar a la última versión.
 
-Para realizar actualizaciones desde las herramientas de ONTAP 9.10 y versiones posteriores, ejecute el dispositivo virtual 9.7P1 o posterior. No se admite la actualización desde una versión anterior a 9.7P1 del dispositivo virtual.
+Para actualizar a las herramientas de ONTAP 9,10 y una versión posterior, debe ejecutar el dispositivo virtual 9.7P1 o una versión posterior. No se admite la actualización desde una versión anterior a 9.7P1 del dispositivo virtual.
 
-Si va a implementar la versión más reciente de las herramientas de ONTAP, tendrá que ver el tema `Requirements for deploying the ONTAP tools.` El tema `Upgrading to the latest release of ONTAP tools` tiene información sobre cómo realizar una actualización in situ.
+Si va a implementar la versión más reciente de las herramientas de ONTAP, tendrá que ver el tema link:..deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html["Requisitos para poner en marcha las herramientas de ONTAP"]. El tema link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["Actualice a la versión más reciente de herramientas de ONTAP"] tiene información sobre cómo realizar una actualización in situ.
 
 *Información relacionada*
 

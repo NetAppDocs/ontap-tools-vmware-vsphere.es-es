@@ -21,7 +21,7 @@ Después de configurar un perfil, puede editar el perfil según sea necesario.
 
 * Pasos*
 
-. En la página de inicio de las herramientas de ONTAP, haga clic en *Perfiles de capacidad de almacenamiento*.
+. En la página de inicio de herramientas de ONTAP, haga clic en *Políticas y perfiles*.
 . Cree un perfil o edite uno existente, según sea necesario:
 +
 |===
@@ -33,7 +33,7 @@ Después de configurar un perfil, puede editar el perfil según sea necesario.
  a| 
 Cree un perfil
  a| 
-Haga clic en *image:../media/create_icon.gif[""]*.
+Haga clic en *CREAR*.
 
 
 
@@ -43,11 +43,18 @@ Edite un perfil existente
 Haga clic en el perfil que desea modificar desde los perfiles que aparecen en la página *Perfiles de capacidad de almacenamiento*.
 
 |===
-
-
++
 
 NOTE: Para ver los valores asociados con un perfil existente, puede hacer clic en el nombre del perfil en la página Storage Capabilities Profile. A continuación, VASA Provider muestra la página Summary para ese perfil.
 
+. Desde *New Datastore* > *Storage Systems*, haz clic en *Create storage capacity profile*.
++
+Recibe el siguiente mensaje para confirmar la salida de la ventana del almacén de datos.
+
++
+_Esto eliminará los datos introducidos al cerrar el flujo de trabajo actual y abrirá el flujo de trabajo Crear perfil de capacidad de almacenamiento. ¿Desea continuar?_
+
+. Haga clic en *SÍ* para abrir la ventana Crear perfil de capacidad de almacenamiento.
 . Complete las páginas del asistente Crear perfil de capacidad de almacenamiento para configurar un perfil o editar valores para modificar un perfil existente.
 +
 La mayoría de los campos en este asistente son claros y explicativos. En la siguiente tabla se describen algunos de los campos que pueden requerir explicación.

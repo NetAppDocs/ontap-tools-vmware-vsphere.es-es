@@ -11,7 +11,7 @@ summary: 'Si utiliza herramientas de ONTAP® para VMware vSphere en un entorno e
 
 
 [role="lead"]
-Si utiliza herramientas de ONTAP para VMware vSphere en un entorno en el que un único cliente HTML5 de VMware vSphere gestiona varias instancias de vCenter Server, debe registrar una instancia de VSC en cada instancia de vCenter Server para poder haber un emparejamiento 1:1 entre VSC y vCenter Server. Esta acción le permite gestionar todos los servidores que ejecutan vCenter 6.0 o una versión posterior en el modo vinculado y en el modo no vinculado desde un único cliente HTML5 de vSphere.
+Si utiliza herramientas de ONTAP para VMware vSphere en un entorno en el que un único cliente HTML5 de VMware vSphere gestiona varias instancias de vCenter Server, debe registrar una instancia de VSC en cada instancia de vCenter Server para poder haber un emparejamiento 1:1 entre VSC y vCenter Server. Hacerlo, permite gestionar todos los servidores que ejecutan vCenter 7,0 o una versión posterior tanto en modo vinculado como en modo no vinculado desde un solo cliente vSphere HTML5.
 
 
 NOTE: Si desea utilizar VSC con una instancia de vCenter Server, debe haber configurado o registrado una instancia de VSC para cada instancia de vCenter Server que desee gestionar. Cada instancia de VSC registrada debe tener la misma versión.
@@ -36,7 +36,7 @@ También debe tener los permisos de RBAC correctos.
 
 
 
-Cuando va a realizar una tarea que requiere especificar una instancia de vCenter Server, el cuadro desplegable *vCenter Server* muestra los servidores vCenter disponibles en orden alfanumérico. El servidor vCenter Server predeterminado siempre es el primer servidor de la lista desplegable.
+Cuando realiza una tarea que requiere que especifique una INSTANCIA DE vCenter Server, el selector *INSTANCE* en la esquina superior izquierda de la pantalla muestra los servidores vCenter Server disponibles en orden alfanumérico. El servidor vCenter Server predeterminado siempre es el primer servidor de la lista desplegable.
 
 Si se conoce la ubicación del almacenamiento (por ejemplo, cuando se utiliza el asistente de aprovisionamiento y el almacén de datos se encuentra en un host gestionado por una instancia específica de vCenter Server), la lista de vCenter Server se muestra como una opción de solo lectura. Esto sucede solo cuando se utiliza la opción de clic con el botón derecho para seleccionar un elemento en vSphere Web Client.
 

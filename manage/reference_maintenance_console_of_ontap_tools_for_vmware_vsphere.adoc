@@ -13,10 +13,10 @@ summary: Puede gestionar las configuraciones de aplicaciones, sistemas y redes m
 [role="lead"]
 Puede gestionar las configuraciones de aplicaciones, sistemas y redes mediante la consola de mantenimiento de las herramientas de ONTAP. Puede cambiar la contraseña de administrador y la contraseña de mantenimiento. También puede generar paquetes de soporte, establecer diferentes niveles de registro, ver y gestionar configuraciones de TLS e iniciar diagnósticos remotos.
 
-Debe haber instalado herramientas de VMware después de implementar herramientas de ONTAP para acceder a la consola de mantenimiento. Debe utilizar «mant» como nombre de usuario y la contraseña que configuró durante la implementación para iniciar sesión en la consola de mantenimiento de las herramientas de ONTAP.
+Debe haber instalado herramientas de VMware después de implementar herramientas de ONTAP para acceder a la consola de mantenimiento. Debe usar `maint` Como nombre de usuario y contraseña que configuró durante la implementación para iniciar sesión en la consola de mantenimiento de las herramientas de ONTAP. Debe usar *nano* para editar los archivos en la consola de inicio de sesión maint o root.
 
 
-NOTE: Debe establecer una contraseña para el usuario «diag» mientras habilita el diagnóstico remoto.
+NOTE: Debe establecer una contraseña para el `diag` usuario al activar el diagnóstico remoto.
 
 Debe utilizar la ficha *Resumen* de las herramientas implementadas de ONTAP para acceder a la consola de mantenimiento. Al hacer clic image:../media/launch_maintenance_console.gif[""], se inicia la consola de mantenimiento.
 
@@ -36,11 +36,16 @@ Configuración de la aplicación
 . Detenga el proveedor VASA y el servicio SRA
 . Cambie la contraseña de usuario del administrador
 . Volver a generar certificados
-. Almacén de claves de restablecimiento manual y certificados
 . Restablecimiento manual de la base de datos
 . Cambie el nivel DE REGISTRO del servicio Virtual Storage Console
 . Cambiar el nivel DE REGISTRO del proveedor VASA y el servicio SRA
 . Mostrar la configuración de TLS
+. Generar token de autenticación Web-CLI
+. Inicie el servicio del complemento de herramientas de ONTAP
+. Detenga el servicio de complemento de herramientas de ONTAP
+. Inicie los servicios de integridad de registros
+. Parar los servicios de integridad de registros
+. Cambiar contraseña de base de datos
 
 
 

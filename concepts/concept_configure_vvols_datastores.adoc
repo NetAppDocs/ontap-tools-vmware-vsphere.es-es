@@ -13,9 +13,9 @@ summary: 'Puede usar VASA Provider para ONTAP para crear y gestionar VMware Virt
 [role="lead"]
 Es posible usar VASA Provider para ONTAP para crear y gestionar VMware Virtual Volumes (vVols). Puede aprovisionar, editar, montar y eliminar un almacén de datos vVols. También puede agregar almacenamiento al almacén de datos vVols o quitar almacenamiento del almacén de datos vVols. para proporcionar mayor flexibilidad. Puede aprovisionar y gestionar cada máquina virtual y el VMDK relacionado.
 
-Un almacén de datos vVols consta de uno o varios volúmenes FlexVol dentro de un contenedor de almacenamiento (también llamado «almacenamiento de respaldo»). Un equipo virtual puede propagarse por un almacén de datos vVols o varios almacenes de datos vVols.
+Un almacén de datos vVols consta de uno o varios volúmenes FlexVol dentro de un contenedor de almacenamiento (también llamado almacenamiento de respaldo). Un equipo virtual puede propagarse por un almacén de datos vVols o varios almacenes de datos vVols.
 
-Aunque puede crear un almacén de datos vVols que tenga varios volúmenes FlexVol, todos los volúmenes FlexVol del contenedor de almacenamiento deben utilizar el mismo protocolo (NFS, iSCSI o FCP) y las mismas máquinas virtuales de almacenamiento (SVM).
+Si bien puede crear un almacén de datos vVols que tenga varios volúmenes FlexVol, todos los volúmenes FlexVol dentro del contenedor de almacenamiento deben usar el mismo protocolo (NFS, iSCSI, FCP o NVMe/FC) y las mismas máquinas virtuales de almacenamiento (SVM).
 
 No necesita tener conocimientos detallados del almacenamiento subyacente. Por ejemplo, no es necesario identificar un volumen FlexVol específico para que contenga el almacenamiento. Después de añadir volúmenes FlexVol al almacén de datos vVols, el contenedor de almacenamiento gestiona los requisitos de almacenamiento y evita que se produzcan situaciones durante el aprovisionamiento de la máquina virtual donde VMware se aprovisionó a un volumen de respaldo sin capacidad.
 

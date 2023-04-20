@@ -25,7 +25,7 @@ Después de crear un perfil de funcionalidad de almacenamiento, puede modificar 
 
 * Pasos*
 
-. En la página de inicio de las herramientas de ONTAP, haga clic en *asignación de almacenamiento*.
+. En la página de inicio de las herramientas NetApp ONTAP, haga clic en *Asignación de almacenamiento*.
 . Seleccione el almacén de datos de la lista Available.
 . En el menú acciones, seleccione *generación automática*.
 . Cuando finalice el proceso de generación automática, actualice la pantalla para ver información sobre el nuevo perfil.

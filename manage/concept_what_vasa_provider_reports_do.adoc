@@ -13,7 +13,7 @@ summary: 'Los informes vVols muestran información detallada acerca de los almac
 [role="lead"]
 Los informes vVols muestran información detallada sobre los almacenes de datos VMware Virtual Volumes (vVols) y las máquinas virtuales que se crean en estos almacenes de datos. La consola vVols le permite revisar e identificar problemas potenciales con los almacenes de datos vVols y los equipos virtuales en vCenter Server.
 
-Puede ver, organizar y exportar informes. Los datos del informe de los almacenes de datos vVols y las máquinas virtuales son proporcionados por ONTAP junto con los servicios API de OnCommand.
+Puede ver, organizar y exportar informes. ONTAP proporciona el informe de datos para almacenes de datos de vVols y máquinas virtuales.
 
 VVols ofrece los siguientes informes predefinidos:
 

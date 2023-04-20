@@ -54,21 +54,21 @@ NOTE: La versión 9.10 de las herramientas de ONTAP admite la creación de almac
  a| 
 Todos los hosts de un centro de datos
  a| 
-Haga clic con el botón derecho en un centro de datos y seleccione *NetApp VSC* > *Provision Datastore*.
+Haga clic con el botón derecho en un centro de datos y seleccione *Herramientas de ONTAP de NetApp* > *aprovisionar almacén de datos*.
 
 
 
  a| 
 Todos los hosts de un clúster
  a| 
-Haga clic con el botón derecho en un clúster y seleccione *NetApp VSC* > *Provision Datastore*.
+Haga clic con el botón derecho en un clúster y, a continuación, seleccione *Herramientas de ONTAP de NetApp* > *Almacén de datos de aprovisionamiento*.
 
 
 
  a| 
 Un solo host
  a| 
-Haga clic con el botón derecho en un host y seleccione *NetApp VSC* > *Provision Datastore*.
+Haga clic con el botón derecho en un host y seleccione *NetApp ONTAP tools* > *Provision Datastore*.
 
 |===
 . Complete los campos en el cuadro de diálogo New Datastore para crear el almacén de datos.
@@ -86,6 +86,11 @@ La mayoría de los campos del cuadro de diálogo son claros y explicativos. En l
 Generales
  a| 
 En la sección General del cuadro de diálogo Nuevo almacén de datos se proporcionan opciones para introducir la ubicación, el nombre, la descripción, el tipo y el protocolo del nuevo almacén de datos. El tipo de almacén de datos vVols se utiliza para configurar un almacén de datos vVols.
+
+Es posible aprovisionar el almacén de datos vVols si la funcionalidad del proveedor VASA está habilitada. Consulte, link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html["Habilite VASA Provider para configurar almacenes de datos virtuales"] para obtener más detalles. El almacén de datos vVols es compatible con los protocolos NFS, iSCSI, FC/FEoE y NVMe/FC.
+
+
+NOTE: El protocolo NVMe/FC para el almacén de datos vVols está disponible si la herramienta de ONTAP se ha registrado en vCenter 8,0 y versiones posteriores, y si la versión de ONTAP es ONTAP 9.91P3 y versiones posteriores.
 
 
 NOTE: Si va a aprovisionar el almacén de datos vVols de iSCSI para la replicación vVols, antes de crear un almacén de datos vVols en el sitio de destino, debe realizar la actualización de SnapMirror y la redetección del clúster.
@@ -115,7 +120,7 @@ Debe seleccionar la programación para SnapMirror y el volumen FlexVol requerido
 
 
 |===
-. En la sección Resumen, haga clic en **Finalizar**.
+. En la sección Resumen, haga clic en *Finalizar*.
 
 
 *resultado*

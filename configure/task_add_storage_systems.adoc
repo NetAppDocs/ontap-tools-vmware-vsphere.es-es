@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 'Puede añadir manualmente el sistema de almacenamiento a Virtual Storage Console \(VSC\).' 
 ---
-= Añada sistemas de almacenamiento a VSC
+= Añadir sistemas de almacenamiento
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,24 +13,53 @@ summary: 'Puede añadir manualmente el sistema de almacenamiento a Virtual Stora
 [role="lead"]
 Puede añadir manualmente el sistema de almacenamiento a Virtual Storage Console (VSC).
 
+
+NOTE: Si el clúster de ONTAP tiene SAML habilitado, la comunicación con ONTAP se realiza con la autenticación básica.
+
 *Acerca de esta tarea*
 
 Cada vez que inicia Virtual Storage Console (VSC) o selecciona la opción *REDISCOVER All*, VSC detecta automáticamente los sistemas de almacenamiento disponibles.
 
 * Pasos*
 
-. Añada un sistema de almacenamiento a VSC mediante la página de inicio de las herramientas de ONTAP:
+. Añada un sistema de almacenamiento a VSC usando una de las opciones de la página de inicio de herramientas de ONTAP:
 +
-** Haga clic en *sistemas de almacenamiento* > *Agregar*.
+** Haga clic en *sistemas de almacenamiento* > *Agregar*. o.
 ** Haga clic en *Descripción general* > *Introducción* y, a continuación, haga clic en el botón *AGREGAR* en Agregar sistema de almacenamiento.
 
 
 . En el cuadro de diálogo *Add Storage System*, introduzca la dirección IP de administración y las credenciales de ese sistema de almacenamiento.
 +
-También puede añadir sistemas de almacenamiento con la dirección IPv6 del clúster o SVM. También puede cambiar los valores predeterminados para TLS y el número de puerto en este cuadro de diálogo.
+Cuando se añade un sistema de almacenamiento, cualquier comunicación entre el plugin de herramientas de ONTAP y el sistema de almacenamiento se debe autenticar mutuamente.
 
 +
-Cuando añade almacenamiento desde la página VSC Storage System, también debe especificar la instancia de vCenter Server donde se ubicará el almacenamiento. El cuadro de diálogo Add Storage System proporciona una lista desplegable de las instancias disponibles de vCenter Server. VSC no muestra esta opción si añade almacenamiento a un centro de datos que ya está asociado a una instancia de vCenter Server.
+También puede añadir sistemas de almacenamiento con la dirección IPv6 del clúster o SVM.
+
++
+Cuando añada almacenamiento desde la página VSC Storage System, especifique la instancia de vCenter Server donde se encuentra el almacenamiento. El cuadro de diálogo Add Storage System proporciona una lista desplegable de las instancias disponibles de vCenter Server. VSC no muestra esta opción si añade almacenamiento a un centro de datos que ya está asociado a una instancia de vCenter Server.
+
++
+NOTA:
+
++
+** A partir de la versión 9,12 de las herramientas de ONTAP, todas las comunicaciones de los sistemas de almacenamiento de ONTAP se llevan a cabo mediante una autenticación basada en certificados.
+** No se permiten las acciones de almacén de datos tradicional como Delete, Resize y Mount cuando el certificado de cliente o clúster no es válido.
+** No se permiten las acciones del almacén de datos de VVol como Expand Storage, Mount datastore cuando el certificado de cliente o clúster no es válido.
+** Se permiten acciones como Eliminar, Eliminar almacenamiento y Editar propiedades, ya que estas acciones no requieren comunicación ONTAP.
+** Para añadir un sistema de almacenamiento con un usuario de ámbito de SVM, el administrador del clúster del sistema de almacenamiento debe editar el usuario y agregar el método de autenticación *Certificate* a las aplicaciones HTTP y ONTAPI.
++
+En las opciones avanzadas, hay dos formas de cargar el *Certificado de Clúster ONTAP*:
+
++
+... * Automáticamente recuperar * - automáticamente recupera los certificados.
+... * Carga manual * - Usted necesita navegar manualmente a la ubicación donde se encuentra el certificado y cargar el certificado.
+
+
+
 
 . Haga clic en *Aceptar* después de haber añadido toda la información necesaria.
++
+Aparece la ventana emergente Autorizar Certificado de Cluster.
+
+. Haga clic en *Mostrar certificado* para ver los detalles del certificado. Haga clic en *Sí* para agregar el sistema de almacenamiento
 

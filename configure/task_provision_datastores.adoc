@@ -35,6 +35,7 @@ La opción *aprovisionar Datastore* permite especificar un perfil de capacidad d
 
 * NFSv3 y NFSv4.1
 * VMFS5 y VMFS6
+* En la versión vSphere 8,0, se admite el protocolo NVMe/FC.
 
 
 VSC puede crear un almacén de datos en un volumen NFS o una LUN:
@@ -140,9 +141,21 @@ Generales
  a| 
 En la sección General del cuadro de diálogo New Datastore Provisioning se proporcionan opciones para introducir el destino, el nombre, el tamaño, el tipo y el protocolo para el nuevo almacén de datos.
 
-Puede seleccionar el tipo de protocolo *NFS* o *VMFS* para configurar un almacén de datos tradicional. Para NFS, puede seleccionar NFS3 o NFS 4.1.
+Puede seleccionar el tipo *nfs*, *VMFS* o *vvols* para configurar un almacén de datos. Cuando selecciona el tipo vVols, el protocolo NVMe/FC se vuelve disponible.
 
-Esta versión le permite configurar un almacén de datos VMFS de un tamaño máximo de 64 TB. Puede seleccionar la opción "almacenar datos de almacén de datos en el clúster de ONTAP" para suministrar un volumen FlexGroup en el sistema de almacenamiento. Al seleccionar esta opción, se anula automáticamente la casilla de verificación «"Use Storage Capability Profile for Provisioning"». Para el aprovisionamiento de almacenes de datos FlexGroup, los clústeres de ONTAP que se encuentran en la versión 9.8 y posteriores solo se enumeran a la selección. El tipo de almacén de datos vVols se utiliza para configurar un almacén de datos vVols. Si VASA Provider está habilitado, entonces también puede decidir si se usarán los perfiles de funcionalidad de almacenamiento. La opción *Datastore cluster* está disponible sólo para almacenes de datos tradicionales. Debe utilizar la opción *Advanced* para especificar el sistema de archivos *VMFS5* o *VMFS6*.
+
+NOTE: El protocolo NVMe/FC es compatible con ONTAP 9.91P3 y versiones posteriores.
+
+** NFS: Puede aprovisionar un almacén de datos NFS con los protocolos NFS3 o NFS4,1.
++
+Puede seleccionar la opción *Distribuir datos de almacenes de datos a través del clúster de ONTAP* para aprovisionar un volumen de FlexGroup en el sistema de almacenamiento. Al seleccionar esta opción se anula automáticamente la selección de la casilla de verificación *Usar perfil de capacidad de almacenamiento para el aprovisionamiento*.
+
+** VMFS: Puede aprovisionar un almacén de datos VMFS del tipo de sistema de archivos VMFS5 o VMFS6 con los protocolos iSCSI o FC/FCoE.
++
+
+NOTE: Si VASA Provider está habilitado, puede elegir usar los perfiles de funcionalidad de almacenamiento.
+
+
 
 
 
@@ -191,10 +204,12 @@ Es posible revisar el resumen de los parámetros especificados para el almacén 
 El campo «'estilo de volumen» le permite diferenciar el tipo de almacén de datos creado. El «estilo de volumen» puede ser «FlexVol» o «FlexGroup».
 
 |===
++
 
+NOTE: Una FlexGroup que forma parte de un almacén de datos tradicional no se puede reducir por debajo del tamaño existente, pero puede crecer un 120 % como máximo. Las Snapshot predeterminadas están habilitadas en estos volúmenes de FlexGroup.
 
+. En la sección Resumen, haga clic en *Finalizar*.
 
-NOTE: Una FlexGroup que forma parte de un almacén de datos tradicional no se puede reducir por debajo del tamaño existente, pero puede crecer un 120 % como máximo. Las Snapshot predeterminadas están habilitadas en estos volúmenes de FlexGroup. . En la sección Resumen, haga clic en *Finalizar*.
 
 *Información relacionada*
 

@@ -1,0 +1,25 @@
+---
+permalink: manage/task_delete_virtual_machines.html 
+sidebar: sidebar 
+keywords:  
+summary: Use los pasos de esta sección para realizar la limpieza de VASA. 
+---
+= Limpieza de VASA
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use los pasos de esta sección para realizar la limpieza de VASA.
+
+
+NOTE: Se recomienda quitar todos los almacenes de datos de vVols antes de ejecutar el borrado de VASA.
+
+* Pasos*
+
+. Cancele el registro del plugin entrando en https://OTV_IP:8143/Register.html[]
+. Compruebe que el plugin ya no esté disponible en vCenter.
+. Cierre las herramientas de ONTAP para VMware vSphere VM
+. Elimine las herramientas de ONTAP para VMware vSphere VM
+

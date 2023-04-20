@@ -1,0 +1,41 @@
+---
+permalink: manage/task_syslog_files.html 
+sidebar: sidebar 
+keywords:  
+summary: Syslog se utiliza para enviar registros del sistema al servidor de registro centralizado. 
+---
+= Gestionar syslog
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilice syslog para enviar registros del sistema al servidor de registro centralizado.
+
+*Acerca de esta tarea*
+
+Las herramientas de ONTAP para la versión 9,12 de VMware vSphere quitan las API de syslog anteriores de 2,0 y contienen nuevas API relacionadas con el syslog de 3,0 que admiten la autenticación mutua. Siga los pasos que se indican a continuación para configurar syslog.
+
+* Pasos*
+
+. Ejecute _POST /2,0/security/user/login para obtener_ un ID de sesión.
+. Ejecute _POST /3,0/appliance-management/logging-client-certificate_ transfiriendo el sessionid recibido en la respuesta anterior.
++
+Esto genera certificados para el servidor VP y para el servidor VSC.
+
+. Copie ambos certificados en el servidor de syslog y hágalos de confianza en el servidor de syslog.
++
+He aquí un ejemplo de cómo hacerlo para syslog-ng docker:
+
++
+** JSON anule la fuga de los certificados y copie los certificados con formato pem en el directorio ca.d.
+** `openssl x509 -noout -hash -in vsccert.pem` el resultado es un hash (por ejemplo, 6d2962a8).
+** `ln -s vsccert.pem 6d2962a8.0` esto crea un enlace simbólico al certificado como hash con el sufijo .0
+** inicie el servidor de syslog
+
+
+. Ejecute la API _PATCH /3,0/appliance-management/syslog-config_ pasando la IP del servidor, el puerto, el patrón (OPCIONAL), el nivel_log y el certificado público del servidor syslog.
+
+
+Los registros se enrutan al servidor de syslog especificado.

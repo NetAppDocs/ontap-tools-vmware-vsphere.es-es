@@ -19,8 +19,8 @@ El cliente web de vSphere proporciona políticas de almacenamiento predeterminad
 
 * Pasos*
 
-. En la página vSphere Client, haga clic en *Menú* > *políticas y perfiles*.
-. Haga clic en *políticas de almacenamiento de VM* > *Crear política de almacenamiento de VM*.
+. En la página vSphere Client, haga clic en *Políticas y perfiles*.
+. En la página VM Storage Policies, haga clic en *CREATE*.
 . En la página Create VM Storage Policy, proporcione los siguientes detalles:
 +
 .. Escriba un nombre y una descripción para la normativa de almacenamiento de VM.
