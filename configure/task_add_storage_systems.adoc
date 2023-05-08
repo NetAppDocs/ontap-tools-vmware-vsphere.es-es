@@ -20,6 +20,9 @@ NOTE: Si el clúster de ONTAP tiene SAML habilitado, la comunicación con ONTAP 
 
 Cada vez que inicia Virtual Storage Console (VSC) o selecciona la opción *REDISCOVER All*, VSC detecta automáticamente los sistemas de almacenamiento disponibles.
 
+
+NOTE: Los almacenes de datos de VVOL no se admiten en la SVM directa.
+
 * Pasos*
 
 . Añada un sistema de almacenamiento a VSC usando una de las opciones de la página de inicio de herramientas de ONTAP:

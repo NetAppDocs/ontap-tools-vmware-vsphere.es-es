@@ -31,7 +31,7 @@ Pone en marcha el complemento como dispositivo virtual, lo que reduce el esfuerz
 
 === Requisitos de puesta en marcha
 
-Las herramientas de ONTAP se pueden usar en Windows vCenter Server o en VMware vCenter Server Virtual Appliance (vcsa). Debe implementar las herramientas de ONTAP en una vSphere compatible que incluya el sistema ESXi.
+Las herramientas de ONTAP se pueden usar con un dispositivo virtual de VMware vCenter Server (vcsa). Debe implementar las herramientas de ONTAP en una vSphere compatible que incluya el sistema ESXi.
 
 Los requisitos de tamaño mínimo para espacio y host son los siguientes:
 
@@ -63,16 +63,10 @@ Las herramientas de ONTAP utilizan los siguientes puertos TCP bidireccionales pr
 | *Requisitos adicionales* | * Columna Descripción* 
 
 
-| 9083 | Cuando se habilita esta opción, tanto el proveedor VASA como el SRA utilizan este puerto para comunicarse con vCenter Server. Este puerto también es necesario para obtener los ajustes de TCP/IP. 
-
-
-| 443 | Según la forma en que haya configurado sus credenciales, VMware vCenter Server y los sistemas de almacenamiento escuchan las comunicaciones seguras en este puerto. 
+| 9083 | Cuando se encuentra habilitada, tanto el proveedor VASA como el adaptador de replicación de almacenamiento (SRA) utilizan este puerto para comunicarse con vCenter Server. Este puerto también es necesario para obtener los ajustes de TCP/IP. Este puerto admite la descarga de paquetes, la interfaz de usuario Web-CLI y la comunicación de la ruta de control de VMware a VP. SRA se comunica en este número de PUERTO con el servicio SRA back-end. 
 
 
 | 8143 | VSC escucha comunicaciones seguras en este puerto. 
-
-
-| 7 | VSC envía una solicitud de eco a ONTAP para verificar la accesibilidad, y solo es necesario cuando se añade un sistema de almacenamiento y se puede deshabilitar más adelante. 
 |===
 Requisitos mínimos de almacenamiento y aplicaciones:
 

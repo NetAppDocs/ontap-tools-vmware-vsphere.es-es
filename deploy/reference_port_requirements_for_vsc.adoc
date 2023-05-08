@@ -28,28 +28,21 @@ VSC utiliza los siguientes puertos TCP bidireccionales predeterminados:
  a| 
 9083
  a| 
-Cuando se encuentra habilitada, tanto el proveedor VASA como el adaptador de replicación de almacenamiento (SRA) utilizan este puerto para comunicarse con vCenter Server. Este puerto también es necesario para obtener los ajustes de TCP/IP.
+Cuando se encuentra habilitada, tanto el proveedor VASA como el adaptador de replicación de almacenamiento (SRA) utilizan este puerto para comunicarse con vCenter Server. Este puerto también es necesario para obtener los ajustes de TCP/IP. Este puerto se utiliza para descargar el paquete de soporte VP, acceder a la interfaz de usuario Web-CLI y la comunicación de la ruta de control de VMware a VP.
 
 
 
  a| 
 443
  a| 
-Según la forma en que haya configurado sus credenciales, VMware vCenter Server y los sistemas de almacenamiento escuchan las comunicaciones seguras en este puerto.
+Según la forma en que haya configurado sus credenciales, VMware vCenter Server y los sistemas de almacenamiento escuchan las comunicaciones seguras en este puerto. El puerto se utiliza en la arquitectura de comunicación cliente-servidor. El puerto 443 está habilitado de manera predeterminada para conexiones seguras. El cliente, que puede ser cualquier cliente de automatización que utilice la API de REST, inicia la conexión con el servidor y los puntos finales intercambian datos.
 
 
 
  a| 
 8143
  a| 
-VSC escucha comunicaciones seguras en este puerto.
-
-
-
- a| 
-7
- a| 
-VSC envía una solicitud de eco a ONTAP para verificar la accesibilidad, y solo es necesario cuando se añade un sistema de almacenamiento y se puede deshabilitar más adelante.
+VSC escucha comunicaciones seguras en este puerto. El puerto se utiliza en la arquitectura de comunicación cliente-servidor. El cliente, que puede ser cualquier cliente de automatización que utilice la API de REST, inicia la conexión con el servidor y los puntos finales intercambian datos. Este puerto está habilitado para los servicios VSC y para exportar registros del servidor VSC. La página register.html está alojada en este puerto. El Swagger DE REST queda expuesto en este puerto.
 
 |===
 

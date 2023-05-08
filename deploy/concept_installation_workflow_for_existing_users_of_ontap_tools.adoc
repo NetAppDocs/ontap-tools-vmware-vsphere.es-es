@@ -46,7 +46,7 @@ Si tiene la versión 7.2 o 7.2.1 del dispositivo virtual para VSC, proveedor VAS
 
 Para actualizar a las herramientas de ONTAP 9,10 y una versión posterior, debe ejecutar el dispositivo virtual 9.7P1 o una versión posterior. No se admite la actualización desde una versión anterior a 9.7P1 del dispositivo virtual.
 
-Si va a implementar la versión más reciente de las herramientas de ONTAP, tendrá que ver el tema link:..deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html["Requisitos para poner en marcha las herramientas de ONTAP"]. El tema link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["Actualice a la versión más reciente de herramientas de ONTAP"] tiene información sobre cómo realizar una actualización in situ.
+Si va a implementar la versión más reciente de las herramientas de ONTAP, tendrá que ver el tema link:../deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html["Requisitos de espacio y ajuste de tamaño para las herramientas de ONTAP"]. El tema link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["Actualice a la versión más reciente de herramientas de ONTAP"] tiene información sobre cómo realizar una actualización in situ.
 
 *Información relacionada*
 
