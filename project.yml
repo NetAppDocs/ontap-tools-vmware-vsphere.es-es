@@ -19,7 +19,7 @@ settings:
   - name: Herramientas de ONTAP para VMware vSphere
     url: "/ontap-tools-vmware-vsphere-98"
     version-number: '9.8'
-  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr
+  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr,it-it
 sidebar:
   entries:
   - title: Herramientas de ONTAP para documentos de VMware vSphere 9,12
