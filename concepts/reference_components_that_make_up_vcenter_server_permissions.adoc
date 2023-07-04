@@ -34,7 +34,7 @@ Como se muestra en el siguiente diagrama, debe tener los tres elementos para ten
 
 NOTE: En este diagrama, los cuadros grises indican los componentes que existen en vCenter Server y los recuadros blancos indican componentes que existen en el sistema operativo donde se ejecuta vCenter Server.
 
-image::../media/permission_updated_graphic.gif[gráfico actualizado con permiso]
+image::../media/permission_updated_graphic.gif[ilustración de componentes de permiso]
 
 
 
@@ -46,16 +46,16 @@ Existen dos tipos de privilegios asociados con las herramientas de ONTAP para VM
 +
 Estos privilegios vienen con vCenter Server.
 
-* Privilegios específicos de VSC
+* Privilegios específicos de herramientas de ONTAP
 +
-Estos privilegios se definen para tareas de VSC específicas. Son exclusivos de VSC.
+Estos privilegios se definen para tareas específicas de herramientas de ONTAP. Son exclusivas de las herramientas de ONTAP.
 
 
 
-Las tareas de VSC requieren privilegios específicos de VSC y privilegios nativos de vCenter Server. Estos privilegios constituyen el "'rol'" del usuario. Un permiso puede tener varios privilegios. Estos privilegios corresponden a un usuario que ha iniciado sesión en vCenter Server.
+Las tareas de las herramientas de ONTAP requieren privilegios específicos de las herramientas de ONTAP y privilegios nativos de vCenter Server. Estos privilegios constituyen el "'rol'" del usuario. Un permiso puede tener varios privilegios. Estos privilegios corresponden a un usuario que ha iniciado sesión en vCenter Server.
 
 
-NOTE: Para simplificar el uso del control de acceso basado en roles de vCenter Server, VSC ofrece varias funciones estándar que contienen todos los privilegios nativos y específicos de VSC necesarios para ejecutar tareas de VSC.
+NOTE: Para simplificar el uso del control de acceso basado en roles de vCenter Server, las herramientas de ONTAP proporcionan varios roles estándar que contienen todos los privilegios nativos y específicos de las herramientas de ONTAP necesarios para ejecutar tareas de herramientas de ONTAP.
 
 Si cambia los privilegios dentro de un permiso, el usuario asociado a ese permiso debe cerrar sesión y, a continuación, iniciar sesión para activar el permiso actualizado.
 
@@ -73,7 +73,7 @@ Herramientas de NetApp ONTAP Consola > Ver
 * Solo lectura de VSC
 
  a| 
-Todas las tareas específicas de VSC y VASA Provider requieren el privilegio View.
+Todas las herramientas de ONTAP y las tareas específicas del proveedor VASA requieren el privilegio de visualización.
 
 
 
@@ -89,15 +89,15 @@ Tareas de VSC y VASA Provider relacionadas con los perfiles de funcionalidad de 
 
 == Objetos de vSphere
 
-Los permisos se asocian con objetos de vSphere, como vCenter Server, hosts ESXi, máquinas virtuales, almacenes de datos, centros de datos, y carpetas. Puede asignar permisos a cualquier objeto de vSphere. Según el permiso que se asigna a un objeto de vSphere, vCenter Server determina quién puede ejecutar qué tareas en ese objeto. Para tareas específicas de VSC, los permisos se asignan y validan solo en el nivel de carpeta raíz (vCenter Server), no en ninguna otra entidad. Excepto para la operación del complemento VAAI, donde se validan los permisos en ESXi en cuestión.
+Los permisos se asocian con objetos de vSphere, como vCenter Server, hosts ESXi, máquinas virtuales, almacenes de datos, centros de datos, y carpetas. Puede asignar permisos a cualquier objeto de vSphere. Según el permiso que se asigna a un objeto de vSphere, vCenter Server determina quién puede ejecutar qué tareas en ese objeto. Para las tareas específicas de herramientas de ONTAP, los permisos se asignan y validan solo en el nivel de carpeta raíz (vCenter Server) y no en ninguna otra entidad. Excepto para la operación del complemento VAAI, donde se validan los permisos en ESXi en cuestión.
 
 
 
 == Usuarios y grupos
 
-Es posible usar Active Directory (o la máquina local de vCenter Server) para configurar usuarios y grupos de usuarios. A continuación, es posible usar permisos de vCenter Server para otorgar acceso a estos usuarios o grupos con el fin de permitirles ejecutar tareas VSC específicas.
+Es posible usar Active Directory (o la máquina local de vCenter Server) para configurar usuarios y grupos de usuarios. Luego, puede utilizar los permisos de vCenter Server para otorgar acceso a estos usuarios o grupos para permitirles ejecutar tareas específicas de herramientas de ONTAP.
 
 
-NOTE: Estos permisos de vCenter Server se aplican a los usuarios de VSC vCenter, no a los administradores de VSC. De forma predeterminada, los administradores de VSC tienen acceso completo al producto y no requieren permisos asignados.
+NOTE: Estos permisos de vCenter Server se aplican a los usuarios de vCenter de las herramientas de ONTAP, no a los administradores de VSC. De forma predeterminada, los administradores de VSC tienen acceso completo al producto y no requieren permisos asignados.
 
 Los usuarios y grupos no tienen roles asignados. Estos obtienen acceso a un rol mediante el permiso de vCenter Server.

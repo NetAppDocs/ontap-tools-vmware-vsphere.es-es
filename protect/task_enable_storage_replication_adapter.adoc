@@ -30,7 +30,7 @@ La flexibilidad para habilitar las funcionalidades VASA Provider y SRA le permit
 * Pasos*
 
 . Inicie sesión en la interfaz de usuario web de VMware vSphere.
-. En vSphere Client, haga clic en *Menú* > *NetApp ONTAP tools* Consola.
+. Desde vSphere Client, selecciona *Menú* > *Herramientas de NetApp ONTAP*.
 . Haga clic en *Configuración*.
 . Haga clic en *Administrar capacidades* en la ficha *Configuración administrativa*.
 . En el cuadro de diálogo *Administrar capacidades*, seleccione la extensión SRA que desee activar.
@@ -40,7 +40,7 @@ La flexibilidad para habilitar las funcionalidades VASA Provider y SRA le permit
 *Para el dispositivo SRM*
 
 +
-.. Acceda a la página del dispositivo SRM y, a continuación, vaya a la página Storage Replication Adapters del dispositivo SRM.
+.. Acceda a la interfaz de gestión de dispositivos VMware SRM y, a continuación, vaya a la página Storage Replication Adapters del dispositivo SRM.
 .. Haga clic en *Nuevo adaptador*.
 .. Cargue el instalador _.tar.gz_ del plugin de SRA en SRM.
 .. Vuelva a analizar los adaptadores para verificar que los detalles se actualizan en la página adaptadores de replicación de almacenamiento SRM.

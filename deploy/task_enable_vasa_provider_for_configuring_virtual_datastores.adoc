@@ -26,7 +26,7 @@ Si la funcionalidad del proveedor VASA está deshabilitada antes de actualizar a
 * Pasos*
 
 . Inicie sesión en la interfaz de usuario web de VMware vSphere.
-. En vSphere Client, haga clic en *Menú* > *NetApp ONTAP tools* Consola.
+. Desde vSphere Client, selecciona *Menú* > *Herramientas de NetApp ONTAP*.
 . Haga clic en *Configuración*.
 . Haga clic en *Administrar capacidades* en la ficha Configuración administrativa.
 . En el cuadro de diálogo gestionar funcionalidades, seleccione la extensión VASA Provider para habilitar.

@@ -19,11 +19,11 @@ Si necesita archivos de registro del proveedor VASA, puede generar un paquete de
 
 `\https://vm_ip:9083`
 
-Puede recopilar los archivos de registro de VSC usando la función «'Export VSC Logs'» de la interfaz gráfica de usuario de VSC. Cuando recoja un bundle de registro de VSC con VASA Provider habilitado, el paquete de registro de VSC también tendrá los registros VP. Los siguientes pasos le indican cómo recoger los archivos de registro de VSC:
+Puede recopilar las herramientas de ONTAP para archivos de registro de VMware vSphere con la función «`Exportar herramientas de ONTAP para registros de VMware vSphere » de la interfaz gráfica de usuario de VSC. Cuando se recoge un paquete de registro de ONTAP para VMware vSphere con VASA Provider habilitado, las herramientas de ONTAP para el paquete de registro de VMware vSphere también tendrán los registros del vicepresidente. Los siguientes pasos le indican cómo recoger las herramientas de ONTAP para archivos de registro de VMware vSphere:
 
 * Pasos*
 
-. En la página de inicio de ONTAP Tools, haga clic en *Configuración* > *Exportar registros de VSC*.
+. En la página de inicio de ONTAP tools, haz clic en *Configuración* > *Exportar herramientas de ONTAP para VMware vSphere Logs*.
 +
 Esta operación puede llevar varios minutos.
 

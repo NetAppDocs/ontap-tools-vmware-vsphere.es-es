@@ -15,7 +15,7 @@ Si utiliza iSCSI o NFS y la subred es diferente entre los hosts ESXi y el sistem
 
 *Acerca de esta tarea*
 
-Cuando el aprovisionamiento del almacén de datos falla, VSC registra los siguientes mensajes de error:
+Cuando se produce un error en el aprovisionamiento del almacén de datos, las herramientas de ONTAP para VMware vSphere registran los siguientes mensajes de error:
 
 'No se puede continuar. No se encontraron direcciones ip al hacer referencia cruzada a las direcciones ip del kernel y a las direcciones en la controladora. No se pudo encontrar una red coincidente con el volumen de montaje NFS en estos hosts.'
 

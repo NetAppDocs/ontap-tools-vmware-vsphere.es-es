@@ -30,7 +30,7 @@ Debe haber conectado los sitios protegidos y de recuperación.
 . Inicie sesión en vCenter Server y haga clic en *Site Recovery* > *Sites*.
 . Seleccione su sitio protegido y, a continuación, haga clic en *Administrar*.
 . En la ficha Administrar, seleccione *asignaciones de red*.
-. Haga clic en la image:../media/new_network_mappings.gif[""] para crear una nueva asignación de red.
+. Haga clic en la image:../media/new_network_mappings.gif["icono de globo"] para crear una nueva asignación de red.
 +
 Aparece el asistente Create Network Mapping (Crear asignación de red).
 

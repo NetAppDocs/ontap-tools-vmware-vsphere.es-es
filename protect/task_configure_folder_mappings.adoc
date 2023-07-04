@@ -22,7 +22,7 @@ Debe haber conectado los sitios protegidos y de recuperación.
 . Inicie sesión en vCenter Server y haga clic en *Site Recovery* > *Sites*.
 . Seleccione su sitio protegido y, a continuación, haga clic en *Administrar*.
 . En la ficha Administrar, seleccione *asignaciones de carpetas*.
-. Haga clic en la image:../media/new_folder_mappings.gif[""] para crear una nueva asignación de carpetas.
+. Seleccione el icono *Carpeta* para crear una nueva asignación de carpetas.
 +
 Aparece el asistente Crear asignación de carpetas.
 

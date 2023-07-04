@@ -23,6 +23,6 @@ Los grupos de replicación se crean durante el flujo de trabajo de creación de 
 
 NOTE: Si utiliza la recuperación ante desastres para el almacén de datos vVols, no es necesario configurar el adaptador de replicación del almacenamiento (SRA) por separado, ya que la funcionalidad del proveedor VASA se mejora para tener la replicación vVols.
 
-image::../media/vvols_replication.png[replicación vvols]
+image::../media/vvols_replication.png[Configurar el flujo de trabajo de los sistemas ONTAP]
 
 link:../protect/configure_vvols_replication_existing_datastore.html["Configurar la replicación de vVols para almacenes de datos existentes"]

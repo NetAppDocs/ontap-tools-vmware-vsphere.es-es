@@ -19,7 +19,7 @@ Hay varios puntos clave que se deben tener en cuenta cuando se trabaja con permi
 
 Solo debe configurar permisos de vCenter Server si desea limitar el acceso a los objetos y tareas de vSphere. De lo contrario, puede iniciar sesión como administrador. Este inicio de sesión permite acceder automáticamente a todos los objetos de vSphere.
 
-Donde se asigna un permiso determina las tareas de VSC que puede ejecutar un usuario.
+Donde se asigna un permiso determina las tareas de las herramientas de ONTAP que un usuario puede realizar.
 
 A veces, para garantizar la finalización de una tarea, debe asignar el permiso a un nivel superior, como el objeto raíz. Es así cuando una tarea requiere un privilegio que no se aplica a un objeto de vSphere específico (por ejemplo, un seguimiento de la tarea) o cuando un privilegio requerido se aplica a un objeto que no es vSphere (por ejemplo, un sistema de almacenamiento).
 
@@ -32,9 +32,9 @@ TIP: A menos que las políticas de seguridad de la empresa requieran permisos m�
 
 == Permisos y objetos que no son de vSphere
 
-El permiso que crea se aplica a un objeto que no sea de vSphere. Por ejemplo, un sistema de almacenamiento no es un objeto de vSphere. Si se aplica un privilegio a un sistema de almacenamiento, debe asignar el permiso que contiene ese privilegio al objeto raíz de VSC porque no hay ningún objeto de vSphere al cual pueda asignarlo.
+El permiso que crea se aplica a un objeto que no sea de vSphere. Por ejemplo, un sistema de almacenamiento no es un objeto de vSphere. Si un privilegio se aplica a un sistema de almacenamiento, debe asignar el permiso que incluye ese privilegio al objeto raíz de herramientas de ONTAP porque no existe ningún objeto de vSphere al que pueda asignarlo.
 
-Por ejemplo, todos los permisos que incluyan un privilegio, como el privilegio VSC "Add/Modify/Skip Storage systems", se deben asignar en el nivel de objetos raíz.
+Por ejemplo, cualquier permiso que incluya un privilegio como el privilegio ONTAP tools «Agregar/modificar/omitir sistemas de almacenamiento» se debe asignar en el nivel de objeto raíz.
 
 
 

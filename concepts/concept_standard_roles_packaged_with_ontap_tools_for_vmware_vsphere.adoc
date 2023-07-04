@@ -2,7 +2,7 @@
 permalink: concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: 'Para simplificar el uso de los privilegios de vCenter Server y el control de acceso basado en funciones \(RBAC\), Virtual Storage Console \(VSC\) proporciona roles VSC estándar que permiten realizar tareas clave de VSC. También hay un rol de solo lectura que le permite ver la información de VSC, pero no ejecutar tareas.' 
+summary: 'Para simplificar el trabajo con privilegios de vCenter Server y el control de acceso basado en roles \(RBAC\), las herramientas de ONTAP proporcionan funciones de herramientas estándar de ONTAP que permiten realizar tareas clave de herramientas de ONTAP. También hay un rol de solo lectura que permite ver la información, pero no ejecutar tareas.' 
 ---
 = Funciones estándar incluidas en las herramientas de ONTAP
 :allow-uri-read: 
@@ -11,18 +11,18 @@ summary: 'Para simplificar el uso de los privilegios de vCenter Server y el cont
 
 
 [role="lead"]
-Para simplificar el uso de los privilegios de vCenter Server y el control de acceso basado en roles (RBAC), Virtual Storage Console (VSC) ofrece roles VSC estándar que le permiten realizar tareas clave de VSC. También hay un rol de solo lectura que le permite ver la información de VSC, pero no ejecutar tareas.
+Para simplificar el uso de los privilegios de vCenter Server y el control de acceso basado en roles (RBAC), las herramientas de ONTAP ofrecen funciones de herramientas estándar de ONTAP que permiten realizar tareas clave de herramientas de ONTAP. También hay un rol de solo lectura que permite ver la información, pero no ejecutar tareas.
 
-Los roles estándar de VSC tienen privilegios específicos requeridos de VSC y los privilegios nativos de vCenter Server necesarios para que los usuarios ejecuten tareas de VSC. Además, los roles están configurados para contar con todos los privilegios necesarios en todas las versiones compatibles de vCenter Server.
+Los roles de herramientas estándar de ONTAP tienen privilegios específicos para las herramientas de ONTAP y los privilegios nativos de vCenter Server requeridos para que los usuarios ejecuten tareas de herramientas de ONTAP. Además, los roles están configurados para contar con todos los privilegios necesarios en todas las versiones compatibles de vCenter Server.
 
 El administrador puede asignar estos roles a los usuarios según sea necesario.
 
 
-NOTE: Cuando actualiza VSC a la versión más reciente, los roles estándar se actualizan automáticamente para que funcionen con la nueva versión de VSC.
+NOTE: Al actualizar las herramientas de ONTAP a la versión más reciente, las funciones estándar se actualizan automáticamente para que funcionen con la nueva versión de la herramienta.
 
-Para ver los roles estándar VSC, haga clic en *roles* en la página principal de vSphere Client.
+Puede ver las funciones estándar de las herramientas de ONTAP haciendo clic en *Roles* en la página inicial del cliente de vSphere.
 
-Los roles que ofrece VSC permiten realizar las siguientes tareas:
+Los roles que las herramientas de ONTAP proporcionan le permiten realizar las siguientes tareas:
 
 |===
 
@@ -33,21 +33,21 @@ Los roles que ofrece VSC permiten realizar las siguientes tareas:
  a| 
 Administrador de VSC
  a| 
-Ofrece todos los privilegios nativos de vCenter Server y los privilegios específicos de VSC requeridos para ejecutar todas las tareas de VSC.
+Ofrece todos los privilegios nativos de vCenter Server y los privilegios específicos de las herramientas de ONTAP que se requieren para ejecutar todas las tareas de las herramientas de ONTAP.
 
 
 
  a| 
 Solo lectura de VSC
  a| 
-Proporciona acceso de solo lectura a VSC. Estos usuarios no pueden realizar ninguna acción VSC que esté controlada por el acceso.
+Ofrece acceso de solo lectura a herramientas de ONTAP. Estos usuarios no pueden realizar ninguna acción de las herramientas de ONTAP que esté controlada por acceso.
 
 
 
  a| 
 Aprovisionamiento de VSC
  a| 
-Ofrece todos los privilegios nativos de vCenter Server y los privilegios específicos de VSC necesarios para aprovisionar almacenamiento. Es posible realizar las siguientes tareas:
+Ofrece todos los privilegios nativos de vCenter Server y los privilegios específicos de la herramienta ONTAP que se requieren para aprovisionar el almacenamiento. Es posible realizar las siguientes tareas:
 
 * Crear nuevos almacenes de datos
 * Destrucción de almacenes de datos
@@ -57,32 +57,32 @@ Ofrece todos los privilegios nativos de vCenter Server y los privilegios especí
 |===
 
 
-== Directrices para usar roles estándar de VSC
+== Directrices para usar los roles estándar de las herramientas de ONTAP
 
 Cuando trabaja con herramientas estándar de ONTAP para roles de VMware vSphere, hay ciertas directrices que deben seguir.
 
-No debe modificar directamente los roles estándar. Si lo hace, VSC sobrescribirá los cambios cada vez que actualice VSC. El instalador actualiza las definiciones de rol estándar cada vez que actualiza VSC. Si hace esto, se garantiza que los roles sean actuales para la versión de VSC, así como para todas las versiones compatibles de vCenter Server.
+No debe modificar directamente los roles estándar. Si lo hace, las herramientas de ONTAP sobrescribirán los cambios cada vez que actualice. Installer actualiza las definiciones de rol estándar cada vez que actualiza las herramientas de ONTAP. Al hacer esto, se garantiza que los roles sean actualizados para la versión de las herramientas de ONTAP, así como para todas las versiones compatibles de vCenter Server.
 
-Sin embargo, puede usar los roles estándar para crear roles que se ajusten a su entorno. Para ello, debe copiar el rol estándar de VSC y editar el rol copiado. Al crear un rol nuevo, puede mantener esta función incluso al reiniciar o actualizar el servicio VSC Windows.
+Sin embargo, puede usar los roles estándar para crear roles que se ajusten a su entorno. Para ello, debe copiar el rol estándar de herramientas de ONTAP y, a continuación, editar el rol copiado. Al crear una nueva función, puede mantener esta función incluso cuando reinicie o actualice el servicio Windows de las herramientas de ONTAP.
 
-Algunas de las formas de utilizar las funciones estándar de VSC incluyen las siguientes:
+Algunas de las formas en que puede utilizar las funciones estándar de ONTAP Tools incluyen las siguientes:
 
-* Utilice los roles estándar de VSC para todas las tareas de VSC.
+* Utilice los roles de herramientas estándar de ONTAP para todas las tareas de herramientas de ONTAP.
 +
-En esta situación, los roles estándar ofrecen todos los privilegios que un usuario necesita para realizar las tareas de VSC.
+En este escenario, los roles estándar proporcionan todos los privilegios que un usuario necesita para realizar las tareas de las herramientas de ONTAP.
 
 * Combinar roles para expandir las tareas que un usuario puede realizar.
 +
-Si los roles estándar de VSC proporcionan demasiada granularidad en el entorno, puede ampliar los roles creando grupos de nivel superior que contengan varias funciones.
+Si los roles de ONTAP Tools estándar proporcionan demasiada granularidad para su entorno, puede expandir los roles creando grupos de nivel superior que contengan varios roles.
 
 +
-Si un usuario tiene que ejecutar otras tareas que no son de VSC y requieren privilegios nativos de vCenter Server adicionales, puede crear una función que incluya esos privilegios y también añadirla al grupo.
+Si un usuario debe ejecutar otras tareas de herramientas que no son de ONTAP y que requieren privilegios nativos adicionales de vCenter Server, puede crear un rol que proporcione dichos privilegios y añadirlo al grupo también.
 
 * Cree funciones más detalladas.
 +
-Si su empresa necesita implementar funciones más restrictivas que las funciones estándar de VSC, puede usar los roles de VSC para crear nuevas funciones.
+Si su empresa requiere que implemente funciones que son más restrictivas que las funciones de herramientas estándar de ONTAP, puede utilizar las funciones de herramientas de ONTAP para crear nuevas funciones.
 
 +
-En este caso, debe clonar los roles de VSC necesarios y editar el rol clonado para que solo tenga los privilegios que requiere el usuario.
+En este caso, debe clonar los roles de herramientas ONTAP necesarios y, a continuación, editar el rol clonado para que solo tenga los privilegios que necesite el usuario.
 
 

@@ -45,7 +45,7 @@ NOTE: Si utiliza System Manager para proteger los volúmenes de FlexVol y el per
 . Agregue el grupo de replicación a la máquina virtual no protegida.
 
 
-image::../media/vvols_replication_existing_datastore.png[almacén de datos existente de replicación vvols]
+image::../media/vvols_replication_existing_datastore.png[Nuevo usuario y flujo de trabajo de usuario existente]
 
 *NOTA:*
 

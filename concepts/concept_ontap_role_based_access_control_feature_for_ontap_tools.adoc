@@ -1,8 +1,8 @@
 ---
-permalink: concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html 
+permalink: concepts/concept_ontap_role_bastoolsed_access_control_feature_for_ontap_tools.html 
 sidebar: sidebar 
 keywords:  
-summary: 'El control de acceso basado en roles de ONTAP \(RBAC\) permite controlar el acceso a sistemas de almacenamiento específicos y controlar las acciones que un usuario puede ejecutar en esos sistemas de almacenamiento. En las herramientas de ONTAP® para VMware vSphere, el control de acceso basado en roles de ONTAP funciona con el control de acceso basado en roles de vCenter Server para determinar qué tareas de Virtual Storage Console \(VSC\) puede realizar un usuario específico en los objetos de un sistema de almacenamiento específico.' 
+summary: 'El control de acceso basado en roles de ONTAP \(RBAC\) permite controlar el acceso a sistemas de almacenamiento específicos y controlar las acciones que un usuario puede ejecutar en esos sistemas de almacenamiento. En las herramientas de ONTAP® para VMware vSphere, el control de acceso basado en roles de ONTAP funciona con el control de acceso basado en roles de vCenter Server para determinar qué tareas de herramientas de ONTAP puede realizar un usuario específico en los objetos de un sistema de almacenamiento específico.' 
 ---
 = Permisos para los sistemas de almacenamiento ONTAP y objetos de vSphere
 :allow-uri-read: 
@@ -11,21 +11,21 @@ summary: 'El control de acceso basado en roles de ONTAP \(RBAC\) permite control
 
 
 [role="lead"]
-El control de acceso basado en roles de ONTAP permite controlar el acceso a sistemas de almacenamiento específicos y controlar las acciones que un usuario puede ejecutar en esos sistemas de almacenamiento. En las herramientas de ONTAP® para VMware vSphere, el control de acceso basado en roles de ONTAP funciona con el control de acceso basado en roles de vCenter Server para determinar qué tareas de la consola de almacenamiento virtual (VSC) puede realizar un usuario específico en los objetos de un sistema de almacenamiento específico.
+El control de acceso basado en roles de ONTAP permite controlar el acceso a sistemas de almacenamiento específicos y controlar las acciones que un usuario puede ejecutar en esos sistemas de almacenamiento. En las herramientas de ONTAP® para VMware vSphere, el control de acceso basado en roles de ONTAP funciona con el control de acceso basado en roles de vCenter Server para determinar qué tareas de herramientas de ONTAP puede realizar un usuario específico en los objetos de un sistema de almacenamiento específico.
 
-VSC usa las credenciales (nombre de usuario y contraseña) configuradas en VSC para autenticar cada sistema de almacenamiento y determinar qué operaciones de almacenamiento se pueden ejecutar en ese sistema de almacenamiento. VSC usa un conjunto de credenciales para cada sistema de almacenamiento. Estas credenciales determinan qué tareas de VSC se pueden ejecutar en ese sistema de almacenamiento, es decir, las credenciales se aplican a VSC, no a un usuario individual de VSC.
+Las herramientas de ONTAP utilizan las credenciales (nombre de usuario y contraseña) que se configuran en herramientas de ONTAP para autenticar cada sistema de almacenamiento y determinar qué operaciones de almacenamiento se pueden ejecutar en ese sistema de almacenamiento. Las herramientas de ONTAP usan un conjunto de credenciales por cada sistema de almacenamiento. Estas credenciales determinan qué tareas de las herramientas de ONTAP se pueden ejecutar en ese sistema de almacenamiento, es decir, las credenciales se aplican a las herramientas de ONTAP, no a un usuario individual de las herramientas de ONTAP.
 
-El control de acceso basado en roles de ONTAP se aplica únicamente al acceso a sistemas de almacenamiento y a la ejecución de tareas de VSC relacionadas con el almacenamiento, como el aprovisionamiento de máquinas virtuales. Si no se cuenta con los privilegios de control de acceso basado en roles de ONTAP correspondientes a un sistema de almacenamiento específico, no es posible ejecutar ninguna tarea en un objeto de vSphere que se encuentre alojado en ese sistema de almacenamiento. Es posible utilizar el control de acceso basado en roles de ONTAP junto con los privilegios específicos de VSC para controlar qué tareas de VSC puede ejecutar un usuario:
+El control de acceso basado en roles de ONTAP se aplica únicamente al acceso a sistemas de almacenamiento y a la ejecución de tareas de herramientas de ONTAP relacionadas con el almacenamiento, como el aprovisionamiento de máquinas virtuales. Si no se cuenta con los privilegios de control de acceso basado en roles de ONTAP correspondientes a un sistema de almacenamiento específico, no es posible ejecutar ninguna tarea en un objeto de vSphere que se encuentre alojado en ese sistema de almacenamiento. Puede utilizar el control de acceso basado en roles de ONTAP junto con los privilegios específicos de ONTAP tools para controlar las tareas que un usuario puede realizar de las herramientas de ONTAP:
 
 * Supervisar y configurar objetos de almacenamiento o de vCenter Server que residen en un sistema de almacenamiento
 * Aprovisionamiento de objetos de vSphere que residen en un sistema de almacenamiento
 
 
-El uso de RBAC de ONTAP con los privilegios específicos de VSC ofrece una capa de seguridad orientada al almacenamiento que puede gestionar el administrador de almacenamiento. Como resultado, dispone de un control de acceso más detallado del que admite RBAC de ONTAP o RBAC de vCenter Server por sí solo. Por ejemplo, con RBAC de vCenter Server, puede permitir que vCenterUserB aprovisione un almacén de datos con almacenamiento de NetApp mientras impide que vCenterUserA aprovisione almacenes de datos. Si las credenciales del sistema de almacenamiento para un sistema de almacenamiento específico no admiten la creación de almacenamiento, ni vCenterUserB ni vCenterUserA pueden aprovisionar un almacén de datos en ese sistema de almacenamiento.
+El uso de control de acceso basado en roles de ONTAP con los privilegios específicos de ONTAP aporta una capa de seguridad orientada al almacenamiento que puede gestionar el administrador de almacenamiento. Como resultado, dispone de un control de acceso más detallado del que admite RBAC de ONTAP o RBAC de vCenter Server por sí solo. Por ejemplo, con RBAC de vCenter Server, puede permitir que vCenterUserB aprovisione un almacén de datos con almacenamiento de NetApp mientras impide que vCenterUserA aprovisione almacenes de datos. Si las credenciales del sistema de almacenamiento para un sistema de almacenamiento específico no admiten la creación de almacenamiento, ni vCenterUserB ni vCenterUserA pueden aprovisionar un almacén de datos en ese sistema de almacenamiento.
 
-Cuando se inicia una tarea VSC, VSC primero comprueba si tiene el permiso correcto de vCenter Server para esa tarea. Si el permiso de vCenter Server no es suficiente para permitir ejecutar la tarea, VSC no tiene que comprobar los privilegios de ONTAP de ese sistema de almacenamiento debido a que no ha superado la comprobación de seguridad inicial de vCenter Server. Como resultado, no podrá acceder al sistema de almacenamiento.
+Al iniciar una tarea de ONTAP tools, las herramientas de ONTAP primero verifican si cuenta con el permiso correcto de vCenter Server para esa tarea. Si el permiso de vCenter Server no es suficiente para permitir que realice la tarea, las herramientas de ONTAP no tienen que comprobar los privilegios de ONTAP para ese sistema de almacenamiento, ya que no se superó la comprobación de seguridad inicial de vCenter Server. Como resultado, no podrá acceder al sistema de almacenamiento.
 
-Si el permiso de vCenter Server es suficiente, VSC comprueba los privilegios de RBAC de ONTAP (su rol de ONTAP) asociados con las credenciales del sistema de almacenamiento (el nombre de usuario y la contraseña) Determinar si tiene privilegios suficientes para realizar las operaciones de almacenamiento que requiere esa tarea de VSC en ese sistema de almacenamiento. Si cuenta con los privilegios de ONTAP correctos, puede acceder al sistema de almacenamiento y ejecutar la tarea de VSC. Los roles de ONTAP determinan las tareas de VSC que se pueden ejecutar en el sistema de almacenamiento.
+Si el permiso de vCenter Server es suficiente, las herramientas de ONTAP luego comprueba los privilegios de RBAC de ONTAP (el rol de ONTAP) asociados con las credenciales del sistema de almacenamiento (el nombre de usuario y la contraseña). Para determinar si cuenta con privilegios suficientes para realizar las operaciones de almacenamiento que requiere esa tarea de herramientas ONTAP en ese sistema de almacenamiento. Si tiene los privilegios de ONTAP correctos, puede acceder al sistema de almacenamiento y ejecutar la tarea de herramientas de ONTAP. Los roles ONTAP determinan las tareas de herramientas de ONTAP que se pueden realizar en el sistema de almacenamiento.
 
 Cada sistema de almacenamiento está asociado con un conjunto de privilegios de ONTAP.
 
@@ -37,7 +37,7 @@ El administrador puede controlar qué usuarios pueden realizar qué tareas a niv
 
 * Información de auditoría
 +
-En muchos casos, VSC ofrece un seguimiento de auditoría del sistema de almacenamiento que permite asociar los eventos con el usuario de vCenter Server que aplicó el cambio en el almacenamiento.
+En muchos casos, las herramientas de ONTAP ofrecen un seguimiento de auditoría del sistema de almacenamiento que permite asociar los eventos con el usuario de vCenter Server que aplicó el cambio en el almacenamiento.
 
 * Facilidad de uso
 +
@@ -49,15 +49,15 @@ Es posible conservar todas las credenciales de la controladora en un mismo lugar
 
 == Roles de ONTAP recomendados al usar herramientas de ONTAP para VMware vSphere
 
-Puede configurar varias funciones ONTAP recomendadas para trabajar con las herramientas de ONTAP® para VMware vSphere y el control de acceso basado en funciones (RBAC). Estos roles contienen los privilegios de ONTAP necesarios para ejecutar las operaciones de almacenamiento necesarias que ejecutan las tareas de Virtual Storage Console (VSC).
+Puede configurar varias funciones ONTAP recomendadas para trabajar con las herramientas de ONTAP® para VMware vSphere y el control de acceso basado en funciones (RBAC). Estos roles contienen los privilegios de la ONTAP que se requieren para ejecutar las operaciones de almacenamiento requeridas que ejecutan las tareas de las herramientas de ONTAP.
 
 Para crear roles de usuario nuevos, debe iniciar sesión como administrador en sistemas de almacenamiento que ejecutan ONTAP. Se pueden crear roles de ONTAP con ONTAP System Manager 9.8P1 o posterior. Consulte link:../configure/task_configure_user_role_and_privileges.html["Configure los roles y privilegios de usuario"] si quiere más información.
 
 Cada rol de ONTAP tiene asociado un nombre de usuario y una pareja de contraseñas que constituyen las credenciales del rol. Si no inicia sesión con estas credenciales, no podrá acceder a las operaciones de almacenamiento que están asociadas con el rol.
 
-Como medida de seguridad, los roles de ONTAP específicos de VSC se ordenan jerárquicamente. Esto significa que la primera función es la más restrictiva y que sólo tiene los privilegios asociados con el conjunto más básico de operaciones de almacenamiento VSC. El siguiente rol incluye sus propios privilegios y todos los privilegios asociados con el rol anterior. Cada puesto adicional resulta menos restrictivo en relación con las operaciones de almacenamiento admitidas.
+Como medida de seguridad, los roles ONTAP específicos de las herramientas de ONTAP se ordenan jerárquicamente. Esto significa que el primer rol es el más restrictivo y solo tiene los privilegios asociados al conjunto más básico de operaciones de almacenamiento de herramientas de ONTAP. El siguiente rol incluye sus propios privilegios y todos los privilegios asociados con el rol anterior. Cada puesto adicional resulta menos restrictivo en relación con las operaciones de almacenamiento admitidas.
 
-A continuación, se enumeran algunos de los roles de control de acceso basado en roles de ONTAP recomendados cuando se usa VSC. Después de crear estos roles, es posible asignar los roles a los usuarios que deben realizar tareas relacionadas con el almacenamiento, como el aprovisionamiento de máquinas virtuales.
+A continuación se muestran algunos de los roles de control de acceso basado en roles recomendados de ONTAP cuando se utilizan las herramientas de ONTAP. Después de crear estos roles, es posible asignar los roles a los usuarios que deben realizar tareas relacionadas con el almacenamiento, como el aprovisionamiento de máquinas virtuales.
 
 . Detección
 +

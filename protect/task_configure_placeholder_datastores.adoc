@@ -24,7 +24,7 @@ Un almacén de datos de marcador de posición se debe configurar para que conten
 . Inicie sesión en vCenter Server y haga clic en *Site Recovery* > *Sites*.
 . Seleccione su sitio protegido y, a continuación, haga clic en *Administrar*.
 . En la pestaña Manage, seleccione *Placeholder datastores*.
-. Haga clic en la image:../media/new_placeholder_datastore.gif[""] para crear un nuevo almacén de datos de marcadores de posición.
+. Haga clic en la image:../media/new_placeholder_datastore.gif["icono buscar y agregar"] para crear un nuevo almacén de datos de marcadores de posición.
 . Seleccione el almacén de datos adecuado y, a continuación, haga clic en *Aceptar*.
 +
 

@@ -26,7 +26,7 @@ Este proceso puede llevar mucho tiempo, según la configuración y la carga del 
 Los valores estándar recomendados se establecen de forma predeterminada.
 
 +
-image::../media/vsc_recommended_hosts_settings.gif[configuración de hosts recomendada por vsc]
+image::../media/vsc_recommended_hosts_settings.gif[Pantalla Establecer valores recomendados]
 
 . Haga clic en *Aceptar*.
 
