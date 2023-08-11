@@ -2,22 +2,22 @@
 permalink: deploy/reference_port_requirements_for_vsc.html 
 sidebar: sidebar 
 keywords: port requirements 
-summary: 'De forma predeterminada, Virtual Storage Console \(VSC\) utiliza puertos designados para habilitar la comunicación entre sus componentes, que incluyen sistemas de almacenamiento y VMware vCenter Server. Si tiene firewalls habilitados, debe asegurarse de que los firewalls están configurados para permitir excepciones.' 
+summary: De forma predeterminada, las herramientas de ONTAP utilizan puertos designados para permitir la comunicación entre sus componentes, que incluyen sistemas de almacenamiento y VMware vCenter Server. Si tiene firewalls habilitados, debe asegurarse de que los firewalls están configurados para permitir excepciones. 
 ---
-= Requisitos de puertos para VSC
+= Requisitos de puertos para las herramientas de ONTAP
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-De forma predeterminada, Virtual Storage Console (VSC) utiliza puertos designados para habilitar la comunicación entre sus componentes, incluidos los sistemas de almacenamiento y VMware vCenter Server. Si tiene firewalls habilitados, debe asegurarse de que los firewalls están configurados para permitir excepciones.
+De forma predeterminada, las herramientas de ONTAP utilizan puertos designados para permitir la comunicación entre sus componentes, que incluyen sistemas de almacenamiento y VMware vCenter Server. Si tiene firewalls habilitados, debe asegurarse de que los firewalls están configurados para permitir excepciones.
 
-Para firewalls diferentes de Windows, debe otorgar acceso manualmente a puertos específicos que utiliza VSC. Si no concede acceso a estos puertos, aparecerá un mensaje de error como el siguiente.
+En el caso de firewalls que no sean Windows, debe conceder manualmente acceso a puertos específicos que utilizan las herramientas de ONTAP. Si no concede acceso a estos puertos, aparecerá un mensaje de error como el siguiente.
 
 `Unable to communicate with the server.`
 
-VSC utiliza los siguientes puertos TCP bidireccionales predeterminados:
+Las herramientas de ONTAP utilizan los siguientes puertos TCP bidireccionales predeterminados:
 
 |===
 
@@ -42,10 +42,10 @@ Según la forma en que haya configurado sus credenciales, VMware vCenter Server 
  a| 
 8143
  a| 
-VSC escucha comunicaciones seguras en este puerto. El puerto se utiliza en la arquitectura de comunicación cliente-servidor. El cliente, que puede ser cualquier cliente de automatización que utilice la API de REST, inicia la conexión con el servidor y los puntos finales intercambian datos. Este puerto está habilitado para los servicios VSC y para exportar registros del servidor VSC. La página register.html está alojada en este puerto. El Swagger DE REST queda expuesto en este puerto.
+Las herramientas de ONTAP escuchan las comunicaciones seguras en este puerto. El puerto se utiliza en la arquitectura de comunicación cliente-servidor. El cliente, que puede ser cualquier cliente de automatización que utilice la API de REST, inicia la conexión con el servidor y los puntos finales intercambian datos. Este puerto está habilitado para los servicios de herramientas de ONTAP y para exportar los registros del servidor de herramientas de ONTAP. La página register.html está alojada en este puerto. El Swagger DE REST queda expuesto en este puerto.
 
 |===
 
 NOTE: Debe haber habilitado el protocolo de mensajes de control de Internet (ICMP) antes de implementar las herramientas de ONTAP.
 
-Si ICMP está deshabilitado, genera errores en la configuración inicial de las herramientas de ONTAP y VSC no puede iniciar los servicios de VSC y VASA Provider después de la implementación. Es necesario habilitar manualmente los servicios de VSC y proveedor VASA después de la implementación.
+Si ICMP está deshabilitado, la configuración inicial de herramientas ONTAP genera errores y las herramientas de ONTAP no pueden iniciar las herramientas ONTAP y los servicios del proveedor VASA después de la implementación. Debe habilitar manualmente las herramientas ONTAP y los servicios del proveedor VASA después de la implementación.

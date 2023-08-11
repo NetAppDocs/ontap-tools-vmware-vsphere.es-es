@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: Cuando trabaja con las herramientas estándar de ONTAP® para funciones de VMware vSphere, hay algunas directrices que debe seguir. 
 ---
-= Directrices para usar roles estándar de VSC
+= Directrices para usar los roles estándar de las herramientas de ONTAP
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,28 +13,28 @@ summary: Cuando trabaja con las herramientas estándar de ONTAP® para funciones
 [role="lead"]
 Cuando trabaja con las herramientas estándar de ONTAP® para funciones de VMware vSphere, hay algunas directrices que debe seguir.
 
-No debe modificar directamente los roles estándar. Si lo hace, VSC sobrescribirá los cambios cada vez que actualice VSC. El instalador actualiza las definiciones de rol estándar cada vez que actualiza VSC. Si hace esto, se garantiza que los roles sean actuales para la versión de VSC, así como para todas las versiones compatibles de vCenter Server.
+No debe modificar directamente los roles estándar. Si lo hace, las herramientas de ONTAP sobrescribirán los cambios cada vez que actualice las herramientas de ONTAP. Installer actualiza las definiciones de rol estándar cada vez que actualiza las herramientas de ONTAP. Al hacer esto, se garantiza que los roles sean actualizados para la versión de las herramientas de ONTAP, así como para todas las versiones compatibles de vCenter Server.
 
-Sin embargo, puede usar los roles estándar para crear roles que se ajusten a su entorno. Para ello, debe copiar el rol estándar de VSC y editar el rol copiado. Al crear un rol nuevo, puede mantener esta función incluso al reiniciar o actualizar el servicio VSC Windows.
+Sin embargo, puede usar los roles estándar para crear roles que se ajusten a su entorno. Para ello, debe copiar el rol estándar de herramientas de ONTAP y, a continuación, editar el rol copiado. Al crear una nueva función, puede mantener esta función incluso cuando reinicie o actualice el servicio Windows de las herramientas de ONTAP.
 
-Algunas de las formas de utilizar las funciones estándar de VSC incluyen las siguientes:
+Algunas de las formas en que puede utilizar las funciones estándar de ONTAP Tools incluyen las siguientes:
 
-* Utilice los roles estándar de VSC para todas las tareas de VSC.
+* Utilice los roles de herramientas estándar de ONTAP para todas las tareas de herramientas de ONTAP.
 +
-En esta situación, los roles estándar ofrecen todos los privilegios que un usuario necesita para realizar las tareas de VSC.
+En este escenario, los roles estándar proporcionan todos los privilegios que un usuario necesita para realizar las tareas de las herramientas de ONTAP.
 
 * Combinar roles para expandir las tareas que un usuario puede realizar.
 +
-Si los roles estándar de VSC proporcionan demasiada granularidad en el entorno, puede ampliar los roles creando grupos de nivel superior que contengan varias funciones.
+Si los roles de ONTAP Tools estándar proporcionan demasiada granularidad para su entorno, puede expandir los roles creando grupos de nivel superior que contengan varios roles.
 
 +
-Si un usuario tiene que ejecutar otras tareas que no son de VSC y requieren privilegios nativos de vCenter Server adicionales, puede crear una función que incluya esos privilegios y también añadirla al grupo.
+Si un usuario debe ejecutar otras tareas de herramientas que no son de ONTAP y que requieren privilegios nativos adicionales de vCenter Server, puede crear un rol que proporcione dichos privilegios y añadirlo al grupo también.
 
 * Cree funciones más detalladas.
 +
-Si su empresa necesita implementar funciones más restrictivas que las funciones estándar de VSC, puede usar los roles de VSC para crear nuevas funciones.
+Si su empresa requiere que implemente funciones que son más restrictivas que las funciones de herramientas estándar de ONTAP, puede utilizar las funciones de herramientas de ONTAP para crear nuevas funciones.
 
 +
-En este caso, debe clonar los roles de VSC necesarios y editar el rol clonado para que solo tenga los privilegios que requiere el usuario.
+En este caso, debe clonar los roles de herramientas ONTAP necesarios y, a continuación, editar el rol clonado para que solo tenga los privilegios que necesite el usuario.
 
 

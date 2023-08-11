@@ -2,7 +2,7 @@
 permalink: configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: 'Es posible configurar tiempos de espera y otros valores en los hosts ESXi mediante las herramientas de ONTAP para VMware vSphere con el fin de garantizar el mejor rendimiento y una conmutación al respaldo correcta. Los valores que define Virtual Storage Console \(VSC\) se basan en pruebas internas de NetApp.' 
+summary: Es posible configurar tiempos de espera y otros valores en los hosts ESXi mediante las herramientas de ONTAP para VMware vSphere con el fin de garantizar el mejor rendimiento y una conmutación al respaldo correcta. Los valores que conjuntos de herramientas de ONTAP se basan en pruebas internas de NetApp. 
 ---
 = Los valores de host de ESXi se establecen mediante herramientas de ONTAP
 :allow-uri-read: 

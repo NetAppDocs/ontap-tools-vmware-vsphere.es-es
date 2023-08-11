@@ -1,0 +1,15 @@
+---
+permalink: manage/vasa_provider_disaster_recovery.html 
+sidebar: sidebar 
+keywords: scope of guide 
+summary: 'Si el dispositivo virtual del proveedor VASA (VP) se ha perdido, se ha inaccesible o no funciona de algún otro modo, es posible que deba ejecutar un vicepresidente de recuperación ante desastres. ' 
+---
+= Recuperación ante desastres del proveedor de VASA
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si el dispositivo virtual del proveedor VASA (VP) se ha perdido, se ha inaccesible o no funciona de algún otro modo, es posible que deba ejecutar un vicepresidente de recuperación ante desastres.
+Para obtener más información, consulte https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/How_to_perform_a_VASA_Provider_Disaster_Recovery_-_Resolution_Guide["Cómo realizar una recuperación de desastres de un proveedor VASA: Guía de resolución"]

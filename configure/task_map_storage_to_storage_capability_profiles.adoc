@@ -16,7 +16,7 @@ Es posible asignar los almacenes de datos que están asociados con VASA Provider
 *Lo que necesitará*
 
 * Debe haber registrado la instancia del proveedor de VASA con las herramientas de ONTAP® para VMware vSphere.
-* Virtual Storage Console (VSC) ya debe haber detectado el almacenamiento.
+* Las herramientas de ONTAP deben haber detectado su almacenamiento.
 
 
 Es posible asignar un almacén de datos tradicional con un perfil de funcionalidad de almacenamiento o cambiar el perfil de funcionalidad de almacenamiento asociado con un almacén de datos. VASA Provider _not_ muestra todos los almacenes de datos de volúmenes virtuales (VVol) en la página Storage Mappings. Todos los almacenes de datos a los que se hace referencia en esta tarea son almacenes de datos tradicionales.
@@ -42,7 +42,7 @@ Un almacén de datos puede coincidir con varios perfiles, pero un almacén de da
 
 . Para asignar un perfil de funcionalidad de almacenamiento a un almacén de datos o cambiar el perfil existente de un almacén de datos, seleccione el almacén de datos.
 +
-Para ubicar almacenes de datos específicos u otra información en la página Storage Mapping, puede introducir un nombre o una cadena parcial en el cuadro de búsqueda. VSC muestra los resultados de la búsqueda en un cuadro de diálogo. Para volver a la pantalla completa, debe eliminar el texto del cuadro de búsqueda y, a continuación, hacer clic en *Intro*.
+Para ubicar almacenes de datos específicos u otra información en la página Storage Mapping, puede introducir un nombre o una cadena parcial en el cuadro de búsqueda. Las herramientas de ONTAP muestran los resultados de la búsqueda en un cuadro de diálogo. Para volver a la pantalla completa, debe eliminar el texto del cuadro de búsqueda y, a continuación, hacer clic en *Intro*.
 
 . En el menú acciones, seleccione *asignar perfil coincidente*.
 . Seleccione el perfil que desea asignar al almacén de datos de la lista de perfiles coincidentes que se proporciona en el cuadro de diálogo *asignar perfil al almacén de datos* y, a continuación, haga clic en *Aceptar* para asignar el perfil seleccionado al almacén de datos.

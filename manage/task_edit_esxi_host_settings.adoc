@@ -54,7 +54,7 @@ Página de inicio de vSphere Client
  a| 
 Portlet sistemas host ESXi
  a| 
-.. Haga clic en la ficha *Panel tradicional* de la sección Descripción general de VSC.
+.. Haga clic en la pestaña *panel tradicional* en la sección Descripción general de las herramientas de ONTAP.
 .. Haga clic en *Editar configuración del host ESXi*.
 .. Seleccione el nombre de host ESXi en la ficha Configuración del host y estado para los que desea modificar la configuración y haga clic en *SIGUIENTE*.
 .. Seleccione la configuración necesaria en la ficha Configuración de host recomendada y, a continuación, haga clic en *Siguiente*.

@@ -98,6 +98,6 @@ Los permisos se asocian con objetos de vSphere, como vCenter Server, hosts ESXi,
 Es posible usar Active Directory (o la máquina local de vCenter Server) para configurar usuarios y grupos de usuarios. Luego, puede utilizar los permisos de vCenter Server para otorgar acceso a estos usuarios o grupos para permitirles ejecutar tareas específicas de herramientas de ONTAP.
 
 
-NOTE: Estos permisos de vCenter Server se aplican a los usuarios de vCenter de las herramientas de ONTAP, no a los administradores de VSC. De forma predeterminada, los administradores de VSC tienen acceso completo al producto y no requieren permisos asignados.
+NOTE: Estos permisos de vCenter Server se aplican a los usuarios de vCenter de las herramientas de ONTAP, no a los administradores de herramientas de ONTAP. De forma predeterminada, los administradores de herramientas de ONTAP tienen acceso completo al producto y no requieren permisos asignados a ellos.
 
 Los usuarios y grupos no tienen roles asignados. Estos obtienen acceso a un rol mediante el permiso de vCenter Server.

@@ -2,7 +2,7 @@
 permalink: concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: Las herramientas de ONTAP para VMware vSphere son compatibles con entornos que usan configuraciones de MetroCluster IP y FC para ONTAP. La mayor parte de este soporte es automático. Sin embargo, es posible que note algunas diferencias cuando utiliza un entorno de MetroCluster con VSC y VASA Provider. 
+summary: Las herramientas de ONTAP para VMware vSphere son compatibles con entornos que usan configuraciones de MetroCluster IP y FC para ONTAP. La mayor parte de este soporte es automático. Sin embargo, es posible que observe algunas diferencias cuando se utiliza un entorno de MetroCluster con herramientas de ONTAP y proveedor VASA. 
 ---
 = Configuraciones de MetroCluster compatibles con las herramientas de ONTAP
 :allow-uri-read: 
@@ -11,23 +11,23 @@ summary: Las herramientas de ONTAP para VMware vSphere son compatibles con entor
 
 
 [role="lead"]
-Las herramientas de ONTAP para VMware vSphere son compatibles con entornos que usan configuraciones de MetroCluster IP y FC para ONTAP. La mayor parte de este soporte es automático. Sin embargo, es posible que note algunas diferencias cuando utiliza un entorno de MetroCluster con VSC y VASA Provider.
+Las herramientas de ONTAP para VMware vSphere son compatibles con entornos que usan configuraciones de MetroCluster IP y FC para ONTAP. La mayor parte de este soporte es automático. Sin embargo, es posible que observe algunas diferencias cuando se utiliza un entorno de MetroCluster con herramientas de ONTAP y proveedor VASA.
 
 
 NOTE: El SRA no es compatible con las configuraciones de MetroCluster.
 
 
 
-== Configuraciones de MetroCluster y VSC
+== Configuraciones de MetroCluster y herramientas ONTAP
 
-Debe asegurarse de que VSC detecte las controladoras del sistema de almacenamiento en el sitio primario y en el sitio secundario. Generalmente, VSC detecta automáticamente las controladoras de almacenamiento. Si utiliza una LIF de gestión de clústeres, es una buena práctica verificar que VSC ha detectado los clústeres en ambos sitios. De lo contrario, puede añadir manualmente las controladoras de almacenamiento a VSC. También puede modificar el nombre de usuario y las parejas de contraseñas que utiliza VSC para conectarse a las controladoras de almacenamiento.
+Debe asegurarse de que las herramientas ONTAP detecten las controladoras del sistema de almacenamiento en el sitio principal y el sitio secundario. Por lo general, las herramientas ONTAP detectan automáticamente las controladoras de almacenamiento. Si usa una LIF de gestión de clúster, una buena práctica es verificar que las herramientas de ONTAP han detectado los clústeres en ambos sitios. De lo contrario, puede añadir manualmente las controladoras de almacenamiento a las herramientas de ONTAP. También es posible modificar los pares de nombre de usuario y contraseña que utilizan las herramientas de ONTAP para conectarse a las controladoras de almacenamiento.
 
 Cuando se produce una conmutación, los SVM del sitio secundario toman el control. Estos SVMs tienen adjunto el sufijo "'-mc'" a sus nombres. Si se produce una operación de conmutación de sitios mientras realiza operaciones como el aprovisionamiento de un almacén de datos, el nombre de la SVM en la que reside el almacén de datos se modifica para incluir el sufijo "'-mc". Este sufijo se descarta cuando se produzca la conmutación de estado y las SVM del sitio principal reanudan el control.
 
 
-NOTE: Si ha añadido SVM directas con la configuración de MetroCluster a VSC, tras la conmutación, no se verá reflejado el cambio en el nombre de SVM (además del sufijo "'-mc"). El resto de las operaciones de conmutación se siguen ejecutando con normalidad.
+NOTE: Si ha añadido SVM directas con configuración de MetroCluster a las herramientas de ONTAP, después de la conmutación por error, no se reflejará el cambio en el nombre de la SVM (la adición del sufijo «`-mc »). El resto de las operaciones de conmutación se siguen ejecutando con normalidad.
 
-Cuando se produce una conmutación de sitios o una conmutación de estado, VSC puede tardar unos minutos en detectar y detectar los clústeres automáticamente. Si esto sucede mientras realiza una operación VSC, como el aprovisionamiento de un almacén de datos, es posible que experimente una demora.
+Cuando se produce una conmutación de sitios o una conmutación de estado, las herramientas de ONTAP pueden demorar varios minutos en detectar automáticamente los clústeres y detectarlos. Si esto sucede mientras realiza una operación de herramientas de ONTAP, como el aprovisionamiento de un almacén de datos, puede experimentar un retraso.
 
 
 

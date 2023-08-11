@@ -2,35 +2,35 @@
 permalink: configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html 
 sidebar: sidebar 
 keywords:  
-summary: 'Si utiliza herramientas de ONTAP® para VMware vSphere en un entorno en el que un único cliente HTML5 de VMware vSphere gestiona varias instancias de vCenter Server, debe registrar una instancia de VSC en cada servidor vCenter para que haya un emparejamiento 1:1 entre VSC y vCenter Server. Esta acción le permite gestionar todos los servidores que ejecutan vCenter 6.0 o una versión posterior en el modo vinculado y en el modo no vinculado desde un único cliente HTML5 de vSphere.' 
+summary: 'Si utiliza las herramientas de ONTAP® para VMware vSphere en un entorno en el que un único cliente de VMware vSphere HTML5 administra varias instancias de vCenter Server, debe registrar una instancia de herramientas de ONTAP en cada instancia de vCenter Server para que se produzca un emparejamiento 1:1 entre las herramientas de ONTAP y vCenter Server. Esta acción le permite gestionar todos los servidores que ejecutan vCenter 6.0 o una versión posterior en el modo vinculado y en el modo no vinculado desde un único cliente HTML5 de vSphere.' 
 ---
-= Requisitos para registrar VSC en varios entornos de vCenter Server
+= Requisitos para registrar herramientas de ONTAP en varios entornos de vCenter Server
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Si utiliza herramientas de ONTAP para VMware vSphere en un entorno en el que un único cliente HTML5 de VMware vSphere gestiona varias instancias de vCenter Server, debe registrar una instancia de VSC en cada instancia de vCenter Server para poder haber un emparejamiento 1:1 entre VSC y vCenter Server. Hacerlo, permite gestionar todos los servidores que ejecutan vCenter 7,0 o una versión posterior tanto en modo vinculado como en modo no vinculado desde un solo cliente vSphere HTML5.
+Si utiliza herramientas de ONTAP para VMware vSphere en un entorno donde un solo cliente de VMware vSphere HTML5 gestiona varias instancias de vCenter Server, debe registrar una instancia de herramientas de ONTAP en cada instancia de vCenter Server para que se produzca un emparejamiento 1:1 entre las herramientas de ONTAP y vCenter Server. Hacerlo, permite gestionar todos los servidores que ejecutan vCenter 7,0 o una versión posterior tanto en modo vinculado como en modo no vinculado desde un solo cliente vSphere HTML5.
 
 
-NOTE: Si desea utilizar VSC con una instancia de vCenter Server, debe haber configurado o registrado una instancia de VSC para cada instancia de vCenter Server que desee gestionar. Cada instancia de VSC registrada debe tener la misma versión.
+NOTE: Si desea usar herramientas de ONTAP con una instancia de vCenter Server, debe haber configurado o registrado una instancia de ONTAP Tools para cada instancia de vCenter Server que desee gestionar. Cada instancia registrada de ONTAP Tools debe tener la misma versión.
 
 El modo vinculado se instala automáticamente durante la puesta en marcha de vCenter Server. El modo vinculado utiliza el modo de aplicación de Microsoft Active Directory (ADAM) para almacenar y sincronizar datos en varios sistemas de vCenter Server.
 
-El uso del cliente HTML5 de vSphere para realizar tareas VSC en varias instancias de vCenter Server requiere lo siguiente:
+Para usar el cliente de vSphere HTML5 para realizar tareas de herramientas de ONTAP en varias instancias de vCenter Server se requiere lo siguiente:
 
-* Cada instancia de vCenter Server del inventario de VMware que desee gestionar debe tener un único servidor VSC registrado con él en un emparejamiento único 1:1.
+* Cada instancia de vCenter Server del inventario de VMware que desee gestionar debe tener un único servidor de herramientas de ONTAP registrado en él en un emparejamiento único de 1:1.
 +
-Por ejemplo, puede tener un servidor VSC A registrado en vCenter Server A, el servidor VSC B registrado en vCenter Server B, el servidor VSC C registrado en vCenter Server C, etc.
-
-+
-*No puede* tener un servidor VSC a registrado tanto en vCenter Server a como en vCenter Server B.
+Por ejemplo, es posible que el servidor de herramientas de ONTAP A esté registrado en vCenter Server A, el servidor de herramientas de ONTAP B registrado en vCenter Server B, el servidor de herramientas de ONTAP C registrado en vCenter Server C, etc.
 
 +
-Si un inventario de VMware incluye una instancia de vCenter Server que no tiene ningún servidor VSC registrado, pero hay una o más instancias de vCenter Server registradas en VSC, A continuación, puede ver las instancias de VSC y realizar operaciones VSC para las instancias de vCenter Server que tienen registrado VSC.
+* No puede* tener el servidor de herramientas de ONTAP A registrado tanto en vCenter Server A como en vCenter Server B.
 
-* Debe tener el privilegio View específico de VSC para cada instancia de vCenter Server que se registre en el inicio de sesión único (SSO).
++
+Si un inventario de VMware incluye una instancia de vCenter Server que no tiene un servidor de herramientas de ONTAP registrado, pero hay una o varias instancias de vCenter Server registradas con herramientas de ONTAP, a continuación, puede ver las instancias de las herramientas de ONTAP y realizar operaciones de las herramientas de ONTAP para las instancias de vCenter Server que tienen las herramientas de ONTAP registradas.
+
+* Debe contar con el privilegio View específico de las herramientas de ONTAP para cada instancia de vCenter Server que esté registrada en el inicio de sesión único (SSO).
 +
 También debe tener los permisos de RBAC correctos.
 
@@ -40,6 +40,6 @@ Cuando realiza una tarea que requiere que especifique una INSTANCIA DE vCenter S
 
 Si se conoce la ubicación del almacenamiento (por ejemplo, cuando se utiliza el asistente de aprovisionamiento y el almacén de datos se encuentra en un host gestionado por una instancia específica de vCenter Server), la lista de vCenter Server se muestra como una opción de solo lectura. Esto sucede solo cuando se utiliza la opción de clic con el botón derecho para seleccionar un elemento en vSphere Web Client.
 
-VSC le avisa cuando se intenta seleccionar un objeto que no gestiona.
+Las herramientas de ONTAP le avisan cuando intenta seleccionar un objeto que no gestiona.
 
-Puede filtrar los sistemas de almacenamiento según una instancia específica de vCenter Server en la página de resumen de VSC. Se muestra una página de resumen para cada instancia de VSC que está registrada en una instancia de vCenter Server. Puede gestionar los sistemas de almacenamiento asociados con una instancia de VSC específica y una instancia de vCenter Server, pero debe mantener la información de registro de cada sistema de almacenamiento separada si ejecuta varias instancias de VSC.
+Desde la página de resumen de herramientas de ONTAP, puede filtrar los sistemas de almacenamiento según una instancia específica de vCenter Server. Se muestra una página de resumen para cada instancia de herramientas de ONTAP que se registre en una instancia de vCenter Server. Es posible gestionar los sistemas de almacenamiento asociados con una instancia de herramientas de ONTAP y una instancia de vCenter Server específica, pero debe conservar la información de registro para cada sistema de almacenamiento por separado si ejecuta varias instancias de herramientas de ONTAP.

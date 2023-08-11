@@ -15,8 +15,8 @@ Puede verificar rápidamente si sus almacenes de datos cumplen con los perfiles 
 
 *Lo que necesitará*
 
-* Debe haber registrado la instancia de VASA Provider con las herramientas ONTAP® para VMware vSphere (VSC).
-* VSC debe haber detectado el almacenamiento.
+* Registró la instancia del proveedor de VASA con las herramientas de ONTAP para VMware vSphere.
+* Las herramientas de ONTAP deben haber detectado tu almacenamiento.
 
 
 * Pasos*
@@ -25,7 +25,7 @@ Puede verificar rápidamente si sus almacenes de datos cumplen con los perfiles 
 . Revise la información de la columna Estado de cumplimiento para identificar almacenes de datos no compatibles y revise las alertas por motivos de incumplimiento.
 +
 
-NOTE: Al hacer clic en el botón *COMPROBACIÓN de CUMPLIMIENTO*, VSC realiza una operación de redetección de todo el almacenamiento, que puede tardar unos minutos.
+NOTE: Al hacer clic en el botón *COMPROBACIÓN DE CUMPLIMIENTO*, las herramientas de ONTAP realizan una operación de redetección para todo el almacenamiento, que puede tardar unos minutos.
 
 +
 Si un almacén de datos ya no es compatible con su perfil, la columna Compliance Status muestra una alerta que indica el motivo de la no conformidad. Por ejemplo, un perfil puede requerir compresión. Si se modificó esa configuración en el almacenamiento, no se utilizará la compresión y el almacén de datos no será compatible.

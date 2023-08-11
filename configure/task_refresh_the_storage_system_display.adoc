@@ -2,7 +2,7 @@
 permalink: configure/task_refresh_the_storage_system_display.html 
 sidebar: sidebar 
 keywords:  
-summary: 'Puede utilizar la función de actualización proporcionada por las herramientas de ONTAP® para VMware vSphere para actualizar la información acerca de los sistemas de almacenamiento y para forzar a Virtual Storage Console \(VSC\) a detectar sistemas de almacenamiento.' 
+summary: Puede utilizar la función de actualización proporcionada por las herramientas de ONTAP® para VMware vSphere para actualizar la información sobre los sistemas de almacenamiento y forzar a las herramientas de ONTAP a detectar sistemas de almacenamiento. 
 ---
 = Actualice la pantalla del sistema de almacenamiento
 :allow-uri-read: 
@@ -11,11 +11,11 @@ summary: 'Puede utilizar la función de actualización proporcionada por las her
 
 
 [role="lead"]
-Puede utilizar la función de actualización proporcionada por las herramientas de ONTAP® para VMware vSphere para actualizar la información sobre los sistemas de almacenamiento y para forzar a la consola de almacenamiento virtual (VSC) a detectar sistemas de almacenamiento.
+Puede utilizar la función de actualización proporcionada por las herramientas de ONTAP® para VMware vSphere para actualizar la información sobre los sistemas de almacenamiento y forzar a las herramientas de ONTAP a detectar sistemas de almacenamiento.
 
 *Acerca de esta tarea*
 
-La `refresh` la opción es útil si cambió las credenciales predeterminadas para los sistemas de almacenamiento después de recibir un error de autenticación. Siempre se debe ejecutar una operación de actualización si se cambiaron las credenciales del sistema de almacenamiento después de que el sistema de almacenamiento informó sobre una `Authentication Failure Status`. Durante la operación de actualización, VSC intenta conectarse al sistema de almacenamiento usando las nuevas credenciales.
+La `refresh` la opción es útil si cambió las credenciales predeterminadas para los sistemas de almacenamiento después de recibir un error de autenticación. Siempre se debe ejecutar una operación de actualización si se cambiaron las credenciales del sistema de almacenamiento después de que el sistema de almacenamiento informó sobre una `Authentication Failure Status`. Durante la operación de actualización, las herramientas de ONTAP intentan conectarse al sistema de almacenamiento utilizando las nuevas credenciales.
 
 Según la configuración del sistema, esta tarea puede tardar mucho tiempo en completarse.
 

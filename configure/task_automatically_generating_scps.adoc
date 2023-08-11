@@ -15,8 +15,8 @@ EL proveedor DE VASA para ONTAP permite generar automáticamente perfiles de fun
 
 *Lo que necesitará*
 
-* Debe haber registrado la instancia del proveedor de VASA en Virtual Storage Console (VSC).
-* VSC debe haber detectado el almacenamiento.
+* Debe haber registrado la instancia del proveedor de VASA con las herramientas ONTAP.
+* Las herramientas de ONTAP deben haber detectado tu almacenamiento.
 
 
 *Acerca de esta tarea*

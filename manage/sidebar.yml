@@ -55,3 +55,5 @@ entries:
     url: "/manage/task_monitor_datastores_using_the_traditional_dashboard.html"
   - title: Analice los datos de rendimiento con el panel vVols
     url: "/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html"
+- title: Recuperación ante desastres del proveedor de VASA
+  url: "/manage/vasa_provider_disaster_recovery.html"

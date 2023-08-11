@@ -15,7 +15,7 @@ Cambiar el tamaño de un almacén de datos permite aumentar o reducir el almacen
 
 *Acerca de esta tarea*
 
-Si desea que VSC cambie el tamaño del volumen que contiene cuando cambia el tamaño del almacén de datos VMFS, no debe utilizar la opción *usar volumen existente* en la sección atributos de almacenamiento al aprovisionar inicialmente el almacén de datos VMFS, sino que en su lugar permita crear automáticamente un volumen nuevo para cada almacén de datos.
+Si desea que las herramientas de ONTAP redimensionen el volumen contenedor cuando cambie el tamaño del almacén de datos VMFS, no debe usar la opción *Use existing volume* en la sección Storage attributes al aprovisionar inicialmente el almacén de datos VMFS, sino que permita crear automáticamente un nuevo volumen para cada almacén de datos.
 
 Puede aumentar o reducir el tamaño de un almacén de datos NFS, pero en el caso de un almacén de datos VMFS, solo puede aumentar el tamaño. También se admite el redimensionamiento de los almacenes de datos con la opción de crecimiento y reducción automáticos de los almacenes de datos FlexGroup. Un FlexGroup que forma parte de un almacén de datos tradicional y un volumen FlexVol que forma parte de un almacén de datos vVols no se puede reducir por debajo del tamaño existente, pero que puede crecer como máximo del 120 %. Las Snapshot predeterminadas están habilitadas en estos volúmenes de FlexGroup y FlexVol.
 

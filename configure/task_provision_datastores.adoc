@@ -15,7 +15,7 @@ El aprovisionamiento de un almacén de datos crea un contenedor lógico para las
 
 *Lo que necesitará*
 
-* Para aprovisionar un almacén de datos en una SVM que está directamente conectada a Virtual Storage Console (VSC), debe haber añadido la SVM a VSC mediante una cuenta de usuario que tenga los privilegios pertinentes, no la cuenta de usuario de vsadmin predeterminada o el rol de vsadmin.
+* Para aprovisionar un almacén de datos en una SVM que está conectada directamente a las herramientas de ONTAP, debe haber añadido la SVM a las herramientas de ONTAP con una cuenta de usuario que tiene los privilegios correspondientes, no la cuenta de usuario vsadmin predeterminada o el rol vsadmin.
 +
 También puede aprovisionar un almacén de datos con un clúster de.
 
@@ -25,7 +25,7 @@ Consulte "activación del montaje del almacén de datos en distintas subredes".
 
 * Si utiliza NFS o iSCSI, y la subred es diferente entre los hosts ESXi y el sistema de almacenamiento, la configuración de NFS o iSCSI en el archivo de preferencias kaminoprefs debe incluir máscaras de subred de host ESXi.
 +
-Este archivo de preferencias también se aplica a la creación de almacenes de datos vVols. Consulte _Activar el montaje del almacén de datos en distintas subredes_ y _Configurar los archivos de preferencias de VSC_ para obtener más información.
+Este archivo de preferencias también se aplica a la creación de almacenes de datos vVols. Consulte _Enable datastore mount across different subnets_ y _Configure the ONTAP tools preferences files_ para obtener más información.
 
 * Si habilitó VASA Provider y desea especificar perfiles de funcionalidad de almacenamiento para los almacenes de datos de NFS o los almacenes de datos VMFS, debe haber creado uno o varios perfiles de funcionalidad de almacenamiento.
 * Para crear un almacén de datos NFSv4.1, debe haber habilitado NFSv4.1 en el nivel de SVM.
@@ -38,10 +38,10 @@ La opción *aprovisionar Datastore* permite especificar un perfil de capacidad d
 * En la versión vSphere 8,0, se admite el protocolo NVMe/FC.
 
 
-VSC puede crear un almacén de datos en un volumen NFS o una LUN:
+Las herramientas de ONTAP pueden crear un almacén de datos en un volumen NFS o LUN:
 
-* Para un almacén de datos NFS, VSC crea un volumen NFS en el sistema de almacenamiento y, a continuación, actualiza las políticas de exportación.
-* Para un almacén de datos VMFS, VSC crea un volumen nuevo (o usa un volumen existente, si seleccionó esa opción) y, a continuación, crea una LUN y un igroup.
+* Para un almacén de datos NFS, las herramientas de ONTAP crean un volumen NFS en el sistema de almacenamiento y, a continuación, actualizan las políticas de exportación.
+* Para un almacén de datos VMFS, las herramientas de ONTAP crean un volumen nuevo (o utilizan un volumen existente, si seleccionó esa opción) y, a continuación, crean un LUN y un igroup.
 
 
 [NOTE]
@@ -182,7 +182,7 @@ Puede seleccionar uno de los perfiles de capacidad de almacenamiento de la lista
  a| 
 Los atributos del almacenamiento
  a| 
-De forma predeterminada, VSC rellena los valores recomendados para las opciones *agregados* y *volúmenes*. Puede personalizar los valores según sus requisitos. No se admite la selección de agregados en los almacenes de datos FlexGroup, mientras ONTAP gestiona la selección de agregados.
+De forma predeterminada, las herramientas de ONTAP rellenan los valores recomendados para las opciones *Aggregates* y *volumes*. Puede personalizar los valores según sus requisitos. No se admite la selección de agregados en los almacenes de datos FlexGroup, mientras ONTAP gestiona la selección de agregados.
 
 La opción *Space reserve* disponible en el menú *Advanced* también se rellena para obtener resultados óptimos.
 

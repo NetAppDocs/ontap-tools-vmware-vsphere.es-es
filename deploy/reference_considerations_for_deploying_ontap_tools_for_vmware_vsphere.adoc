@@ -24,16 +24,16 @@ La siguiente tabla presenta una descripción general de lo que debe tener en cue
  a| 
 Puesta en marcha por primera vez de herramientas de ONTAP
  a| 
-La puesta en marcha de las herramientas de ONTAP instala automáticamente las funciones de VSC.
+La puesta en marcha de las herramientas de ONTAP instala automáticamente las características de las herramientas de ONTAP.
 
 link:../deploy/concept_installation_workflow_for_new_users.html["Flujo de trabajo de implementación para nuevos usuarios de herramientas de ONTAP para VMware vSphere"]
 
 
 
  a| 
-Actualizar desde una puesta en marcha existente de VSC
+Actualizar desde una puesta en marcha existente de herramientas de ONTAP
  a| 
-El procedimiento de actualización desde una puesta en marcha existente de VSC a las herramientas de ONTAP depende de la versión de VSC y de si ha puesto en marcha las herramientas de ONTAP. La sección de flujos de trabajo de implementación y actualización contiene más información.
+El procedimiento de actualización de una implementación existente de herramientas de ONTAP en herramientas de ONTAP depende de la versión de las herramientas de ONTAP y de si ha implementado las herramientas de ONTAP. La sección de flujos de trabajo de implementación y actualización contiene más información.
 
 link:../deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html["Flujo de trabajo de implementación para usuarios existentes de herramientas de ONTAP"]
 
@@ -43,16 +43,16 @@ Prácticas recomendadas antes de una actualización:
 +
 Después de la actualización, debe verificar que todos los sistemas de almacenamiento se detectaron automáticamente y que tienen las credenciales correctas.
 
-* Si modificó alguno de los roles estándar de VSC, debe copiar dichos roles para guardar los cambios.
+* Si ha modificado cualquiera de los roles estándar de herramientas de ONTAP, debe copiar esos roles para guardar los cambios.
 +
-VSC sobrescribe los roles estándar con los valores predeterminados actuales cada vez que reinicia el servicio VSC.
+Las herramientas de ONTAP sobrescriben las funciones estándar con los valores predeterminados actuales cada vez que reinicia el servicio de herramientas de ONTAP.
 
 
 
 
 
  a| 
-Regeneración de un certificado SSL para VSC
+Regeneración de un certificado SSL para las herramientas ONTAP
  a| 
 El certificado SSL se genera automáticamente al implementar las herramientas de ONTAP. Es posible que tenga que regenerar el certificado SSL para crear un certificado específico de sitio.
 
@@ -88,9 +88,9 @@ En la siguiente tabla se muestra una descripción general de lo que se necesita 
  a| 
 Requisitos de control de acceso basado en roles (RBAC)
  a| 
-VSC es compatible con el control de acceso basado en roles de vCenter Server y de ONTAP. La cuenta utilizada para registrar VSC en vCenter Server (`https://<appliance_ip>:8143/Register.html`) Debe ser un administrador de vCenter Server (asignado al rol de administrador de vCenter Server o de administrador). Si piensa ejecutar VSC como administrador, debe tener todos los permisos y privilegios necesarios para todas las tareas.
+Las herramientas de ONTAP son compatibles con el control de acceso basado en roles de vCenter Server y de ONTAP. La cuenta utilizada para registrar herramientas de ONTAP en vCenter Server (`https://<appliance_ip>:8143/Register.html`) Debe ser un administrador de vCenter Server (asignado al rol de administrador de vCenter Server o de administrador). Si planea ejecutar herramientas de ONTAP como administrador, debe tener todos los permisos y privilegios necesarios para todas las tareas.
 
-Si la empresa requiere que limite el acceso a objetos de vSphere, puede crear y asignar roles VSC estándar a los usuarios para que cumplan los requisitos de vCenter Server.
+Si su empresa requiere restringir el acceso a objetos de vSphere, puede crear y asignar roles de herramientas estándar de ONTAP a los usuarios para cumplir los requisitos de vCenter Server.
 
 Puede crear los roles de ONTAP recomendados mediante System Manager de ONTAP mediante el archivo JSON proporcionado con las herramientas de ONTAP.
 
@@ -153,11 +153,11 @@ Por motivos de seguridad, se recomienda que la longitud de la contraseña sea de
 
 * Debe proporcionar la dirección IP (IPv4 o IPv6) de la instancia de vCenter Server en la que desea registrar las herramientas de ONTAP.
 +
-El tipo de certificados VSC y VASA generados depende de la dirección IP (IPv4 o IPv6) que haya proporcionado durante la implementación. Al implementar herramientas de ONTAP, si no ha introducido ningún detalle de IP estático y su DHCP, la red proporciona direcciones IPv4 e IPv6.
+El tipo de herramientas de ONTAP y certificados VASA generados depende de la dirección IP (IPv4 o IPv6) que se proporcionó durante la implementación. Al implementar herramientas de ONTAP, si no ha introducido ningún detalle de IP estático y su DHCP, la red proporciona direcciones IPv4 e IPv6.
 
 * La dirección IP de las herramientas de ONTAP que se utiliza para registrar en vCenter Server depende del tipo de dirección IP de vCenter Server (IPv4 o IPv6) que se introdujo en el asistente de implementación.
 +
-Tanto los certificados VSC como los certificados VASA se generarán con el mismo tipo de dirección IP que se usó durante el registro de vCenter Server.
+Tanto las herramientas de ONTAP como los certificados de VASA se generarán con el mismo tipo de dirección IP que se usó durante el registro de vCenter Server.
 
 +
 

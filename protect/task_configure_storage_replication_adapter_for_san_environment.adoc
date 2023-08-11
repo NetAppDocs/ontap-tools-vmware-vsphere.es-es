@@ -13,6 +13,10 @@ summary: 'Debe configurar los sistemas de almacenamiento antes de ejecutar el ad
 [role="lead"]
 Debe configurar los sistemas de almacenamiento antes de ejecutar Storage Replication Adapter (SRA) para el administrador de recuperación del sitio (SRM).
 
+Las herramientas de ONTAP para VMware vSphere son compatibles con SRM Shared Recovery Site Configuration de VMware. Para obtener más información, consulte: https://docs.vmware.com/en/Site-Recovery-Manager/8.6/com.vmware.srm.install_config.doc/GUID-EBF84252-DF37-43CD-ADC8-E90F5254F315.html["Site Recovery Manager en una configuración de sitio de recuperación compartida"].
+
+La https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["Cómo configurar el SRA en un sitio de recuperación compartida de SRM"] El artículo de la KB detalla el procedimiento para configurar SRA para admitir la configuración del sitio de recuperación compartida de SRM.
+
 *Lo que necesitará*
 
 Debe haber instalado los siguientes programas en el sitio protegido y en el sitio de recuperación:

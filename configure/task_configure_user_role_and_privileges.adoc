@@ -16,6 +16,9 @@ Puede configurar nuevos roles de usuario para gestionar sistemas de almacenamien
 *Lo que necesitará*
 
 * Debería haber descargado el archivo privilegios de ONTAP desde las herramientas de ONTAP mediante \https://{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip.
++
+Consulte el artículo de la base de conocimientos - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges["Virtual Storage Console: Cómo recuperar el archivo JSON para configurar los roles y privilegios de usuario"] Para obtener instrucciones sobre cómo descargar el archivo de privilegios de ONTAP desde la CLI web.
+
 * Debe haber configurado el almacenamiento ONTAP 9.8P1 o posterior.
 * Inició sesión con privilegios de administrador del sistema de almacenamiento.
 

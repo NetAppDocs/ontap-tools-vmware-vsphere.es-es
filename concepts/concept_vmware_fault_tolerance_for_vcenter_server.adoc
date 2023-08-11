@@ -1,7 +1,7 @@
 ---
 permalink: concepts/concept_vmware_fault_tolerance_for_vcenter_server.html 
 sidebar: sidebar 
-keywords: VSC 
+keywords: ONTAP tools 
 summary: 'La función VMware vSphere Fault Tolerance \(FT\) proporciona una alta disponibilidad \(ha\) en un nivel superior y le permite proteger equipos virtuales sin que se pierdan datos o conexiones. Debe habilitar o deshabilitar las herramientas de vSphere FT para ONTAP desde vCenter Server.' 
 ---
 = Tolerancia a fallos de VMware vSphere

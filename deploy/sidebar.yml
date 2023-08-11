@@ -14,7 +14,7 @@ entries:
   url: "/qsg.html"
 - title: Requisitos para poner en marcha las herramientas de ONTAP
   entries:
-  - title: Requisitos de puertos para VSC
+  - title: Requisitos de puertos para las herramientas de ONTAP
     url: "/deploy/reference_port_requirements_for_vsc.html"
   - title: Requisitos de espacio y ajuste de tamaño para las herramientas de ONTAP
     url: "/deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html"
