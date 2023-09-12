@@ -15,7 +15,7 @@ EL proveedor VASA para ONTAP permite crear perfiles de funcionalidad de almacena
 
 Una funcionalidad de almacenamiento es un conjunto de atributos del sistema de almacenamiento que identifica un nivel específico de rendimiento del almacenamiento, eficiencia del almacenamiento y otras funcionalidades, como el cifrado del objeto de almacenamiento asociado con la funcionalidad de almacenamiento.
 
-Para los almacenes de datos tradicionales, puede utilizar un perfil de funcionalidad de almacenamiento para crear almacenes de datos de forma coherente con los atributos comunes y asignar políticas de calidad de servicio a ellos. Durante el aprovisionamiento, VSC muestra los clústeres, las SVM y los agregados que coinciden con el perfil de funcionalidad de almacenamiento. Puede generar un perfil de capacidad de almacenamiento a partir de almacenes de datos tradicionales existentes mediante la opción *GLOBAL AUTO-GENERATE PROFILES* del menú Storage Mapping. Una vez creado el perfil, puede usar VSC para supervisar el cumplimiento de normativas de los almacenes de datos con el perfil.
+Para los almacenes de datos tradicionales, puede utilizar un perfil de funcionalidad de almacenamiento para crear almacenes de datos de forma coherente con los atributos comunes y asignar políticas de calidad de servicio a ellos. Durante el aprovisionamiento, las herramientas de ONTAP muestran los clústeres, las SVM y los agregados que coinciden con el perfil de funcionalidad de almacenamiento. Puede generar un perfil de capacidad de almacenamiento a partir de almacenes de datos tradicionales existentes mediante la opción *GLOBAL AUTO-GENERATE PROFILES* del menú Storage Mapping. Después de crear el perfil, puede utilizar las herramientas de ONTAP para supervisar el cumplimiento de los almacenes de datos con el perfil.
 
 
 NOTE: Los almacenes de datos de VVOL no se admiten en la SVM directa.
@@ -24,15 +24,30 @@ Si se utiliza con almacenes de datos vVols, el asistente de aprovisionamiento pu
 
 Si se utiliza con vVols, también se utiliza el perfil de funcionalidad del almacenamiento para establecer el rendimiento del almacenamiento para el equipo virtual individual y colocarlo en el volumen FlexVol en el almacén de datos vVols que mejor satisfaga los requisitos de rendimiento. Puede especificar la política de calidad de servicio con IOPS mínimo y/o máximo para el rendimiento. Puede usar las políticas predeterminadas al aprovisionar una máquina virtual inicialmente, o cambiar la política de almacenamiento de máquinas virtuales más adelante si cambian los requisitos empresariales. Los perfiles de funcionalidad de almacenamiento predeterminados para esta versión de herramientas de ONTAP:
 
-* AFF_Thick
-* FAS_MAX20
-* FAS_default
-* AFF_default
-* Organización en niveles_AFF
-* Cifrado_AFF
-* Organización_en niveles_cifrado_AFF
-* AFF_Encrypted_min50
-* Platino
+* Platinum_AFF_A
+* Platinum_AFF_C
+* Platinum_ASA_A
+* AFF_NVME_AFF_A
+* AFF_NVME_AFF_C
+* AFF_NVME_ASA_A
+* AFF_THICK_AFF_A
+* AFF_THICK_AFF_C
+* AFF_THICK_ASA_A
+* AFF_DEFAULT_AFF_A
+* AFF_DEFAULT_AFF_C
+* AFF_DEFAULT_ASA_A
+* AFF_TIERING_AFF_A
+* AFF_TIERING_AFF_C
+* AFF_TIERING_ASA_A
+* AFF_ENCRYPTED_AFF_A
+* AFF_ENCRYPTED_AFF_C
+* AFF_ENCRYPTED_ASA_A
+* AFF_Encrypted_Tiering_AFF_A
+* AFF_Encrypted_Tiering_AFF_C
+* AFF_Encrypted_Tiering_ASA_A
+* AFF_Encrypted_min50_AFF_A
+* AFF_Encrypted_min50_AFF_C
+* AFF_Encrypted_min50_ASA_A
 * Bronce
 
 
@@ -51,9 +66,9 @@ Debe tener en cuenta las consideraciones que se deben tener en cuenta para crear
 +
 Esta funcionalidad proporciona una mayor flexibilidad a la hora de asignar diferentes métricas de calidad de servicio para diferentes VMDK de la misma máquina virtual que se aprovisiona en un almacén de datos virtual.
 
-* Puede configurar perfiles de funcionalidad del almacenamiento para almacenes de datos FAS y AFFdatastores.
+* Es posible configurar perfiles de capacidades de almacenamiento para almacenes de datos de cabina flash híbrida, ASA y AFF.
 +
-En el caso de los sistemas FAS y AFF, puede configurar la reserva de espacio para que sea gruesa o ligera.
+En los sistemas de cabina flash híbrida, ASA y AFF, se puede configurar la reserva de espacio para que sea gruesa o delgada.
 
 * Puede usar perfiles de funcionalidad de almacenamiento para proporcionar cifrado para los almacenes de datos.
 * No puede modificar los perfiles de funcionalidad de almacenamiento existentes (creados antes de la versión 7.2) después de actualizar desde una versión anterior de las herramientas de ONTAP para VMware vSphere a la versión más reciente de las herramientas de ONTAP.

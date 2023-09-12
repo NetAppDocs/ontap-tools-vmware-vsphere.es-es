@@ -2,7 +2,7 @@
 permalink: configure/task_configure_alarm_thresholds.html 
 sidebar: sidebar 
 keywords:  
-summary: Puede usar VSC para configurar alarmas con el fin de notificarle en qué casos los umbrales de los volúmenes y los umbrales de los agregados alcanzan los límites establecidos. 
+summary: Puede utilizar las herramientas de ONTAP para establecer alarmas que le notifiquen cuando los umbrales de volumen y los umbrales agregados alcancen los límites establecidos. 
 ---
 = Configure los umbrales de alarma
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Puede usar VSC para configurar alarmas con el fin de notificarle en qu�
 
 
 [role="lead"]
-Puede usar VSC para configurar alarmas con el fin de notificarle en qué casos los umbrales de los volúmenes y los umbrales de los agregados alcanzan los límites establecidos.
+Puede utilizar las herramientas de ONTAP para establecer alarmas que le notifiquen cuando los umbrales de volumen y los umbrales agregados alcancen los límites establecidos.
 
 * Pasos*
 

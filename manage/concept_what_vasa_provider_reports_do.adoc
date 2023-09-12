@@ -1,7 +1,7 @@
 ---
 permalink: manage/concept_what_vasa_provider_reports_do.html 
 sidebar: sidebar 
-keywords: VSC, VASA Provider, and SRA 
+keywords: ONTAP tools, VASA Provider, and SRA 
 summary: 'Los informes vVols muestran información detallada acerca de los almacenes de datos VMware Virtual Volumes \(vVols\) y las máquinas virtuales creadas en estos almacenes de datos. La consola vVols le permite revisar e identificar problemas potenciales con los almacenes de datos vVols y los equipos virtuales en vCenter Server.' 
 ---
 = Informes de vVols

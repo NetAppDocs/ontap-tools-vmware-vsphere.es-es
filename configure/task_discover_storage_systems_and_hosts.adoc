@@ -2,7 +2,7 @@
 permalink: configure/task_discover_storage_systems_and_hosts.html 
 sidebar: sidebar 
 keywords:  
-summary: 'Cuando se ejecuta por primera vez Virtual Storage Console \(VSC\) en una instancia de vSphere Client, VSC detecta los hosts ESXi, sus LUN y exportaciones NFS y los sistemas de almacenamiento de NetApp a los que pertenecen estas LUN y exportaciones.' 
+summary: Cuando se ejecutan por primera vez las herramientas de ONTAP en un cliente vSphere, las herramientas de ONTAP detectan los hosts ESXi, sus exportaciones de LUN y NFS y los sistemas de almacenamiento de NetApp propietarios de esos LUN y exportaciones. 
 ---
 = Detectar sistemas de almacenamiento y hosts
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Cuando se ejecuta por primera vez Virtual Storage Console \(VSC\) en u
 
 
 [role="lead"]
-Cuando se ejecuta Virtual Storage Console (VSC) en una instancia de vSphere Client, VSC detecta los hosts ESXi, sus LUN y exportaciones NFS y los sistemas de almacenamiento de NetApp que poseen esas LUN y exportaciones.
+Cuando se ejecutan por primera vez las herramientas de ONTAP en un cliente vSphere, las herramientas de ONTAP detectan los hosts ESXi, sus exportaciones de LUN y NFS y los sistemas de almacenamiento de NetApp propietarios de esos LUN y exportaciones.
 
 *Lo que necesitará*
 
@@ -21,16 +21,16 @@ Cuando se ejecuta Virtual Storage Console (VSC) en una instancia de vSphere Clie
 
 *Acerca de esta tarea*
 
-Puede detectar nuevos sistemas de almacenamiento o actualizar información sobre los sistemas de almacenamiento existentes para obtener la información más reciente sobre la configuración y la capacidad en cualquier momento. También puede modificar las credenciales que utiliza VSC para iniciar sesión en los sistemas de almacenamiento.
+Puede detectar nuevos sistemas de almacenamiento o actualizar información sobre los sistemas de almacenamiento existentes para obtener la información más reciente sobre la configuración y la capacidad en cualquier momento. También puede modificar las credenciales que utiliza las herramientas de ONTAP para iniciar sesión en los sistemas de almacenamiento.
 
-Al detectar los sistemas de almacenamiento de, VSC recopila información de los hosts ESXi gestionados por la instancia de vCenter Server.
+Al detectar los sistemas de almacenamiento, las herramientas de ONTAP recopilan información de los hosts ESXi que gestionan la instancia de vCenter Server.
 
 * Pasos*
 
 . En la página Home de vSphere Client, seleccione *hosts and Clusters*.
 . Haga clic con el botón derecho en el centro de datos requerido y seleccione *Herramientas de ONTAP de NetApp* > *Actualizar datos de host y almacenamiento* .
 +
-VSC muestra un cuadro de diálogo Confirmar que le informa de que esta acción reiniciará la detección de todos los sistemas de almacenamiento conectados, y puede demorar varios minutos. ¿Desea continuar?
+Las herramientas de ONTAP muestran un cuadro de diálogo Confirmar que le informa de que esta acción reiniciará la detección de todos los sistemas de almacenamiento conectados y puede demorar unos minutos. ¿Desea continuar?
 
 . Haga clic en *YES*.
 . Seleccione las controladoras de almacenamiento detectadas que tengan el estado `Authentication Failure`, Y, a continuación, haga clic en *ACCIONES* > *Modificar*.
@@ -40,6 +40,6 @@ VSC muestra un cuadro de diálogo Confirmar que le informa de que esta acción r
 
 Una vez completado el proceso de detección, realice lo siguiente:
 
-* Utilice VSC para configurar los ajustes del host ESXi para los hosts que muestran el icono Alert en la columna Adapter Settings, la columna MPIO Settings o la columna NFS Settings.
+* Use las herramientas de ONTAP para configurar los ajustes del host ESXi para los hosts que muestran el icono de alerta en la columna Adapter Settings, la columna MPIO Settings o la columna NFS Settings.
 * Proporcione las credenciales del sistema de almacenamiento.
 

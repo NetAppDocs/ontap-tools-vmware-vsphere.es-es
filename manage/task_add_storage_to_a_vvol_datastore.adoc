@@ -21,7 +21,7 @@ Cuando se añade un volumen de FlexVol, también existe la opción de cambiar el
 ====
 * Al expandir un almacén de datos vVols con funcionalidades de replicación, no puede crear nuevos volúmenes FlexVol, pero solo puede seleccionar volúmenes FlexVol preconfigurados de la lista existente.
 * Al clonar una máquina virtual protegida implementada en el almacén de datos con replicación vVols, se produce un error debido a la falta de espacio, debería aumentar el tamaño del volumen FlexVol.
-* Cuando se crea un almacén de datos vVols en un clúster de AFF, no es posible ampliar el almacén de datos con otro volumen FlexVol que tenga un perfil de capacidad de almacenamiento de generación automática.
+* Cuando se crea un almacén de datos vVols en un clúster de AFF o ASA, no se puede expandir el almacén de datos con otro volumen de FlexVol que tenga el perfil de funcionalidad de almacenamiento generado automáticamente.
 +
 ** Puede ampliar el almacén de datos vVols con volúmenes FlexVol que tengan perfiles de funcionalidad de almacenamiento creados previamente.
 

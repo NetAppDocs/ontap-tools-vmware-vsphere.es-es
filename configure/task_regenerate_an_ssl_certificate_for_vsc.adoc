@@ -23,6 +23,6 @@ https://kb.netapp.com/advice_and_troubleshooting/data_storage_software/vsc_and_v
 
 . Inicie sesión en la consola de mantenimiento.
 . Introduzca `1` Para acceder al menú Configuración de la aplicación.
-. En el menú Configuración de la aplicación, introduzca `3` Para detener el servicio VSC.
+. En el menú Configuración de la aplicación, introduzca `3` Para detener el servicio de herramientas de ONTAP.
 . Introduzca `7` Para regenerar el certificado SSL.
 

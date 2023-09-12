@@ -29,7 +29,7 @@ Estos valores se establecen automáticamente en el host ESXi cuando se actualiza
 
 * Pasos*
 
-. Cambie el nombre de `.vib` Archivo que ha descargado del sitio de soporte de NetApp a NetAppNasPlugin.vib para coincidir con el nombre predefinido que utiliza VSC.
+. Cambie el nombre de `.vib` Archivo que ha descargado del sitio de soporte de NetApp en NetAppNasPlugin.vib para que coincida con el nombre predefinido que utiliza las herramientas de ONTAP.
 . Haga clic en *Configuración* en la página de inicio de ONTAP Tools.
 . Haga clic en la ficha *NFS VAAI Tools*.
 . Haga clic en *Cambiar* en la sección *Versión existente*.
@@ -40,6 +40,6 @@ Debe seguir las instrucciones que aparecen en pantalla para completar la instala
 
 . Reinicie el host ESXi después de que finalice la instalación.
 +
-Cuando reinicia el host ESXi, VSC detecta automáticamente el plugin NFS VAAI. No es necesario realizar pasos adicionales para habilitar el plugin.
+Cuando reinicia el host ESXi, las herramientas ONTAP detectan automáticamente el plugin VAAI de NFS. No es necesario realizar pasos adicionales para habilitar el plugin.
 
 

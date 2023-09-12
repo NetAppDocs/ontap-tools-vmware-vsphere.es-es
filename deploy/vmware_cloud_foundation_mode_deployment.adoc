@@ -15,7 +15,10 @@ Las herramientas de ONTAP para VMware vSphere se pueden poner en marcha en un en
 
 El modo VCF permite crear contenedores para el almacenamiento sin necesidad de una instancia de vCenter Server. Vasa Provider se habilita de forma predeterminada después de la puesta en marcha de las herramientas ONTAP en modo VCF. Una vez completada la implementación, puede añadir sistemas de almacenamiento y crear contenedores mediante las API DE REST. El siguiente artículo contiene el procedimiento para agregar almacenamiento a las herramientas de ONTAP cuando VCF está activado. https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["Añada almacenamiento a herramientas de ONTAP desde Swagger-UI"].
 
-Se introduce una nueva API para generar el _Appliance-api-token_ que autentica las llamadas API. Algunas de las API existentes se modifican para incluir el encabezado _Appliance-api-token_. Con la versión 9,12 de las herramientas de ONTAP, Swagger no admite las API de 1,0. Los punteros que anteriormente estaban en 1,0 se mueven a las API de 2,0 o 3,0.
+Se introduce una nueva API para generar el _Appliance-api-token_ que autentica las llamadas API. Algunas de las API existentes se modifican para incluir el encabezado _Appliance-api-token_. A partir de la versión 9,12 de las herramientas de ONTAP, Swagger no admite las API de 1,0. Los punteros que anteriormente estaban en 1,0 se mueven a las API de 2,0 o 3,0.
+
+
+NOTE: En las herramientas de ONTAP para la versión VMware vSphere 9,13, las API del perfil de la funcionalidad de almacenamiento de 2,0 ya no están disponibles.
 
 Las API disponibles para el modo de implementación VCF son:
 
@@ -143,13 +146,11 @@ almacenamiento/volúmenes
 Mientras ejecuta la API de creación de contenedores, puede añadir volúmenes existentes al contenedor. Pero debe asegurarse de que los valores de compresión y deduplicación de los volúmenes existentes coincidan con la capacidad de almacenamiento del contenedor. La creación de la máquina virtual falla cuando los valores no coinciden. En la siguiente tabla, se proporcionan detalles sobre los valores que deberían tener los volúmenes existentes para los perfiles de funcionalidad de almacenamiento correspondientes.
 
 |===
-
-
 | *Perfil de capacidad de almacenamiento en contenedores* | *Deduplicación* | *Compresión* 
 
 
  a| 
-Platino
+Platinum_AFF_A
  a| 
 Ambas
  a| 
@@ -158,7 +159,7 @@ Ambas
 
 
  a| 
-AFF_Thick
+Platinum_AFF_C
  a| 
 Ambas
  a| 
@@ -167,7 +168,7 @@ Ambas
 
 
  a| 
-AFF_default
+Platinum_ASA_A
  a| 
 Ambas
  a| 
@@ -176,7 +177,7 @@ Ambas
 
 
  a| 
-Organización en niveles_AFF
+AFF_NVME_AFF_A
  a| 
 Ambas
  a| 
@@ -185,7 +186,7 @@ Ambas
 
 
  a| 
-Cifrado_AFF
+AFF_NVME_AFF_C
  a| 
 Ambas
  a| 
@@ -194,7 +195,7 @@ Ambas
 
 
  a| 
-Organización_en niveles_cifrado_AFF
+AFF_NVME_ASA_A
  a| 
 Ambas
  a| 
@@ -203,7 +204,7 @@ Ambas
 
 
  a| 
-AFF_Encrypted_min50
+AFF_THICK_AFF_A
  a| 
 Ambas
  a| 
@@ -212,7 +213,25 @@ Ambas
 
 
  a| 
-FAS_default
+AFF_THICK_AFF_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_THICK_ASA_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_DEFAULT_AFF_A
  a| 
 Información previa
  a| 
@@ -221,11 +240,128 @@ Ninguno
 
 
  a| 
-FAS_Max20
+AFF_DEFAULT_AFF_C
  a| 
 Información previa
  a| 
 Ninguno
+
+
+
+ a| 
+AFF_DEFAULT_ASA_A
+ a| 
+Información previa
+ a| 
+Ninguno
+
+
+
+ a| 
+AFF_TIERING_AFF_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_TIERING_AFF_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_TIERING_ASA_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_ENCRYPTED_AFF_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_ENCRYPTED_AFF_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_ENCRYPTED_ASA_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_Encrypted_Tiering_AFF_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_Encrypted_Tiering_AFF_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_Encrypted_Tiering_ASA_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_Encrypted_min50_AFF_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_Encrypted_min50_AFF_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_Encrypted_min50_ASA_A
+ a| 
+Ambas
+ a| 
+Ambas
 
 
 

@@ -13,6 +13,9 @@ summary: 'Puede configurar la replicación para el almacén de datos vVols media
 [role="lead"]
 Puede configurar la replicación para el almacén de datos vVols mediante las herramientas de ONTAP. El objetivo principal de la replicación de vVols es proteger los equipos virtuales críticos durante la recuperación ante desastres mediante VMware Site Recovery Manager (SRM).
 
+
+NOTE: Los flujos de trabajo de Site Recovery Manager (SRM) producen un error en vCenter 8,0 con un mensaje de error. La replicación de VVol funciona según lo esperado en la versión 7.0u3 de vCenter.
+
 Sin embargo, para configurar la replicación de vVols para herramientas ONTAP, se deben habilitar la funcionalidad VASA Provider y la replicación vVols. El proveedor DE VASA está habilitado de forma predeterminada en las herramientas de ONTAP. La replicación basada en cabina se realiza en el nivel de FlexVol. Cada almacén de datos vVols se asigna a un contenedor de almacenamiento que consta de uno o más volúmenes FlexVol. Los volúmenes de FlexVol deben preconfigurarse con SnapMirror de ONTAP.
 
 

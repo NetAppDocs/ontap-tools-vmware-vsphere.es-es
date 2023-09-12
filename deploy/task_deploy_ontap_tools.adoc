@@ -30,7 +30,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 * Debe haber cerrado sesión y cerrado todas las sesiones del explorador de vSphere Client y haber eliminado la caché del explorador para evitar cualquier problema con la caché del explorador durante la implementación de las herramientas de ONTAP.
 * Debe haber habilitado el protocolo de mensajes de control de Internet (ICMP).
 +
-Si ICMP está deshabilitado, genera errores en la configuración inicial de las herramientas de ONTAP y VSC no puede iniciar los servicios de VSC y VASA Provider después de la implementación. Es necesario habilitar manualmente los servicios de VSC y proveedor VASA después de la implementación.
+Si ICMP está deshabilitado, la configuración inicial de herramientas ONTAP genera errores y las herramientas de ONTAP no pueden iniciar las herramientas ONTAP y los servicios del proveedor VASA después de la implementación. Debe habilitar manualmente las herramientas ONTAP y los servicios del proveedor VASA después de la implementación.
 
 
 
@@ -81,7 +81,7 @@ Mientras espera a que termine la implementación, puede ver el progreso de la im
 
 . Encienda la máquina virtual de herramientas de ONTAP y, a continuación, abra una consola de la máquina virtual que ejecuta las herramientas de ONTAP.
 . Compruebe que las herramientas de ONTAP se están ejecutando una vez completada la implementación.
-. Si las herramientas de ONTAP no están registradas en ninguna instancia de vCenter Server, utilice `\https://appliance_ip:8143/Register.html` Para registrar la instancia de VSC. Register.html le redirige a la página de Swagger. A partir de las herramientas de ONTAP 9,12, el registro de las herramientas de ONTAP con vCenter se produce desde la página de Swagger.
+. Si las herramientas de ONTAP no están registradas en ninguna instancia de vCenter Server, utilice `\https://appliance_ip:8143/Register.html` Para registrar la instancia de herramientas de ONTAP. Register.html le redirige a la página de Swagger. A partir de las herramientas de ONTAP 9,12, el registro de las herramientas de ONTAP con vCenter se produce desde la página de Swagger.
 +
 Use la API POSTERIOR para registrar herramientas de ONTAP en vCenter a partir de la versión 9,12.
 

@@ -15,7 +15,8 @@ Puede comprobar los archivos de registro en el directorio '/opt/netapp/vscserver
 
 Los siguientes tres archivos de registro pueden ser útiles para identificar problemas:
 
-* 'cxf.log', con información sobre el tráfico de API que entra y sale de VASA Provider *'kaminoPrefs.xml', que contiene información acerca de la configuración de VSC
+* 'cxf.log', que contiene información sobre el tráfico de API hacia y hacia fuera del proveedor VASA
+*'kaminoPrefs.xml', que contiene información sobre la configuración de las herramientas de ONTAP
 * 'Vvolvp.log', que contiene toda la información de registro sobre VASA Provider
 
 
@@ -29,7 +30,7 @@ El menú de mantenimiento de herramientas de ONTAP para VMware vSphere le permit
 
 Al establecer los niveles de registro, se actualizan los siguientes archivos:
 
-* Servidor VSC: "kamino.log" y "vvolvp.log"
+* Servidor de herramientas ONTAP: 'kamino.log' y 'vvolvp.log'
 * Servidor del proveedor DE VASA: "Vvolvp.log", "error.log" y "netapp.log"
 
 

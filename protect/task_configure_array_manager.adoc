@@ -39,7 +39,7 @@ NOTE: VMware no admite el protocolo NFS4.1 para SRM.
 *** Si se conecta directamente a una SVM, debe introducir la dirección IP de la LIF de gestión de SVM.
 +
 
-NOTE: Al configurar el administrador de cabinas, debe utilizar la misma conexión y las mismas credenciales para el sistema de almacenamiento que se utilizó para añadir el sistema de almacenamiento en el menú Storage Systems de Virtual Storage Console. Por ejemplo, si la configuración del administrador de cabinas tiene el ámbito de SVM, debe añadirse el almacenamiento en VSC a nivel de SVM.
+NOTE: Al configurar el administrador de cabinas, debe utilizar la misma conexión y las mismas credenciales para el sistema de almacenamiento que se utilizó para añadir el sistema de almacenamiento en el menú Storage Systems de Virtual Storage Console. Por ejemplo, si la configuración de array Manager se encuentra dentro del ámbito SVM, deberá añadirse el almacenamiento de las herramientas de ONTAP en el nivel de SVM.
 
 
 

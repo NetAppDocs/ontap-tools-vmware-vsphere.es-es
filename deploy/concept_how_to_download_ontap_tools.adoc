@@ -13,6 +13,6 @@ summary: Puede descargar el archivo .ova para las herramientas de ONTAP para VMw
 [role="lead"]
 Puede descargar la `.zip` Archivo que contiene binarios (_.ova_) y certificados firmados para las herramientas de ONTAP para VMware vSphere del https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["Sitio de soporte de NetApp"^].
 
-El archivo _.ova_ incluye las herramientas de ONTAP. Una vez finalizada la puesta en marcha, los productos VSC, VASA y SRA se instalan en el entorno. De forma predeterminada, VSC comienza a trabajar en cuanto decida sobre el modelo de puesta en marcha siguiente y decida si desea habilitar el proveedor VASA y el SRA en función de sus requisitos.
+El archivo _.ova_ incluye las herramientas de ONTAP. Una vez finalizada la puesta en marcha, se instalan en el entorno las herramientas de ONTAP, VASA y los productos del SRA. De forma predeterminada, las herramientas de ONTAP empezarán a funcionar tan pronto como decida el modelo de implementación posterior y decida si habilitar el proveedor VASA y el SRA en función de sus requisitos.
 
 Si desea habilitar el SRA en la implementación de herramientas de ONTAP, debe haber instalado el plugin del SRA en el servidor del administrador de recuperación del sitio (SRM). Puede descargar el archivo de instalación del complemento SRA en el menú *adaptador de replicación de almacenamiento para ONTAP* de la sección Descargas de software.

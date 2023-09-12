@@ -34,7 +34,7 @@ entries:
   - title: Descripción general de la consola de mantenimiento de las herramientas
       de ONTAP
     url: "/manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html"
-  - title: Archivos de registro de VSC y VASA Provider
+  - title: Herramientas de ONTAP y archivos de registro del proveedor VASA
     url: "/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html"
   - title: Cambie la contraseña del administrador
     url: "/manage/task_change_the_administrative_password.html"

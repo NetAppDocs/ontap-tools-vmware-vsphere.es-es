@@ -11,7 +11,7 @@ summary: Cuando trabaja con las herramientas estándar de ONTAP® para funciones
 
 
 [role="lead"]
-Cuando trabaja con las herramientas estándar de ONTAP® para funciones de VMware vSphere, hay algunas directrices que debe seguir.
+Cuando trabaja con herramientas estándar de ONTAP para roles de VMware vSphere, hay ciertas directrices que deben seguir.
 
 No debe modificar directamente los roles estándar. Si lo hace, las herramientas de ONTAP sobrescribirán los cambios cada vez que actualice las herramientas de ONTAP. Installer actualiza las definiciones de rol estándar cada vez que actualiza las herramientas de ONTAP. Al hacer esto, se garantiza que los roles sean actualizados para la versión de las herramientas de ONTAP, así como para todas las versiones compatibles de vCenter Server.
 

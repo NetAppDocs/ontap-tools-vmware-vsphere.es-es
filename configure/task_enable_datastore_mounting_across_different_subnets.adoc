@@ -2,7 +2,7 @@
 permalink: configure/task_enable_datastore_mounting_across_different_subnets.html 
 sidebar: sidebar 
 keywords:  
-summary: 'Si utiliza iSCSI o NFS y la subred es diferente entre los hosts ESXi y el sistema de almacenamiento, debe modificar los archivos de preferencias de las herramientas de ONTAP para VMware vSphere. Si no modifica el archivo de preferencias, el aprovisionamiento del almacén de datos genera errores porque Virtual Storage Console \(VSC\) no puede montar el almacén de datos.' 
+summary: Si utiliza iSCSI o NFS y la subred es diferente entre los hosts ESXi y el sistema de almacenamiento, debe modificar los archivos de preferencias de las herramientas de ONTAP para VMware vSphere. Si no modifica el archivo de preferencias, se produce un error en el aprovisionamiento del almacén de datos porque las herramientas de ONTAP no pueden montar el almacén de datos. 
 ---
 = Habilite el montaje del almacén de datos en diferentes subredes
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Si utiliza iSCSI o NFS y la subred es diferente entre los hosts ESXi y
 
 
 [role="lead"]
-Si utiliza iSCSI o NFS y la subred es diferente entre los hosts ESXi y el sistema de almacenamiento, debe modificar los archivos de preferencias de las herramientas de ONTAP para VMware vSphere. Si no modifica el archivo de preferencias, el aprovisionamiento del almacén de datos genera errores porque Virtual Storage Console (VSC) no puede montar el almacén de datos.
+Si utiliza iSCSI o NFS y la subred es diferente entre los hosts ESXi y el sistema de almacenamiento, debe modificar los archivos de preferencias de las herramientas de ONTAP para VMware vSphere. Si no modifica el archivo de preferencias, se produce un error en el aprovisionamiento del almacén de datos porque las herramientas de ONTAP no pueden montar el almacén de datos.
 
 *Acerca de esta tarea*
 

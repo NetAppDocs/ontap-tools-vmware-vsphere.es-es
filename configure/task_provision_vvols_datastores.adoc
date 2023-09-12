@@ -104,7 +104,7 @@ Esta sección le permite seleccionar si desea que el almacén de datos vVols ten
 
 *Nota:* al crear volúmenes FlexVol en ONTAP, debe asegurarse de crearlos con los atributos que desee seleccionar en el perfil de capacidad de almacenamiento. Tanto los volúmenes de FlexVol de protección de datos como de lectura deben tener atributos similares.
 
-Después de crear los volúmenes FlexVol y de inicializar SnapMirror en ONTAP, debe ejecutar una nueva detección del almacenamiento en VSC para poder ver los nuevos volúmenes.
+Después de crear los volúmenes de FlexVol y de inicializar SnapMirror en ONTAP, debería ejecutar una detección del almacenamiento en las herramientas de ONTAP para poder ver los volúmenes nuevos.
 
 
 

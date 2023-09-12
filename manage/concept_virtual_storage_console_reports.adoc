@@ -2,7 +2,7 @@
 permalink: manage/concept_virtual_storage_console_reports.html 
 sidebar: sidebar 
 keywords:  
-summary: Puede utilizar el menú de informes de la consola de herramientas de ONTAP para ver informes predefinidos de todos los almacenes de datos gestionados por una instancia de VSC seleccionada en una instancia concreta de vCenter Server. Puede realizar operaciones como ordenar y exportar informes. 
+summary: Puede usar el menú Informes de la consola de herramientas de ONTAP para ver informes predefinidos de todos los almacenes de datos gestionados por una instancia de ONTAP Tools seleccionada en una instancia concreta de vCenter Server. Puede realizar operaciones como ordenar y exportar informes. 
 ---
 = Descripción general de los informes de vVols y almacenes de datos de ONTAP
 :allow-uri-read: 
@@ -11,13 +11,13 @@ summary: Puede utilizar el menú de informes de la consola de herramientas de ON
 
 
 [role="lead"]
-Puede utilizar el menú * Reports* de la consola de herramientas de ONTAP para ver informes predefinidos para todos los almacenes de datos gestionados por una instancia de VSC seleccionada en un vCenter Server en particular. Puede realizar operaciones como ordenar y exportar informes.
+Puede utilizar el menú *Informes* de la consola de herramientas de ONTAP para ver informes predefinidos de todos los almacenes de datos gestionados por una instancia de herramientas de ONTAP seleccionada en un vCenter Server concreto. Puede realizar operaciones como ordenar y exportar informes.
 
 Los informes muestran información detallada sobre los almacenes de datos y las máquinas virtuales, lo que permite revisar e identificar problemas potenciales con los almacenes de datos y las máquinas virtuales en vCenter Server
 
 Es posible ver, ordenar y exportar informes.
 
-Virtual Storage Console (VSC) ofrece los siguientes informes predefinidos:
+Las herramientas de ONTAP proporcionan los siguientes informes predefinidos:
 
 * Informe del almacén de datos
 * Informe de máquinas virtuales
@@ -73,7 +73,7 @@ También puede verificar la hora en la que se generó el informe. El menú Datas
 
 *Informe de máquina virtual*
 
-El menú Virtual Machine Report ofrece las métricas de rendimiento de todas las máquinas virtuales que utilizan almacenes de datos aprovisionados por VSC para una instancia seleccionada de vCenter Server. Las métricas de máquina virtual que se muestran en los informes de máquinas virtuales son datos históricos que se recopilan cada 30 minutos para las máquinas virtuales de almacenes de datos tradicionales. Las opciones "última actualización" y "próxima actualización" se agregan a la tabla para proporcionar detalles sobre cuándo se recopilaron los datos y cuándo será la siguiente recopilación de datos.
+El menú Virtual Machine Report ofrece métricas de rendimiento de todas las máquinas virtuales que utilizan los almacenes de datos aprovisionados por las herramientas de ONTAP para un servidor vCenter Server seleccionado. Las métricas de máquina virtual que se muestran en los informes de máquinas virtuales son datos históricos que se recopilan cada 30 minutos para las máquinas virtuales de almacenes de datos tradicionales. Las opciones "última actualización" y "próxima actualización" se agregan a la tabla para proporcionar detalles sobre cuándo se recopilaron los datos y cuándo será la siguiente recopilación de datos.
 
 * Nombre de la máquina virtual
 * Nombre del almacén de datos
@@ -179,7 +179,7 @@ El estado del archivo log disponible es:
 
 Las herramientas de ONTAP para VMware vSphere generan registro de auditoría para los siguientes aspectos:
 
-* Servicio VSC
+* Servicio de herramientas de ONTAP
 +
 Ubicación del registro de auditoría para vscservice: _/opt/netapp/vscservice/vsc-audit.log_. Es posible cambiar los siguientes parámetros del informe de integridad del registro en el archivo _/opt/netapp/vscserver/etc/log4j2.properties_:
 

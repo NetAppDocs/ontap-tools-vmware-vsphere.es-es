@@ -19,7 +19,7 @@ summary: Proporciona instrucciones para poner en marcha e inicializar herramient
 
 
 [role="lead"]
-Las herramientas de ONTAP para VMware vSphere es un único complemento de vCenter Server que incluye las extensiones VSC, VASA Provider y el adaptador de replicación del almacenamiento (SRA). Se recomienda VSC para todos los entornos de ONTAP vSphere al configurar los ajustes del host ESXi y aprovisionar almacenamiento ONTAP mediante las prácticas recomendadas. El proveedor VASA es necesario para el soporte de volúmenes virtuales (vVols) y el SRA funciona conjuntamente con el administrador de recuperación del sitio de VMware.
+Las herramientas de ONTAP para VMware vSphere son un único complemento vCenter Server que incluye herramientas ONTAP, proveedores VASA y extensiones de adaptador de replicación de almacenamiento (SRA). Se recomiendan las herramientas de ONTAP para todos los entornos de ONTAP vSphere, ya que configuran los ajustes del host ESXi y aprovisionan el almacenamiento de ONTAP mediante prácticas recomendadas. El proveedor VASA es necesario para el soporte de volúmenes virtuales (vVols) y el SRA funciona conjuntamente con el administrador de recuperación del sitio de VMware.
 
 
 

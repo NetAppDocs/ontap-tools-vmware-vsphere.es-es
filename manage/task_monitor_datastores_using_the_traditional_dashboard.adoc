@@ -35,7 +35,7 @@ La consola tradicional de las herramientas de ONTAP le permite ver almacenes de 
 El portlet datastores proporciona los siguientes detalles:
 
 +
-** El número de almacenes de datos tradicionales junto con sus métricas de rendimiento que gestiona VSC en su instancia de vCenter Server
+** Número de almacenes de datos tradicionales junto con sus métricas de rendimiento que gestionan las herramientas de ONTAP en la instancia de vCenter Server
 ** Los cinco almacenes de datos principales según los parámetros de uso y rendimiento de los recursos que se pueden modificar, si es necesario, puede cambiar la lista de los almacenes de datos según el espacio utilizado, IOPS o latencia y el orden requerido.
 
 

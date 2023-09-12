@@ -2,7 +2,7 @@
 permalink: configure/reference_configure_guest_operating_system_scripts.html 
 sidebar: sidebar 
 keywords: Guest operating system 
-summary: 'Las imágenes ISO de los scripts del sistema operativo invitado \(OS\) se montan en las herramientas ONTAP® para el servidor VMware vSphere. Para utilizar los scripts del sistema operativo invitado para configurar los tiempos de espera de almacenamiento de las máquinas virtuales, se deben montar los scripts desde vSphere Client.' 
+summary: 'Las imágenes ISO de los scripts \(OS\) de sistemas operativos invitados se montan en las herramientas de ONTAP para el servidor VMware vSphere. Para utilizar los scripts del sistema operativo invitado para configurar los tiempos de espera de almacenamiento de las máquinas virtuales, se deben montar los scripts desde vSphere Client.' 
 ---
 = Configurar los scripts del sistema operativo invitado
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Las imágenes ISO de los scripts del sistema operativo invitado \(OS\)
 
 
 [role="lead"]
-Las imágenes ISO de los scripts del sistema operativo invitado (SO) se montan en las herramientas ONTAP® para el servidor VMware vSphere. Para utilizar los scripts del sistema operativo invitado para configurar los tiempos de espera de almacenamiento de las máquinas virtuales, se deben montar los scripts desde vSphere Client.
+Las imágenes ISO de los scripts de sistema operativo invitado se montan en herramientas para VMware vSphere Server. Para utilizar los scripts del sistema operativo invitado para configurar los tiempos de espera de almacenamiento de las máquinas virtuales, se deben montar los scripts desde vSphere Client.
 
 |===
 
@@ -45,6 +45,6 @@ Solaris
 \https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso
 
 |===
-Debe instalar el script desde la copia de la instancia de VSC que está registrada en la instancia de vCenter Server (ELM) que gestiona la máquina virtual. Si su entorno incluye varias instancias de vCenter Server, debe seleccionar la instancia que contenga la máquina virtual para la que desea configurar los valores de tiempo de espera del almacenamiento.
+Debe instalar el script desde la copia de la instancia de herramientas de ONTAP que está registrada en la instancia de vCenter Server (ELM) que gestiona la máquina virtual. Si su entorno incluye varias instancias de vCenter Server, debe seleccionar la instancia que contenga la máquina virtual para la que desea configurar los valores de tiempo de espera del almacenamiento.
 
 Debe iniciar sesión en la máquina virtual y ejecutar el script para configurar los valores de tiempo de espera de almacenamiento.

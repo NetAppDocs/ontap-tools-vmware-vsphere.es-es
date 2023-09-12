@@ -82,7 +82,7 @@ Virtual Storage Console de NetApp > Gestión basada en políticas > Gestión o p
  a| 
 Administrador de VSC
  a| 
-Tareas de VSC y VASA Provider relacionadas con los perfiles de funcionalidad de almacenamiento y la configuración de umbral.
+Herramientas de ONTAP y tareas del proveedor VASA relacionadas con los perfiles de capacidad de almacenamiento y la configuración de umbral.
 
 |===
 

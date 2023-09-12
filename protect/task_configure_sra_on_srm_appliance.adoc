@@ -23,6 +23,7 @@ La configuración del SRA en el dispositivo de SRM almacena las credenciales del
 
 * Pasos*
 
+. En el menú del cliente de vSphere, selecciona *Herramientas de NetApp ONTAP* > *Configuración* > *Configuración administrativa* > *Administrar capacidades* > *Activar adaptador de replicación de almacenamiento (SRA)*
 . En la pantalla del dispositivo SRM, haga clic en *adaptador de replicación de almacenamiento* > *Nuevo adaptador*.
 . Cargue el archivo _.tar.gz_ en SRM.
 . Vuelva a analizar los adaptadores para verificar que los detalles se actualizan en la página adaptadores de replicación de almacenamiento SRM.

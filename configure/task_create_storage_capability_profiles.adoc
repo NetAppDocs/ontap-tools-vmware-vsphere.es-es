@@ -2,7 +2,7 @@
 permalink: configure/task_create_storage_capability_profiles.html 
 sidebar: sidebar 
 keywords:  
-summary: Puede usar VSC para crear manualmente perfiles de funcionalidades de almacenamiento, generar automáticamente un perfil según las funcionalidades de un almacén de datos o modificar un perfil para satisfacer sus requisitos. 
+summary: Puede usar herramientas de ONTAP para crear manualmente perfiles de funcionalidad de almacenamiento, generar automáticamente un perfil según las capacidades de un almacén de datos o modificar un perfil para cumplir sus requisitos. 
 ---
 = Crear perfiles de funcionalidad del almacenamiento
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Puede usar VSC para crear manualmente perfiles de funcionalidades de al
 
 
 [role="lead"]
-Puede usar VSC para crear manualmente perfiles de funcionalidades de almacenamiento, generar automáticamente un perfil según las funcionalidades de un almacén de datos o modificar un perfil para satisfacer sus requisitos.
+Puede usar herramientas de ONTAP para crear manualmente perfiles de funcionalidad de almacenamiento, generar automáticamente un perfil según las capacidades de un almacén de datos o modificar un perfil para cumplir sus requisitos.
 
 *Lo que necesitará*
 
@@ -69,9 +69,10 @@ La mayoría de los campos en este asistente son claros y explicativos. En la sig
  a| 
 Identificación de múltiples perfiles
  a| 
-Puede utilizar el campo *Descripción* de la pestaña Nombre y Descripción para describir el propósito del perfil de capacidad de almacenamiento. Proporcionar una buena descripción es útil porque es una buena práctica configurar diferentes perfiles basados en las aplicaciones que se utilizan.
+Puede usar el campo *Descripción* en la pestaña Nombre y Descripción para describir el propósito del perfil de capacidad de almacenamiento (SCP). Proporcionar una buena descripción es útil porque es una buena práctica configurar diferentes perfiles basados en las aplicaciones que se utilizan.
 
-Por ejemplo, una aplicación clave requiere un perfil con funcionalidades que admitan un mayor rendimiento, como una plataforma AFF. Un almacén de datos que se usa para pruebas o entrenamiento puede usar un perfil con una plataforma FAS de menor rendimiento y habilitar todas las funcionalidades de eficiencia del almacenamiento y organización en niveles para controlar los costes.
+Por ejemplo, una aplicación vital para el negocio requiere un perfil con capacidades que admitan un rendimiento superior, como la plataforma AFF y ASA. Un almacén de datos que se usa para pruebas o entrenamiento puede usar un perfil con una plataforma Flash Array Hybrid de menor rendimiento y para habilitar todas las funcionalidades de eficiencia del almacenamiento y la organización en niveles para controlar los costes.
+La combinación del tipo de plataforma y el indicador asimétrico determina el tipo de SCPs. Por ejemplo: Platinum_ASA_A, Platinum_AFF_A, Platinum_AFF_C.
 
 Si ha habilitado el modo «"vinculado"» para vCenter Server, debe seleccionar la instancia de vCenter Server para la cual desea crear el perfil de funcionalidad de almacenamiento.
 
@@ -80,7 +81,7 @@ Si ha habilitado el modo «"vinculado"» para vCenter Server, debe seleccionar l
  a| 
 Plataforma
  a| 
-Puede seleccionar el sistema de almacenamiento para que tenga el tipo de plataforma AFF o FAS. Las opciones de las pantallas siguientes se actualizan en función de la selección del tipo de sistema de almacenamiento.
+Puede crear un perfil de funcionalidad de almacenamiento con tipos de plataforma (Rendimiento, capacidad, cabina flash híbrida) y una nueva funcionalidad de almacenamiento que sea el indicador asimétrico. Las opciones de las pantallas siguientes se actualizan en función de la selección del tipo de sistema de almacenamiento.
 
 
 
@@ -118,13 +119,17 @@ Atributos de almacenamiento
  a| 
 Los atributos de almacenamiento que se pueden habilitar en esta pestaña dependen del tipo de almacenamiento que se seleccione en la pestaña Personality.
 
-** Si selecciona el almacenamiento de FAS, puede configurar la reserva de espacio (grueso o fino), habilitar la deduplicación, la compresión y el cifrado.
+** Si selecciona almacenamiento híbrido en la cabina flash, puede configurar la reserva de espacio (gruesa o fina), habilitar la deduplicación, la compresión y el cifrado.
 +
-El atributo de organización en niveles está deshabilitado porque este atributo no se aplica al almacenamiento FAS.
+El atributo de organización en niveles está deshabilitado porque este atributo no se aplica al almacenamiento híbrido de cabina flash.
 
 ** Si selecciona el almacenamiento de AFF, puede habilitar el cifrado y la organización en niveles.
 +
 La deduplicación y la compresión están habilitadas de forma predeterminada en el almacenamiento de AFF y no se pueden deshabilitar.
+
+** Si selecciona Almacenamiento de ASA, puede habilitar el cifrado y la organización en niveles.
++
+La deduplicación y la compresión están habilitadas de forma predeterminada para el almacenamiento de ASA y no se pueden deshabilitar.
 
 +
 El atributo de organización en niveles permite el uso de volúmenes que forman parte de un agregado habilitado para FabricPool (compatible con VASA Provider para sistemas AFF con ONTAP 9.4 y versiones posteriores). Puede configurar una de las siguientes directivas para el atributo de organización en niveles:

@@ -1,7 +1,7 @@
 ---
 permalink: concepts/concept_vmware_high_availability_for_vcenter_server.html 
 sidebar: sidebar 
-keywords: VSC 
+keywords: ONTAP tools 
 summary: 'Puede configurar su entorno de vSphere donde se pongan en marcha las herramientas de ONTAP para VMware vSphere para obtener una \(ha\) de alta disponibilidad. La función de alta disponibilidad de VMware ofrece protección tras fallos frente a fallos del hardware y fallos del sistema operativo en entornos virtuales.' 
 ---
 = VMware vSphere ha
