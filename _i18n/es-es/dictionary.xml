@@ -2107,7 +2107,6 @@ La combinación del tipo de plataforma y el indicador asimétrico determina el t
   <block id="e35bb7c62e5e99a4dd4c45dc7401d654" category="paragraph">Las imágenes ISO de los scripts de sistema operativo invitado se montan en herramientas para VMware vSphere Server. Para utilizar los scripts del sistema operativo invitado para configurar los tiempos de espera de almacenamiento de las máquinas virtuales, se deben montar los scripts desde vSphere Client.</block>
   <block id="7a7c304e2893cb9575f4c95e13bd9557" category="paragraph">Debe instalar el script desde la copia de la instancia de herramientas de ONTAP que está registrada en la instancia de vCenter Server (ELM) que gestiona la máquina virtual. Si su entorno incluye varias instancias de vCenter Server, debe seleccionar la instancia que contenga la máquina virtual para la que desea configurar los valores de tiempo de espera del almacenamiento.</block>
   <block id="955b51e13e470f907369543549a3a405" category="inline-link">Notas de la versión de ONTAP tools para VMware vSphere 9,13</block>
-  <block id="5e6870560e6c8c9613501cc132ae6c39" category="paragraph">Para obtener más información, consulte<block ref="a04b4fbd78e27d3612eea8f3ed389176" category="inline-link-rx"></block>.</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Código abierto</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.</block>
   <block id="b1659ef2c01d8401d9bc67bd39f2ad1d" category="inline-link">Aviso para las herramientas de ONTAP para VMware vSphere 9,13</block>
@@ -2131,4 +2130,5 @@ Ejecute los siguientes comandos en la interfaz de línea de comandos de ONTAP co
   <block id="5693a336860dc6b738a1f289ec743b63" category="sidebar">Herramientas de ONTAP para documentos de VMware vSphere 9,13</block>
   <block id="48c1a759d48445c3852e48203f0d0aae" category="sidebar">Herramientas de ONTAP y archivos de registro del proveedor VASA</block>
   <block id="b1ea6eb22e631a7bdaef7c4f2b598432" category="sidebar">Regenerar un certificado SSL para las herramientas ONTAP</block>
+  <block id="ccfe3ded2b336756061426e3beb4ea84" category="paragraph">Para obtener más información, consulte<block ref="217abffc61852464bf1ed6a3818c434b" category="inline-link-rx"></block>.</block>
 </blocks>

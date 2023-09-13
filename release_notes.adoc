@@ -13,4 +13,4 @@ summary: Proporciona información importante sobre esta versión de herramientas
 [role="lead"]
 Proporciona información importante sobre esta versión de herramientas de ONTAP para VMware vSphere, incluidos los problemas solucionados, los problemas conocidos, las precauciones y las limitaciones.
 
-Para obtener más información, consulte https://library.netapp.com/ecm/ecm_download_file/ECMLP2886293["Notas de la versión de ONTAP tools para VMware vSphere 9,13"^].
+Para obtener más información, consulte https://library.netapp.com/ecm/ecm_download_file/ECMLP2886292["Notas de la versión de ONTAP tools para VMware vSphere 9,13"^].
