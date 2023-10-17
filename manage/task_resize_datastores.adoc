@@ -26,7 +26,7 @@ NOTE: Si utiliza plataformas de almacenamiento de tipo cabina All SAN (ASA) con 
 
 . En la página Home de vSphere Client, haga clic en *hosts and Clusters*.
 . En el panel de navegación, seleccione el centro de datos que contiene el almacén de datos.
-. Haga clic con el botón derecho en el almacén de datos y seleccione *Herramientas de ONTAP de NetApp* > *asignar QoS*.
+. Haga clic con el botón derecho en el almacén de datos y seleccione *Herramientas de NetApp ONTAP* > *Cambiar tamaño de almacén de datos que no sea vVols*.
 . En el cuadro de diálogo Cambiar tamaño, especifique un nuevo tamaño para el almacén de datos y, a continuación, haga clic en *Aceptar*.
 +
 Puede ejecutar la opción *REDISCOVER ALL* en el menú sistemas de almacenamiento para actualizar manualmente el listado de almacenamiento en Storage Systems y el panel, o esperar la próxima actualización programada.

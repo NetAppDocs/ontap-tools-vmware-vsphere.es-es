@@ -1,0 +1,18 @@
+---
+permalink: protect/configure_sra_with_srm_shared_site.html 
+sidebar: sidebar 
+keywords: SRA with SRM 
+summary: Las herramientas de ONTAP para VMware vSphere son compatibles con la configuración del sitio de recuperación compartida de VMware SRM. 
+---
+= Configurar SRA con SRM en una configuración de sitio de recuperación compartida
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las herramientas de ONTAP para VMware vSphere son compatibles con SRM Shared Recovery Site Configuration de VMware. Para obtener más información, consulte: https://docs.vmware.com/en/Site-Recovery-Manager/8.6/com.vmware.srm.install_config.doc/GUID-EBF84252-DF37-43CD-ADC8-E90F5254F315.html["Site Recovery Manager en una configuración de sitio de recuperación compartida"]. Las instancias del servidor de Site Recovery Manager en el sitio de recuperación se conectan a las mismas instancias de vCenter Server.
+
+En una configuración de sitio de recuperación compartida de SRM, cada servidor SRM debe tener una instancia de SRA dedicada (relación 1:1 entre SRM y SRA). Configure OTV en el modo VCF para que actúe como una instancia de SRA dedicada para cada servidor SRM. También es posible poner en marcha un dispositivo de herramientas de ONTAP sin SRA, que esté registrado en vCenter y que se utilice para tareas que no sean del SRA, como el aprovisionamiento de almacenes de datos.
+
+La https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["Cómo configurar el SRA en un sitio de recuperación compartida de SRM"] El artículo de la KB detalla el procedimiento para configurar SRA para admitir la configuración del sitio de recuperación compartida de SRM.

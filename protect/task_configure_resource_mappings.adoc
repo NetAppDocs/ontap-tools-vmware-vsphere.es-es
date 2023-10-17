@@ -25,7 +25,7 @@ NOTE: En Site Recovery Manager (SRM), los recursos pueden ser pools de recursos,
 . Inicie sesión en vCenter Server y haga clic en *Site Recovery* > *Sites*.
 . Seleccione su sitio protegido y, a continuación, haga clic en *Administrar*.
 . En la ficha Administrar, seleccione *asignaciones de recursos*.
-. Haga clic en la image:../media/new_resource_mappings.gif[""] icono para crear una nueva asignación de recursos.
+. Haga clic en la image:../media/new_resource_mappings.gif["icono de globo"] icono para crear una nueva asignación de recursos.
 +
 Aparece el asistente Create Resource Mapping (Crear asignación de recursos).
 

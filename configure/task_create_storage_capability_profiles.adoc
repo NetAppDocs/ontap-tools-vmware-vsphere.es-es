@@ -81,7 +81,20 @@ Si ha habilitado el modo «"vinculado"» para vCenter Server, debe seleccionar l
  a| 
 Plataforma
  a| 
-Puede crear un perfil de funcionalidad de almacenamiento con tipos de plataforma (Rendimiento, capacidad, cabina flash híbrida) y una nueva funcionalidad de almacenamiento que sea el indicador asimétrico. Las opciones de las pantallas siguientes se actualizan en función de la selección del tipo de sistema de almacenamiento.
+A partir de las herramientas de ONTAP para VMware vSphere 9,13, puede crear perfiles de funcionalidades de almacenamiento mediante una combinación de los siguientes elementos:
+
+.. Tipo de plataforma: Rendimiento, capacidad y cabina flash híbrida
+.. Marca asimétrica: Indica el estado optimizado para SAN (All SAN Array) del sistema de almacenamiento.
++
+*** Cuando el tipo de plataforma es *Performance* y el indicador asimétrico es *TRUE*, considera el sistema de almacenamiento del tipo AFF-A.
+*** Cuando el tipo de plataforma es *Rendimiento* y el indicador asimétrico es *Falso*, considera el sistema de almacenamiento del tipo ASA-A.
+*** Cuando el tipo de plataforma es *Capacity* y el indicador asimétrico es *True*, considera el sistema de almacenamiento del tipo AFF-C.
+*** Cuando el tipo de plataforma es *Flash hybrid array* y el indicador asimétrico es NA, considera el sistema de almacenamiento del tipo FAS
+
+
+
+
+Las opciones de las pantallas siguientes se actualizan en función de la selección del tipo de sistema de almacenamiento.
 
 
 

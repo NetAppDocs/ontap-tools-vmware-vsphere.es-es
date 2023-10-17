@@ -14,9 +14,6 @@ summary: Las herramientas de ONTAP para VMware vSphere son compatibles con entor
 Las herramientas de ONTAP para VMware vSphere son compatibles con entornos que usan configuraciones de MetroCluster IP y FC para ONTAP. La mayor parte de este soporte es automático. Sin embargo, es posible que observe algunas diferencias cuando se utiliza un entorno de MetroCluster con herramientas de ONTAP y proveedor VASA.
 
 
-NOTE: El SRA no es compatible con las configuraciones de MetroCluster.
-
-
 
 == Configuraciones de MetroCluster y herramientas ONTAP
 
@@ -37,3 +34,17 @@ VASA Provider admite automáticamente entornos que utilizan configuraciones Metr
 
 
 NOTE: VASA Provider no incorpora el sufijo "'-mc" a los nombres de las SVM del sitio secundario después de una conmutación por sitios.
+
+
+
+== Configuraciones de MetroCluster y SRA
+
+El adaptador de replicación de almacenamiento (SRA) es compatible con entornos que usan configuraciones de MetroCluster (MCC) con el protocolo FC.
+
+Como requisito previo para la configuración de MCC y SRA, todos los nombres de las máquinas virtuales de almacenamiento (SVM) deben ser únicos en los clústeres de MCC. Si los nombres no son únicos, provocará conflictos y fallarán los flujos de trabajo del SRA.
+
+Acciones necesarias:
+
+. Después de realizar una conmutación de sitios o una conmutación de estado de MCC, asegúrese de que el comando _snapmirror list-destinations_ en el clúster de origen muestre la salida correcta con el nuevo nombre de SVM (<vserver_name>-mc). El comando puede tardar hasta 30 minutos en ejecutarse.
+. Realice la operación DetecDevices desde la interfaz de usuario del SRM antes de continuar con otros flujos de trabajo del SRA. Esta operación garantiza que el SRM reconozca los cambios en los nombres de las SVM después de una conmutación de sitios o una conmutación de estado.
+

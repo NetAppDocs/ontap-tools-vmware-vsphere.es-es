@@ -44,6 +44,21 @@ Según la forma en que haya configurado sus credenciales, VMware vCenter Server 
  a| 
 Las herramientas de ONTAP escuchan las comunicaciones seguras en este puerto. El puerto se utiliza en la arquitectura de comunicación cliente-servidor. El cliente, que puede ser cualquier cliente de automatización que utilice la API de REST, inicia la conexión con el servidor y los puntos finales intercambian datos. Este puerto está habilitado para los servicios de herramientas de ONTAP y para exportar los registros del servidor de herramientas de ONTAP. La página register.html está alojada en este puerto. El Swagger DE REST queda expuesto en este puerto.
 
+
+
+ a| 
+8443
+ a| 
+Este puerto se utiliza para el servicio de complemento remoto.
+
+
+
+ a| 
+7
+ a| 
+Las herramientas de ONTAP envían una solicitud de eco a ONTAP para verificar la accesibilidad y solo se requiere cuando se añade almacenamiento
+sistema y se puede desactivar más adelante.
+
 |===
 
 NOTE: Debe haber habilitado el protocolo de mensajes de control de Internet (ICMP) antes de implementar las herramientas de ONTAP.
