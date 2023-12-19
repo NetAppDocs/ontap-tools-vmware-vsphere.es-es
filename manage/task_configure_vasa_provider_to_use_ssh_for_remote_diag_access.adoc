@@ -35,7 +35,7 @@ La sesión de inicio de sesión solo será válida hasta la medianoche del día 
 
 * Pasos*
 
-. Desde vCenter Server, abra una consola al proveedor VASA.
+. En vCenter Server, abra una consola para la máquina virtual del dispositivo de herramientas de ONTAP.
 . Inicie sesión como el usuario de mantenimiento.
 . Introduzca `4` Para seleccionar Support and Diagnostics.
 . Introduzca `3` Para seleccionar Activar acceso de diagnóstico remoto.

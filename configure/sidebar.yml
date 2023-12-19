@@ -40,8 +40,6 @@ entries:
   entries:
   - title: Descripción general del sistema de almacenamiento para herramientas ONTAP
     url: "/configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html"
-  - title: Establezca las credenciales predeterminadas para los sistemas de almacenamiento
-    url: "/configure/task_set_default_credentials_for_storage_systems.html"
   - title: Añadir sistemas de almacenamiento
     url: "/configure/task_add_storage_systems.html"
   - title: Modificar los sistemas de almacenamiento
