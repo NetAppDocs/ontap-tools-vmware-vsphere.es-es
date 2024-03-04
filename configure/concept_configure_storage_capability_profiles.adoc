@@ -27,27 +27,35 @@ Si se utiliza con vVols, también se utiliza el perfil de funcionalidad del alma
 * Platinum_AFF_A
 * Platinum_AFF_C
 * Platinum_ASA_A
+* Platinum_ASA_C
 * AFF_NVME_AFF_A
 * AFF_NVME_AFF_C
 * AFF_NVME_ASA_A
+* AFF_NVME_ASA_C
 * AFF_THICK_AFF_A
 * AFF_THICK_AFF_C
 * AFF_THICK_ASA_A
+* AFF_THICK_ASA_C
 * AFF_DEFAULT_AFF_A
 * AFF_DEFAULT_AFF_C
 * AFF_DEFAULT_ASA_A
+* AFF_DEFAULT_ASA_C
 * AFF_TIERING_AFF_A
 * AFF_TIERING_AFF_C
 * AFF_TIERING_ASA_A
+* AFF_TIERING_ASA_C
 * AFF_ENCRYPTED_AFF_A
 * AFF_ENCRYPTED_AFF_C
 * AFF_ENCRYPTED_ASA_A
+* AFF_ENCRYPTED_ASA_C
 * AFF_Encrypted_Tiering_AFF_A
 * AFF_Encrypted_Tiering_AFF_C
 * AFF_Encrypted_Tiering_ASA_A
+* AFF_Encrypted_Tiering_ASA_C
 * AFF_Encrypted_min50_AFF_A
 * AFF_Encrypted_min50_AFF_C
 * AFF_Encrypted_min50_ASA_A
+* AFF_Encrypted_min50_ASA_C
 * Bronce
 
 
@@ -76,5 +84,4 @@ En los sistemas de cabina flash híbrida, ASA y AFF, se puede configurar la rese
 Los perfiles de funcionalidad de almacenamiento anteriores se conservan para su compatibilidad con versiones anteriores. Si no se están utilizando las plantillas predeterminadas, durante la actualización a la versión más reciente de las herramientas de ONTAP, las plantillas existentes se anularán para reflejar las nuevas métricas de calidad de servicio y las políticas de organización en niveles relacionadas con el rendimiento de los perfiles de funcionalidades de almacenamiento.
 
 * No es posible modificar ni utilizar los perfiles de funcionalidad de almacenamiento heredados para aprovisionar nuevos almacenes de datos virtuales ni políticas de almacenamiento de máquinas virtuales.
-* Es necesario usar nuevos perfiles de funcionalidad de almacenamiento para todos los almacenes de datos nuevos.
 

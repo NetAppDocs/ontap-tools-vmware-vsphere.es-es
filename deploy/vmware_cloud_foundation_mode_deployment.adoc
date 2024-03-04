@@ -13,7 +13,7 @@ summary: Las herramientas de ONTAP para VMware vSphere se pueden poner en marcha
 [role="lead"]
 Las herramientas de ONTAP para VMware vSphere se pueden poner en marcha en un entorno VMware Cloud Foundation (VCF). El objetivo principal de la puesta en marcha de VCF es usar las herramientas de ONTAP en una configuración cloud y crear contenedores sin vCenter Server.
 
-El modo VCF permite crear contenedores para el almacenamiento sin necesidad de una instancia de vCenter Server. Vasa Provider se habilita de forma predeterminada después de la puesta en marcha de las herramientas ONTAP en modo VCF. Una vez completada la implementación, puede añadir sistemas de almacenamiento y crear contenedores mediante las API DE REST. El siguiente artículo contiene el procedimiento para agregar almacenamiento a las herramientas de ONTAP cuando VCF está activado. https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["Añada almacenamiento a herramientas de ONTAP desde Swagger-UI"].
+El modo VCF permite crear contenedores para el almacenamiento sin necesidad de una instancia de vCenter Server. Vasa Provider se habilita de forma predeterminada después de la puesta en marcha de las herramientas ONTAP en modo VCF. Una vez completada la implementación, se pueden añadir, eliminar o modificar sistemas de almacenamiento, y crear contenedores utilizando las API DE REST. El siguiente artículo contiene el procedimiento para agregar almacenamiento a las herramientas de ONTAP cuando VCF está activado. https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["Añada almacenamiento a herramientas de ONTAP desde Swagger-UI"].
 
 Se introduce una nueva API para generar el _Appliance-api-token_ que autentica las llamadas API. Algunas de las API existentes se modifican para incluir el encabezado _Appliance-api-token_. A partir de la versión 9,12 de las herramientas de ONTAP, Swagger no admite las API de 1,0. Los punteros que anteriormente estaban en 1,0 se mueven a las API de 2,0 o 3,0.
 
@@ -78,6 +78,28 @@ Sistemas de almacenamiento
 PUBLICAR
  a| 
 Modificado
+ a| 
+Sistemas de almacenamiento
+
+
+
+ a| 
+/3,0/storage/clusters
+ a| 
+ELIMINAR
+ a| 
+Nuevo
+ a| 
+Sistemas de almacenamiento
+
+
+
+ a| 
+/3,0/storage/clusters
+ a| 
+PUESTO
+ a| 
+Nuevo
  a| 
 Sistemas de almacenamiento
 
@@ -177,6 +199,15 @@ Ambas
 
 
  a| 
+Platinum_ASA_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
 AFF_NVME_AFF_A
  a| 
 Ambas
@@ -196,6 +227,15 @@ Ambas
 
  a| 
 AFF_NVME_ASA_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_NVME_ASA_C
  a| 
 Ambas
  a| 
@@ -231,6 +271,15 @@ Ambas
 
 
  a| 
+AFF_THICK_ASA_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
 AFF_DEFAULT_AFF_A
  a| 
 Información previa
@@ -250,6 +299,15 @@ Ninguno
 
  a| 
 AFF_DEFAULT_ASA_A
+ a| 
+Información previa
+ a| 
+Ninguno
+
+
+
+ a| 
+AFF_DEFAULT_ASA_C
  a| 
 Información previa
  a| 
@@ -285,6 +343,15 @@ Ambas
 
 
  a| 
+AFF_TIERING_ASA_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
 AFF_ENCRYPTED_AFF_A
  a| 
 Ambas
@@ -304,6 +371,15 @@ Ambas
 
  a| 
 AFF_ENCRYPTED_ASA_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_ENCRYPTED_ASA_C
  a| 
 Ambas
  a| 
@@ -339,6 +415,15 @@ Ambas
 
 
  a| 
+AFF_Encrypted_Tiering_ASA_C
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
 AFF_Encrypted_min50_AFF_A
  a| 
 Ambas
@@ -358,6 +443,15 @@ Ambas
 
  a| 
 AFF_Encrypted_min50_ASA_A
+ a| 
+Ambas
+ a| 
+Ambas
+
+
+
+ a| 
+AFF_Encrypted_min50_ASA_C
  a| 
 Ambas
  a| 

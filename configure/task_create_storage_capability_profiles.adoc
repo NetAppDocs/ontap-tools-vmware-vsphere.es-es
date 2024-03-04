@@ -72,7 +72,7 @@ Identificación de múltiples perfiles
 Puede usar el campo *Descripción* en la pestaña Nombre y Descripción para describir el propósito del perfil de capacidad de almacenamiento (SCP). Proporcionar una buena descripción es útil porque es una buena práctica configurar diferentes perfiles basados en las aplicaciones que se utilizan.
 
 Por ejemplo, una aplicación vital para el negocio requiere un perfil con capacidades que admitan un rendimiento superior, como la plataforma AFF y ASA. Un almacén de datos que se usa para pruebas o entrenamiento puede usar un perfil con una plataforma Flash Array Hybrid de menor rendimiento y para habilitar todas las funcionalidades de eficiencia del almacenamiento y la organización en niveles para controlar los costes.
-La combinación del tipo de plataforma y el indicador asimétrico determina el tipo de SCPs. Por ejemplo: Platinum_ASA_A, Platinum_AFF_A, Platinum_AFF_C.
+La combinación del tipo de plataforma y el indicador asimétrico determina el tipo de SCPs. Por ejemplo: Platinum_ASA_A, Platinum_ASA_C, Platinum_AFF_A, Platinum_AFF_C.
 
 Si ha habilitado el modo «"vinculado"» para vCenter Server, debe seleccionar la instancia de vCenter Server para la cual desea crear el perfil de funcionalidad de almacenamiento.
 
