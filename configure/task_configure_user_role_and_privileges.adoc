@@ -17,7 +17,7 @@ Puede configurar nuevos roles de usuario para gestionar sistemas de almacenamien
 
 * Debe haber descargado el archivo de privilegios de ONTAP desde las herramientas de ONTAP siguiendo estos pasos:
 +
-** Vaya a. https://{virtual_appliance_IP}:9083/vsc/config/[]
+** Vaya a. `\https://{virtual_appliance_IP}:9083/vsc/config/`
 ** Descargue el archivo VSC_ONTAP_User_Privileges.zip
 ** Extraiga el archivo VSC_ONTAP_User_Privileges.zip descargado
 ** Acceda a System Manager

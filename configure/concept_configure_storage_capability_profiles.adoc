@@ -22,7 +22,12 @@ NOTE: Los almacenes de datos de VVOL no se admiten en la SVM directa.
 
 Si se utiliza con almacenes de datos vVols, el asistente de aprovisionamiento puede utilizar varios perfiles de funcionalidad de almacenamiento para crear diferentes volúmenes FlexVol en el almacén de datos. Puede utilizar la normativa de almacenamiento de equipos virtuales para crear automáticamente vVols para una máquina virtual en los volúmenes FlexVol adecuados, tal y como se ha definido. Por ejemplo, puede crear perfiles para clases de almacenamiento comunes (como límites de rendimiento y otras funcionalidades como el cifrado o FabricPool). Posteriormente, es posible crear políticas de almacenamiento de equipos virtuales en vCenter Server que representen a los tipos de negocio de las máquinas virtuales y vincularlos al perfil de funcionalidad de almacenamiento correspondiente por nombre (por ejemplo, producción, pruebas, recursos humanos).
 
-Si se utiliza con vVols, también se utiliza el perfil de funcionalidad del almacenamiento para establecer el rendimiento del almacenamiento para el equipo virtual individual y colocarlo en el volumen FlexVol en el almacén de datos vVols que mejor satisfaga los requisitos de rendimiento. Puede especificar la política de calidad de servicio con IOPS mínimo y/o máximo para el rendimiento. Puede usar las políticas predeterminadas al aprovisionar una máquina virtual inicialmente, o cambiar la política de almacenamiento de máquinas virtuales más adelante si cambian los requisitos empresariales. Los perfiles de funcionalidad de almacenamiento predeterminados para esta versión de herramientas de ONTAP:
+Si se utiliza con vVols, también se utiliza el perfil de funcionalidad del almacenamiento para establecer el rendimiento del almacenamiento para el equipo virtual individual y colocarlo en el volumen FlexVol en el almacén de datos vVols que mejor satisfaga los requisitos de rendimiento. Puede especificar la política de calidad de servicio con IOPS mínimo y/o máximo para el rendimiento. Puede usar las políticas predeterminadas al aprovisionar una máquina virtual inicialmente, o cambiar la política de almacenamiento de máquinas virtuales más adelante si cambian los requisitos empresariales.
+
+
+NOTE: El perfil de funcionalidad de almacenamiento ASA-C es compatible con las herramientas de ONTAP para VMware vSphere 9.13P1 en adelante.
+
+Los perfiles de funcionalidad de almacenamiento predeterminados para esta versión de herramientas de ONTAP:
 
 * Platinum_AFF_A
 * Platinum_AFF_C

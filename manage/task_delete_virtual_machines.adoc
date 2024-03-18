@@ -18,7 +18,7 @@ NOTE: Se recomienda quitar todos los almacenes de datos de vVols antes de ejecut
 
 * Pasos*
 
-. Cancele el registro del plugin entrando en https://OTV_IP:8143/Register.html[]
+. Cancele el registro del plugin entrando en `\https://OTV_IP:8143/Register.html`
 . Compruebe que el plugin ya no esté disponible en vCenter.
 . Cierre las herramientas de ONTAP para VMware vSphere VM
 . Elimine las herramientas de ONTAP para VMware vSphere VM

@@ -32,7 +32,7 @@ Puede activar el indicador QUICK_RESINNC para realizar la operación de reprotec
 Siga estos pasos para activar el indicador QUICK_REINNC:
 
 .Pasos
-. Inicie sesión en el panel de control en _https://<IP address>:9083_ y haga clic en Interfaz CLI basada en web.
+. Inicie sesión en el panel de control en `/https://<IP address>:9083` Y haga clic en interfaz CLI basada en Web.
 . Ejecute el comando `vp updateconfig -key=snapmirror.quick.resync.enabled -value=true`.
 . Ejecute el comando `vp reloadconfig`.
 

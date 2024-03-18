@@ -32,7 +32,7 @@ La configuración del SRA en el dispositivo de SRM almacena las credenciales del
 . Ejecutar el comando `cd /var/log/vmware/srm` para desplazarse al directorio de registro.
 . En la ubicación del registro, introduzca el comando para obtener el identificador del Docker utilizado por el SRA: `docker ps -l`
 . Para iniciar sesión en el identificador del contenedor, introduzca el comando: `docker exec -it -u srm <container id> sh`
-. Configure SRM con la dirección IP y la contraseña de ONTAP Tools mediante el comando: `perl command.pl -I <otv-IP> administrator <otv-password>`
+. Configure SRM con la dirección IP y la contraseña de ONTAP Tools mediante el comando: `perl command.pl -I administrator '<otv-password>'`
 +
 Se muestra un mensaje indicando que las credenciales de almacenamiento están almacenadas correctamente. El SRA puede comunicarse con el servidor SRA mediante la dirección IP, el puerto y las credenciales proporcionados.
 

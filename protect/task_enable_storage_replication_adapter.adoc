@@ -40,7 +40,7 @@ La flexibilidad para habilitar las funcionalidades VASA Provider y SRA le permit
 *Para el dispositivo SRM*
 
 +
-.. Acceda a la interfaz de gestión de dispositivos VMware SRM a través de la URL: https://:<srm_ip>:5480[], Y, a continuación, vaya a Storage Replication Adapters in VMware SRM Appliance Management Interface.
+.. Acceda a la interfaz de gestión de dispositivos VMware SRM a través de la URL: \Https://:<srm_ip>:5480 y, a continuación, vaya a Adaptadores de replicación de almacenamiento en la interfaz de gestión de dispositivos SRM de VMware.
 .. Haga clic en *Nuevo adaptador*.
 .. Cargue el instalador _.tar.gz_ del plugin de SRA en SRM.
 .. Vuelva a analizar los adaptadores para verificar que los detalles se actualizan en la página adaptadores de replicación de almacenamiento SRM.

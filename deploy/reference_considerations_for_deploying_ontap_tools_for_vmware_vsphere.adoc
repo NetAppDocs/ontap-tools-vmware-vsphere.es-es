@@ -88,7 +88,7 @@ En la siguiente tabla se muestra una descripción general de lo que se necesita 
  a| 
 Requisitos de control de acceso basado en roles (RBAC)
  a| 
-Las herramientas de ONTAP son compatibles con el control de acceso basado en roles de vCenter Server y de ONTAP. La cuenta utilizada para registrar herramientas de ONTAP en vCenter Server (`https://<appliance_ip>:8143/Register.html`) Debe ser un administrador de vCenter Server (asignado al rol de administrador de vCenter Server o de administrador). Si planea ejecutar herramientas de ONTAP como administrador, debe tener todos los permisos y privilegios necesarios para todas las tareas.
+Las herramientas de ONTAP son compatibles con el control de acceso basado en roles de vCenter Server y de ONTAP. La cuenta utilizada para registrar herramientas de ONTAP en vCenter Server (`\https://<appliance_ip>:8143/Register.html`) Debe ser un administrador de vCenter Server (asignado al rol de administrador de vCenter Server o de administrador). Si planea ejecutar herramientas de ONTAP como administrador, debe tener todos los permisos y privilegios necesarios para todas las tareas.
 
 Si su empresa requiere restringir el acceso a objetos de vSphere, puede crear y asignar roles de herramientas estándar de ONTAP a los usuarios para cumplir los requisitos de vCenter Server.
 
@@ -139,7 +139,7 @@ Debe acceder a la consola de mantenimiento utilizando el nombre de usuario «man
 
 Puede configurar las credenciales de administrador para vCenter Server mientras implementa las herramientas de ONTAP.
 
-Si cambia la contraseña del administrador de vCenter Server, puede actualizar la contraseña del administrador con la siguiente URL: ``\https://<IP>:8143/Register.html` El lugar donde la dirección IP es de las herramientas de ONTAP que se proporcionan durante la implementación.
+Si cambia la contraseña del administrador de vCenter Server, puede actualizar la contraseña del administrador con la siguiente URL: `\https://<IP>:8143/Register.html` El lugar donde la dirección IP es de las herramientas de ONTAP que se proporcionan durante la implementación.
 
 
 
