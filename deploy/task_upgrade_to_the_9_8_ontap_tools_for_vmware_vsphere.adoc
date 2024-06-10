@@ -50,8 +50,7 @@ Ejecute los comandos siguientes en la interfaz de línea de comandos de ONTAP an
 . _security login role create -role <existing-role-name> -cmddirname «security certificate install» -access all_
 
 
-Si el sistema de almacenamiento se añade con un usuario de ámbito de SVM creado personalizado mediante el archivo json y desea actualizar a la versión 9,12 y versiones posteriores, entonces
-Ejecute los siguientes comandos en la interfaz de línea de comandos de ONTAP con acceso de administrador del clúster antes de la actualización para habilitar la comunicación basada en certificados entre las herramientas de ONTAP para VMware vSphere y ONTAP:
+Si el sistema de almacenamiento se añade con un usuario de ámbito de SVM creado personalizado mediante el archivo json y desea actualizar a la versión 9,12 y versiones posteriores, después, ejecute los siguientes comandos en la interfaz de línea de comandos de ONTAP con acceso de administrador del clúster antes de la actualización para habilitar la comunicación basada en certificados entre las herramientas de ONTAP para VMware vSphere y ONTAP:
 
 . _security login role create -role <existing-role-name> -cmddirname «security certificate install» -access all -vserver <vserver-name>_
 . _security login role create -role <existing-role-name> -cmddirname «security certificate show» -access all -vserver <vserver-name>_

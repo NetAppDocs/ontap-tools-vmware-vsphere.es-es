@@ -35,7 +35,7 @@ La opción *aprovisionar Datastore* permite especificar un perfil de capacidad d
 
 * NFSv3 y NFSv4.1
 * VMFS5 y VMFS6
-* En la versión vSphere 8,0, se admite el protocolo NVMe/FC.
+* En la versión vSphere 8,0, el protocolo NVMe/FC es compatible con los almacenes de datos vvol.
 
 
 Las herramientas de ONTAP pueden crear un almacén de datos en un volumen NFS o LUN:

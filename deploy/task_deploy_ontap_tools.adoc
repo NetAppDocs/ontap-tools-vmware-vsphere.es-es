@@ -68,7 +68,9 @@ Extraiga el archivo .zip, que contiene el archivo .ova en el sistema local. En l
 |===
 . Introduzca los detalles para personalizar el asistente de implementación.
 +
-(Opcional) en la sección Configure vCenter o Enable VCF, seleccione la casilla de comprobación *Enable VMware Cloud Foundation (VCF)* y proporcione una contraseña para las credenciales de las herramientas de ONTAP. No es necesario proporcionar una dirección IP, pero es obligatorio proporcionar una contraseña. Consulte lo siguiente para obtener toda la información.
+(Opcional) en la sección Configure vCenter o Enable VCF, seleccione la casilla de comprobación *Enable VMware Cloud Foundation (VCF)* y proporcione una contraseña para las credenciales de las herramientas de ONTAP. Las herramientas de ONTAP almacenan los detalles del usuario en un formato codificado. Para cualquier comunicación desde las herramientas de ONTAP con vCenter, se utilizan estos detalles de usuario de vCenter.
+No es necesario proporcionar una dirección IP, pero es obligatorio proporcionar una contraseña.
+Consulte lo siguiente para obtener toda la información.
 
 +
 ** link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html["Consideraciones sobre la personalización de la implantación"]
@@ -80,6 +82,10 @@ Extraiga el archivo .zip, que contiene el archivo .ova en el sistema local. En l
 Mientras espera a que termine la implementación, puede ver el progreso de la implementación en la pestaña tareas.
 
 . Encienda la máquina virtual de herramientas de ONTAP y, a continuación, abra una consola de la máquina virtual que ejecuta las herramientas de ONTAP.
++
+
+NOTE: No almacene la máquina virtual de herramientas de ONTAP en un almacén de datos VVOL que gestiona.
+
 . Compruebe que las herramientas de ONTAP se están ejecutando una vez completada la implementación.
 . Si las herramientas de ONTAP no están registradas en ninguna instancia de vCenter Server, utilice `\https://appliance_ip:8143/Register.html` Para registrar la instancia de herramientas de ONTAP. Register.html le redirige a la página de Swagger. A partir de las herramientas de ONTAP 9,12, el registro de las herramientas de ONTAP con vCenter se produce desde la página de Swagger.
 +

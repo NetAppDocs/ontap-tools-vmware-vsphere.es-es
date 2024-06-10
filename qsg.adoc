@@ -185,7 +185,8 @@ Puede implementar el SRA en un servidor SRM de Windows o en un dispositivo SRM d
 . Cambie al usuario raíz: `su root`
 . En la ubicación del registro, escriba el comando para obtener el identificador del Docker utilizado por el Docker SRA: `docker ps -l`
 . Inicie sesión en el ID del contenedor: `docker exec -it -u srm <container id> sh`
-. Configure SRM con la dirección IP y contraseña de ONTAP Tools: `perl command.pl -I <otv-IP> administrator <otv-password>`Se muestra un mensaje indicando que las credenciales de almacenamiento están almacenadas correctamente.
+. Configure SRM con la dirección IP y contraseña de ONTAP Tools: `perl command.pl -I <otv-IP> administrator <otv-password>`. Es necesario tener una sola cotización en torno al valor de la contraseña.
+Se muestra un mensaje indicando que las credenciales de almacenamiento están almacenadas correctamente. El SRA puede comunicarse con el servidor SRA mediante la dirección IP, el puerto y las credenciales proporcionados.
 
 
 
@@ -202,7 +203,10 @@ Puede implementar el SRA en un servidor SRM de Windows o en un dispositivo SRM d
 . Ejecute el comando perl para configurar SRA con las nuevas credenciales:
 +
 .. `cd /srm/sra/`
-.. `perl command.pl -I <otv-IP> administrator <otv-password>`
+.. `perl command.pl -I <otv-IP> administrator <otv-password>`. Es necesario tener una sola cotización en torno al valor de la contraseña.
++
+Se muestra un mensaje indicando que las credenciales de almacenamiento están almacenadas correctamente. El SRA puede comunicarse con el servidor SRA mediante la dirección IP, el puerto y las credenciales proporcionados.
+
 
 
 
