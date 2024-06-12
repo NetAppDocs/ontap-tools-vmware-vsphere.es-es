@@ -18,10 +18,10 @@ NOTE: Si el clúster de ONTAP tiene SAML habilitado, la comunicación con ONTAP 
 
 *Acerca de esta tarea*
 
-Cada vez que inicie las herramientas de ONTAP o seleccione la opción *REDESCUBRIR todo*, las herramientas de ONTAP detectarán automáticamente los sistemas de almacenamiento disponibles.
+Cada vez que inicia las herramientas de ONTAP o selecciona la opción *REDESCUBRIR todo*, las herramientas de ONTAP para VMware vSphere detectan automáticamente los sistemas de almacenamiento disponibles.
 
 
-NOTE: Los almacenes de datos de VVOL no se admiten en la SVM directa.
+NOTE: El usuario de SVM no admite los almacenes de datos de VVol.
 
 * Pasos*
 

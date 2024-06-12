@@ -17,7 +17,7 @@ Las herramientas de ONTAP se integran con vSphere Client y permiten utilizar ser
 
 Cada componente de las herramientas de ONTAP ofrece funcionalidades para ayudarle a gestionar su almacenamiento de forma más eficiente.
 
-La herramienta del complemento remoto de VMware vSphere Client está diseñada para integrar la funcionalidad del plugin en vSphere Client sin tener que ejecutarse dentro de vCenter Server. Esto ofrece aislamiento de complementos y permite la escalabilidad horizontal de complementos que funcionan en entornos vSphere grandes.
+La herramienta del complemento VMware vSphere Client está diseñada para integrar la funcionalidad del plugin en vSphere Client sin necesidad de ejecutarse dentro de vCenter Server. Esto ofrece aislamiento de complementos y permite la escalabilidad horizontal de complementos que funcionan en entornos vSphere grandes.
 
 
 

@@ -2,7 +2,7 @@
 permalink: concepts/concept_privileges_required_for_vsc_tasks.html 
 sidebar: sidebar 
 keywords:  
-summary: Las diferentes herramientas de ONTAP para las tareas de VMware vSphere requieren diferentes combinaciones de privilegios específicos de las herramientas de ONTAP y los privilegios nativos de vCenter Server. 
+summary: Las diferentes herramientas de ONTAP para las tareas de VMware vSphere requieren diferentes combinaciones de privilegios específicos de las herramientas de ONTAP para VMware vSphere y los privilegios nativos de vCenter Server. 
 ---
 = Privilegios requeridos para las tareas de herramientas de ONTAP
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Las diferentes herramientas de ONTAP para las tareas de VMware vSphere 
 
 
 [role="lead"]
-Las diferentes herramientas de ONTAP para las tareas de VMware vSphere requieren diferentes combinaciones de privilegios específicos de las herramientas de ONTAP y los privilegios nativos de vCenter Server.
+Las diferentes herramientas de ONTAP para las tareas de VMware vSphere requieren diferentes combinaciones de privilegios específicos de las herramientas de ONTAP para VMware vSphere y los privilegios nativos de vCenter Server.
 
 En el artículo de la base de conocimientos de NetApp 1032542, encontrará información sobre los privilegios requeridos para las tareas de las herramientas ONTAP.
 

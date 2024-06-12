@@ -80,4 +80,4 @@ Después de crear un volumen FlexVol, puede editarlo haciendo clic en el botón 
 El asistente agrega el almacenamiento especificado al almacén de datos vVols. Muestra un mensaje de éxito cuando finaliza.
 
 
-NOTE: El asistente Expand Storage of vVols Datastore gestiona automáticamente cualquier reexpansi n de almacenamiento ESXi o cualquier otra operación importante que sea necesaria. Dado que un almacén de datos vVols es una entidad lógica controlada por VASA Provider, la adición del volumen FlexVol es la única cosa que necesita hacer para ampliar la capacidad del contenedor de almacenamiento.
+NOTE: El asistente Expand Storage of vVols Datastore gestiona automáticamente cualquier escaneo de almacenamiento de host ESXi o cualquier otra operación significativa necesaria. Dado que un almacén de datos vVols es una entidad lógica controlada por VASA Provider, la adición del volumen FlexVol es la única cosa que necesita hacer para ampliar la capacidad del contenedor de almacenamiento.

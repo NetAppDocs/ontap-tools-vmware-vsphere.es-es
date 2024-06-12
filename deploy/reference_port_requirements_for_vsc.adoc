@@ -28,7 +28,7 @@ Las herramientas de ONTAP utilizan los siguientes puertos TCP bidireccionales pr
  a| 
 9083
  a| 
-Cuando se encuentra habilitada, tanto el proveedor VASA como el adaptador de replicación de almacenamiento (SRA) utilizan este puerto para comunicarse con vCenter Server. Este puerto también es necesario para obtener los ajustes de TCP/IP. Este puerto debe estar habilitado en el firewall desde los hosts ESXi hasta el dispositivo de herramientas ONTAP. Este puerto se utiliza para descargar el paquete de soporte VP, acceder a la interfaz de usuario Web-CLI y la comunicación de la ruta de control de VMware a VP.
+Cuando se encuentra habilitada, tanto el proveedor VASA como el adaptador de replicación de almacenamiento (SRA) utilizan este puerto para comunicarse con vCenter Server. Este puerto también es necesario para obtener los ajustes de TCP/IP. Este puerto debe estar habilitado en el firewall desde los hosts ESXi hasta las herramientas de ONTAP para el dispositivo VMware vSphere. Este puerto se utiliza para descargar el paquete de soporte VP, acceder a la interfaz de usuario Web-CLI y la comunicación de la ruta de control de VMware a VP.
 
 
 
@@ -49,7 +49,7 @@ Las herramientas de ONTAP escuchan las comunicaciones seguras en este puerto. El
  a| 
 8443
  a| 
-Este puerto se utiliza para el servicio de complemento remoto.
+Este puerto se usa para herramientas de ONTAP para el servicio del complemento de VMware vSphere.
 
 
 
@@ -63,4 +63,4 @@ sistema y se puede desactivar más adelante.
 
 NOTE: Debe haber habilitado el protocolo de mensajes de control de Internet (ICMP) antes de implementar las herramientas de ONTAP.
 
-Si ICMP está deshabilitado, la configuración inicial de herramientas ONTAP genera errores y las herramientas de ONTAP no pueden iniciar las herramientas ONTAP y los servicios del proveedor VASA después de la implementación. Debe habilitar manualmente las herramientas ONTAP y los servicios del proveedor VASA después de la implementación.
+Si ICMP está deshabilitado, la configuración inicial de las herramientas ONTAP produce un error y las herramientas de ONTAP no pueden iniciar las herramientas de ONTAP para los servicios de VMware vSphere y VASA Provider después de la implementación. Debe habilitar manualmente las herramientas de ONTAP para los servicios de proveedor VASA y VMware vSphere después de la implementación.

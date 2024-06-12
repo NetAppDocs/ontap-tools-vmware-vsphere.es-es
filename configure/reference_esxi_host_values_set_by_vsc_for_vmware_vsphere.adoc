@@ -17,7 +17,7 @@ Puede configurar los siguientes valores en un host ESXi:
 
 
 
-== Configuración avanzada de ESXi
+== Configuración avanzada de host ESXi
 
 * *VMFS3.HardwaraceleratedLocking*
 +

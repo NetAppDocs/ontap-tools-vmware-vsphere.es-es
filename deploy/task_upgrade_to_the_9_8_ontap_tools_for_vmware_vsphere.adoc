@@ -77,7 +77,7 @@ Cuando se complete la actualización, se reinicien las herramientas ONTAP. Las h
 +
 .. Cancele el registro de las herramientas de ONTAP.
 .. Registre la dirección IPv6 de las herramientas de ONTAP en vCenter Server mediante la página *Register*.
-.. Vuelva a generar herramientas de ONTAP y certificados de proveedor VASA después del registro.
+.. Vuelva a generar las herramientas de ONTAP para los certificados de VMware vSphere y VASA Provider después del registro.
 
 
 +

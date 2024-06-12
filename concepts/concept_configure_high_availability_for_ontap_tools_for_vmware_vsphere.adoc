@@ -23,7 +23,7 @@ Las herramientas de ONTAP se basan en la función de alta disponibilidad (ha) de
 
 No se necesita ninguna configuración adicional para que las herramientas de ONTAP proporcionen una alta disponibilidad. Solo las instancias de vCenter Server y los hosts ESXi deben configurarse con la función de alta disponibilidad de VMware vSphere o la función vSphere FT en función de sus requisitos. Tanto la alta disponibilidad COMO FT requieren hosts en clúster junto con almacenamiento compartido. FT tiene requisitos y limitaciones adicionales.
 
-Además de la solución de alta disponibilidad de VMware vSphere y la solución VSPHERE FT, las herramientas de ONTAP también contribuyen a que los servicios de herramientas de ONTAP se ejecuten en todo momento. El proceso de vigilancia de las herramientas ONTAP supervisa periódicamente los tres servicios y los reinicia automáticamente cuando se detecta cualquier tipo de fallo. Esto ayuda a evitar que se produzcan fallos en las aplicaciones.
+Además de la solución de alta disponibilidad de VMware vSphere y la solución VSPHERE FT, las herramientas de ONTAP para VMware vSphere también le ayudan a mantener en funcionamiento los servicios de herramientas de ONTAP en todo momento. El proceso de vigilancia de las herramientas ONTAP supervisa periódicamente los tres servicios y los reinicia automáticamente cuando se detecta cualquier tipo de fallo. Esto ayuda a evitar que se produzcan fallos en las aplicaciones.
 
 
 NOTE: Las herramientas de ONTAP no admiten la alta disponibilidad del vCenter.

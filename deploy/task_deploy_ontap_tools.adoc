@@ -2,7 +2,7 @@
 permalink: deploy/task_deploy_ontap_tools.html 
 sidebar: sidebar 
 keywords:  
-summary: Debe poner en marcha herramientas de ONTAP en su entorno y especificar los parámetros necesarios para poder utilizar el dispositivo. 
+summary: Para utilizar las herramientas ONTAP para el dispositivo VMware vSphere, ponga en marcha las herramientas de ONTAP para VMware vSphere en el entorno y especifique los parámetros necesarios. 
 ---
 = Cómo implementar las herramientas de ONTAP
 :allow-uri-read: 
@@ -11,14 +11,14 @@ summary: Debe poner en marcha herramientas de ONTAP en su entorno y especificar 
 
 
 [role="lead"]
-Debe poner en marcha herramientas de ONTAP en su entorno y especificar los parámetros necesarios para poder utilizar el dispositivo.
+Para utilizar las herramientas ONTAP para el dispositivo VMware vSphere, ponga en marcha las herramientas de ONTAP para VMware vSphere en el entorno y especifique los parámetros necesarios.
 
 *Lo que necesitará*
 
-* Debe ejecutar una versión compatible de vCenter Server.
+* Debe tener la versión compatible de vCenter Server.
 +
 
-NOTE: Las herramientas de ONTAP se pueden registrar ya sea en una puesta en marcha de Windows de vCenter Server o en una puesta en marcha de VMware vCenter Server Virtual Appliance (vcsa).
+NOTE: Es posible registrar las herramientas de ONTAP para VMware vSphere en una implementación de Windows de vCenter Server o en una implementación de VMware vCenter Server Virtual Appliance (vcsa).
 
 +
 https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["Herramienta de matriz de interoperabilidad"^]
@@ -30,21 +30,25 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 * Debe haber cerrado sesión y cerrado todas las sesiones del explorador de vSphere Client y haber eliminado la caché del explorador para evitar cualquier problema con la caché del explorador durante la implementación de las herramientas de ONTAP.
 * Debe haber habilitado el protocolo de mensajes de control de Internet (ICMP).
 +
-Si ICMP está deshabilitado, la configuración inicial de herramientas ONTAP genera errores y las herramientas de ONTAP no pueden iniciar las herramientas ONTAP y los servicios del proveedor VASA después de la implementación. Debe habilitar manualmente las herramientas ONTAP y los servicios del proveedor VASA después de la implementación.
+Si ICMP está deshabilitado, se produce un error en la configuración inicial de las herramientas de ONTAP para VMware vSphere. Debe habilitar manualmente las herramientas de ONTAP para los servicios de proveedor VASA y VMware vSphere después de la implementación.
 
 
 
 *Acerca de esta tarea*
 
-Si va a poner en marcha una instalación nueva de herramientas de ONTAP, VASA Provider está habilitado de forma predeterminada. Sin embargo, en caso de actualización de una versión anterior de las herramientas de ONTAP, se conserva el estado de VASA Provider y es posible que deba habilitar VASA Provider manualmente.
+El proveedor VASA está habilitado de forma predeterminada para una instalación nueva de las herramientas de ONTAP para VMware vSphere. Pero, en caso de una actualización desde una versión anterior, se conserva el estado de VASA Provider y es posible que deba habilitar el proveedor de VASA de forma manual.
 
 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html["Habilite VASA Provider para configurar almacenes de datos virtuales"]
 
 * Pasos*
 
 . Inicie sesión en vSphere Client.
-. Selecciona *Inicio* > *Host and Clusters*.
+. Selecciona *Inicio* > *Hosts and Clusters*.
 . Haga clic con el botón derecho en el centro de datos requerido y luego haga clic en *Desplegar plantilla OVF...*.
++
+
+NOTE: No implemente herramientas de ONTAP para máquinas virtuales VMware vSphere en un almacén de datos vVols que gestiona.
+
 . Seleccione el método correspondiente para proporcionar el archivo de implementación para las herramientas de ONTAP y, a continuación, haga clic en *Siguiente*.
 +
 |===
@@ -82,10 +86,6 @@ Consulte lo siguiente para obtener toda la información.
 Mientras espera a que termine la implementación, puede ver el progreso de la implementación en la pestaña tareas.
 
 . Encienda la máquina virtual de herramientas de ONTAP y, a continuación, abra una consola de la máquina virtual que ejecuta las herramientas de ONTAP.
-+
-
-NOTE: No almacene la máquina virtual de herramientas de ONTAP en un almacén de datos VVOL que gestiona.
-
 . Compruebe que las herramientas de ONTAP se están ejecutando una vez completada la implementación.
 . Si las herramientas de ONTAP no están registradas en ninguna instancia de vCenter Server, utilice `\https://appliance_ip:8143/Register.html` Para registrar la instancia de herramientas de ONTAP. Register.html le redirige a la página de Swagger. A partir de las herramientas de ONTAP 9,12, el registro de las herramientas de ONTAP con vCenter se produce desde la página de Swagger.
 +

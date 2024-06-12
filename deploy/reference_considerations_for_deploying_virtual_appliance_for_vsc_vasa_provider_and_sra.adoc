@@ -24,7 +24,7 @@ La siguiente tabla presenta una descripción general de lo que debe tener en cue
  a| 
 Puesta en marcha por primera vez de herramientas de ONTAP
  a| 
-La puesta en marcha de las herramientas de ONTAP instala automáticamente las características de las herramientas de ONTAP.
+La puesta en marcha de las herramientas de ONTAP para VMware vSphere instala automáticamente las funciones de las herramientas de ONTAP.
 
 link:../deploy/concept_installation_workflow_for_new_users.html["Flujo de trabajo de implementación para nuevos usuarios de herramientas de ONTAP para VMware vSphere"]
 
@@ -88,7 +88,7 @@ En la siguiente tabla se muestra una descripción general de lo que se necesita 
  a| 
 Requisitos de control de acceso basado en roles (RBAC)
  a| 
-Las herramientas de ONTAP son compatibles con el control de acceso basado en roles de vCenter Server y de ONTAP. La cuenta utilizada para registrar herramientas de ONTAP en vCenter Server (`\https://<appliance_ip>:8143/Register.html`) Debe ser un administrador de vCenter Server (asignado al rol de administrador de vCenter Server o de administrador). Si planea ejecutar herramientas de ONTAP como administrador, debe tener todos los permisos y privilegios necesarios para todas las tareas.
+Las herramientas de ONTAP son compatibles con el control de acceso basado en roles de vCenter Server y de ONTAP. La cuenta utilizada para registrar herramientas de ONTAP en vCenter Server (`\https://<appliance_ip>:8143/Register.html`) Debe ser un administrador de vCenter Server (asignado al rol de administrador de vCenter Server o de administrador). Si planea ejecutar ONTAP Tools para VMware vSphere como administrador, debe contar con todos los permisos y privilegios necesarios para todas las tareas.
 
 Si su empresa requiere restringir el acceso a objetos de vSphere, puede crear y asignar roles de herramientas estándar de ONTAP a los usuarios para cumplir los requisitos de vCenter Server.
 

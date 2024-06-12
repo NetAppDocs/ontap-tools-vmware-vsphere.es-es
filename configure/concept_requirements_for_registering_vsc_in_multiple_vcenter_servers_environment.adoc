@@ -2,7 +2,7 @@
 permalink: configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html 
 sidebar: sidebar 
 keywords:  
-summary: 'Si utiliza las herramientas de ONTAP® para VMware vSphere en un entorno en el que un único cliente de VMware vSphere HTML5 administra varias instancias de vCenter Server, debe registrar una instancia de herramientas de ONTAP en cada instancia de vCenter Server para que se produzca un emparejamiento 1:1 entre las herramientas de ONTAP y vCenter Server. Esta acción le permite gestionar todos los servidores que ejecutan vCenter 6.0 o una versión posterior en el modo vinculado y en el modo no vinculado desde un único cliente HTML5 de vSphere.' 
+summary: 'Si utiliza las herramientas de ONTAP® para VMware vSphere en un entorno en el que un único cliente de VMware vSphere HTML5 administra varias instancias de vCenter Server, debe registrar una instancia de herramientas de ONTAP en cada instancia de vCenter Server para que se produzca un emparejamiento 1:1 entre las herramientas de ONTAP para VMware vSphere y vCenter Server. Esta acción le permite gestionar todos los servidores que ejecutan vCenter 6.0 o una versión posterior en el modo vinculado y en el modo no vinculado desde un único cliente HTML5 de vSphere.' 
 ---
 = Requisitos para registrar herramientas de ONTAP en varios entornos de vCenter Server
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Si utiliza las herramientas de ONTAP® para VMware vSphere en un entor
 
 
 [role="lead"]
-Si utiliza herramientas de ONTAP para VMware vSphere en un entorno donde un solo cliente de VMware vSphere HTML5 gestiona varias instancias de vCenter Server, debe registrar una instancia de herramientas de ONTAP en cada instancia de vCenter Server para que se produzca un emparejamiento 1:1 entre las herramientas de ONTAP y vCenter Server. Hacerlo, permite gestionar todos los servidores que ejecutan vCenter 7,0 o una versión posterior tanto en modo vinculado como en modo no vinculado desde un solo cliente vSphere HTML5.
+Si utiliza herramientas de ONTAP para VMware vSphere en un entorno donde un solo cliente de VMware vSphere HTML5 gestiona varias instancias de vCenter Server, debe registrar una instancia de herramientas de ONTAP en cada instancia de vCenter Server para que se produzca un emparejamiento 1:1 entre las herramientas de ONTAP para VMware vSphere y vCenter Server. Hacerlo, permite gestionar todos los servidores que ejecutan vCenter 7,0 o una versión posterior tanto en modo vinculado como en modo no vinculado desde un solo cliente vSphere HTML5.
 
 
 NOTE: Si desea usar herramientas de ONTAP con una instancia de vCenter Server, debe haber configurado o registrado una instancia de ONTAP Tools para cada instancia de vCenter Server que desee gestionar. Cada instancia registrada de ONTAP Tools debe tener la misma versión.
@@ -28,7 +28,7 @@ Por ejemplo, es posible que el servidor de herramientas de ONTAP A esté registr
 * No puede* tener el servidor de herramientas de ONTAP A registrado tanto en vCenter Server A como en vCenter Server B.
 
 +
-Si un inventario de VMware incluye una instancia de vCenter Server que no tiene un servidor de herramientas de ONTAP registrado, pero hay una o varias instancias de vCenter Server registradas con herramientas de ONTAP, a continuación, puede ver las instancias de las herramientas de ONTAP y realizar operaciones de las herramientas de ONTAP para las instancias de vCenter Server que tienen las herramientas de ONTAP registradas.
+Si un inventario de VMware incluye una instancia de vCenter Server que no tiene un servidor de herramientas de ONTAP registrado, pero hay una o varias instancias de vCenter Server registradas con herramientas de ONTAP, a continuación, puede ver las instancias de las herramientas de ONTAP para VMware vSphere y realizar operaciones de las herramientas de ONTAP para las instancias de vCenter Server que tienen las herramientas de ONTAP registradas.
 
 * Debe contar con el privilegio View específico de las herramientas de ONTAP para cada instancia de vCenter Server que esté registrada en el inicio de sesión único (SSO).
 +

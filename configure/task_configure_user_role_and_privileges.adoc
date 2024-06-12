@@ -2,7 +2,7 @@
 permalink: configure/task_configure_user_role_and_privileges.html 
 sidebar: sidebar 
 keywords: user roles 
-summary: Puede configurar nuevos roles de usuario para gestionar sistemas de almacenamiento mediante el archivo JSON proporcionado con las herramientas de ONTAP y System Manager de ONTAP. 
+summary: Es posible configurar nuevos roles de usuario para gestionar sistemas de almacenamiento mediante el archivo JSON proporcionado con las herramientas de ONTAP para VMware vSphere y ONTAP System Manager. 
 ---
 = Configure los roles y privilegios de usuario
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Puede configurar nuevos roles de usuario para gestionar sistemas de alm
 
 
 [role="lead"]
-Puede configurar nuevos roles de usuario para gestionar sistemas de almacenamiento mediante el archivo JSON proporcionado con las herramientas de ONTAP y System Manager de ONTAP.
+Es posible configurar nuevos roles de usuario para gestionar sistemas de almacenamiento mediante el archivo JSON proporcionado con las herramientas de ONTAP para VMware vSphere y ONTAP System Manager.
 
 *Lo que necesitará*
 
@@ -22,7 +22,7 @@ Puede configurar nuevos roles de usuario para gestionar sistemas de almacenamien
 ** Extraiga el archivo VSC_ONTAP_User_Privileges.zip descargado
 ** Acceda a System Manager
 +
-Consulte el artículo de la base de conocimientos - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges["Virtual Storage Console: Cómo recuperar el archivo JSON para configurar los roles y privilegios de usuario"] Para obtener instrucciones sobre cómo descargar el archivo de privilegios de ONTAP desde la CLI web.
+Consulte el artículo de la base de conocimientos - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges["Virtual Storage Console: Cómo recuperar el archivo JSON para configurar los roles y privilegios de usuario"] Para obtener instrucciones sobre cómo descargar el archivo de privilegios de ONTAP de la CLI.
 
 
 

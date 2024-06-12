@@ -36,7 +36,27 @@ El comando rebalancear elimina volúmenes FlexVol vacíos para proporcionar espa
 
 
 * Si un volumen FlexVol tiene Snapshots, durante el funcionamiento del reequilibrio de vVols, los vVols no se reequilibran correctamente debido a la falta de detalles sobre la utilización del espacio.
-* Puede establecer la propiedad VASA Provider _enable.update.vvol.through.Discovery_ en true para obtener datos consistentes entre las herramientas ONTAP y ONTAP, cuando se produce un tiempo de espera durante una operación de reequilibrio de contenedores.
+* Es posible establecer la propiedad del proveedor VASA _enable.update.vvol.through.discovery_ como true para obtener datos coherentes entre las herramientas de ONTAP para VMware vSphere y ONTAP, cuando se agote el tiempo de espera durante la operación de reequilibrio de contenedores.
+* No hay API de REST expuestas para volver a equilibrar el almacén de datos de VVol.
 
 
 ====
+.*Antes de empezar*
+* Genere el token Web-CLI desde la consola de mantenimiento:
++
+.. Inicie sesión en la consola de mantenimiento.
+.. Seleccione la opción *1* Configuración del aparato.
+.. Seleccione la opción *12* Generar token de autenticación Web-CLI.
+
+
+* Obtenga el nombre del contenedor y el nombre de los volúmenes de FlexVol de vCenter o de la CLI web.
+Para obtener la lista de volúmenes FlexVol adjuntos al contenedor, ejecute el comando _container list_ desde web-CLI. Puede encontrar los detalles del comando Container rebalance en la página Web-CLI.
+
+
+
+NOTE: Debe proporcionar el nombre del contenedor para llevar a cabo un reequilibrio en todos los volúmenes FlexVol conectados a dicho contenedor. Sin embargo, si se proporciona el parámetro FlexVol volume, el reequilibrio solo se realiza en el volumen FlexVol proporcionado.
+
+.* Pasos*
+. Inicie sesión desde Web-CLI mediante URL `\https://<OTV-IP>:9083/`
+. Ejecute el comando: _Container rebalance -container_name=<container-name>_
+

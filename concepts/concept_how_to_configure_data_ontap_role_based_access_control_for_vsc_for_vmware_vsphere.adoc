@@ -13,9 +13,9 @@ summary: 'Debe configurar el control de acceso basado en roles de ONTAP \(RBAC\)
 [role="lead"]
 Debe configurar el control de acceso basado en roles (RBAC) de ONTAP en el sistema de almacenamiento para poder utilizar el control de acceso basado en roles con las herramientas ONTAP para VMware vSphere. Es posible crear una o varias cuentas de usuario personalizadas con privilegios de acceso limitados mediante la función RBAC de ONTAP.
 
-Las herramientas de ONTAP y el SRA pueden acceder a los sistemas de almacenamiento a nivel del clúster o al nivel de SVM de la máquina virtual de almacenamiento (SVM). Si va a añadir sistemas de almacenamiento en el nivel del clúster, debe proporcionar las credenciales del usuario administrador para proporcionar todas las funcionalidades necesarias. Si va a añadir sistemas de almacenamiento añadiendo detalles de SVM directamente, debe tener en cuenta que el usuario "'vsadmin'" no tiene todos los roles y capacidades requeridos para realizar ciertas tareas.
+Las herramientas de ONTAP para VMware vSphere y el SRA pueden acceder a los sistemas de almacenamiento a nivel de clúster o de máquina virtual de almacenamiento (SVM) SVM. Si va a añadir sistemas de almacenamiento en el nivel del clúster, debe proporcionar las credenciales del usuario administrador para proporcionar todas las funcionalidades necesarias. Si va a añadir sistemas de almacenamiento añadiendo detalles de SVM directamente, debe tener en cuenta que el usuario "'vsadmin'" no tiene todos los roles y capacidades requeridos para realizar ciertas tareas.
 
-EL proveedor DE VASA puede acceder a los sistemas de almacenamiento únicamente en el nivel del clúster. Si se necesita VASA Provider para una controladora de almacenamiento determinada, el sistema de almacenamiento se debe añadir a las herramientas de ONTAP en el nivel de clúster, incluso si utiliza herramientas de ONTAP o SRA.
+EL proveedor DE VASA puede acceder a los sistemas de almacenamiento únicamente en el nivel del clúster. Si se necesita VASA Provider para una controladora de almacenamiento determinada, el sistema de almacenamiento debe añadirse a las herramientas de ONTAP para VMware vSphere en el nivel de clúster, incluso si utiliza herramientas ONTAP o SRA.
 
 Para crear un nuevo usuario y conectar un clúster o una SVM a las herramientas de ONTAP, debe realizar lo siguiente:
 
@@ -24,7 +24,7 @@ Para crear un nuevo usuario y conectar un clúster o una SVM a las herramientas 
 +
 Estas credenciales del sistema de almacenamiento son necesarias para configurar los sistemas de almacenamiento para las herramientas de ONTAP. Puede configurar sistemas de almacenamiento para las herramientas ONTAP introduciendo las credenciales en las herramientas de ONTAP. Cada vez que se inicie sesión en un sistema de almacenamiento con estas credenciales, se tendrán permisos para las funciones de herramientas de ONTAP que se configuraron en ONTAP al crear las credenciales.
 
-* Añada el sistema de almacenamiento a las herramientas de ONTAP y proporcione las credenciales del usuario que acaba de crear
+* Agregar el sistema de almacenamiento a las herramientas de ONTAP para VMware vSphere y proporcionar las credenciales del usuario que acaba de crear
 
 
 
@@ -63,4 +63,4 @@ Solo puede crear gestión basada en políticas en el nivel de clúster. Este rol
 
 El SRA clasifica los privilegios del ONTAP en un rol DE SAN o NAS a nivel del clúster o de SVM. Esto permite a los usuarios ejecutar operaciones de SRM.
 
-Las herramientas de ONTAP realizan una validación inicial de privilegios de roles de control de acceso basado en roles de ONTAP al añadir el clúster a las herramientas de ONTAP. Si añadió una dirección IP de almacenamiento SVM directa, las herramientas de ONTAP no realizan la validación inicial. Las herramientas de ONTAP comprueban y aplican los privilegios más adelante en el flujo de trabajo de la tarea.
+Las herramientas de ONTAP realizan una validación inicial de privilegios de roles de control de acceso basado en roles de ONTAP al añadir el clúster a las herramientas de ONTAP. Si añadió una IP de almacenamiento de usuario de SVM, las herramientas de ONTAP no realizan la validación inicial. Las herramientas de ONTAP comprueban y aplican los privilegios más adelante en el flujo de trabajo de la tarea.

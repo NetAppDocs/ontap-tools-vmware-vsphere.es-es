@@ -15,7 +15,7 @@ Si utiliza Site Recovery Manager (SRM) basado en Windows para la recuperación a
 
 Los pasos involucrados en la migración de la recuperación ante desastres son:
 
-. Actualice su dispositivo de herramientas de ONTAP actual a la última versión.
+. Actualice sus herramientas de ONTAP actuales para el dispositivo de VMware vSphere a la versión más reciente.
 +
 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["Actualice a la versión más reciente de herramientas de ONTAP"]
 

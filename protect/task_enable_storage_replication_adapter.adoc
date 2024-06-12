@@ -34,7 +34,7 @@ La flexibilidad para habilitar las funcionalidades VASA Provider y SRA le permit
 . Haga clic en *Configuración*.
 . Haga clic en *Administrar capacidades* en la ficha *Configuración administrativa*.
 . En el cuadro de diálogo *Administrar capacidades*, seleccione la extensión SRA que desee activar.
-. Introduzca la dirección IP de las herramientas de ONTAP y la contraseña del administrador y, a continuación, haga clic en *aplicar*.
+. Introduzca la dirección IP de las herramientas de ONTAP para VMware vSphere y la contraseña del administrador, y luego haga clic en *Aplicar*.
 . Puede usar uno de los siguientes métodos para implementar el SRA:
 +
 *Para el dispositivo SRM*

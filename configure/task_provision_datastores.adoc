@@ -35,7 +35,7 @@ La opción *aprovisionar Datastore* permite especificar un perfil de capacidad d
 
 * NFSv3 y NFSv4.1
 * VMFS5 y VMFS6
-* En la versión vSphere 8,0, el protocolo NVMe/FC es compatible con los almacenes de datos vvol.
+* En la versión vSphere 8,0, el protocolo NVMe/FC es compatible con los almacenes de datos VVOL.
 
 
 Las herramientas de ONTAP pueden crear un almacén de datos en un volumen NFS o LUN:
@@ -65,7 +65,7 @@ En las otras plataformas, el tamaño de LUN máximo admitido es de 16 TB.
 
 
 
-Si no se especifica un perfil de funcionalidad de almacenamiento durante el aprovisionamiento, se puede utilizar más adelante la página Storage Mapping para asignar un almacén de datos a un perfil de funcionalidad de almacenamiento. Puede aplicar la configuración de calidad de servicio del almacenamiento, el techo de rendimiento (IOPS máx.) y la planta de rendimiento (IOPS mín.) en archivos de datos VMDK de máquinas virtuales aprovisionados en un almacén de datos respaldado de FlexGroup. La configuración de QoS se puede aplicar a nivel de almacén de datos o en cada máquina virtual haciendo clic con el botón derecho en el almacén de datos. La opción con el botón derecho está disponible solo en esos almacenes de datos o máquinas virtuales de los que se realiza un backup de un almacén de datos de FlexGroup. Una vez que se aplica la calidad de servicio a un almacén de datos, se anulan los ajustes preexistentes de almacén de datos o de calidad de servicio de las máquinas virtuales. No se puede aplicar la configuración de calidad de servicio en el nivel de un almacén de datos o en un nivel de máquina virtual para almacenes de datos que se aprovisionan en SVM directas, ya que ONTAP no admite la calidad de servicio en el nivel de gestión de SVM.
+Si no se especifica un perfil de funcionalidad de almacenamiento durante el aprovisionamiento, se puede utilizar más adelante la página Storage Mapping para asignar un almacén de datos a un perfil de funcionalidad de almacenamiento. Puede aplicar la configuración de calidad de servicio del almacenamiento, el techo de rendimiento (IOPS máx.) y la planta de rendimiento (IOPS mín.) en archivos de datos VMDK de máquinas virtuales aprovisionados en un almacén de datos respaldado de FlexGroup. La configuración de QoS se puede aplicar a nivel de almacén de datos o en cada máquina virtual haciendo clic con el botón derecho en el almacén de datos. La opción con el botón derecho está disponible solo en esos almacenes de datos o máquinas virtuales de los que se realiza un backup de un almacén de datos de FlexGroup. Una vez que se aplica la calidad de servicio a un almacén de datos, se anulan los ajustes preexistentes de almacén de datos o de calidad de servicio de las máquinas virtuales. La configuración de QoS no se puede aplicar a nivel de almacén de datos ni a un nivel de máquina virtual para almacenes de datos aprovisionados en usuarios de SVM, ya que ONTAP no admite QoS en el nivel de gestión de SVM.
 
 * Pasos*
 

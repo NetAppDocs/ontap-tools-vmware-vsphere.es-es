@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: Las herramientas de ONTAP® para VMware vSphere comprueban y establecen la configuración de accesos múltiples del host ESXi y la configuración de tiempo de espera del HBA que funcionan mejor con los sistemas de almacenamiento de NetApp. 
 ---
-= Configure los valores de multivía y de tiempo de espera del servidor ESXi
+= Configure los ajustes de tiempo de espera y multivía del servidor host ESXi
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

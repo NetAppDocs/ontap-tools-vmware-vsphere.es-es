@@ -31,7 +31,7 @@ Si la funcionalidad del proveedor VASA está deshabilitada antes de actualizar a
 . Haga clic en *Administrar capacidades* en la ficha Configuración administrativa.
 . En el cuadro de diálogo gestionar funcionalidades, seleccione la extensión VASA Provider para habilitar.
 . Si desea utilizar la capacidad de replicación para almacenes de datos vVols, utilice el botón de alternar *Activar replicación vVols*.
-. Introduzca la dirección IP de las herramientas de ONTAP y la contraseña del administrador y, a continuación, haga clic en *aplicar*.
+. Introduzca la dirección IP de las herramientas de ONTAP para VMware vSphere y la contraseña del administrador, y luego haga clic en *Aplicar*.
 +
 
 NOTE: Si el estado del proveedor VASA se muestra como "'fuera de línea'" incluso después de habilitar la extensión del proveedor VASA, compruebe la ``/var/log/vmware/vmware-sps/sps.log` Archivar los errores de conexión con VASA Provider o reiniciar el servicio "'vmware-sps'".

@@ -2,7 +2,7 @@
 permalink: configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: Debe añadir sistemas de almacenamiento a las herramientas de ONTAP y establecer credenciales predeterminadas, si es necesario, mediante la interfaz de herramientas de ONTAP. 
+summary: Debe agregar sistemas de almacenamiento a las herramientas de ONTAP para VMware vSphere y establecer credenciales predeterminadas, si es necesario, mediante la interfaz de herramientas de ONTAP. 
 ---
 = Información general de los sistemas de almacenamiento para las herramientas de ONTAP
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Debe añadir sistemas de almacenamiento a las herramientas de ONTAP y e
 
 
 [role="lead"]
-Debe añadir sistemas de almacenamiento a las herramientas de ONTAP y establecer credenciales predeterminadas, si es necesario, mediante la interfaz de herramientas de ONTAP.
+Debe agregar sistemas de almacenamiento a las herramientas de ONTAP para VMware vSphere y establecer credenciales predeterminadas, si es necesario, mediante la interfaz de herramientas de ONTAP.
 
 Las herramientas de ONTAP para VMware vSphere ofrecen un único mecanismo para detectar sistemas de almacenamiento y configurar las credenciales de almacenamiento. Las credenciales proporcionan los permisos de ONTAP requeridos para permitir que los usuarios de herramientas de ONTAP ejecuten tareas mediante los sistemas de almacenamiento.
 
@@ -20,7 +20,7 @@ Para que las herramientas de ONTAP puedan mostrar y gestionar los recursos de al
 
 NOTE: Si inicia sesión como administrador, tiene automáticamente todos los privilegios de ese sistema de almacenamiento.
 
-Cuando se añade un sistema de almacenamiento a herramientas ONTAP, se debe proporcionar una dirección IP para el sistema de almacenamiento y la pareja de nombre de usuario y contraseña que está asociada con ese sistema. Puede configurar credenciales predeterminadas que las herramientas de ONTAP utilizarán durante el proceso de detección del sistema de almacenamiento, o bien puede introducir credenciales manualmente al detectar el sistema de almacenamiento. Los detalles del sistema de almacenamiento que se añaden a las herramientas de ONTAP se aplican automáticamente a las extensiones que habilita en la implementación. No es necesario añadir manualmente el almacenamiento al proveedor VASA y al adaptador de replicación de almacenamiento (SRA). Tanto las herramientas de ONTAP como el SRA admiten la adición de credenciales a nivel de clúster y a nivel de máquina virtual de almacenamiento (SVM). El proveedor DE VASA de solo admite credenciales en el nivel del clúster para añadir sistemas de almacenamiento. Cuando se añade un sistema de almacenamiento, cualquier comunicación entre el plugin de herramientas de ONTAP y el sistema de almacenamiento se debe autenticar mutuamente.
+Cuando se añade un sistema de almacenamiento a herramientas ONTAP, se debe proporcionar una dirección IP para el sistema de almacenamiento y la pareja de nombre de usuario y contraseña que está asociada con ese sistema. Puede configurar credenciales predeterminadas que las herramientas de ONTAP utilizarán durante el proceso de detección del sistema de almacenamiento, o bien puede introducir credenciales manualmente al detectar el sistema de almacenamiento. Los detalles del sistema de almacenamiento que se añaden a las herramientas de ONTAP para VMware vSphere se insertan automáticamente en las extensiones que habilita en la implementación. No es necesario añadir manualmente el almacenamiento al proveedor VASA y al adaptador de replicación de almacenamiento (SRA). Tanto las herramientas de ONTAP para VMware vSphere como el SRA admiten la adición de credenciales a nivel de clúster y de máquina virtual de almacenamiento (SVM). El proveedor DE VASA de solo admite credenciales en el nivel del clúster para añadir sistemas de almacenamiento. Cuando se añade un sistema de almacenamiento, cualquier comunicación entre el plugin de herramientas de ONTAP y el sistema de almacenamiento se debe autenticar mutuamente.
 
 Si el entorno incluye varias instancias de vCenter Server, al añadir un sistema de almacenamiento a las herramientas ONTAP desde la página Storage Systems, el cuadro de diálogo Add Storage System muestra un cuadro de diálogo de vCenter Server en el que puede especificar la instancia de vCenter Server a la que debe añadirse el sistema de almacenamiento. Si añade un sistema de almacenamiento haciendo clic con el botón derecho en el nombre de un centro de datos, no tiene la opción de especificar una instancia de vCenter Server debido a que el servidor ya está asociado a ese centro de datos.
 

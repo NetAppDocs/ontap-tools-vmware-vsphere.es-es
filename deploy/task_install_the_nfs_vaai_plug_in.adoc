@@ -41,6 +41,6 @@ Debe seguir las instrucciones que aparecen en pantalla para completar la instala
 
 . Reinicie el host ESXi después de que finalice la instalación.
 +
-Cuando reinicia el host ESXi, las herramientas ONTAP detectan automáticamente el plugin VAAI de NFS. No es necesario realizar pasos adicionales para habilitar el plugin.
+Cuando se reinicia el host ESXi, las herramientas de ONTAP para VMware vSphere detectan automáticamente el plugin VAAI de NFS. No es necesario realizar pasos adicionales para habilitar el plugin.
 
 

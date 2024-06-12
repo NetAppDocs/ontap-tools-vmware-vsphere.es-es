@@ -28,7 +28,7 @@ Si SVM tiene tanto LIF IPv4 como IPv6, debe deshabilitar las LIF IPv6 y, más ad
 [NOTE]
 ====
 ** Esta versión de herramientas de ONTAP no admite la clonación en caliente de máquinas virtuales protegidas. Debe apagar la máquina virtual y después realizar la operación de clonado.
-** Si un almacén de datos no aparece en las herramientas de ONTAP después de una operación ReProtect, deberá ejecutar una detección del sistema de almacenamiento o esperar a que se ejecute la próxima operación de detección programada.
+** Si un almacén de datos no aparece en las herramientas de ONTAP para VMware vSphere después de una operación de reprotección, debe ejecutar una detección del sistema de almacenamiento o esperar a la siguiente operación de detección programada.
 
 
 ====

@@ -86,7 +86,7 @@ Las herramientas de ONTAP escuchan las comunicaciones seguras en este puerto. El
  a| 
 8443
  a| 
-Este puerto se utiliza para el servicio de complemento remoto.
+Este puerto se usa para herramientas de ONTAP para el servicio del complemento de VMware vSphere.
 
 |===
 Requisitos mínimos de almacenamiento y aplicaciones:
@@ -223,5 +223,5 @@ Se muestra un mensaje indicando que las credenciales de almacenamiento están al
 
 NOTE: El proveedor DE VASA está habilitado de forma predeterminada. Si desea utilizar la funcionalidad de replicación para almacenes de datos vVols, utilice el botón de alternar Enable vVols replication.
 
-. Introduzca la dirección IP de las herramientas de ONTAP y la contraseña del administrador y, a continuación, haga clic en *aplicar*.
+. Introduzca la dirección IP de las herramientas de ONTAP para VMware vSphere y la contraseña del administrador y, a continuación, haga clic en *Aplicar*.
 
