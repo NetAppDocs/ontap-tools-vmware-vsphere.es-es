@@ -46,7 +46,7 @@ Las herramientas de ONTAP pueden crear un almacén de datos en un volumen NFS o 
 
 [NOTE]
 ====
-* Las herramientas de ONTAP admiten el aprovisionamiento de almacenes de datos de VMFS5 y VMFS6, con un tamaño de volumen y LUN de VMFS máximo de 64 TB, cuando se utilizan con ASA y sistemas AFF aprobados con ONTAP 9.8 y versiones posteriores.
+* Las herramientas de ONTAP admiten el aprovisionamiento de almacenes de datos de VMFS5 GB y VMFS6 TB hasta el tamaño máximo de volumen y LUN de VMFS de 64TB TB cuando se utilizan todos los sistemas ASA que ejecuten ONTAP 9,8 o una versión posterior, y todos los demás sistemas que ejecuten ONTAP 9.12.1P2 o una versión posterior.
 +
 En las otras plataformas, el tamaño de LUN máximo admitido es de 16 TB.
 

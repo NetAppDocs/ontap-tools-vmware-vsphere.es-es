@@ -62,7 +62,7 @@ https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GU
 
 == Configuración de almacenamiento
 
-Debe configurar el valor de `storage.commandTimeout` y.. `storage.maxConcurrentCommandCnt` intervalo de tiempo de espera para entornos con gran escala a 99,999 segundos.
+Cuando alcance un tiempo de espera, aumente los valores de `storage.commandTimeout` y.. `storage.maxConcurrentCommandCnt` a un valor superior.
 
 
 NOTE: El intervalo de tiempo de espera especificado es el valor máximo. No es necesario esperar hasta que se llegue al tiempo de espera máximo. La mayoría de comandos terminan dentro del intervalo máximo de tiempo de espera establecido.

@@ -65,7 +65,7 @@ Las herramientas de ONTAP utilizan los siguientes puertos TCP bidireccionales pr
  a| 
 9083
  a| 
-Cuando se encuentra habilitada, tanto el proveedor VASA como el adaptador de replicación de almacenamiento (SRA) utilizan este puerto para comunicarse con vCenter Server. Este puerto también es necesario para obtener los ajustes de TCP/IP. Este puerto se utiliza para descargar el paquete de soporte VP, acceder a la interfaz de usuario Web-CLI y la comunicación de la ruta de control de VMware a VP.
+Cuando se encuentra habilitada, tanto el proveedor VASA como el adaptador de replicación de almacenamiento (SRA) utilizan este puerto para comunicarse con vCenter Server. Este puerto también es necesario para obtener los ajustes de TCP/IP. Este puerto debe estar habilitado en el firewall desde los hosts ESXi hasta las herramientas de ONTAP para el dispositivo VMware vSphere. Este puerto se utiliza para descargar el paquete de soporte VP, acceder a la interfaz de usuario Web-CLI y la comunicación de la ruta de control de VMware a VP.
 
 
 
