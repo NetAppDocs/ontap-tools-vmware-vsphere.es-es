@@ -15,6 +15,8 @@ Puede realizar una actualización in situ a la versión más reciente de herrami
 
 *Lo que necesitará*
 
+La herramienta de matriz de interoperabilidad (IMT) contiene la información más reciente sobre las versiones compatibles de ONTAP, vCenter Server, hosts ESXi, aplicaciones de plugins y Site Recovery Manager (SRM). Consulte https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["Herramienta de matriz de interoperabilidad"^] para obtener toda la información sobre las rutas de actualización compatibles.
+
 * Debe haber descargado el archivo _.iso_ para la última versión de las herramientas de ONTAP.
 * Debe haber reservado al menos 12 GB de RAM para que las herramientas de ONTAP funcionen de forma óptima después de la actualización.
 * Debe limpiar la caché del explorador de vSphere Client.

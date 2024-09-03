@@ -65,6 +65,10 @@ Establezca este valor en 12 para todas las configuraciones de NFS.
 +
 Establezca este valor en 5 para todas las configuraciones de NFS.
 
+* *SunRPC.MaxConnPerIP*
++
+Si usa vSphere 7,0 o posterior, debe configurar este valor en 128.
+
 
 
 
