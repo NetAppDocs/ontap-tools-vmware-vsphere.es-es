@@ -1166,8 +1166,6 @@
   <block id="520eedfc708c9b9e975734575ce13112" category="paragraph">En una implementación de NFS, se trata de un archivo que tiene el tamaño de la memoria virtual.</block>
   <block id="d061debbb69f1badde16263f7edd67dc" category="list-text">*Memoria*</block>
   <block id="3704cccc9d328731555a0894fdde61bc" category="paragraph">Este vVols se crea si se selecciona la opción Memory snapshots (instantáneas de memoria) al crear la instantánea de VM.</block>
-  <block id="6b894d7e8f2bb219ece874c3c249c3f7" category="inline-link">Cómo configurar RBAC para Virtual Storage Console</block>
-  <block id="14d107055fdbd0aa4ef3c23300469f88" category="paragraph"><block ref="14d107055fdbd0aa4ef3c23300469f88" category="inline-link-rx"></block></block>
   <block id="da496c85a4c5475dec77c310cdcb6be9" category="doc">Permisos para los sistemas de almacenamiento ONTAP y objetos de vSphere</block>
   <block id="845e835b372dcd78cff8f20ea48e3ec4" category="list-text">Supervisar y configurar objetos de almacenamiento o de vCenter Server que residen en un sistema de almacenamiento</block>
   <block id="6209ea29783659ad409dca288f7ef0f1" category="list-text">Aprovisionamiento de objetos de vSphere que residen en un sistema de almacenamiento</block>
@@ -1417,7 +1415,6 @@
   <block id="b4985c4f7663e3e799236852df85319e" category="inline-link-macro">Los valores de host de ESXi se establecen mediante las herramientas de ONTAP para VMware vSphere</block>
   <block id="fceaf78f3c73355fe250db66743fa112" category="list-text"><block ref="fceaf78f3c73355fe250db66743fa112" category="inline-link-macro-rx"></block></block>
   <block id="52b95ac1087cc8a2310e7b2234240c33" category="list-text"><block ref="52b95ac1087cc8a2310e7b2234240c33" category="inline-link-macro-rx"></block></block>
-  <block id="a7189062665fe6b8b3263ee857e62834" category="paragraph">Si es nuevo en VMware y nunca ha usado un producto de herramientas ONTAP de NetApp, debe configurar su instancia de vCenter Server y configurar un host ESXi, antes de poner en marcha y configurar las herramientas de ONTAP.</block>
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">Puesta en marcha de nuevo usuario</block>
   <block id="8f7c4a87ce8fc0f59eab7afd9a2efbb7" category="summary">Proporciona instrucciones para poner en marcha e inicializar herramientas de ONTAP para VMware vSphere.</block>
   <block id="ae797764cbca1ca8efcd5ef67c6285c5" category="doc">Herramientas de ONTAP para VMware vSphere Quick Start</block>
@@ -1650,7 +1647,6 @@
   <block id="148d96a120a3dbbdac7376feadd4f4e7" category="paragraph">Debe haber ejecutado los pasos mencionados en el tema <block ref="a7b1731ee7a384d42899d1089c98fcd0" category="inline-link-macro-rx"></block></block>
   <block id="50344e3c61009efb2aa76acc2330e318" category="list-text">En la página vSphere Client, haga clic en *Políticas y perfiles*.</block>
   <block id="f9945d9a9730b8841a7d9375a4e7d470" category="list-text">En la página VM Storage Policies, haga clic en *CREATE*.</block>
-  <block id="ef9991a7cf13c45bcebdc7db419b4a5b" category="summary">Las herramientas de ONTAP para VMware vSphere permiten gestionar su ciclo de vida de extremo a extremo para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Permite a los administradores gestionar el almacenamiento desde el servidor de vCenter directamente y, por tanto, simplifica la gestión de datos y el almacenamiento para entornos VMware.</block>
   <block id="35b93a81a0436a7a2cfd708e05194805" category="paragraph">Las herramientas de ONTAP se integran con vSphere Client y permiten utilizar servicios de inicio de sesión único (SSO). En un entorno con varias instancias de vCenter Server, cada instancia de vCenter Server que desee gestionar debe tener su propia instancia registrada de las herramientas de ONTAP.</block>
   <block id="b0fc0bed1deb4cd0ac1733c83406a338" category="list-text">Cree un rol de administrador de clúster o de administrador de SVM mediante ONTAP System Manager 9.8P1 o posterior. Consulte <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="36a3e078a9ae64bd58305972fd6b6a14" category="paragraph">Para crear roles de usuario nuevos, debe iniciar sesión como administrador en sistemas de almacenamiento que ejecutan ONTAP. Se pueden crear roles de ONTAP con ONTAP System Manager 9.8P1 o posterior. Consulte <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> si quiere más información.</block>
@@ -2155,4 +2151,9 @@ Compruebe el acceso a los LUN asignados en el host ESXi para verificar la conect
   <block id="df5910bf5ed161a784cc7b4fb3fc0a84" category="list-text">*SunRPC.MaxConnPerIP*</block>
   <block id="4a8c1c4202dd77901215a87452e10629" category="paragraph">Si usa vSphere 7,0 o posterior, debe configurar este valor en 128.</block>
   <block id="34881aef32159ff28f8619a31ff308a3" category="paragraph">La herramienta de matriz de interoperabilidad (IMT) contiene la información más reciente sobre las versiones compatibles de ONTAP, vCenter Server, hosts ESXi, aplicaciones de plugins y Site Recovery Manager (SRM). Consulte<block ref="c4e3c5dd56e9c0925a46d52133eef091" category="inline-link-rx"></block> para obtener toda la información sobre las rutas de actualización compatibles.</block>
+  <block id="dc00c7eca4a9deab6a54899a9976ba3a" category="inline-link">Herramientas de ONTAP para VMware vSphere: Configuración de control de acceso basado en roles</block>
+  <block id="788b65c29277d612dded28375da10d63" category="paragraph"><block ref="788b65c29277d612dded28375da10d63" category="inline-link-rx"></block></block>
+  <block id="7230ef1fabe08177b3b9d5485ebc25c0" category="summary">Las herramientas de ONTAP para VMware vSphere proporcionan una gestión del ciclo de vida integral para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Permite a los administradores gestionar el almacenamiento desde el servidor de vCenter directamente y, por tanto, simplifica la gestión de datos y el almacenamiento para entornos VMware.</block>
+  <block id="47635be81cb27fe24be3c1541e49e8c2" category="doc">Descripción general de las herramientas de ONTAP</block>
+  <block id="693059892f5ca1ab1683c98e037ee404" category="summary">Si es nuevo en VMware y nunca ha utilizado un producto de herramientas de NetApp ONTAP, debe configurar vCenter Server y configurar un host ESXi antes de poner en marcha y configurar las herramientas de ONTAP.</block>
 </blocks>

@@ -2,7 +2,7 @@
 permalink: concepts/concept_virtual_storage_console_overview.html 
 sidebar: sidebar 
 keywords:  
-summary: Las herramientas de ONTAP para VMware vSphere permiten gestionar su ciclo de vida de extremo a extremo para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Permite a los administradores gestionar el almacenamiento desde el servidor de vCenter directamente y, por tanto, simplifica la gestión de datos y el almacenamiento para entornos VMware. 
+summary: Las herramientas de ONTAP para VMware vSphere proporcionan una gestión del ciclo de vida integral para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Permite a los administradores gestionar el almacenamiento desde el servidor de vCenter directamente y, por tanto, simplifica la gestión de datos y el almacenamiento para entornos VMware. 
 ---
 = Descripción general de las herramientas de ONTAP
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Las herramientas de ONTAP para VMware vSphere permiten gestionar su cic
 
 
 [role="lead"]
-Las herramientas de ONTAP para VMware vSphere permiten gestionar su ciclo de vida de extremo a extremo para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Permite a los administradores gestionar el almacenamiento desde el servidor de vCenter directamente y, por tanto, simplifica la gestión de datos y el almacenamiento para entornos VMware.
+Las herramientas de ONTAP para VMware vSphere proporcionan una gestión del ciclo de vida integral para máquinas virtuales en entornos VMware que usan los sistemas de almacenamiento de NetApp. Permite a los administradores gestionar el almacenamiento desde el servidor de vCenter directamente y, por tanto, simplifica la gestión de datos y el almacenamiento para entornos VMware.
 
 Las herramientas de ONTAP se integran con vSphere Client y permiten utilizar servicios de inicio de sesión único (SSO). En un entorno con varias instancias de vCenter Server, cada instancia de vCenter Server que desee gestionar debe tener su propia instancia registrada de las herramientas de ONTAP.
 

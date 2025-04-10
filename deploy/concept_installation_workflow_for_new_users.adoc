@@ -2,7 +2,7 @@
 permalink: deploy/concept_installation_workflow_for_new_users.html 
 sidebar: sidebar 
 keywords:  
-summary: Si es nuevo en VMware y nunca ha usado un producto de herramientas ONTAP de NetApp, debe configurar su instancia de vCenter Server y configurar un host ESXi, antes de poner en marcha y configurar las herramientas de ONTAP. 
+summary: Si es nuevo en VMware y nunca ha utilizado un producto de herramientas de NetApp ONTAP, debe configurar vCenter Server y configurar un host ESXi antes de poner en marcha y configurar las herramientas de ONTAP. 
 ---
 = Flujo de trabajo de implementación para nuevos usuarios de herramientas de ONTAP para VMware vSphere
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: Si es nuevo en VMware y nunca ha usado un producto de herramientas ONTA
 
 
 [role="lead"]
-Si es nuevo en VMware y nunca ha usado un producto de herramientas ONTAP de NetApp, debe configurar su instancia de vCenter Server y configurar un host ESXi, antes de poner en marcha y configurar las herramientas de ONTAP.
+Si es nuevo en VMware y nunca ha utilizado un producto de herramientas de NetApp ONTAP, debe configurar vCenter Server y configurar un host ESXi antes de poner en marcha y configurar las herramientas de ONTAP.
 
 image::../media/new_user_deployment_workflow_ontap_tools.png[Puesta en marcha de nuevo usuario]
