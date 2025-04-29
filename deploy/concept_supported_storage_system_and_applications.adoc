@@ -34,5 +34,5 @@ Debe habilitar la licencia de FlexClone para realizar operaciones de conmutació
 Para ver las IOPS de un almacén de datos, debe habilitar el control de I/o de almacenamiento o bien anular la selección de la casilla de comprobación Disable Storage I/o statistics Collection en la configuración de Storage I/o control. Solo puede habilitar el control de I/o de almacenamiento si tiene la licencia Enterprise Plus de VMware.
 
 * https://kb.vmware.com/s/article/1022091["Solución de problemas de Storage I/o Control"]
-* https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-37CC0E44-7BC7-479C-81DC-FFFC21C1C4E3.html["Requisitos de Storage I/o Control"]
+* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-resource-management-6-5.html["Gestión de recursos de vSphere"]
 

@@ -21,12 +21,7 @@ Debe emparejar los sitios protegidos y de recuperación creados mediante vSphere
 
 *Acerca de esta tarea*
 
-Las configuraciones de dispersión de SnapMirror son las que permiten replicar un volumen de origen en dos destinos diferentes. Esto crea un problema durante la recuperación cuando el SRM necesita recuperar la máquina virtual del destino.
-
-
-NOTE: El adaptador de replicación de almacenamiento (SRA) no admite las configuraciones de SnapMirror con ventilador fuera.
-
-* Pasos*
+Las configuraciones de dispersión de SnapMirror son las que permiten replicar un volumen de origen en dos destinos diferentes. Esto crea un problema durante la recuperación cuando el SRM necesita recuperar la máquina virtual del destino. * Pasos*
 
 . Haga doble clic en *Site Recovery* en la página de inicio de vSphere Client y, a continuación, haga clic en *Sitios*.
 . Haga clic en *objetos* > *acciones* > *Vincular sitios*.

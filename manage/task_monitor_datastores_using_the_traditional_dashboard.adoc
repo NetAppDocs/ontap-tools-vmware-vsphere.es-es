@@ -17,7 +17,7 @@ Puede supervisar los almacenes de datos tradicionales y las máquinas virtuales 
 
 Debe seleccionar la opción *Activar control de E/S de almacenamiento y recopilación de estadísticas* o *Desactivar control de E/S de almacenamiento pero habilitar recopilación de estadísticas* en el cuadro de diálogo Configurar control de E/S de almacenamiento. Solo es posible habilitar Storage I/o Control si tiene la licencia Enterprise Plus de VMware.
 
-https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-BB5D9BAB-9E0E-4204-A76A-54634CD8AD51.html["Documentación de VMware vSphere: Habilitar Storage I/o Control"]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-resource-management-6-5.html["Gestión de recursos de vSphere"]
 
 La consola tradicional muestra métricas de IOPS, espacio utilizado, latencia y capacidad comprometida que se obtienen en vCenter Server. ONTAP proporciona indicadores de ahorro de espacio agregado a la consola tradicional. Puede ver el ahorro de espacio para un agregado específico. Estos parámetros de rendimiento le permiten identificar cuellos de botella de rendimiento en el entorno virtual y realizar acciones correctivas para resolver los problemas.
 

@@ -11,7 +11,7 @@ summary: Las herramientas de ONTAP para VMware vSphere son compatibles con la co
 
 
 [role="lead"]
-Las herramientas de ONTAP para VMware vSphere son compatibles con SRM Shared Recovery Site Configuration de VMware. Para obtener más información, consulte: https://docs.vmware.com/en/Site-Recovery-Manager/8.6/com.vmware.srm.install_config.doc/GUID-EBF84252-DF37-43CD-ADC8-E90F5254F315.html["Site Recovery Manager en una configuración de sitio de recuperación compartida"]. Las instancias del servidor de Site Recovery Manager en el sitio de recuperación se conectan a las mismas instancias de vCenter Server.
+Las herramientas de ONTAP para VMware vSphere son compatibles con SRM Shared Recovery Site Configuration de VMware. Para obtener más información, consulte:  https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-installation-and-configuration-8-8.html["Site Recovery Manager en una configuración de sitio de recuperación compartida"]. Las instancias del servidor de Site Recovery Manager en el sitio de recuperación se conectan a las mismas instancias de vCenter Server.
 
 En una configuración de sitio de recuperación compartida de SRM, cada servidor SRM debe tener una instancia de SRA dedicada (relación 1:1 entre SRM y SRA). Configure OTV en el modo VCF para que actúe como una instancia de SRA dedicada para cada servidor SRM. También es posible tener puestas en marcha herramientas ONTAP sin SRA habilitadas para el dispositivo de VMware vSphere que esté registrado en vCenter y que se utilice para tareas distintas de SRA, como el aprovisionamiento de almacenes de datos.
 
