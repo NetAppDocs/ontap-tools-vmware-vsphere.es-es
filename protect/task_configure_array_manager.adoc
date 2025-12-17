@@ -18,7 +18,7 @@ Puede configurar Storage Replication Adapter (SRA) mediante el asistente Array M
 * Debe haber emparejado los sitios protegidos y los sitios de recuperación de SRM.
 * Debe haber configurado el almacenamiento antes de configurar el administrador de cabinas.
 * Debe haber configurado y replicado las relaciones de SnapMirror entre los sitios protegidos y los sitios de recuperación.
-* Debe haber habilitado las LIF de gestión de SVM para habilitar la funcionalidad multi-tenancy.
+* Debe haber habilitado los LIF de administración de SVM para admitir la tenencia múltiple.
 
 
 El SRA admite la gestión a nivel de clúster y la gestión a nivel de SVM. Si añade almacenamiento en el nivel del clúster, puede detectar y realizar operaciones en todas las SVM del clúster. Si añade almacenamiento a nivel de SVM, solo podrá gestionar esa SVM específica.

@@ -40,7 +40,7 @@ El estado del proveedor de VASA de la implementación existente se conserva desp
 NOTE: Puede realizar una actualización in situ a la versión más reciente de herramientas de ONTAP solo a partir de la versión 9,10 o posterior existente.
 
 
-NOTE: Desde las herramientas de ONTAP 9,12, actualizar todos los sistemas de almacenamiento La autenticación y el proceso de comunicación ha cambiado de la autenticación básica a la autenticación basada en certificados gracias a la confianza automática en los certificados de almacenamiento de ONTAP. No es necesario realizar ninguna acción por parte del usuario.
+NOTE: A partir de la actualización de las herramientas ONTAP 9.12, el proceso de autenticación y comunicación de todos los sistemas de almacenamiento cambia de autenticación básica a autenticación basada en certificados mediante la confianza automática en los certificados de almacenamiento de ONTAP .
 
 Se restringe la adición de un sistema de almacenamiento sin autenticación de certificados.
 

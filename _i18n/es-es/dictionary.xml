@@ -785,7 +785,6 @@
   <block id="56d43ad1a280ada5e16fd2960ae44b32" category="list-text">SRM</block>
   <block id="03b870ced8b149ca765fa1ffe2f8b770" category="paragraph">La documentación sobre la instalación de SRM se encuentra en el sitio de VMware.</block>
   <block id="4617dd5a7193927c5552182931541c9c" category="inline-link">Documentación de VMware Site Recovery Manager</block>
-  <block id="2b27cdd9529ad91885c6c019ee8329ee" category="paragraph"><block ref="2b27cdd9529ad91885c6c019ee8329ee" category="inline-link-rx"></block></block>
   <block id="406292f3c5b20715e348f48fa5e6d6e3" category="list-text">SRA.</block>
   <block id="5964a20b29586f71f419711aae6ae487" category="paragraph">El adaptador está instalado en SRM.</block>
   <block id="39d642e40fbcd108eb0ab15715ee349d" category="list-text">Compruebe que los hosts ESXi principales están conectados a los LUN del sistema de almacenamiento principal en el sitio protegido.</block>
@@ -935,7 +934,6 @@
   <block id="39b58596949c4b9771bc20ef05dffce8" category="list-text">Debe haber emparejado los sitios protegidos y los sitios de recuperación de SRM.</block>
   <block id="0fef91ca040522ee258c514383b22085" category="list-text">Debe haber configurado el almacenamiento antes de configurar el administrador de cabinas.</block>
   <block id="c57d1578817fecd8541ae081dd3b752e" category="list-text">Debe haber configurado y replicado las relaciones de SnapMirror entre los sitios protegidos y los sitios de recuperación.</block>
-  <block id="43195d9f7cab578cb244f5f740f6e085" category="list-text">Debe haber habilitado las LIF de gestión de SVM para habilitar la funcionalidad multi-tenancy.</block>
   <block id="7945c1d153109a7470a701147eb9bf91" category="paragraph">El SRA admite la gestión a nivel de clúster y la gestión a nivel de SVM. Si añade almacenamiento en el nivel del clúster, puede detectar y realizar operaciones en todas las SVM del clúster. Si añade almacenamiento a nivel de SVM, solo podrá gestionar esa SVM específica.</block>
   <block id="e074ce1ed2ac873058a796fcf283eedd" category="admonition">VMware no admite el protocolo NFS4.1 para SRM.</block>
   <block id="7fdab6ccf999bb53d546254efa8e925a" category="list-text">En SRM, haga clic en *Array Managers* y, a continuación, haga clic en *Agregar Array Manager*.</block>
@@ -1947,7 +1945,6 @@ Siga los pasos que se indican a continuación para configurar syslog.</block>
   <block id="9854c166539f1bb4ba9e61f895f32a6f" category="paragraph">Se introduce una nueva API para generar el _Appliance-api-token_ que autentica las llamadas API. Algunas de las API existentes se modifican para incluir el encabezado _Appliance-api-token_. A partir de la versión 9,12 de las herramientas de ONTAP, Swagger no admite las API de 1,0. Los punteros que anteriormente estaban en 1,0 se mueven a las API de 2,0 o 3,0.</block>
   <block id="ca98aaad89f286b4cde26867bc59bed4" category="admonition">En las herramientas de ONTAP para la versión VMware vSphere 9,13, las API del perfil de la funcionalidad de almacenamiento de 2,0 ya no están disponibles.</block>
   <block id="92ac68c3c800987e3d8470f227aef494" category="paragraph">El archivo _.ova_ incluye las herramientas de ONTAP. Una vez finalizada la puesta en marcha, se instalan en el entorno las herramientas de ONTAP, VASA y los productos del SRA. De forma predeterminada, las herramientas de ONTAP empezarán a funcionar tan pronto como decida el modelo de implementación posterior y decida si habilitar el proveedor VASA y el SRA en función de sus requisitos.</block>
-  <block id="47036403afaaf8ca717ff4a9ab5e937f" category="admonition">Desde las herramientas de ONTAP 9,12, actualizar todos los sistemas de almacenamiento La autenticación y el proceso de comunicación ha cambiado de la autenticación básica a la autenticación basada en certificados gracias a la confianza automática en los certificados de almacenamiento de ONTAP. No es necesario realizar ninguna acción por parte del usuario.</block>
   <block id="58219ebdf648f85e26c26438bb61d686" category="paragraph">Si el sistema de almacenamiento se añade con un usuario de ámbito de clúster creado personalizado mediante el archivo json y desea actualizar a la versión 9,12 y versiones posteriores, entonces
 Ejecute los comandos siguientes en la interfaz de línea de comandos de ONTAP antes de actualizar para habilitar la comunicación basada en certificado entre las herramientas de ONTAP para VMware vSphere y ONTAP.</block>
   <block id="89ee3f6f60ef2fe23bff96f279b6d85a" category="summary">Debe descargar y poner en marcha herramientas de ONTAP en su entorno VMware vSphere y, a continuación, configurar las aplicaciones requeridas en función de las tareas que desee realizar mediante herramientas ONTAP, proveedor VASA y SRA.</block>
@@ -2153,4 +2150,7 @@ Compruebe el acceso a los LUN asignados en el host ESXi para verificar la conect
   <block id="d2a8cc12733d837b21d04e966da18849" category="inline-link">Site Recovery Manager Instalación y configuración Site Recovery Manager</block>
   <block id="aa7e72b3419247f39d0e6b1a10ecde90" category="paragraph"><block ref="e8cde9e1b38fd82f2c0a7be37ca3e90f" category="inline-link-rx"></block> tiene más información.</block>
   <block id="1131b5ba310f0132fa89f2e2bc52cb0c" category="paragraph">Las configuraciones de dispersión de SnapMirror son las que permiten replicar un volumen de origen en dos destinos diferentes. Esto crea un problema durante la recuperación cuando el SRM necesita recuperar la máquina virtual del destino. * Pasos*</block>
+  <block id="e9137eaa9a63d9c4bceed13dfb01d6db" category="admonition">A partir de la actualización de las herramientas ONTAP 9.12, el proceso de autenticación y comunicación de todos los sistemas de almacenamiento cambia de autenticación básica a autenticación basada en certificados mediante la confianza automática en los certificados de almacenamiento de ONTAP .</block>
+  <block id="04afb3bdbc4139cf45256b44141b1a77" category="list-text">Debe haber habilitado los LIF de administración de SVM para admitir la tenencia múltiple.</block>
+  <block id="0d6d5f3b6b0d7149732baa366c9a237a" category="paragraph"><block ref="0d6d5f3b6b0d7149732baa366c9a237a" category="inline-link-rx"></block></block>
 </blocks>
