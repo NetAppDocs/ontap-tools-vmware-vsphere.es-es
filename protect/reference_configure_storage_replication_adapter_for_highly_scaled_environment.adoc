@@ -56,7 +56,7 @@ También debe habilitar el `StorageProvider.autoResignatureMode` opción.
 
 Consulte la documentación de Broadcom para obtener más información sobre la modificación de la configuración del proveedor de almacenamiento.
 
-https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/advanced-srm-configuration/reconfigure-srm-settings/change-storage-provider-settings.html["Cambie la configuración del proveedor de almacenamiento"]
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/advanced-srm-configuration/reconfigure-srm-settings/change-storage-provider-settings.html["Cambie la configuración del proveedor de almacenamiento"^]
 
 
 
@@ -69,8 +69,8 @@ NOTE: El intervalo de tiempo de espera especificado es el valor máximo. No es n
 
 También debe configurar el tiempo máximo para que SRA realice una sola operación en el archivo vvol.properties: offtap.operation.timeout.period.seconds=86400.
 
-https://kb.netapp.com/mgmt/OTV/SRA/NetApp_Storage_Replication_Adapter_4.0%2F%2F7.X_for_ONTAP_Sizing_Guide["Respuesta 1001111 de la base de conocimientos de NetApp: Adaptador de replicación de almacenamiento de NetApp 4.0/7.X para la guía de ajuste de tamaño de ONTAP"]
+https://kb.netapp.com/mgmt/OTV/SRA/NetApp_Storage_Replication_Adapter_4.0%2F%2F7.X_for_ONTAP_Sizing_Guide["Respuesta 1001111 de la base de conocimientos de NetApp: Adaptador de replicación de almacenamiento de NetApp 4.0/7.X para la guía de ajuste de tamaño de ONTAP"^]
 
 La documentación de Broadcom acerca de la modificación de la configuración del proveedor de SAN tiene más información.
 
-https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/advanced-srm-configuration/reconfigure-srm-settings/change-storage-settings.html["Cambie la configuración de almacenamiento"]
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/advanced-srm-configuration/reconfigure-srm-settings/change-storage-settings.html["Cambie la configuración de almacenamiento"^]

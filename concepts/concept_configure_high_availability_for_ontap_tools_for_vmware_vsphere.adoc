@@ -38,7 +38,7 @@ La función de alta disponibilidad de VMware supervisa las máquinas virtuales p
 
 El procedimiento para configurar VMware ha depende de la versión de su vCenter Server. Por ejemplo, puede utilizar el siguiente enlace de referencia y seleccionar la versión necesaria de vCenter Server para ver los pasos necesarios para configurar la alta disponibilidad de VMware.
 
-https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-availability.html["Disponibilidad de vSphere"]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-availability.html["Disponibilidad de vSphere"^]
 
 
 
@@ -56,4 +56,4 @@ El sistema debe cumplir los requisitos de CPU, los requisitos de límite de máq
 
 El procedimiento para configurar la alta disponibilidad depende de la versión del servidor de vCenter Server. Por ejemplo, puede utilizar el siguiente enlace de referencia y seleccionar la versión necesaria de vCenter Server para ver los pasos necesarios para configurar la alta disponibilidad.
 
-https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-availability.html["Requisitos, límites y licencias de Fault Tolerance"]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-availability.html["Requisitos, límites y licencias de Fault Tolerance"^]

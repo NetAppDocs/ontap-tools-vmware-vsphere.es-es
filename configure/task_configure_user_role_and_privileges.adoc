@@ -22,7 +22,7 @@ Es posible configurar nuevos roles de usuario para gestionar sistemas de almacen
 ** Extraiga el archivo VSC_ONTAP_User_Privileges.zip descargado
 ** Acceda a System Manager
 +
-Consulte el artículo de la base de conocimientos - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges["Virtual Storage Console: Cómo recuperar el archivo JSON para configurar los roles y privilegios de usuario"] Para obtener instrucciones sobre cómo descargar el archivo de privilegios de ONTAP de la CLI.
+Consulta el artículo de KB - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges["Virtual Storage Console: Cómo recuperar el archivo JSON para configurar los roles y privilegios de usuario"^] para ver instrucciones sobre cómo descargar el archivo ONTAP Privileges desde Web-CLI.
 
 
 

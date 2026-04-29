@@ -68,4 +68,4 @@ Cuando se habilita el SRA y se usa junto con VMware Site Recovery Manager (SRM),
 
 *Información relacionada*
 
-https://mysupport.netapp.com/site/global/dashboard["Soporte de NetApp"]
+https://mysupport.netapp.com/site/global/dashboard["Soporte de NetApp"^]

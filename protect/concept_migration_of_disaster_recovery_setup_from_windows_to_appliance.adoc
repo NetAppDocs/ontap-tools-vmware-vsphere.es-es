@@ -23,4 +23,4 @@ link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["Actu
 . Migración de datos de Windows SRM a SRM Appliance.
 
 
-Consulte https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-installation-and-configuration-8-8.html["Instalación y configuración de Site Recovery Manager"] para obtener información detallada sobre los pasos
+Consulta  https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-installation-and-configuration-8-8.html["Instalación y configuración de Site Recovery Manager"^] para ver los pasos detallados

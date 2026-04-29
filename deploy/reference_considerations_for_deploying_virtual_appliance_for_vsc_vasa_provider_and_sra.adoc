@@ -35,7 +35,7 @@ Actualizar desde una puesta en marcha existente de herramientas de ONTAP
  a| 
 El procedimiento de actualización de una implementación existente de herramientas de ONTAP en herramientas de ONTAP depende de la versión de las herramientas de ONTAP y de si ha implementado las herramientas de ONTAP. La sección de flujos de trabajo de implementación y actualización contiene más información.
 
-link:concept_installation_workflow_for_existing_users_of_vsc.html["Flujo de trabajo de implementación para usuarios existentes de herramientas de ONTAP"]
+link:concept_installation_workflow_for_existing_users_of_ontap_tools.html["Flujo de trabajo de implementación para usuarios existentes de herramientas de ONTAP"]
 
 Prácticas recomendadas antes de una actualización:
 
@@ -96,7 +96,7 @@ Puede crear los roles de ONTAP recomendados mediante System Manager de ONTAP med
 
 Si un usuario intenta realizar una tarea sin los privilegios y permisos correctos, las opciones de la tarea aparecen atenuadas.
 
-* link:../concepts/concept_standard_roles_packaged_with_virtual_appliance_for_vsc_vp_and_sra.html["Funciones estándar incluidas en las herramientas de ONTAP"]
+* link:../concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html["Funciones estándar incluidas en las herramientas de ONTAP"]
 * link:../concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html["Permisos para los sistemas de almacenamiento ONTAP y objetos de vSphere"]
 
 

@@ -40,4 +40,4 @@ NOTE: Si el estado del proveedor VASA se muestra como "'fuera de línea'" inclus
 
 *Información relacionada*
 
-https://mysupport.netapp.com/site/global/dashboard["Soporte de NetApp"]
+https://mysupport.netapp.com/site/global/dashboard["Soporte de NetApp"^]
