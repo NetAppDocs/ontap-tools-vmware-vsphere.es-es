@@ -15,6 +15,7 @@ Las herramientas de ONTAP para VMware vSphere son compatibles con entornos que u
 
 
 
+[[metrocluster-configurations-and-ontap-tools]]
 == Configuraciones de MetroCluster y herramientas ONTAP
 
 Debe asegurarse de que las herramientas ONTAP detecten las controladoras del sistema de almacenamiento en el sitio principal y el sitio secundario. Por lo general, las herramientas de ONTAP para VMware vSphere detectan automáticamente las controladoras de almacenamiento. Si usa una LIF de gestión de clúster, una buena práctica es verificar que las herramientas de ONTAP han detectado los clústeres en ambos sitios. De lo contrario, puede añadir manualmente las controladoras de almacenamiento a las herramientas de ONTAP. También es posible modificar los pares de nombre de usuario y contraseña que utilizan las herramientas de ONTAP para conectarse a las controladoras de almacenamiento.
@@ -28,6 +29,7 @@ Cuando se produce una conmutación de sitios o una conmutación de estado, las h
 
 
 
+[[metrocluster-configurations-and-vasa-provider]]
 == Configuraciones de MetroCluster y proveedor VASA
 
 VASA Provider admite automáticamente entornos que utilizan configuraciones MetroCluster. El cambio es transparente en los entornos de proveedores de VASA. No es posible añadir usuarios de SVM al proveedor de VASA.
@@ -37,6 +39,7 @@ NOTE: VASA Provider no incorpora el sufijo "'-mc" a los nombres de las SVM del s
 
 
 
+[[metrocluster-configurations-and-sra]]
 == Configuraciones de MetroCluster y SRA
 
 El adaptador de replicación de almacenamiento (SRA) es compatible con entornos que usan configuraciones de MetroCluster (MCC) con protocolo NFS, iSCSI y FCP.

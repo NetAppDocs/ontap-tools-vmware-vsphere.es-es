@@ -15,6 +15,7 @@ Debe tener en cuenta algunas de las consideraciones que se deben tener en cuenta
 
 
 
+[[migrate-protected-virtual-machines]]
 == Migrar máquinas virtuales protegidas
 
 Puede migrar las máquinas virtuales protegidas a:
@@ -28,6 +29,7 @@ Si la máquina virtual se migra a otro volumen de FlexVol, el respectivo archivo
 
 
 
+[[clone-protected-virtual-machines]]
 == Clonar máquinas virtuales protegidas
 
 Es posible clonar máquinas virtuales protegidas con las siguientes características:
@@ -52,6 +54,7 @@ Se admite el clonado de clon de una máquina virtual protegida.
 
 
 
+[[virtual-machine-snapshots]]
 == Snapshots de máquina virtual
 
 Actualmente solo se admiten instantáneas de máquina virtual sin memoria. Si la máquina virtual tiene una snapshot con memoria, no se considera que la máquina virtual tenga protección.

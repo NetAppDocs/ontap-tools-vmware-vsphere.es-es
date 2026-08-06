@@ -15,6 +15,7 @@ Debe configurar los intervalos de tiempo de espera de almacenamiento de acuerdo 
 
 
 
+[[storage-provider-settings]]
 == Configuración del proveedor de almacenamiento
 
 Debe configurar los siguientes valores de tiempo de espera en SRM para entornos escalados:
@@ -60,6 +61,7 @@ https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manag
 
 
 
+[[storage-settings]]
 == Configuración de almacenamiento
 
 Cuando alcance un tiempo de espera, aumente los valores de `storage.commandTimeout` y.. `storage.maxConcurrentCommandCnt` a un valor superior.

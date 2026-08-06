@@ -29,6 +29,7 @@ Estas credenciales del sistema de almacenamiento son necesarias para configurar 
 
 
 
+[[ontap-tools-roles]]
 == Funciones de herramientas de ONTAP
 
 Las herramientas de ONTAP clasifican los privilegios de ONTAP en el siguiente conjunto de funciones de herramientas de ONTAP:
@@ -53,12 +54,14 @@ Permite la destrucción de volúmenes y LUN
 
 
 
+[[vasa-provider-roles]]
 == Roles del proveedor DE VASA
 
 Solo puede crear gestión basada en políticas en el nivel de clúster. Este rol permite la gestión basada en políticas del almacenamiento mediante perfiles de capacidades de almacenamiento.
 
 
 
+[[sra-roles]]
 == Roles SRA
 
 El SRA clasifica los privilegios del ONTAP en un rol DE SAN o NAS a nivel del clúster o de SVM. Esto permite a los usuarios ejecutar operaciones de SRM.

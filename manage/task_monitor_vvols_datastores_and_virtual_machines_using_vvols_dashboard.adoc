@@ -52,6 +52,7 @@ El portlet Máquinas virtuales proporciona los siguientes detalles:
 
 
 
+[[vvols-dashboard-data-requirements]]
 == Requisitos de datos del panel de vVols
 
 Debe verificar algunos requisitos importantes del panel vVols para mostrar detalles dinámicos de los almacenes de datos y las máquinas virtuales de VMware Virtual Volumes (vVols).

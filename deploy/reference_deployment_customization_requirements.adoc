@@ -15,18 +15,21 @@ Debe tener en cuenta algunas limitaciones a la hora de personalizar las herramie
 
 
 
+[[appliance-administrator-user-password]]
 == Contraseña de usuario del administrador del dispositivo
 
 No debe usar ningún espacio en la contraseña de administrador.
 
 
 
+[[appliance-maintenance-console-credentials]]
 == Credenciales de la consola de mantenimiento del dispositivo
 
 Debe acceder a la consola de mantenimiento utilizando el nombre de usuario «mant». Puede establecer la contraseña para el usuario «mant» durante la implementación. Puede utilizar el menú Configuración de aplicaciones de la consola de mantenimiento de las herramientas de ONTAP para cambiar la contraseña.
 
 
 
+[[vcenter-server-administrator-credentials]]
 == Credenciales de administrador de vCenter Server
 
 Puede configurar las credenciales de administrador para vCenter Server mientras implementa las herramientas de ONTAP.
@@ -35,6 +38,7 @@ Si cambia la contraseña del administrador de vCenter Server, puede actualizar l
 
 
 
+[[vcenter-server-ip-address]]
 == Dirección IP de vCenter Server
 
 * Debe proporcionar la dirección IP (IPv4 o IPv6) de la instancia de vCenter Server en la que desea registrar las herramientas de ONTAP.
@@ -53,6 +57,7 @@ NOTE: : IPv6 solo es compatible con vCenter Server 6.7 y versiones posteriores.
 
 
 
+[[appliance-network-properties]]
 == Propiedades de la red del dispositivo
 
 Si no utiliza DHCP, especifique un nombre de host DNS válido (no cualificado), así como la dirección IP estática para las herramientas ONTAP para VMware vSphere y los demás parámetros de red. Todos estos parámetros son necesarios para una instalación y funcionamiento correctos.

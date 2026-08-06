@@ -70,6 +70,7 @@ Con las herramientas de ONTAP, puede configurar cada almacén de datos de volúm
 
 
 
+[[considerations-for-creating-and-editing-storage-capability-profiles]]
 == Consideraciones que tener en cuenta para crear y editar perfiles de funcionalidad de almacenamiento
 
 Debe tener en cuenta las consideraciones que se deben tener en cuenta para crear y editar perfiles de funcionalidad de almacenamiento.

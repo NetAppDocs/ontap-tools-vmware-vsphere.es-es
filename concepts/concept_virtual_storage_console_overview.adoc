@@ -21,6 +21,7 @@ La herramienta del complemento VMware vSphere Client está diseñada para integr
 
 
 
+[[virtual-storage-console-vsc]]
 == Virtual Storage Console (VSC)
 
 VSC le permite realizar las siguientes tareas:
@@ -49,6 +50,7 @@ El plugin de NetApp NFS para VAAI no se envía con VSC. Pero puede descargar el 
 
 
 
+[[vasa-provider]]
 == Proveedor de VASA
 
 VASA Provider para ONTAP usa las API VMware vSphere para el reconocimiento del almacenamiento (VASA) para enviar información sobre el almacenamiento que utiliza VMware vSphere al vCenter Server. Las herramientas de ONTAP cuentan con VASA Provider integrado con VSC. EL proveedor DE VASA permite realizar las siguientes tareas:
@@ -62,6 +64,7 @@ VASA Provider para ONTAP usa las API VMware vSphere para el reconocimiento del a
 
 
 
+[[storage-replication-adapter-sra]]
 == Adaptador de replicación de almacenamiento (SRA)
 
 Cuando se habilita el SRA y se usa junto con VMware Site Recovery Manager (SRM), es posible recuperar los almacenes de datos y las máquinas virtuales de vCenter Server en caso de fallo. El SRA permite utilizar la replicación basada en cabina (ABR) para sitios protegidos y sitios de recuperación para la recuperación ante desastres en caso de un fallo.

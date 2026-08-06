@@ -17,6 +17,7 @@ Puede configurar los siguientes valores en un host ESXi:
 
 
 
+[[esxi-host-advanced-configuration]]
 == Configuración avanzada de host ESXi
 
 * *VMFS3.HardwaraceleratedLocking*
@@ -31,6 +32,7 @@ Debe configurar este valor en 0.
 
 
 
+[[nfs-settings]]
 == Configuración de NFS
 
 * *Net.TcpipHeapSize*
@@ -73,6 +75,7 @@ Si usa vSphere 7,0 o posterior, debe configurar este valor en 128.
 
 
 
+[[fcfcoe-settings]]
 == Configuración de FC/FCoE
 
 * *Política de selección de ruta*
@@ -105,6 +108,7 @@ Se utiliza el valor predeterminado.
 
 
 
+[[iscsi-settings]]
 == Configuración de iSCSI
 
 * *Política de selección de ruta*

@@ -15,6 +15,7 @@ Hay varios puntos clave que se deben tener en cuenta cuando se trabaja con permi
 
 
 
+[[assigning-permissions]]
 == Asignación de permisos
 
 Solo debe configurar permisos de vCenter Server si desea limitar el acceso a los objetos y tareas de vSphere. De lo contrario, puede iniciar sesión como administrador. Este inicio de sesión permite acceder automáticamente a todos los objetos de vSphere.
@@ -30,6 +31,7 @@ TIP: A menos que las políticas de seguridad de la empresa requieran permisos m�
 
 
 
+[[permissions-and-non-vsphere-objects]]
 == Permisos y objetos que no son de vSphere
 
 El permiso que crea se aplica a un objeto que no sea de vSphere. Por ejemplo, un sistema de almacenamiento no es un objeto de vSphere. Si un privilegio se aplica a un sistema de almacenamiento, debe asignar el permiso que incluye ese privilegio al objeto raíz de herramientas de ONTAP porque no existe ningún objeto de vSphere al que pueda asignarlo.
@@ -38,6 +40,7 @@ Por ejemplo, cualquier permiso que incluya un privilegio como el privilegio ONTA
 
 
 
+[[modifying-permissions]]
 == Modificar permisos
 
 Puede modificar un permiso en cualquier momento.

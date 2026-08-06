@@ -30,6 +30,7 @@ NOTE: Las herramientas de ONTAP no admiten la alta disponibilidad del vCenter.
 
 
 
+[[vmware-vsphere-ha]]
 == VMware vSphere ha
 
 Puede configurar su entorno de vSphere donde las herramientas de ONTAP para VMware vSphere esté puesto en marcha para una alta disponibilidad (ha). La función de alta disponibilidad de VMware ofrece protección tras fallos frente a fallos del hardware y fallos del sistema operativo en entornos virtuales.
@@ -42,6 +43,7 @@ https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-avail
 
 
 
+[[vmware-vsphere-fault-tolerance]]
 == Tolerancia a fallos de VMware vSphere
 
 La función DE tolerancia a fallos (FT) de VMware vSphere proporciona alta disponibilidad (ha) a un nivel superior y le permite proteger las máquinas virtuales sin perder datos o conexiones. Debe habilitar o deshabilitar las herramientas de vSphere FT para ONTAP desde vCenter Server.
@@ -56,4 +58,4 @@ El sistema debe cumplir los requisitos de CPU, los requisitos de límite de máq
 
 El procedimiento para configurar la alta disponibilidad depende de la versión del servidor de vCenter Server. Por ejemplo, puede utilizar el siguiente enlace de referencia y seleccionar la versión necesaria de vCenter Server para ver los pasos necesarios para configurar la alta disponibilidad.
 
-https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-availability.html["Requisitos, límites y licencias de Fault Tolerance"^]
+https://techdocs.broadcom.com/["Documentación técnica de Broadcom"^]

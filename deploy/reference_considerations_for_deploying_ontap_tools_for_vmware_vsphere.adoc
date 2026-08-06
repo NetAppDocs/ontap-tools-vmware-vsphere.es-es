@@ -117,24 +117,28 @@ Para usar perfiles de funcionalidad de almacenamiento o configurar alarmas, es n
 |===
 
 
+[[additional-deployment-considerations]]
 == Consideraciones adicionales sobre la puesta en marcha
 
 Debe tener en cuenta pocos requisitos a la hora de personalizar las herramientas de ONTAP de puesta en marcha.
 
 
 
+[[application-user-password]]
 === Contraseña de usuario de la aplicación
 
 Esta es la contraseña asignada a la cuenta de administrador. Por motivos de seguridad, se recomienda que la longitud de la contraseña sea de entre 8 y 30 caracteres y contenga un mínimo de un carácter superior, uno inferior, un dígito y un carácter especial. La contraseña caduca después de 90 días.
 
 
 
+[[appliance-maintenance-console-credentials]]
 === Credenciales de la consola de mantenimiento del dispositivo
 
 Debe acceder a la consola de mantenimiento utilizando el nombre de usuario «mant». Puede establecer la contraseña para el usuario «mant» durante la implementación. Puede utilizar el menú Configuración de aplicaciones de la consola de mantenimiento de las herramientas de ONTAP para cambiar la contraseña.
 
 
 
+[[vcenter-server-administrator-credentials]]
 === Credenciales de administrador de vCenter Server
 
 Puede configurar las credenciales de administrador para vCenter Server mientras implementa las herramientas de ONTAP.
@@ -143,12 +147,14 @@ Si cambia la contraseña del administrador de vCenter Server, puede actualizar l
 
 
 
+[[derby-database-password]]
 === Contraseña de la base de datos Derby
 
 Por motivos de seguridad, se recomienda que la longitud de la contraseña sea de entre 8 y 30 caracteres y contenga un mínimo de un carácter superior, uno inferior, un dígito y un carácter especial. La contraseña caduca después de 90 días.
 
 
 
+[[vcenter-server-ip-address]]
 === Dirección IP de vCenter Server
 
 * Debe proporcionar la dirección IP (IPv4 o IPv6) de la instancia de vCenter Server en la que desea registrar las herramientas de ONTAP.
@@ -167,6 +173,7 @@ NOTE: IPv6 solo es compatible con vCenter Server 6.7 y versiones posteriores.
 
 
 
+[[appliance-network-properties]]
 === Propiedades de la red del dispositivo
 
 Si no utiliza DHCP, especifique un nombre de host DNS válido (no cualificado), así como la dirección IP estática para las herramientas ONTAP para VMware vSphere y los demás parámetros de red. Todos estos parámetros son necesarios para una instalación y funcionamiento correctos.

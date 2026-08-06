@@ -20,12 +20,14 @@ Las herramientas de ONTAP para VMware vSphere son un único complemento vCenter 
 
 
 
+[[preparing-for-installation]]
 == Preparación de la instalación
 
 Pone en marcha el complemento como dispositivo virtual, lo que reduce el esfuerzo de instalar y registrar cada producto por separado en vCenter Server.
 
 
 
+[[deployment-requirements]]
 === Requisitos de puesta en marcha
 
 Las herramientas de ONTAP se pueden usar con un dispositivo virtual de VMware vCenter Server (vcsa). Debe implementar las herramientas de ONTAP en una vSphere compatible que incluya el sistema ESXi.
@@ -102,6 +104,7 @@ Requisitos mínimos de almacenamiento y aplicaciones:
 |===
 
 
+[[ontap-tools-requirements]]
 === Requisitos de las herramientas de ONTAP
 
 * Configurar y configurar el entorno de vCenter Server.
@@ -114,12 +117,14 @@ Requisitos mínimos de almacenamiento y aplicaciones:
 
 
 
+[[optional-requirements-for-sra]]
 === Requisitos opcionales para SRA
 
 Si está implementando el dispositivo virtual para utilizarlo con VMware Site Recovery Manager, debe tener: * Descargado el `.tar.gz` Archivo para SRA si utiliza el dispositivo SRM.
 
 
 
+[[deploying-ontap-tools]]
 == Implementar las herramientas de ONTAP
 
 .Pasos
@@ -168,6 +173,7 @@ El archivo de registro contiene la ejecución de _sha256sum -c /opt/netapp/vscer
 
 
 
+[[deploying-sra-on-srm]]
 === Puesta en marcha de SRA en SRM
 
 Puede implementar el SRA en un servidor SRM de Windows o en un dispositivo SRM de 8.2.

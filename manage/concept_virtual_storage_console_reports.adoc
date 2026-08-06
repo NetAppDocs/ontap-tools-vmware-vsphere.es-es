@@ -28,6 +28,7 @@ Las herramientas de ONTAP proporcionan los siguientes informes predefinidos:
 
 
 
+[[datastore-reports]]
 == Informes del almacén de datos
 
 Los informes de almacenes de datos, proporcionan información detallada sobre los almacenes de datos tradicionales y las máquinas virtuales que se crean en estos almacenes de datos.
@@ -115,6 +116,7 @@ Para máquinas virtuales a las que se realizan backups de FlexGroup Volumes, cua
 
 
 
+[[vvols-reports]]
 == Informes de vVols
 
 Los informes vVols muestran información detallada sobre los almacenes de datos VMware Virtual Volumes (vVols) y las máquinas virtuales que se crean en estos almacenes de datos. La consola vVols le permite revisar e identificar problemas potenciales con los almacenes de datos vVols y los equipos virtuales en vCenter Server.

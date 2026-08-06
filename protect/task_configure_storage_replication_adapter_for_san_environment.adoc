@@ -43,6 +43,7 @@ Compruebe el acceso a los LUN asignados en el host ESXi para verificar la conect
 
 
 
+[[configure-storage-replication-adapter-for-nas-environment]]
 == Configurar el adaptador de replicación de almacenamiento para el entorno NAS
 
 *Lo que necesitará*
